@@ -1,0 +1,289 @@
+{
+ "task": "TurnOffWifiAndTurnOnBluetooth",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.71,
+   "end_s": 29.73,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 30.95,
+   "end_s": 33.91,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 20,
+    "endX": 540,
+    "endY": 1600,
+    "durationMs": 300
+   }
+  },
+  {
+   "step": 3,
+   "tool": "swipe",
+   "start_s": 35.03,
+   "end_s": 36.12,
+   "ok": true,
+   "args": {
+    "durationMs": 300,
+    "endX": 540,
+    "endY": 2000,
+    "startX": 540,
+    "startY": 800
+   }
+  },
+  {
+   "step": 4,
+   "tool": "launch",
+   "start_s": 37.32,
+   "end_s": 38.74,
+   "ok": true,
+   "args": {
+    "app": "com.android.settings"
+   }
+  },
+  {
+   "step": 5,
+   "tool": "key",
+   "start_s": 40.04,
+   "end_s": 41.15,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 42.42,
+   "end_s": 43.83,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 540,
+    "y": 886
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 44.97,
+   "end_s": 52.45,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 540,
+    "y": 701
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 53.61,
+   "end_s": 55.32,
+   "ok": true,
+   "args": {
+    "index": 8,
+    "toggle": true
+   }
+  },
+  {
+   "step": 9,
+   "tool": "get_ui_state",
+   "start_s": 56.28,
+   "end_s": 56.53,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 57.9,
+   "end_s": 58.43,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 2,
+    "x": 74,
+    "y": 202
+   }
+  },
+  {
+   "step": 11,
+   "tool": "get_ui_state",
+   "start_s": 59.72,
+   "end_s": 59.75,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 60.75,
+   "end_s": 61.84,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 2,
+    "x": 74,
+    "y": 202
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 62.74,
+   "end_s": 64.01,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 487,
+    "y": 1117
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 65.55,
+   "end_s": 67.02,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 541,
+    "y": 1248
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 68.24,
+   "end_s": 69.32,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 547,
+    "y": 787
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 70.48,
+   "end_s": 70.95,
+   "ok": true,
+   "args": {
+    "index": 4,
+    "toggle": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 913,
+    "y": 738
+   }
+  },
+  {
+   "step": 17,
+   "tool": "get_ui_state",
+   "start_s": 71.92,
+   "end_s": 71.94,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 73.63,
+   "end_s": 74.93,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 2,
+    "x": 74,
+    "y": 202
+   }
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 76.46,
+   "end_s": 77.23,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 2,
+    "x": 73,
+    "y": 202
+   }
+  },
+  {
+   "step": 20,
+   "tool": "done",
+   "start_s": 80.02,
+   "end_s": 80.02,
+   "ok": true,
+   "args": {
+    "summary": "WiFi is now off and Bluetooth is on. I turned WiFi off from Settings, Network & internet, Internet (the Wi-Fi switch now reads Unchecked), then turned Bluetooth on from Settings, Connected devices, Connection preferences, Bluetooth (the switch reads Checked, and the Connected devices page now shows this phone as visible to other devices).",
+    "evidence": {
+     "objective_evidence": "Internet page: Wi-Fi switch shows Unchecked while Bluetooth page switch shows Checked; Connected devices page now shows 'Visible as \"sdk_gphone64_x86_64\" to other devices'.",
+     "key_signals": [
+      "Wi-Fi switch Unchecked on Internet settings page",
+      "Bluetooth 'Use Bluetooth' switch Checked",
+      "Connected devices shows Bluetooth visibility line instead of 'Bluetooth will turn on'"
+     ]
+    },
+    "rows": [
+     {
+      "setting": "Wi-Fi",
+      "state": "Off",
+      "lusor_status": "succeeded"
+     },
+     {
+      "setting": "Bluetooth",
+      "state": "On",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

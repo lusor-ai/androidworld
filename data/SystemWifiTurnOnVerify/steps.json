@@ -1,0 +1,55 @@
+{
+ "task": "SystemWifiTurnOnVerify",
+ "video_duration_s": 61.7,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.4,
+   "end_s": 29.41,
+   "ok": true,
+   "note": "Observe current screen; then open Settings/Quick Settings and toggle Wi-Fi on"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 30.62,
+   "end_s": 33.5,
+   "ok": true,
+   "note": "In Settings, find Wi-Fi entry"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 34.26,
+   "end_s": 36.07,
+   "ok": true,
+   "note": "Open the Wi-Fi row in Network & internet and check current Wi-Fi switch"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 36.95,
+   "end_s": 44.27,
+   "ok": true,
+   "note": "On the Internet screen, check Wi-Fi switch state and turn it on if off"
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 45.31,
+   "end_s": 45.37,
+   "ok": true,
+   "note": "Confirm Wi-Fi switch is checked, then done()"
+  },
+  {
+   "step": 6,
+   "tool": "done",
+   "start_s": 46.92,
+   "end_s": 46.92,
+   "ok": true,
+   "note": "Task complete; no further action"
+  }
+ ]
+}

@@ -1,0 +1,746 @@
+{
+ "task": "TasksDueNextWeek",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.8,
+   "end_s": 29.81,
+   "ok": true,
+   "args": {
+    "path": "skill://tasks/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.8,
+   "end_s": 29.81,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.81,
+   "end_s": 34.53,
+   "ok": true,
+   "args": {
+    "app": "org.tasks"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "map_app",
+   "start_s": 36.49,
+   "end_s": 52.66,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 5,
+   "tool": "scroll_to",
+   "start_s": 56.2,
+   "end_s": 87.98,
+   "ok": true,
+   "args": {
+    "target": "Meal Prep for the Week",
+    "direction": "up"
+   }
+  },
+  {
+   "step": 6,
+   "tool": "swipe",
+   "start_s": 89.46,
+   "end_s": 97.01,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 600,
+    "endX": 540,
+    "endY": 2100,
+    "durationMs": 300,
+    "capture": true
+   }
+  },
+  {
+   "step": 7,
+   "tool": "swipe",
+   "start_s": 98.32,
+   "end_s": 103.31,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "durationMs": 300,
+    "endX": 540,
+    "endY": 2100,
+    "startX": 540,
+    "startY": 600
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 104.78,
+   "end_s": 106.31,
+   "ok": true,
+   "args": {
+    "index": 19,
+    "capture": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 19,
+    "x": 540,
+    "y": 1589
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap",
+   "start_s": 107.55,
+   "end_s": 108.38,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "x": 540,
+    "y": 1076
+   }
+  },
+  {
+   "step": 10,
+   "tool": "get_ui_state",
+   "start_s": 109.9,
+   "end_s": 110.12,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 11,
+   "tool": "chain",
+   "start_s": 119.22,
+   "end_s": 120.39,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "CANCEL"
+      }
+     },
+     {
+      "verb": "back"
+     },
+     {
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 12,
+   "tool": "chain",
+   "start_s": 122.36,
+   "end_s": 123.33,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 22
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 13,
+   "tool": "chain",
+   "start_s": 124.73,
+   "end_s": 124.74,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "x": 540,
+       "y": 1076
+      },
+      "verb": "tap"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap",
+   "start_s": 125.82,
+   "end_s": 127.48,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "x": 540,
+    "y": 1076
+   }
+  },
+  {
+   "step": 15,
+   "tool": "chain",
+   "start_s": 130.21,
+   "end_s": 133.8,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "target": "CANCEL"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {
+       "target": "Organize movie night"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 16,
+   "tool": "chain",
+   "start_s": 137.17,
+   "end_s": 138.04,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 25
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap",
+   "start_s": 139.37,
+   "end_s": 141.3,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "x": 540,
+    "y": 1076
+   }
+  },
+  {
+   "step": 18,
+   "tool": "chain",
+   "start_s": 143.41,
+   "end_s": 144.4,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "target": "CANCEL"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {
+       "index": 28
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 146.33,
+   "end_s": 147.39,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 28
+   },
+   "tapped": {
+    "label": null,
+    "index": 28,
+    "x": 540,
+    "y": 2301
+   }
+  },
+  {
+   "step": 20,
+   "tool": "swipe",
+   "start_s": 148.79,
+   "end_s": 148.8,
+   "ok": false,
+   "args": {
+    "capture": true,
+    "durationMs": 300,
+    "endX": 540,
+    "endY": 1600
+   }
+  },
+  {
+   "step": 21,
+   "tool": "swipe",
+   "start_s": 149.84,
+   "end_s": 151.59,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "durationMs": 300,
+    "endX": 540,
+    "endY": 1600,
+    "startX": 540,
+    "startY": 1900
+   }
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 152.35,
+   "end_s": 153.11,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 25
+   },
+   "tapped": {
+    "label": null,
+    "index": 25,
+    "x": 540,
+    "y": 1975
+   }
+  },
+  {
+   "step": 23,
+   "tool": "tap",
+   "start_s": 154.05,
+   "end_s": 155.8,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "x": 540,
+    "y": 1076
+   }
+  },
+  {
+   "step": 24,
+   "tool": "chain",
+   "start_s": 158.07,
+   "end_s": 158.99,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "target": "CANCEL"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {
+       "endX": 540,
+       "endY": 2000,
+       "startX": 540,
+       "startY": 700
+      },
+      "verb": "swipe"
+     },
+     {
+      "params": {
+       "endX": 540,
+       "endY": 2000,
+       "startX": 540,
+       "startY": 700
+      },
+      "verb": "swipe"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 25,
+   "tool": "chain",
+   "start_s": 160.65,
+   "end_s": 161.48,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 4
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 26,
+   "tool": "tap",
+   "start_s": 162.6,
+   "end_s": 164.21,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "x": 540,
+    "y": 1076
+   }
+  },
+  {
+   "step": 27,
+   "tool": "chain",
+   "start_s": 165.87,
+   "end_s": 166.72,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "target": "CANCEL"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 28,
+   "tool": "chain",
+   "start_s": 168.34,
+   "end_s": 169.07,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 7
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 29,
+   "tool": "tap",
+   "start_s": 170.05,
+   "end_s": 171.59,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "x": 540,
+    "y": 1076
+   }
+  },
+  {
+   "step": 30,
+   "tool": "chain",
+   "start_s": 173.51,
+   "end_s": 174.31,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "target": "CANCEL"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 31,
+   "tool": "swipe",
+   "start_s": 175.4,
+   "end_s": 177.22,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "durationMs": 300,
+    "endX": 540,
+    "endY": 2000,
+    "startX": 540,
+    "startY": 700
+   }
+  },
+  {
+   "step": 32,
+   "tool": "chain",
+   "start_s": 178.6,
+   "end_s": 179.31,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 7
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 33,
+   "tool": "tap",
+   "start_s": 180.39,
+   "end_s": 182.11,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "x": 540,
+    "y": 1076
+   }
+  },
+  {
+   "step": 34,
+   "tool": "chain",
+   "start_s": 183.74,
+   "end_s": 184.62,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "target": "CANCEL"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 35,
+   "tool": "chain",
+   "start_s": 186.03,
+   "end_s": 186.82,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 10
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 36,
+   "tool": "tap",
+   "start_s": 187.84,
+   "end_s": 189.41,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "x": 540,
+    "y": 1076
+   }
+  },
+  {
+   "step": 37,
+   "tool": "chain",
+   "start_s": 190.85,
+   "end_s": 191.72,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "target": "CANCEL"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 38,
+   "tool": "chain",
+   "start_s": 194.31,
+   "end_s": 195.01,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 16
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 39,
+   "tool": "tap",
+   "start_s": 196.25,
+   "end_s": 198.01,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "x": 540,
+    "y": 1076
+   }
+  },
+  {
+   "step": 40,
+   "tool": "chain",
+   "start_s": 201.81,
+   "end_s": 202.79,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "target": "CANCEL"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 41,
+   "tool": "done",
+   "start_s": 206.17,
+   "end_s": 206.18,
+   "ok": true,
+   "args": {
+    "summary": "You have 6 tasks due next week. The week runs Monday Oct 16 through Sunday Oct 22, 2023, and I counted only incomplete tasks: Complete project proposal (Mon Oct 16, shown as \"Tmrw\"), Review code changes (Tue Oct 17), Organize files and folders (Wed Oct 18), Organize movie night (Fri Oct 20), Prepare agenda for weekly meeting (Sat Oct 21) and Plan family reunion (Sun Oct 22). The other weekday-labelled tasks (Meal Prep for the Week, Renew Driver's License, Submit Expense Report, Grocery Shopping, Learn to Play Guitar) turned out to fall in the past week, Oct 9 to Oct 11, which I confirmed in each task's date picker.",
+    "schema": [
+     "answer"
+    ],
+    "rows": [
+     {
+      "answer": 6,
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "My Tasks list read in full (26 rows, end proven). Date pickers opened per task: Review code changes selected 17 (Oct 17), Organize files and folders 18, Organize movie night 20, Prepare agenda for weekly meeting 21, Meal Prep 10, Renew Driver's License 11, Grocery Shopping 11, Learn to Play Guitar 9, Submit Expense Report 10. Complete project proposal shows Tmrw and Plan family reunion shows Oct 22.",
+     "key_signals": [
+      "Device date Sun 2023-10-15",
+      "Next week = 2023-10-16 to 2023-10-22",
+      "6 unfinished tasks fall in that range",
+      "No list changes made; only inspected"
+     ]
+    }
+   }
+  }
+ ]
+}

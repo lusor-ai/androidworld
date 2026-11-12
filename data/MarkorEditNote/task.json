@@ -1,0 +1,135 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "MarkorEditNote",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 27.3,
+  "mobilerun_published_time_s": 143.1,
+  "speed_ratio": 0.191,
+  "lusor_cost_usd": 0.0087,
+  "mobilerun_published_actions": 6,
+  "mobilerun_est_cost_usd": 0.46,
+  "lusor_tool_calls": 11,
+  "disclosure": null,
+  "skills_read": [
+   "markor"
+  ],
+  "skill_assisted": [],
+  "goal": "Edit note_6aamy.txt in Markor. Add to the top of the note It's a bird, it's a plane.",
+  "final_answer": null,
+  "final_summary": "I added \"It's a bird, it's a plane.\" as the first line of note_6aamy.txt in Markor, saved it, and reopened the note to confirm the saved text reads: \"It's a bird, it's a plane.\" followed by the original line \"The night is dark and full of terrors.\"",
+  "video_duration_s": 67.4,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 30.08,
+    "end_s": 30.1,
+    "ok": true,
+    "note": "Load Markor skill guidance"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 30.08,
+    "end_s": 30.1,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 31.23,
+    "end_s": 33.64,
+    "ok": true,
+    "note": "Launch Markor and locate note_6aamy.txt"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 34.43,
+    "end_s": 34.89,
+    "ok": true,
+    "note": "Open note_6aamy.txt"
+   },
+   {
+    "step": 5,
+    "tool": "get_ui_state",
+    "start_s": 36.18,
+    "end_s": 36.19,
+    "ok": true,
+    "note": "Read note editor screen"
+   },
+   {
+    "step": 6,
+    "tool": "type",
+    "start_s": 37.69,
+    "end_s": 45.5,
+    "ok": true,
+    "note": "Type prepended text into the editor"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 46.47,
+    "end_s": 46.88,
+    "ok": true,
+    "note": "Tap Save and verify saved content"
+   },
+   {
+    "step": 8,
+    "tool": "key",
+    "start_s": 48.0,
+    "end_s": 48.42,
+    "ok": true,
+    "note": "Go back to file list and reopen note to verify saved content"
+   },
+   {
+    "step": 9,
+    "tool": "key",
+    "start_s": 49.49,
+    "end_s": 50.42,
+    "ok": true,
+    "note": "Return to file list and reopen note_6aamy.txt to verify saved text"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 51.43,
+    "end_s": 52.57,
+    "ok": true,
+    "note": "Reopen note_6aamy.txt and read back content"
+   },
+   {
+    "step": 11,
+    "tool": "done",
+    "start_s": 54.62,
+    "end_s": 54.62,
+    "ok": true,
+    "note": "Task complete; nothing further"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorEditNote/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/MarkorEditNote/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/MarkorEditNote/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/MarkorEditNote/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/MarkorEditNote/task.json"
+  }
+ }
+}

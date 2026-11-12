@@ -1,0 +1,110 @@
+{
+ "task": "SystemBluetoothTurnOnVerify",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 28.72,
+   "end_s": 28.74,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 29.57,
+   "end_s": 32.34,
+   "ok": true,
+   "args": {
+    "app": "com.android.settings"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 33.41,
+   "end_s": 34.72,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 1117
+   }
+  },
+  {
+   "step": 4,
+   "tool": "scroll_to",
+   "start_s": 36.11,
+   "end_s": 44.09,
+   "ok": true,
+   "args": {
+    "direction": "up",
+    "target": "Bluetooth"
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 44.78,
+   "end_s": 46.02,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 540,
+    "y": 1146
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 46.95,
+   "end_s": 48.11,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 540,
+    "y": 787
+   }
+  },
+  {
+   "step": 7,
+   "tool": "done",
+   "start_s": 49.83,
+   "end_s": 49.84,
+   "ok": true,
+   "args": {
+    "summary": "Bluetooth was already on when I opened the Bluetooth settings screen, so nothing needed changing. The \"Use Bluetooth\" switch shows as checked and the phone is visible as \"sdk_gphone64_x86_64\".",
+    "evidence": {
+     "objective_evidence": "Settings > Connection preferences > Bluetooth screen shows a \"Use Bluetooth\" switch marked Checked, with Device name sdk_gphone64_x86_64.",
+     "key_signals": [
+      "Switch id switch_widget: Checked",
+      "\"Use Bluetooth\" toggle bar visible on Bluetooth page"
+     ]
+    },
+    "rows": [
+     {
+      "item": "Bluetooth",
+      "action": "none needed",
+      "state": "on",
+      "lusor_status": "succeeded",
+      "lusor_status_note": "The Bluetooth switch was already checked when I opened the settings."
+     }
+    ]
+   }
+  }
+ ]
+}

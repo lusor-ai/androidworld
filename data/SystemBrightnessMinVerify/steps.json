@@ -1,0 +1,63 @@
+{
+ "task": "SystemBrightnessMinVerify",
+ "video_duration_s": 57.8,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 28.48,
+   "end_s": 28.5,
+   "ok": true,
+   "note": "Observe current screen to find brightness settings"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 29.37,
+   "end_s": 32.06,
+   "ok": true,
+   "note": "Open Settings app and navigate to Display > Brightness level"
+  },
+  {
+   "step": 3,
+   "tool": "scroll_to",
+   "start_s": 33.26,
+   "end_s": 34.46,
+   "ok": true,
+   "note": "Scroll to Display entry in Settings"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.15,
+   "end_s": 36.52,
+   "ok": true,
+   "note": "Open Display settings"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.72,
+   "end_s": 38.52,
+   "ok": true,
+   "note": "Open Brightness level page to check slider value"
+  },
+  {
+   "step": 6,
+   "tool": "key",
+   "start_s": 40.44,
+   "end_s": 40.94,
+   "ok": true,
+   "note": "Close slider and re-read Display screen to confirm 0%"
+  },
+  {
+   "step": 7,
+   "tool": "done",
+   "start_s": 42.69,
+   "end_s": 42.69,
+   "ok": true,
+   "note": "Task complete; brightness confirmed at minimum (0%)"
+  }
+ ]
+}

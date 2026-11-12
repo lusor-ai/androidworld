@@ -1,0 +1,148 @@
+{
+ "task": "SimpleSmsResend",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 51.06,
+   "end_s": 51.08,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "tap_element",
+   "start_s": 52.5,
+   "end_s": 53.54,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": "Elementary, my dear Watson.",
+    "index": 9,
+    "x": 737,
+    "y": 1065
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 55.03,
+   "end_s": 56.01,
+   "ok": true,
+   "args": {
+    "index": 9,
+    "hold_ms": 800
+   },
+   "tapped": {
+    "label": "Elementary, my dear Watson.",
+    "index": 9,
+    "x": 737,
+    "y": 1065
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 57.1,
+   "end_s": 58.2,
+   "ok": true,
+   "args": {
+    "index": 20
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 20,
+    "x": 1028,
+    "y": 212
+   }
+  },
+  {
+   "step": 5,
+   "tool": "key",
+   "start_s": 60.5,
+   "end_s": 60.9,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 61.82,
+   "end_s": 62.42,
+   "ok": true,
+   "args": {
+    "index": 15
+   },
+   "tapped": {
+    "label": "Done",
+    "index": 15,
+    "x": 74,
+    "y": 212
+   }
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 63.53,
+   "end_s": 65.88,
+   "ok": true,
+   "args": {
+    "text": "Elementary, my dear Watson.",
+    "index": 14
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 66.92,
+   "end_s": 68.2,
+   "ok": true,
+   "args": {
+    "index": 15,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "SMS",
+    "index": 15,
+    "x": 1006,
+    "y": 1454
+   }
+  },
+  {
+   "step": 9,
+   "tool": "done",
+   "start_s": 71.42,
+   "end_s": 71.43,
+   "ok": true,
+   "args": {
+    "summary": "I resent your message to Juan Alves in Simple SMS Messenger. The thread now shows a second outgoing copy of \"Elementary, my dear Watson.\" right after the original, and the compose field is empty again. The app's long-press menu on that message offers only Properties, Forward, Select text and Select all, so I resent it by typing the identical text from the original message into the compose field and sending it.",
+    "evidence": {
+     "objective_evidence": "After tapping the SMS send button, the Juan Alves thread lists four messages: the 15:34 timestamp, two outgoing \"Elementary, my dear Watson.\" bubbles (the second at y 1176-1307, below the original at 794-925), and Juan's incoming \"Sorry, there was a glitch, what was the last message you sent me?\". The compose field is empty and the SMS button is Disabled again.",
+     "key_signals": [
+      "Thread header shows Juan Alves",
+      "Original sent message: \"Elementary, my dear Watson.\" at 15:34",
+      "Long-press menu had no Resend option (Properties, Forward, Select text, Select all)",
+      "Compose field read back exactly \"Elementary, my dear Watson.\" before sending",
+      "List now reports \"elementary, my dear watson.\" x2+ and 4 rows shown"
+     ]
+    },
+    "rows": [
+     {
+      "recipient": "Juan Alves",
+      "message": "Elementary, my dear Watson.",
+      "conversation": "Juan Alves",
+      "method": "Sent again from compose field; no Resend option in message menu",
+      "verified_in_thread": true,
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

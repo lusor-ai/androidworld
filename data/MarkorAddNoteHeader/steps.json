@@ -1,0 +1,247 @@
+{
+ "task": "MarkorAddNoteHeader",
+ "video_duration_s": 111.5,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.59,
+   "end_s": 30.64,
+   "ok": true,
+   "note": "Read Markor skill and observe screen"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.59,
+   "end_s": 30.64,
+   "ok": true,
+   "note": "Read Markor skill and observe screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.53,
+   "end_s": 33.94,
+   "ok": true,
+   "note": "Launch Markor and open eager_rose_edited.txt"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.03,
+   "end_s": 35.91,
+   "ok": true,
+   "note": "Open eager_rose_edited.txt and read its content"
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 37.07,
+   "end_s": 37.09,
+   "ok": true,
+   "note": "Read note content on editor screen"
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 38.98,
+   "end_s": 43.69,
+   "ok": true,
+   "note": "Type new content with added line and blank line"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 45.21,
+   "end_s": 45.61,
+   "ok": true,
+   "note": "Tap Save, then rename file via More options"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 46.72,
+   "end_s": 47.53,
+   "ok": true,
+   "note": "Open More options menu to find rename"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 48.49,
+   "end_s": 49.62,
+   "ok": true,
+   "note": "Open File settings submenu to rename"
+  },
+  {
+   "step": 10,
+   "tool": "key",
+   "start_s": 51.19,
+   "end_s": 51.72,
+   "ok": true,
+   "note": "Close menus and go back to file list to use long-press rename"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 53.39,
+   "end_s": 54.32,
+   "ok": true,
+   "note": "Check Tools submenu for rename option"
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 55.28,
+   "end_s": 56.41,
+   "ok": true,
+   "note": "Open Tools submenu to look for rename"
+  },
+  {
+   "step": 13,
+   "tool": "key",
+   "start_s": 57.56,
+   "end_s": 58.12,
+   "ok": true,
+   "note": "Close menu and return to file list"
+  },
+  {
+   "step": 14,
+   "tool": "key",
+   "start_s": 59.09,
+   "end_s": 59.43,
+   "ok": true,
+   "note": "Return to file list and long press the note for rename"
+  },
+  {
+   "step": 15,
+   "tool": "key",
+   "start_s": 60.6,
+   "end_s": 61.31,
+   "ok": true,
+   "note": "Return to file list and long press the note for rename"
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 62.45,
+   "end_s": 63.77,
+   "ok": true,
+   "note": "Long press eager_rose_edited.txt for context menu with rename"
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 65.06,
+   "end_s": 65.63,
+   "ok": true,
+   "note": "Tap Rename and enter new filename quick_pig_2023_04_05.txt"
+  },
+  {
+   "step": 18,
+   "tool": "type",
+   "start_s": 66.74,
+   "end_s": 69.61,
+   "ok": true,
+   "note": "Type new name and tap OK"
+  },
+  {
+   "step": 19,
+   "tool": "get_ui_state",
+   "start_s": 70.62,
+   "end_s": 70.65,
+   "ok": true,
+   "note": "Re-read rename dialog field and type new name"
+  },
+  {
+   "step": 20,
+   "tool": "key",
+   "start_s": 72.83,
+   "end_s": 73.42,
+   "ok": true,
+   "note": "Exit selection mode, then reselect only eager_rose_edited.txt"
+  },
+  {
+   "step": 21,
+   "tool": "tap_element",
+   "start_s": 75.05,
+   "end_s": 75.53,
+   "ok": true,
+   "note": "Deselect edited_summer_vacation_plans.md so only the target stays selected"
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 76.61,
+   "end_s": 77.81,
+   "ok": true,
+   "note": "Tap Rename to open dialog"
+  },
+  {
+   "step": 23,
+   "tool": "tap_element",
+   "start_s": 79.13,
+   "end_s": 80.02,
+   "ok": true,
+   "note": "Focus the name field"
+  },
+  {
+   "step": 24,
+   "tool": "type",
+   "start_s": 80.95,
+   "end_s": 82.66,
+   "ok": true,
+   "note": "Type the new filename into the focused field"
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 83.59,
+   "end_s": 84.82,
+   "ok": true,
+   "note": "Confirm rename with OK and verify the list entry"
+  },
+  {
+   "step": 26,
+   "tool": "map_app",
+   "start_s": 87.1,
+   "end_s": 87.14,
+   "ok": true,
+   "note": "Inventory file list to confirm quick_pig_2023_04_05.txt exists and old name is gone"
+  },
+  {
+   "step": 27,
+   "tool": "key",
+   "start_s": 88.17,
+   "end_s": 88.74,
+   "ok": true,
+   "note": "Close keyboard, then inventory the file list"
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 90.44,
+   "end_s": 90.92,
+   "ok": true,
+   "note": "Open quick_pig_2023_04_05.txt and verify content"
+  },
+  {
+   "step": 29,
+   "tool": "tap_element",
+   "start_s": 92.25,
+   "end_s": 93.04,
+   "ok": true,
+   "note": "Tap quick_pig_2023_04_05.txt row again to open it"
+  },
+  {
+   "step": 30,
+   "tool": "done",
+   "start_s": 96.56,
+   "end_s": 96.57,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

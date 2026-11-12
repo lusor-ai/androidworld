@@ -1,0 +1,255 @@
+{
+ "task": "SportsTrackerLongestDistanceActivity",
+ "video_duration_s": 194.2,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.52,
+   "end_s": 29.54,
+   "ok": true,
+   "note": "Observe current screen to find OpenTracks app"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 30.67,
+   "end_s": 32.84,
+   "ok": true,
+   "note": "Launch OpenTracks and view activity list"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 33.93,
+   "end_s": 34.18,
+   "ok": true,
+   "note": "Skip intro pages to reach activity list"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 34.88,
+   "end_s": 36.47,
+   "ok": true,
+   "note": "Continue tapping next through intro pages"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 39.97,
+   "end_s": 40.99,
+   "ok": true,
+   "note": "Open Nature Walk track to see detail fields (category, distance)"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 42.97,
+   "end_s": 43.97,
+   "ok": true,
+   "note": "Open More options menu on Nature Walk detail to find Edit showing activity type"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 44.89,
+   "end_s": 45.57,
+   "ok": true,
+   "note": "Open Edit screen to read Nature Walk activity type"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 49.32,
+   "end_s": 50.17,
+   "ok": true,
+   "note": "Back to list, check activity type of remaining candidate tracks"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 53.7,
+   "end_s": 54.91,
+   "ok": true,
+   "note": "Return to track list and check activity type of the other 6 candidate tracks"
+  },
+  {
+   "step": 10,
+   "tool": "chain",
+   "start_s": 57.02,
+   "end_s": 62.95,
+   "ok": true,
+   "note": "Prove chain reading activity type via Edit screen for Laps around the lake"
+  },
+  {
+   "step": 11,
+   "tool": "chain",
+   "start_s": 65.11,
+   "end_s": 70.38,
+   "ok": true,
+   "note": "Read Laps around the lake activity type via edit screen with a settle wait"
+  },
+  {
+   "step": 12,
+   "tool": "get_ui_state",
+   "start_s": 72.63,
+   "end_s": 72.68,
+   "ok": true,
+   "note": "Confirm screen and check Road Run activity type"
+  },
+  {
+   "step": 13,
+   "tool": "chain",
+   "start_s": 74.32,
+   "end_s": 95.32,
+   "ok": true,
+   "note": "Read activity types for Road Run, Sailboat Expedition, Dirt Biking, Pedal Excursion, Skateboard Ride"
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 97.69,
+   "end_s": 98.8,
+   "ok": true,
+   "note": "Return to list and check Pedal Excursion and Skateboard Ride activity types"
+  },
+  {
+   "step": 15,
+   "tool": "chain",
+   "start_s": 100.43,
+   "end_s": 114.6,
+   "ok": true,
+   "note": "Read Pedal Excursion and Skateboard Ride activity types"
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 117.18,
+   "end_s": 118.06,
+   "ok": true,
+   "note": "Look for unit setting to read exact hiking distance in meters"
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 119.03,
+   "end_s": 119.98,
+   "ok": true,
+   "note": "Open Settings and find Units option"
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 121.12,
+   "end_s": 121.61,
+   "ok": true,
+   "note": "Open Default Units setting to check current units"
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 122.84,
+   "end_s": 123.76,
+   "ok": true,
+   "note": "Set Preferred units to Metric to read exact distance, then restore Imperial"
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 124.76,
+   "end_s": 125.36,
+   "ok": true,
+   "note": "Apply Metric units and read hiking track distance"
+  },
+  {
+   "step": 21,
+   "tool": "tap_element",
+   "start_s": 126.37,
+   "end_s": 126.86,
+   "ok": true,
+   "note": "Return to track list in metric units and open Laps around the lake"
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 127.93,
+   "end_s": 128.98,
+   "ok": true,
+   "note": "Back to track list, open Laps around the lake in metric"
+  },
+  {
+   "step": 23,
+   "tool": "tap_element",
+   "start_s": 153.94,
+   "end_s": 154.66,
+   "ok": true,
+   "note": "Inspect Import/Export settings for a way to read exact track distance data"
+  },
+  {
+   "step": 24,
+   "tool": "tap_element",
+   "start_s": 156.06,
+   "end_s": 157.38,
+   "ok": true,
+   "note": "Back to list, then open Laps around the lake detail"
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 158.26,
+   "end_s": 158.97,
+   "ok": true,
+   "note": "Open Laps around the lake detail to read metric distance"
+  },
+  {
+   "step": 26,
+   "tool": "calculate",
+   "start_s": 162.44,
+   "end_s": 162.48,
+   "ok": true,
+   "note": "Compute exact distance from pace and time"
+  },
+  {
+   "step": 27,
+   "tool": "tap_element",
+   "start_s": 163.9,
+   "end_s": 165.16,
+   "ok": true,
+   "note": "Restore Preferred units to Imperial"
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 165.99,
+   "end_s": 166.77,
+   "ok": true,
+   "note": "Open Settings to restore Imperial units"
+  },
+  {
+   "step": 29,
+   "tool": "chain",
+   "start_s": 167.87,
+   "end_s": 173.87,
+   "ok": true,
+   "note": "Restore Preferred units to Imperial and confirm"
+  },
+  {
+   "step": 30,
+   "tool": "chain",
+   "start_s": 175.26,
+   "end_s": 178.1,
+   "ok": true,
+   "note": "Back out to track list and report answer"
+  },
+  {
+   "step": 31,
+   "tool": "done",
+   "start_s": 180.97,
+   "end_s": 180.97,
+   "ok": true,
+   "note": "Report answer"
+  }
+ ]
+}

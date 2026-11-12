@@ -1,0 +1,99 @@
+{
+ "task": "SimpleSmsReply",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 35.66,
+   "end_s": 35.68,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 36.65,
+   "end_s": 38.95,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.smsmessenger"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 40.2,
+   "end_s": 42.25,
+   "ok": true,
+   "args": {
+    "index": 9,
+    "capture": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 423
+   }
+  },
+  {
+   "step": 4,
+   "tool": "type",
+   "start_s": 43.49,
+   "end_s": 48.86,
+   "ok": true,
+   "args": {
+    "text": "Your dentist appointment is scheduled for 2 PM on Thursday.",
+    "index": 12,
+    "capture": true
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 49.94,
+   "end_s": 51.25,
+   "ok": true,
+   "args": {
+    "index": 13,
+    "irreversible": true,
+    "capture": true
+   },
+   "tapped": {
+    "label": "SMS",
+    "index": 13,
+    "x": 1006,
+    "y": 1454
+   }
+  },
+  {
+   "step": 6,
+   "tool": "done",
+   "start_s": 53.17,
+   "end_s": 53.17,
+   "ok": true,
+   "args": {
+    "summary": "I replied to +17184821533 in Simple SMS Messenger with \"Your dentist appointment is scheduled for 2 PM on Thursday.\" The message shows in the thread as an outgoing message with a success checkmark next to it.",
+    "evidence": {
+     "objective_evidence": "Thread with +17184821533 shows the outgoing message \"Your dentist appointment is scheduled for 2 PM on Thursday.\" in a right-aligned bubble with the thread_success check icon, and the input field is empty with the SMS button disabled.",
+     "key_signals": [
+      "Conversation header reads +17184821533",
+      "Typed text read back exactly as requested before sending",
+      "Message bubble appears after send with thread_success indicator",
+      "Input cleared and SMS button disabled, confirming send"
+     ]
+    },
+    "rows": [
+     {
+      "recipient": "+17184821533",
+      "message": "Your dentist appointment is scheduled for 2 PM on Thursday.",
+      "status": "sent",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,462 @@
+{
+ "task": "SimpleCalendarAddOneEventTomorrow",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.87,
+   "end_s": 30.9,
+   "ok": true,
+   "args": {
+    "path": "skill://simple-calendar/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.87,
+   "end_s": 30.9,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.95,
+   "end_s": 34.32,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.calendar.pro"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 36.54,
+   "end_s": 37.33,
+   "ok": true,
+   "args": {
+    "index": 53
+   },
+   "tapped": {
+    "label": "New Event",
+    "index": 53,
+    "x": 965,
+    "y": 2222
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 38.18,
+   "end_s": 39.33,
+   "ok": true,
+   "args": {
+    "index": 56
+   },
+   "tapped": {
+    "label": "Event",
+    "index": 56,
+    "x": 812,
+    "y": 2222
+   }
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 40.27,
+   "end_s": 41.87,
+   "ok": true,
+   "args": {
+    "text": "Call with Alice",
+    "index": 4
+   }
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 42.76,
+   "end_s": 48.38,
+   "ok": true,
+   "args": {
+    "index": 7,
+    "text": "We will celebrate contract details. Looking forward to productive discussions."
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 49.29,
+   "end_s": 49.82,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": "October 15 (Sun)",
+    "index": 10,
+    "x": 350,
+    "y": 1140
+   }
+  },
+  {
+   "step": 9,
+   "tool": "get_ui_state",
+   "start_s": 50.71,
+   "end_s": 50.89,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 51.67,
+   "end_s": 52.0,
+   "ok": true,
+   "args": {
+    "index": 21
+   },
+   "tapped": {
+    "label": "16",
+    "index": 21,
+    "x": 329,
+    "y": 1357
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 52.86,
+   "end_s": 53.31,
+   "ok": true,
+   "args": {
+    "index": 40
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 40,
+    "x": 844,
+    "y": 1798
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 54.26,
+   "end_s": 55.61,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "16:00",
+    "index": 11,
+    "x": 962,
+    "y": 1140
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 57.43,
+   "end_s": 58.39,
+   "ok": true,
+   "args": {
+    "index": 28
+   },
+   "tapped": {
+    "label": "Switch to text input mode for the time input.",
+    "index": 28,
+    "x": 237,
+    "y": 1816
+   }
+  },
+  {
+   "step": 14,
+   "tool": "type",
+   "start_s": 59.2,
+   "end_s": 61.5,
+   "ok": true,
+   "args": {
+    "index": 1,
+    "text": "10"
+   }
+  },
+  {
+   "step": 15,
+   "tool": "get_ui_state",
+   "start_s": 62.22,
+   "end_s": 62.23,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 63.15,
+   "end_s": 63.72,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 5,
+    "x": 781,
+    "y": 1107
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 64.51,
+   "end_s": 65.7,
+   "ok": true,
+   "args": {
+    "index": 13
+   },
+   "tapped": {
+    "label": "10:00",
+    "index": 13,
+    "x": 962,
+    "y": 1285
+   }
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 66.48,
+   "end_s": 67.21,
+   "ok": true,
+   "args": {
+    "index": 28
+   },
+   "tapped": {
+    "label": "Switch to text input mode for the time input.",
+    "index": 28,
+    "x": 237,
+    "y": 1816
+   }
+  },
+  {
+   "step": 19,
+   "tool": "tap",
+   "start_s": 68.35,
+   "end_s": 69.43,
+   "ok": true,
+   "args": {
+    "x": 697,
+    "y": 969
+   }
+  },
+  {
+   "step": 20,
+   "tool": "tap",
+   "start_s": 70.57,
+   "end_s": 70.8,
+   "ok": true,
+   "args": {
+    "x": 697,
+    "y": 828
+   }
+  },
+  {
+   "step": 21,
+   "tool": "type",
+   "start_s": 71.73,
+   "end_s": 72.7,
+   "ok": true,
+   "args": {
+    "index": 2,
+    "text": "45"
+   }
+  },
+  {
+   "step": 22,
+   "tool": "get_ui_state",
+   "start_s": 73.83,
+   "end_s": 73.9,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 23,
+   "tool": "type",
+   "start_s": 75.32,
+   "end_s": 77.09,
+   "ok": true,
+   "args": {
+    "index": 1,
+    "text": "10"
+   }
+  },
+  {
+   "step": 24,
+   "tool": "get_ui_state",
+   "start_s": 77.92,
+   "end_s": 77.93,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 25,
+   "tool": "type",
+   "start_s": 78.83,
+   "end_s": 79.35,
+   "ok": true,
+   "args": {
+    "text": "45"
+   }
+  },
+  {
+   "step": 26,
+   "tool": "clear",
+   "start_s": 81.34,
+   "end_s": 81.85,
+   "ok": true,
+   "args": {
+    "index": 2
+   }
+  },
+  {
+   "step": 27,
+   "tool": "tap_element",
+   "start_s": 83.61,
+   "end_s": 84.21,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Switch to clock mode for the time input.",
+    "index": 3,
+    "x": 289,
+    "y": 1102
+   }
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 85.11,
+   "end_s": 85.5,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": "45",
+    "index": 9,
+    "x": 279,
+    "y": 1354
+   }
+  },
+  {
+   "step": 29,
+   "tool": "tap_element",
+   "start_s": 86.46,
+   "end_s": 86.83,
+   "ok": true,
+   "args": {
+    "index": 18
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 18,
+    "x": 834,
+    "y": 1821
+   }
+  },
+  {
+   "step": 30,
+   "tool": "tap_element",
+   "start_s": 87.81,
+   "end_s": 88.72,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "Save",
+    "index": 2,
+    "x": 1017,
+    "y": 211
+   }
+  },
+  {
+   "step": 31,
+   "tool": "tap_element",
+   "start_s": 89.64,
+   "end_s": 91.12,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 3,
+    "x": 842,
+    "y": 1512
+   }
+  },
+  {
+   "step": 32,
+   "tool": "tap_element",
+   "start_s": 92.71,
+   "end_s": 93.83,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 20,
+    "y": 212
+   }
+  },
+  {
+   "step": 33,
+   "tool": "tap",
+   "start_s": 95.51,
+   "end_s": 96.19,
+   "ok": true,
+   "args": {
+    "x": 231,
+    "y": 1577
+   }
+  },
+  {
+   "step": 34,
+   "tool": "done",
+   "start_s": 98.53,
+   "end_s": 98.53,
+   "ok": true,
+   "args": {
+    "summary": "Created \"Call with Alice\" in Simple Calendar Pro for tomorrow, Monday October 16, from 10:00 to 10:45 (45 minutes), with the description \"We will celebrate contract details. Looking forward to productive discussions.\" The day view for October 16 shows the single event with that title, the 10:00 - 10:45 time, and the full description.",
+    "rows": [
+     {
+      "title": "Call with Alice",
+      "date": "October 16, 2023 (Mon)",
+      "start_time": "10:00",
+      "end_time": "10:45",
+      "duration": "45 minutes",
+      "description": "We will celebrate contract details. Looking forward to productive discussions.",
+      "calendar": "Simple Calendar Pro",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "The October 16 (Mon) day view lists one event: \"Call with Alice\", \"10:00 - 10:45\", \"We will celebrate contract details. Looking forward to productive discussions.\"",
+     "key_signals": [
+      "Device date Sun 2023-10-15, so tomorrow is Mon 2023-10-16",
+      "Event form showed start/end date October 16 (Mon), times 10:00 and 10:45",
+      "Saved via Save button and dismissed the reminder disclaimer",
+      "Day view day_events list: 1 row with matching title, time and description"
+     ]
+    }
+   }
+  }
+ ]
+}

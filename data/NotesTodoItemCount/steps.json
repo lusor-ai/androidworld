@@ -1,0 +1,71 @@
+{
+ "task": "NotesTodoItemCount",
+ "video_duration_s": 74.3,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 33.23,
+   "end_s": 33.24,
+   "ok": true,
+   "note": "Observe current screen to locate Joplin app"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 34.6,
+   "end_s": 35.96,
+   "ok": true,
+   "note": "Launch Joplin and observe its home screen"
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 37.36,
+   "end_s": 38.3,
+   "ok": true,
+   "note": "Re-read Joplin screen after load"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 39.55,
+   "end_s": 41.15,
+   "ok": true,
+   "note": "Open sidebar to find Health folder"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 42.15,
+   "end_s": 44.1,
+   "ok": true,
+   "note": "Tap Health notebook"
+  },
+  {
+   "step": 6,
+   "tool": "map_app",
+   "start_s": 45.68,
+   "end_s": 53.18,
+   "ok": true,
+   "note": "Map Health folder list to end to count to-dos"
+  },
+  {
+   "step": 7,
+   "tool": "scroll_to",
+   "start_s": 57.22,
+   "end_s": 57.31,
+   "ok": true,
+   "note": "Scroll to bottom and read remaining rows' checkbox state"
+  },
+  {
+   "step": 8,
+   "tool": "done",
+   "start_s": 60.19,
+   "end_s": 60.2,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

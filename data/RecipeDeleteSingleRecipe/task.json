@@ -1,0 +1,119 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "RecipeDeleteSingleRecipe",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 18.2,
+  "mobilerun_published_time_s": 171.5,
+  "speed_ratio": 0.106,
+  "lusor_cost_usd": 0.0064,
+  "mobilerun_published_actions": 5,
+  "mobilerun_est_cost_usd": 0.383,
+  "lusor_tool_calls": 9,
+  "disclosure": null,
+  "skills_read": [
+   "broccoli"
+  ],
+  "skill_assisted": [],
+  "goal": "Delete the following recipes from Broccoli app: Turkey and Cheese Panini.",
+  "final_answer": null,
+  "final_summary": "I deleted the Turkey and Cheese Panini recipe from Broccoli. The recipe list now shows \"No recipes found.\" with zero entries.",
+  "video_duration_s": 58.6,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 29.05,
+    "end_s": 29.06,
+    "ok": true,
+    "note": "Read broccoli skill, then observe screen"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 29.81,
+    "end_s": 29.82,
+    "ok": true,
+    "note": "Observe current screen and locate the Turkey and Cheese Panini recipe"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 30.59,
+    "end_s": 34.24,
+    "ok": true,
+    "note": "Broccoli launched; locate Turkey and Cheese Panini in recipe list"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 35.37,
+    "end_s": 36.94,
+    "ok": true,
+    "note": "Open the Turkey and Cheese Panini recipe page and find delete option"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 37.85,
+    "end_s": 38.77,
+    "ok": true,
+    "note": "Open More options menu to find Delete"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 39.4,
+    "end_s": 40.26,
+    "ok": true,
+    "note": "Confirm delete dialog for Turkey and Cheese Panini"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 41.09,
+    "end_s": 42.04,
+    "ok": true,
+    "note": "Confirm deletion and verify list no longer shows the recipe"
+   },
+   {
+    "step": 8,
+    "tool": "map_app",
+    "start_s": 42.79,
+    "end_s": 42.8,
+    "ok": true,
+    "note": "Recount list with map_app to confirm it is empty"
+   },
+   {
+    "step": 9,
+    "tool": "done",
+    "start_s": 44.66,
+    "end_s": 44.66,
+    "ok": true,
+    "note": "Task complete; recipe deleted and empty list verified"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleRecipe/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleRecipe/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleRecipe/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleRecipe/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleRecipe/task.json"
+  }
+ }
+}

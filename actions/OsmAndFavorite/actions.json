@@ -1,0 +1,535 @@
+{
+ "task": "OsmAndFavorite",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.34,
+   "end_s": 29.34,
+   "ok": true,
+   "args": {
+    "path": "skill://osmand/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.55,
+   "end_s": 30.57,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.42,
+   "end_s": 35.72,
+   "ok": true,
+   "args": {
+    "app": "net.osmand"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 36.39,
+   "end_s": 36.91,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 39.7,
+   "end_s": 40.62,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Search",
+    "index": 3,
+    "x": 203,
+    "y": 202
+   }
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 41.47,
+   "end_s": 43.93,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "text": "47.0688832, 9.5061564"
+   }
+  },
+  {
+   "step": 7,
+   "tool": "get_ui_state",
+   "start_s": 44.88,
+   "end_s": 45.01,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 45.84,
+   "end_s": 46.17,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 540,
+    "y": 961
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap",
+   "start_s": 47.41,
+   "end_s": 49.43,
+   "ok": true,
+   "args": {
+    "x": 500,
+    "y": 505
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 53.04,
+   "end_s": 53.61,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 942,
+    "y": 2130
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 56.49,
+   "end_s": 56.93,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 2274
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap",
+   "start_s": 58.32,
+   "end_s": 59.32,
+   "ok": true,
+   "args": {
+    "x": 1006,
+    "y": 1845
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap",
+   "start_s": 64.32,
+   "end_s": 65.38,
+   "ok": true,
+   "args": {
+    "x": 1006,
+    "y": 698
+   }
+  },
+  {
+   "step": 14,
+   "tool": "key",
+   "start_s": 66.61,
+   "end_s": 67.41,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 15,
+   "tool": "key",
+   "start_s": 68.52,
+   "end_s": 68.87,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 16,
+   "tool": "key",
+   "start_s": 69.62,
+   "end_s": 69.97,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 71.39,
+   "end_s": 72.14,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Back to menu",
+    "index": 3,
+    "x": 85,
+    "y": 2253
+   }
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 72.92,
+   "end_s": 73.64,
+   "ok": true,
+   "args": {
+    "index": 12
+   },
+   "tapped": {
+    "label": null,
+    "index": 12,
+    "x": 368,
+    "y": 627
+   }
+  },
+  {
+   "step": 19,
+   "tool": "get_ui_state",
+   "start_s": 74.43,
+   "end_s": 74.51,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 75.67,
+   "end_s": 76.73,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": "Add to 'Favorites'",
+    "index": 8,
+    "x": 77,
+    "y": 2263
+   }
+  },
+  {
+   "step": 21,
+   "tool": "key",
+   "start_s": 88.12,
+   "end_s": 88.53,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 89.55,
+   "end_s": 91.15,
+   "ok": true,
+   "args": {
+    "index": 1
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 1,
+    "x": 20,
+    "y": 202
+   }
+  },
+  {
+   "step": 23,
+   "tool": "get_ui_state",
+   "start_s": 92.96,
+   "end_s": 93.02,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 24,
+   "tool": "tap",
+   "start_s": 98.59,
+   "end_s": 99.86,
+   "ok": true,
+   "args": {
+    "x": 540,
+    "y": 1200,
+    "hold_ms": 800
+   }
+  },
+  {
+   "step": 25,
+   "tool": "screenshot",
+   "start_s": 101.74,
+   "end_s": 103.45,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 26,
+   "tool": "key",
+   "start_s": 106.8,
+   "end_s": 107.42,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 27,
+   "tool": "tap_element",
+   "start_s": 108.67,
+   "end_s": 109.45,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "Search",
+    "index": 2,
+    "x": 203,
+    "y": 202
+   }
+  },
+  {
+   "step": 28,
+   "tool": "tap",
+   "start_s": 110.87,
+   "end_s": 112.42,
+   "ok": true,
+   "args": {
+    "x": 500,
+    "y": 505
+   }
+  },
+  {
+   "step": 29,
+   "tool": "tap_element",
+   "start_s": 114.34,
+   "end_s": 115.55,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 139,
+    "y": 2130
+   }
+  },
+  {
+   "step": 30,
+   "tool": "tap_element",
+   "start_s": 117.94,
+   "end_s": 119.12,
+   "ok": true,
+   "args": {
+    "index": 35
+   },
+   "tapped": {
+    "label": null,
+    "index": 35,
+    "x": 800,
+    "y": 1438
+   }
+  },
+  {
+   "step": 31,
+   "tool": "chain",
+   "start_s": 121.04,
+   "end_s": 122.33,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "Back to menu"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "My Places"
+      }
+     },
+     {
+      "verb": "get_ui_state",
+      "params": {}
+     }
+    ]
+   }
+  },
+  {
+   "step": 32,
+   "tool": "key",
+   "start_s": 123.93,
+   "end_s": 124.63,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 33,
+   "tool": "tap_element",
+   "start_s": 125.86,
+   "end_s": 126.38,
+   "ok": true,
+   "args": {
+    "index": 1
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 1,
+    "x": 74,
+    "y": 202
+   }
+  },
+  {
+   "step": 34,
+   "tool": "chain",
+   "start_s": 127.72,
+   "end_s": 129.43,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "target": "Back to menu"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "My Places"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 35,
+   "tool": "get_ui_state",
+   "start_s": 130.77,
+   "end_s": 130.9,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 36,
+   "tool": "tap_element",
+   "start_s": 132.45,
+   "end_s": 132.86,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": null,
+    "index": 11,
+    "x": 540,
+    "y": 1043
+   }
+  },
+  {
+   "step": 37,
+   "tool": "tap_element",
+   "start_s": 136.03,
+   "end_s": 137.21,
+   "ok": true,
+   "args": {
+    "index": 13
+   },
+   "tapped": {
+    "label": null,
+    "index": 13,
+    "x": 540,
+    "y": 1187
+   }
+  },
+  {
+   "step": 38,
+   "tool": "get_ui_state",
+   "start_s": 138.54,
+   "end_s": 138.75,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 39,
+   "tool": "tap",
+   "start_s": 140.6,
+   "end_s": 141.42,
+   "ok": true,
+   "args": {
+    "x": 400,
+    "y": 1840
+   }
+  },
+  {
+   "step": 40,
+   "tool": "done",
+   "start_s": 144.24,
+   "end_s": 144.24,
+   "ok": true,
+   "args": {
+    "summary": "I added the favorite location in OsmAnd at 47.0688832, 9.5061564. It was created from the exact coordinate search point and is listed in My Places under Favorites as \"Winkel, Balzers\"; opening it shows the location 47.06888° N, 9.50616° E.",
+    "evidence": {
+     "objective_evidence": "My Places > Favorites shows one favorite \"Winkel, Balzers\" in the Favorites group; opening it and expanding the point card displays the coordinates row \"47.06888° N, 9.50616° E\" and the point type \"Favorites\".",
+     "key_signals": [
+      "Context menu after saving shows line2 \"Favorites\" and action \"Edit Favorite\"",
+      "Favorites list: 1 group \"Favorites\" with row \"Winkel, Balzers\", distance 1 ft",
+      "Expanded point card coordinates: 47.06888° N, 9.50616° E"
+     ]
+    },
+    "rows": [
+     {
+      "action": "Add favorite location in OsmAnd",
+      "name": "Winkel, Balzers",
+      "coordinates": "47.0688832, 9.5061564",
+      "listed_coordinates": "47.06888° N, 9.50616° E",
+      "group": "Favorites",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

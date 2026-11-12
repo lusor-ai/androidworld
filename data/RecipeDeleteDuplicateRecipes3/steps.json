@@ -1,0 +1,111 @@
+{
+ "task": "RecipeDeleteDuplicateRecipes3",
+ "video_duration_s": 284.5,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 33.55,
+   "end_s": 33.56,
+   "ok": true,
+   "note": "Read Broccoli skill and observe current screen"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 33.55,
+   "end_s": 33.56,
+   "ok": true,
+   "note": "Read Broccoli skill and observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 34.74,
+   "end_s": 38.71,
+   "ok": true,
+   "note": "Launch Broccoli and inventory recipes"
+  },
+  {
+   "step": 4,
+   "tool": "map_app",
+   "start_s": 40.43,
+   "end_s": 211.88,
+   "ok": true,
+   "note": "Map all recipes with details to find exact duplicates"
+  },
+  {
+   "step": 5,
+   "tool": "scroll_to",
+   "start_s": 218.3,
+   "end_s": 221.04,
+   "ok": true,
+   "note": "Scroll to bottom of recipe list to reach the duplicate Veggie and Hummus Sandwich"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 222.71,
+   "end_s": 223.92,
+   "ok": true,
+   "note": "Open the last Veggie and Hummus Sandwich (bottom row) to verify it is the duplicate"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 225.57,
+   "end_s": 226.33,
+   "ok": true,
+   "note": "Open More options menu on this recipe to delete it"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 227.17,
+   "end_s": 228.0,
+   "ok": true,
+   "note": "Tap Delete and confirm the deletion dialog"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 229.15,
+   "end_s": 230.39,
+   "ok": true,
+   "note": "Confirm DELETE on the duplicate recipe and return to list"
+  },
+  {
+   "step": 10,
+   "tool": "map_app",
+   "start_s": 231.98,
+   "end_s": 260.31,
+   "ok": true,
+   "note": "Recount recipe list titles to confirm 31 remain"
+  },
+  {
+   "step": 11,
+   "tool": "get_ui_state",
+   "start_s": 263.15,
+   "end_s": 263.18,
+   "ok": true,
+   "note": "Final screen check then report"
+  },
+  {
+   "step": 12,
+   "tool": "done",
+   "start_s": 266.55,
+   "end_s": 266.55,
+   "ok": false,
+   "note": null
+  },
+  {
+   "step": 13,
+   "tool": "done",
+   "start_s": 269.26,
+   "end_s": 269.26,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

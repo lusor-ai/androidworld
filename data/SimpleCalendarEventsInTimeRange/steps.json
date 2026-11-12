@@ -1,0 +1,63 @@
+{
+ "task": "SimpleCalendarEventsInTimeRange",
+ "video_duration_s": 61.2,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 28.77,
+   "end_s": 28.79,
+   "ok": true,
+   "note": "Load simple-calendar skill"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 28.77,
+   "end_s": 28.79,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 29.55,
+   "end_s": 31.99,
+   "ok": true,
+   "note": "Launch Simple Calendar Pro and observe"
+  },
+  {
+   "step": 4,
+   "tool": "tap",
+   "start_s": 33.66,
+   "end_s": 34.7,
+   "ok": true,
+   "note": "Tap Oct 17 in month view then open day view"
+  },
+  {
+   "step": 5,
+   "tool": "chain",
+   "start_s": 37.43,
+   "end_s": 41.54,
+   "ok": true,
+   "note": "Advance day view 7 days to Oct 17 and read events"
+  },
+  {
+   "step": 6,
+   "tool": "scroll_to",
+   "start_s": 43.27,
+   "end_s": 45.76,
+   "ok": true,
+   "note": "Confirm end of Oct 17 day list"
+  },
+  {
+   "step": 7,
+   "tool": "done",
+   "start_s": 47.59,
+   "end_s": 47.59,
+   "ok": true,
+   "note": "Report answer"
+  }
+ ]
+}

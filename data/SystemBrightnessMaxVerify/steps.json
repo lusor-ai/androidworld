@@ -1,0 +1,87 @@
+{
+ "task": "SystemBrightnessMaxVerify",
+ "video_duration_s": 67.0,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 28.54,
+   "end_s": 28.55,
+   "ok": true,
+   "note": "Observe current screen to determine app state"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 29.71,
+   "end_s": 32.58,
+   "ok": true,
+   "note": "Open Settings and go to Display > Brightness"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 33.36,
+   "end_s": 35.14,
+   "ok": true,
+   "note": "Type 'brightness' into Settings search"
+  },
+  {
+   "step": 4,
+   "tool": "type",
+   "start_s": 35.86,
+   "end_s": 38.85,
+   "ok": true,
+   "note": "Read search results for brightness"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 39.91,
+   "end_s": 40.72,
+   "ok": true,
+   "note": "Open Brightness level setting and drag slider to max"
+  },
+  {
+   "step": 6,
+   "tool": "tap",
+   "start_s": 41.48,
+   "end_s": 43.13,
+   "ok": true,
+   "note": "Open Brightness level setting"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 44.46,
+   "end_s": 44.74,
+   "ok": true,
+   "note": "Inspect Brightness level slider to confirm maximum"
+  },
+  {
+   "step": 8,
+   "tool": "swipe",
+   "start_s": 46.96,
+   "end_s": 48.99,
+   "ok": true,
+   "note": null
+  },
+  {
+   "step": 9,
+   "tool": "key",
+   "start_s": 49.96,
+   "end_s": 50.35,
+   "ok": true,
+   "note": "Dismiss brightness mirror and verify Display page shows 100%"
+  },
+  {
+   "step": 10,
+   "tool": "done",
+   "start_s": 52.49,
+   "end_s": 52.5,
+   "ok": true,
+   "note": "Report result"
+  }
+ ]
+}

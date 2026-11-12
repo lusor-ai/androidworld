@@ -1,0 +1,391 @@
+{
+ "task": "SportsTrackerTotalDurationForCategoryThisWeek",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.49,
+   "end_s": 29.53,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 30.6,
+   "end_s": 32.43,
+   "ok": true,
+   "args": {
+    "app": "de.dennisguse.opentracks"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 33.33,
+   "end_s": 34.14,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 943,
+    "y": 2017
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 34.99,
+   "end_s": 36.93,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 943,
+    "y": 2017
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 38.67,
+   "end_s": 40.06,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 3,
+    "x": 1028,
+    "y": 211
+   }
+  },
+  {
+   "step": 6,
+   "tool": "key",
+   "start_s": 41.81,
+   "end_s": 42.63,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 44.47,
+   "end_s": 45.71,
+   "ok": true,
+   "args": {
+    "index": 7
+   },
+   "tapped": {
+    "label": null,
+    "index": 7,
+    "x": 540,
+    "y": 379
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 47.12,
+   "end_s": 48.17,
+   "ok": true,
+   "args": {
+    "index": 12
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 12,
+    "x": 444,
+    "y": 2232
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 49.61,
+   "end_s": 50.32,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 258,
+    "y": 1708
+   }
+  },
+  {
+   "step": 10,
+   "tool": "get_ui_state",
+   "start_s": 51.11,
+   "end_s": 51.42,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 53.29,
+   "end_s": 54.26,
+   "ok": true,
+   "args": {
+    "index": 7
+   },
+   "tapped": {
+    "label": "Cancel",
+    "index": 7,
+    "x": 270,
+    "y": 2064
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 55.12,
+   "end_s": 56.47,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 9,
+    "x": 62,
+    "y": 2232
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 57.25,
+   "end_s": 58.56,
+   "ok": true,
+   "args": {
+    "index": 18
+   },
+   "tapped": {
+    "label": null,
+    "index": 18,
+    "x": 105,
+    "y": 2232
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 60.05,
+   "end_s": 61.73,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "Filter",
+    "index": 2,
+    "x": 201,
+    "y": 2232
+   }
+  },
+  {
+   "step": 15,
+   "tool": "swipe",
+   "start_s": 64.0,
+   "end_s": 65.94,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1900,
+    "endX": 540,
+    "endY": 1400,
+    "durationMs": 400
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 68.26,
+   "end_s": 68.67,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": "Sunday, October 15, 2023",
+    "index": 14,
+    "x": 540,
+    "y": 1820
+   }
+  },
+  {
+   "step": 17,
+   "tool": "swipe",
+   "start_s": 69.81,
+   "end_s": 71.61,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1900,
+    "endX": 540,
+    "endY": 1100,
+    "durationMs": 400
+   }
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 72.73,
+   "end_s": 72.96,
+   "ok": true,
+   "args": {
+    "index": 22
+   },
+   "tapped": {
+    "label": "9",
+    "index": 22,
+    "x": 326,
+    "y": 1797
+   }
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 73.97,
+   "end_s": 74.46,
+   "ok": true,
+   "args": {
+    "index": 15
+   },
+   "tapped": {
+    "label": "Saturday, October 21, 2023",
+    "index": 15,
+    "x": 540,
+    "y": 2029
+   }
+  },
+  {
+   "step": 20,
+   "tool": "swipe",
+   "start_s": 75.69,
+   "end_s": 77.39,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 2000,
+    "endX": 540,
+    "endY": 1200,
+    "durationMs": 400
+   }
+  },
+  {
+   "step": 21,
+   "tool": "tap_element",
+   "start_s": 78.33,
+   "end_s": 78.69,
+   "ok": true,
+   "args": {
+    "index": 21
+   },
+   "tapped": {
+    "label": "15",
+    "index": 21,
+    "x": 219,
+    "y": 2128
+   }
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 79.93,
+   "end_s": 80.54,
+   "ok": true,
+   "args": {
+    "index": 18
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 18,
+    "x": 894,
+    "y": 2221
+   }
+  },
+  {
+   "step": 23,
+   "tool": "scroll_to",
+   "start_s": 83.13,
+   "end_s": 86.77,
+   "ok": true,
+   "args": {
+    "page": true
+   }
+  },
+  {
+   "step": 24,
+   "tool": "calculate",
+   "start_s": 91.42,
+   "end_s": 91.46,
+   "ok": true,
+   "args": {
+    "code": "return {minutes: 3*60+25, sumCheck: 40+165}"
+   }
+  },
+  {
+   "step": 25,
+   "tool": "get_ui_state",
+   "start_s": 93.1,
+   "end_s": 93.14,
+   "ok": true,
+   "args": {
+    "options": {
+     "verbosity": "compact"
+    },
+    "plan": "[\"Open OpenTracks\", \"Find skate boarding activities this week\", \"Sum durations into minutes\"]}"
+   }
+  },
+  {
+   "step": 26,
+   "tool": "get_ui_state",
+   "start_s": 94.23,
+   "end_s": 94.28,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 27,
+   "tool": "done",
+   "start_s": 96.88,
+   "end_s": 96.89,
+   "ok": true,
+   "args": {
+    "summary": "Skate boarding this week (Monday, October 9 through Sunday, October 15, 2023) totalled 3 hours 25 minutes, which is 205 minutes. OpenTracks' aggregated stats for that date range list SKATE BOARDING with 2 tracks and a combined time of 3:25:00; the two skate boarding tracks in the list, \"Lunch Break Fitness\" (40:00) and \"Need more strength and conditioning\" (2:45:00), add up to exactly that.",
+    "evidence": {
+     "objective_evidence": "In OpenTracks > Aggregated stats with the filter set to Monday, October 9, 2023 through Sunday, October 15, 2023, the SKATE BOARDING row shows (2) tracks, 8.08 mi, and time 3:25:00. The list was scrolled to its end (5 rows total: SKATE BOARDING, CYCLING, MOUNTAIN BIKING, WALKING, PADDLING).",
+     "key_signals": [
+      "Device date: Sunday 2023-10-15, so the Monday-start week is Oct 9 to Oct 15",
+      "Aggregated stats row: SKATE BOARDING (2) 3:25:00",
+      "Track list total times: Lunch Break Fitness 40:00 + Need more strength and conditioning 2:45:00 = 3:25:00",
+      "3:25:00 = 205 minutes"
+     ]
+    },
+    "rows": [
+     {
+      "answer": "205",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

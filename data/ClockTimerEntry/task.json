@@ -1,0 +1,93 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "ClockTimerEntry",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 21.1,
+  "mobilerun_published_time_s": 117.0,
+  "speed_ratio": 0.18,
+  "lusor_cost_usd": 0.0063,
+  "mobilerun_published_actions": 8,
+  "mobilerun_est_cost_usd": 0.613,
+  "lusor_tool_calls": 6,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Create a timer with 14 hours, 14 minutes, and 17 seconds. Do not start the timer.",
+  "final_answer": null,
+  "final_summary": "The timer is set up in the Clock app to 14h 14m 17s and has not been started; the screen still shows the Start button, meaning nothing is running.",
+  "video_duration_s": 62.3,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 30.34,
+    "end_s": 30.36,
+    "ok": true,
+    "note": "Observe current screen and open the Clock app's timer"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 31.64,
+    "end_s": 34.2,
+    "ok": true,
+    "note": "Open Timer tab in Clock app"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 35.81,
+    "end_s": 36.7,
+    "ok": true,
+    "note": "Read timer screen and set hours/minutes/seconds"
+   },
+   {
+    "step": 4,
+    "tool": "chain",
+    "start_s": 39.81,
+    "end_s": 42.59,
+    "ok": true,
+    "note": "Type digits 141417 into timer keypad"
+   },
+   {
+    "step": 5,
+    "tool": "get_ui_state",
+    "start_s": 44.41,
+    "end_s": 44.43,
+    "ok": true,
+    "note": "Confirm timer shows 14h 14m 17s and is not started, then report"
+   },
+   {
+    "step": 6,
+    "tool": "done",
+    "start_s": 46.86,
+    "end_s": 46.86,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/ClockTimerEntry/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/ClockTimerEntry/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/ClockTimerEntry/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/ClockTimerEntry/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/ClockTimerEntry/task.json"
+  }
+ }
+}

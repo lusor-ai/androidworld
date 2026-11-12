@@ -1,0 +1,382 @@
+{
+ "task": "ExpenseAddMultiple",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.83,
+   "end_s": 29.84,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 31.15,
+   "end_s": 32.39,
+   "ok": true,
+   "args": {
+    "app": "com.arduia.expense"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 33.31,
+   "end_s": 33.71,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 34.77,
+   "end_s": 35.98,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 965,
+    "y": 2180
+   }
+  },
+  {
+   "step": 5,
+   "tool": "type",
+   "start_s": 37.04,
+   "end_s": 38.98,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Night Out"
+   }
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 39.88,
+   "end_s": 40.78,
+   "ok": true,
+   "args": {
+    "index": 6,
+    "text": "263.95"
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 42.13,
+   "end_s": 42.58,
+   "ok": true,
+   "args": {
+    "index": 11,
+    "toggle": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 11,
+    "x": 710,
+    "y": 817
+   }
+  },
+  {
+   "step": 8,
+   "tool": "type",
+   "start_s": 43.48,
+   "end_s": 45.02,
+   "ok": true,
+   "args": {
+    "index": 13,
+    "text": "A need"
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 46.31,
+   "end_s": 47.56,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 14,
+    "x": 454,
+    "y": 1303
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 49.99,
+   "end_s": 51.04,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 965,
+    "y": 1360
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 52.59,
+   "end_s": 53.49,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 965,
+    "y": 2180
+   }
+  },
+  {
+   "step": 12,
+   "tool": "type",
+   "start_s": 55.27,
+   "end_s": 56.99,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Rent Payment"
+   }
+  },
+  {
+   "step": 13,
+   "tool": "type",
+   "start_s": 58.32,
+   "end_s": 59.33,
+   "ok": true,
+   "args": {
+    "index": 6,
+    "text": "231.73"
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 60.49,
+   "end_s": 60.79,
+   "ok": true,
+   "args": {
+    "index": 10,
+    "toggle": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 10,
+    "x": 519,
+    "y": 817
+   }
+  },
+  {
+   "step": 15,
+   "tool": "type",
+   "start_s": 61.85,
+   "end_s": 63.98,
+   "ok": true,
+   "args": {
+    "index": 13,
+    "text": "Want to have"
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 65.41,
+   "end_s": 66.9,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 14,
+    "x": 454,
+    "y": 1303
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 68.61,
+   "end_s": 69.96,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 965,
+    "y": 2180
+   }
+  },
+  {
+   "step": 18,
+   "tool": "type",
+   "start_s": 71.84,
+   "end_s": 73.6,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Taxi Fare"
+   }
+  },
+  {
+   "step": 19,
+   "tool": "type",
+   "start_s": 75.42,
+   "end_s": 76.23,
+   "ok": true,
+   "args": {
+    "index": 6,
+    "text": "494.58"
+   }
+  },
+  {
+   "step": 20,
+   "tool": "swipe",
+   "start_s": 78.08,
+   "end_s": 79.81,
+   "ok": true,
+   "args": {
+    "startX": 950,
+    "startY": 817,
+    "endX": 150,
+    "endY": 817
+   }
+  },
+  {
+   "step": 21,
+   "tool": "tap_element",
+   "start_s": 81.62,
+   "end_s": 81.94,
+   "ok": true,
+   "args": {
+    "index": 10,
+    "toggle": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 10,
+    "x": 566,
+    "y": 817
+   }
+  },
+  {
+   "step": 22,
+   "tool": "type",
+   "start_s": 83.52,
+   "end_s": 85.56,
+   "ok": true,
+   "args": {
+    "index": 13,
+    "text": "Monthly recurring"
+   }
+  },
+  {
+   "step": 23,
+   "tool": "tap_element",
+   "start_s": 87.38,
+   "end_s": 88.42,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 14,
+    "x": 454,
+    "y": 1303
+   }
+  },
+  {
+   "step": 24,
+   "tool": "tap_element",
+   "start_s": 90.73,
+   "end_s": 91.79,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 540,
+    "y": 1805
+   }
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 94.68,
+   "end_s": 95.3,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 992,
+    "y": 1469
+   }
+  },
+  {
+   "step": 26,
+   "tool": "done",
+   "start_s": 98.25,
+   "end_s": 98.26,
+   "ok": true,
+   "args": {
+    "summary": "I added all three expenses to Pro Expense. Night Out ($263.95, Social, note \"A need\"), Rent Payment ($231.73, Housing, note \"Want to have\") and Taxi Fare ($494.58, Transportation, note \"Monthly recurring\") are each saved with today's date, and the home screen's weekly outcome total now reads 990.26 USD, which matches the three amounts added together.",
+    "evidence": {
+     "objective_evidence": "Home screen \"Recent\" list shows Taxi Fare 494.58 USD, Rent Payment 231.73 USD and Night Out 263.95 USD, all dated Today 3:34 PM, with OUTCOME 990.26 USD. Opening Taxi Fare's detail showed amount 494.58 USD and note \"Monthly recurring\". Each entry form was read back before saving with its name, amount, selected category chip and note.",
+     "key_signals": [
+      "Expense detail for Taxi Fare: 494.58 USD, note Monthly recurring",
+      "Recent list rows: Taxi Fare 494.58, Rent Payment 231.73, Night Out 263.95",
+      "Totals OUTCOME 990.26 USD equals sum of the three amounts",
+      "Category chips checked before save: Social, Housing, Transportation"
+     ]
+    },
+    "rows": [
+     {
+      "expense": "Night Out",
+      "amount_dollars": "$263.95",
+      "category_name": "Social",
+      "note": "A need",
+      "lusor_status": "succeeded"
+     },
+     {
+      "expense": "Rent Payment",
+      "amount_dollars": "$231.73",
+      "category_name": "Housing",
+      "note": "Want to have",
+      "lusor_status": "succeeded"
+     },
+     {
+      "expense": "Taxi Fare",
+      "amount_dollars": "$494.58",
+      "category_name": "Transportation",
+      "note": "Monthly recurring",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

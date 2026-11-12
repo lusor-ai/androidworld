@@ -1,0 +1,101 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "ClockStopWatchRunning",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 18.2,
+  "mobilerun_published_time_s": 122.1,
+  "speed_ratio": 0.149,
+  "lusor_cost_usd": 0.0063,
+  "mobilerun_published_actions": 3,
+  "mobilerun_est_cost_usd": 0.23,
+  "lusor_tool_calls": 7,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Run the stopwatch.",
+  "final_answer": null,
+  "final_summary": "The stopwatch is running. I opened the Clock app, switched to the Stopwatch tab and pressed Start; it now shows 00:01.69 and is still counting, with the button changed to Pause.",
+  "video_duration_s": 58.9,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 29.31,
+    "end_s": 29.33,
+    "ok": true,
+    "note": "Observe screen and find stopwatch app"
+   },
+   {
+    "step": 2,
+    "tool": "swipe",
+    "start_s": 30.4,
+    "end_s": 32.53,
+    "ok": true,
+    "note": "Open app drawer to find Clock app"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 33.19,
+    "end_s": 36.44,
+    "ok": true,
+    "note": "Tap Clock app icon"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 37.19,
+    "end_s": 38.07,
+    "ok": true,
+    "note": "Tap Stopwatch tab"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 38.99,
+    "end_s": 39.63,
+    "ok": true,
+    "note": "Tap Start button and verify stopwatch counting"
+   },
+   {
+    "step": 6,
+    "tool": "get_ui_state",
+    "start_s": 40.72,
+    "end_s": 41.02,
+    "ok": true,
+    "note": "Verify stopwatch is running and finish with done()"
+   },
+   {
+    "step": 7,
+    "tool": "done",
+    "start_s": 42.97,
+    "end_s": 42.97,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/ClockStopWatchRunning/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/ClockStopWatchRunning/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/ClockStopWatchRunning/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/ClockStopWatchRunning/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/ClockStopWatchRunning/task.json"
+  }
+ }
+}

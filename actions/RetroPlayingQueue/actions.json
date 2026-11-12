@@ -1,0 +1,309 @@
+{
+ "task": "RetroPlayingQueue",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 36.44,
+   "end_s": 36.46,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 37.45,
+   "end_s": 41.73,
+   "ok": true,
+   "args": {
+    "app": "code.name.monkey.retromusic"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 42.98,
+   "end_s": 44.66,
+   "ok": true,
+   "args": {
+    "index": 28
+   },
+   "tapped": {
+    "label": "Songs",
+    "index": 28,
+    "x": 324,
+    "y": 2232
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 46.86,
+   "end_s": 47.94,
+   "ok": true,
+   "args": {
+    "index": 21
+   },
+   "tapped": {
+    "label": null,
+    "index": 21,
+    "x": 1014,
+    "y": 563
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 49.61,
+   "end_s": 49.94,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 823,
+    "y": 842
+   }
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 51.17,
+   "end_s": 51.27,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 53.17,
+   "end_s": 54.32,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": null,
+    "index": 10,
+    "x": 1014,
+    "y": 741
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 55.23,
+   "end_s": 55.95,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 823,
+    "y": 1020
+   }
+  },
+  {
+   "step": 9,
+   "tool": "get_ui_state",
+   "start_s": 57.36,
+   "end_s": 57.41,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 60.85,
+   "end_s": 61.76,
+   "ok": true,
+   "args": {
+    "index": 18
+   },
+   "tapped": {
+    "label": null,
+    "index": 18,
+    "x": 1014,
+    "y": 1453
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 63.12,
+   "end_s": 64.08,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 823,
+    "y": 343
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 65.29,
+   "end_s": 66.37,
+   "ok": true,
+   "args": {
+    "index": 12
+   },
+   "tapped": {
+    "label": null,
+    "index": 12,
+    "x": 1014,
+    "y": 919
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 67.43,
+   "end_s": 68.32,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 823,
+    "y": 1135
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 69.27,
+   "end_s": 70.13,
+   "ok": true,
+   "args": {
+    "index": 16
+   },
+   "tapped": {
+    "label": null,
+    "index": 16,
+    "x": 1014,
+    "y": 1275
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 71.23,
+   "end_s": 72.46,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 823,
+    "y": 343
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 74.07,
+   "end_s": 75.45,
+   "ok": true,
+   "args": {
+    "index": 31
+   },
+   "tapped": {
+    "label": "City of Stars • Nora",
+    "index": 31,
+    "x": 571,
+    "y": 2054
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 76.95,
+   "end_s": 77.62,
+   "ok": true,
+   "args": {
+    "index": 16
+   },
+   "tapped": {
+    "label": "Now playing queue",
+    "index": 16,
+    "x": 912,
+    "y": 2252
+   }
+  },
+  {
+   "step": 18,
+   "tool": "map_app",
+   "start_s": 80.47,
+   "end_s": 81.52,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 19,
+   "tool": "done",
+   "start_s": 84.96,
+   "end_s": 84.96,
+   "ok": true,
+   "args": {
+    "summary": "All five songs are in your Retro Music playing queue, in the order you asked: City of Stars, Dreamer's Awake, Moonlight Sonata, Echoes of Silence, Forever Young. I re-read the queue list once after adding them and it holds exactly these five entries in that order.",
+    "evidence": {
+     "objective_evidence": "The Now playing queue screen lists 5 rows in order: City of Stars (Nora), Dreamer's Awake (Emily), Moonlight Sonata (Miguel), Echoes of Silence (Noah), Forever Young (Hugo); a map_app titles-only recount confirmed count 5 with the end of the list proven.",
+     "key_signals": [
+      "Songs tab menu item 'Add to playing queue' used for each of the five songs",
+      "Now playing queue header 'Up next • 16:20'",
+      "Queue list end proven: only 5 rows plus a Clear queue button"
+     ]
+    },
+    "rows": [
+     {
+      "song": "City of Stars",
+      "artist": "Nora",
+      "queue_position": 1,
+      "lusor_status": "succeeded"
+     },
+     {
+      "song": "Dreamer's Awake",
+      "artist": "Emily",
+      "queue_position": 2,
+      "lusor_status": "succeeded"
+     },
+     {
+      "song": "Moonlight Sonata",
+      "artist": "Miguel",
+      "queue_position": 3,
+      "lusor_status": "succeeded"
+     },
+     {
+      "song": "Echoes of Silence",
+      "artist": "Noah",
+      "queue_position": 4,
+      "lusor_status": "succeeded"
+     },
+     {
+      "song": "Forever Young",
+      "artist": "Hugo",
+      "queue_position": 5,
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

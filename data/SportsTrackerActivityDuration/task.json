@@ -1,0 +1,125 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SportsTrackerActivityDuration",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 30.2,
+  "mobilerun_published_time_s": 246.9,
+  "speed_ratio": 0.122,
+  "lusor_cost_usd": 0.0115,
+  "mobilerun_published_actions": 9,
+  "mobilerun_est_cost_usd": 0.689,
+  "lusor_tool_calls": 10,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "How long was my running activity October 05 in the OpenTracks app? Express your answer in minutes as a single integer.",
+  "final_answer": "30",
+  "final_summary": "Your running activity on October 05, 2023 (named \"Skill work\", started 7:00 AM) lasted 30 minutes. Both its moving time and total time read 30:00.",
+  "video_duration_s": 70.7,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 29.52,
+    "end_s": 29.53,
+    "ok": true,
+    "note": "Observe current screen; check skills for OpenTracks"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 30.43,
+    "end_s": 32.63,
+    "ok": true,
+    "note": "Launch OpenTracks and view activity list"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 33.32,
+    "end_s": 34.02,
+    "ok": true,
+    "note": "Skip intro screens with next button"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 35.18,
+    "end_s": 36.72,
+    "ok": true,
+    "note": "Continue skipping intro screens"
+   },
+   {
+    "step": 5,
+    "tool": "scroll_to",
+    "start_s": 38.08,
+    "end_s": 43.09,
+    "ok": true,
+    "note": "Scroll list to find a running activity dated 5 Oct / Thursday"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 45.24,
+    "end_s": 46.21,
+    "ok": true,
+    "note": "Open the 5 Oct track and read its type and duration"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 49.23,
+    "end_s": 50.21,
+    "ok": true,
+    "note": "Open track options to check activity type/duration"
+   },
+   {
+    "step": 8,
+    "tool": "key",
+    "start_s": 52.22,
+    "end_s": 52.6,
+    "ok": true,
+    "note": "Back to stats, then visually check the activity type icon"
+   },
+   {
+    "step": 9,
+    "tool": "screenshot",
+    "start_s": 53.39,
+    "end_s": 54.79,
+    "ok": true,
+    "note": "Inspect the activity type icon to confirm the sport"
+   },
+   {
+    "step": 10,
+    "tool": "done",
+    "start_s": 57.09,
+    "end_s": 57.1,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SportsTrackerActivityDuration/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SportsTrackerActivityDuration/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SportsTrackerActivityDuration/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SportsTrackerActivityDuration/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SportsTrackerActivityDuration/task.json"
+  }
+ }
+}

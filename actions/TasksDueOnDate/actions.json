@@ -1,0 +1,448 @@
+{
+ "task": "TasksDueOnDate",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 28.54,
+   "end_s": 28.54,
+   "ok": true,
+   "args": {
+    "path": "skill://tasks/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.31,
+   "end_s": 29.32,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.1,
+   "end_s": 33.6,
+   "ok": true,
+   "args": {
+    "app": "org.tasks"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "map_app",
+   "start_s": 35.83,
+   "end_s": 50.37,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 5,
+   "tool": "map_app",
+   "start_s": 53.78,
+   "end_s": 103.17,
+   "ok": true,
+   "args": {
+    "levels": 2,
+    "rows": {
+     "contains": [
+      "Follow up on support tickets",
+      "Review quarterly goals",
+      "Plan team outing"
+     ]
+    }
+   }
+  },
+  {
+   "step": 6,
+   "tool": "scroll_to",
+   "start_s": 108.89,
+   "end_s": 124.9,
+   "ok": true,
+   "args": {
+    "target": "Follow up on support tickets"
+   }
+  },
+  {
+   "step": 7,
+   "tool": "swipe",
+   "start_s": 126.59,
+   "end_s": 130.51,
+   "ok": true,
+   "args": {
+    "startX": 700,
+    "startY": 1900,
+    "endX": 700,
+    "endY": 700,
+    "durationMs": 800,
+    "capture": true
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 132.97,
+   "end_s": 134.12,
+   "ok": true,
+   "args": {
+    "index": 33
+   },
+   "tapped": {
+    "label": null,
+    "index": 33,
+    "x": 540,
+    "y": 1982
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 135.67,
+   "end_s": 137.3,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 1077
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 140.59,
+   "end_s": 141.31,
+   "ok": true,
+   "args": {
+    "index": 48
+   },
+   "tapped": {
+    "label": "CANCEL",
+    "index": 48,
+    "x": 727,
+    "y": 2274
+   }
+  },
+  {
+   "step": 11,
+   "tool": "key",
+   "start_s": 142.64,
+   "end_s": 143.2,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 144.79,
+   "end_s": 145.71,
+   "ok": true,
+   "args": {
+    "index": 36
+   },
+   "tapped": {
+    "label": null,
+    "index": 36,
+    "x": 540,
+    "y": 2202
+   }
+  },
+  {
+   "step": 13,
+   "tool": "key",
+   "start_s": 147.28,
+   "end_s": 147.62,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 14,
+   "tool": "key",
+   "start_s": 149.3,
+   "end_s": 149.59,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap",
+   "start_s": 151.26,
+   "end_s": 152.14,
+   "ok": true,
+   "args": {
+    "x": 300,
+    "y": 2140
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 153.03,
+   "end_s": 154.52,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 1077
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 155.58,
+   "end_s": 156.01,
+   "ok": true,
+   "args": {
+    "index": 48
+   },
+   "tapped": {
+    "label": "CANCEL",
+    "index": 48,
+    "x": 727,
+    "y": 2274
+   }
+  },
+  {
+   "step": 18,
+   "tool": "key",
+   "start_s": 156.92,
+   "end_s": 157.32,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 19,
+   "tool": "swipe",
+   "start_s": 158.49,
+   "end_s": 160.6,
+   "ok": true,
+   "args": {
+    "startX": 700,
+    "endX": 700,
+    "endY": 1600,
+    "startY": 2000,
+    "durationMs": 800,
+    "capture": true
+   }
+  },
+  {
+   "step": 20,
+   "tool": "tap",
+   "start_s": 161.71,
+   "end_s": 162.4,
+   "ok": true,
+   "args": {
+    "x": 300,
+    "y": 1990
+   }
+  },
+  {
+   "step": 21,
+   "tool": "tap_element",
+   "start_s": 163.32,
+   "end_s": 165.0,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 1077
+   }
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 169.65,
+   "end_s": 170.12,
+   "ok": true,
+   "args": {
+    "index": 48
+   },
+   "tapped": {
+    "label": "CANCEL",
+    "index": 48,
+    "x": 727,
+    "y": 2274
+   }
+  },
+  {
+   "step": 23,
+   "tool": "key",
+   "start_s": 170.94,
+   "end_s": 171.33,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 24,
+   "tool": "tap",
+   "start_s": 172.4,
+   "end_s": 173.12,
+   "ok": true,
+   "args": {
+    "x": 300,
+    "y": 2200
+   }
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 174.77,
+   "end_s": 176.41,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 1077
+   }
+  },
+  {
+   "step": 26,
+   "tool": "tap_element",
+   "start_s": 179.07,
+   "end_s": 179.59,
+   "ok": true,
+   "args": {
+    "index": 49
+   },
+   "tapped": {
+    "label": "CANCEL",
+    "index": 49,
+    "x": 727,
+    "y": 2274
+   }
+  },
+  {
+   "step": 27,
+   "tool": "key",
+   "start_s": 180.71,
+   "end_s": 181.02,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 28,
+   "tool": "swipe",
+   "start_s": 182.52,
+   "end_s": 184.88,
+   "ok": true,
+   "args": {
+    "durationMs": 800,
+    "endX": 700,
+    "endY": 1000,
+    "startX": 700,
+    "startY": 2000
+   }
+  },
+  {
+   "step": 29,
+   "tool": "tap",
+   "start_s": 186.51,
+   "end_s": 187.21,
+   "ok": true,
+   "args": {
+    "x": 300,
+    "y": 2120
+   }
+  },
+  {
+   "step": 30,
+   "tool": "tap_element",
+   "start_s": 188.3,
+   "end_s": 189.8,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 1077
+   }
+  },
+  {
+   "step": 31,
+   "tool": "tap_element",
+   "start_s": 193.27,
+   "end_s": 193.64,
+   "ok": true,
+   "args": {
+    "index": 49
+   },
+   "tapped": {
+    "label": "CANCEL",
+    "index": 49,
+    "x": 727,
+    "y": 2274
+   }
+  },
+  {
+   "step": 32,
+   "tool": "key",
+   "start_s": 194.9,
+   "end_s": 195.2,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 33,
+   "tool": "done",
+   "start_s": 197.85,
+   "end_s": 197.86,
+   "ok": true,
+   "args": {
+    "summary": "You have three tasks due Friday (Oct 20): Follow up on support tickets, Review quarterly goals, Plan team outing.",
+    "rows": [
+     {
+      "answer": "Follow up on support tickets, Review quarterly goals, Plan team outing",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "My Tasks list shows three incomplete rows with a 'Fri' due label; opening each and tapping its due date showed day 20 selected (Fri Oct 20, 2023). The two completed 'Fri' tasks (Reply to Emails, Read 'The Martian') showed day 13 selected, i.e. the past Friday Oct 13, so they are not due this Friday.",
+     "key_signals": [
+      "Device date Sun 2023-10-15; coming Friday is 2023-10-20",
+      "Rows 'Follow up on support tickets', 'Review quarterly goals', 'Plan team outing' each due Friday with no time, picker day 20 Selected",
+      "Row 'Reply to Emails' (Fri 19:50, completed) picker day 13 Selected",
+      "Row \"Read 'The Martian'\" (Fri 09:27, completed) picker day 13 Selected",
+      "map_app proved the end of the 23-row list, so no other Friday-due rows exist"
+     ]
+    }
+   }
+  }
+ ]
+}

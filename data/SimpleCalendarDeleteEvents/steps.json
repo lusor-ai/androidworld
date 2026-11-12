@@ -1,0 +1,135 @@
+{
+ "task": "SimpleCalendarDeleteEvents",
+ "video_duration_s": 84.4,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.34,
+   "end_s": 30.35,
+   "ok": true,
+   "note": "Read the simple-calendar skill"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.34,
+   "end_s": 30.35,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.48,
+   "end_s": 33.6,
+   "ok": true,
+   "note": "Launch Simple Calendar and observe"
+  },
+  {
+   "step": 4,
+   "tool": "tap",
+   "start_s": 35.81,
+   "end_s": 36.49,
+   "ok": true,
+   "note": "Tap Oct 20 (2023-10-20) in the month grid and observe the day view"
+  },
+  {
+   "step": 5,
+   "tool": "key",
+   "start_s": 39.65,
+   "end_s": 39.96,
+   "ok": true,
+   "note": "Back to month view, then tap Oct 20 at row y~1577 col x~848"
+  },
+  {
+   "step": 6,
+   "tool": "tap",
+   "start_s": 41.35,
+   "end_s": 42.19,
+   "ok": true,
+   "note": "Verify day view header shows October 20 (Fri)"
+  },
+  {
+   "step": 7,
+   "tool": "swipe",
+   "start_s": 44.35,
+   "end_s": 47.38,
+   "ok": true,
+   "note": "Scroll day list to confirm only 3 events, then open first event"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 48.6,
+   "end_s": 49.88,
+   "ok": true,
+   "note": "Open 'Review session for Budget Planning' and find delete option"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 50.97,
+   "end_s": 51.78,
+   "ok": true,
+   "note": "Tap Delete on 'Review session for Budget Planning' and confirm outcome"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 52.59,
+   "end_s": 53.67,
+   "ok": true,
+   "note": "Confirm deletion, then open next event 'Catch up on Project X'"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 54.7,
+   "end_s": 55.79,
+   "ok": true,
+   "note": "Open 'Catch up on Project X', tap Delete, confirm Yes"
+  },
+  {
+   "step": 12,
+   "tool": "chain",
+   "start_s": 57.17,
+   "end_s": 59.27,
+   "ok": true,
+   "note": "Delete 'Meeting with Dr. Smith' the same way"
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 60.08,
+   "end_s": 61.01,
+   "ok": true,
+   "note": "Open 'Meeting with Dr. Smith' and delete it"
+  },
+  {
+   "step": 14,
+   "tool": "chain",
+   "start_s": 62.09,
+   "end_s": 64.18,
+   "ok": true,
+   "note": "Verify day view for October 20 is empty"
+  },
+  {
+   "step": 15,
+   "tool": "map_app",
+   "start_s": 65.32,
+   "end_s": 66.02,
+   "ok": true,
+   "note": "Confirm day_events list is empty with map_app, then done"
+  },
+  {
+   "step": 16,
+   "tool": "done",
+   "start_s": 68.36,
+   "end_s": 68.36,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

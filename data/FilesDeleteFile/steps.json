@@ -1,0 +1,95 @@
+{
+ "task": "FilesDeleteFile",
+ "video_duration_s": 65.7,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.16,
+   "end_s": 29.17,
+   "ok": true,
+   "note": "Observe the current screen to locate a file manager app"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 30.86,
+   "end_s": 34.56,
+   "ok": true,
+   "note": "Launch the Files app and inspect its screen"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 35.56,
+   "end_s": 36.59,
+   "ok": true,
+   "note": "Open the roots drawer and select the sdk_gphone_x86_64 storage root"
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 37.64,
+   "end_s": 37.79,
+   "ok": true,
+   "note": "Read the roots list items in the drawer"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 38.84,
+   "end_s": 39.98,
+   "ok": true,
+   "note": "Open the sdk_gphone64_x86_64 root and find the Podcasts folder"
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 40.85,
+   "end_s": 40.91,
+   "ok": true,
+   "note": "Read the contents of the sdk_gphone64_x86_64 storage root"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 41.78,
+   "end_s": 42.81,
+   "ok": true,
+   "note": "Open the Podcasts folder and locate 2023_09_01_strong_dog.mp3"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 43.73,
+   "end_s": 45.09,
+   "ok": true,
+   "note": "Long press 2023_09_01_strong_dog.mp3 to select it and reveal the delete option"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 46.31,
+   "end_s": 47.16,
+   "ok": true,
+   "note": "Tap Delete, then confirm the deletion dialog"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 48.07,
+   "end_s": 49.05,
+   "ok": true,
+   "note": "Confirm deletion with OK and verify the file no longer appears in Podcasts"
+  },
+  {
+   "step": 11,
+   "tool": "done",
+   "start_s": 51.57,
+   "end_s": 51.57,
+   "ok": true,
+   "note": "Task complete; file deleted and verified absent"
+  }
+ ]
+}

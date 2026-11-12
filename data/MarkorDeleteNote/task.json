@@ -1,0 +1,119 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "MarkorDeleteNote",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 21.2,
+  "mobilerun_published_time_s": 140.9,
+  "speed_ratio": 0.15,
+  "lusor_cost_usd": 0.0099,
+  "mobilerun_published_actions": 4,
+  "mobilerun_est_cost_usd": 0.306,
+  "lusor_tool_calls": 9,
+  "disclosure": null,
+  "skills_read": [
+   "markor"
+  ],
+  "skill_assisted": [],
+  "goal": "Delete the note in Markor named final_polite_fish.",
+  "final_answer": null,
+  "final_summary": "I deleted the Markor note named exactly final_polite_fish. I long-pressed it in the Files list, tapped Delete, and confirmed the \"Confirm Delete\" dialog, which showed the path /storage/emulated/0/Documents/markor/final_polite_fish. The list now has 13 entries and no longer contains that note; the similarly named files that have extra text or extensions (such as final_polite_fish_2023_02_28.md) are separate notes and were left alone.",
+  "video_duration_s": 64.0,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 31.73,
+    "end_s": 31.73,
+    "ok": true,
+    "note": "Read Markor skill guidance"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 32.72,
+    "end_s": 32.74,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 33.83,
+    "end_s": 36.15,
+    "ok": true,
+    "note": "Launch Markor and inspect file list"
+   },
+   {
+    "step": 4,
+    "tool": "get_ui_state",
+    "start_s": 37.02,
+    "end_s": 37.11,
+    "ok": true,
+    "note": "Re-read Markor file list to see notes"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 38.41,
+    "end_s": 39.7,
+    "ok": true,
+    "note": "Long press final_polite_fish row to open context menu"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 40.79,
+    "end_s": 41.73,
+    "ok": true,
+    "note": "Tap Delete in toolbar and confirm dialog"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 42.78,
+    "end_s": 43.82,
+    "ok": true,
+    "note": "Tap OK in Confirm Delete dialog"
+   },
+   {
+    "step": 8,
+    "tool": "map_app",
+    "start_s": 45.48,
+    "end_s": 46.85,
+    "ok": true,
+    "note": "Map file list titles to confirm final_polite_fish is gone"
+   },
+   {
+    "step": 9,
+    "tool": "done",
+    "start_s": 49.07,
+    "end_s": 49.08,
+    "ok": true,
+    "note": "Task complete; note deleted and list verified"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorDeleteNote/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/MarkorDeleteNote/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/MarkorDeleteNote/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/MarkorDeleteNote/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/MarkorDeleteNote/task.json"
+  }
+ }
+}

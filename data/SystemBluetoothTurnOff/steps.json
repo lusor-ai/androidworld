@@ -1,0 +1,103 @@
+{
+ "task": "SystemBluetoothTurnOff",
+ "video_duration_s": 66.3,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 27.71,
+   "end_s": 27.72,
+   "ok": true,
+   "note": "Observe current screen to find Settings or Quick Settings for Bluetooth"
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 29.04,
+   "end_s": 32.14,
+   "ok": true,
+   "note": "Read quick settings panel to find Bluetooth tile state"
+  },
+  {
+   "step": 3,
+   "tool": "swipe",
+   "start_s": 33.18,
+   "end_s": 33.18,
+   "ok": false,
+   "note": null
+  },
+  {
+   "step": 4,
+   "tool": "swipe",
+   "start_s": 34.4,
+   "end_s": 35.59,
+   "ok": true,
+   "note": "Read expanded quick settings panel for Bluetooth tile"
+  },
+  {
+   "step": 5,
+   "tool": "launch",
+   "start_s": 36.46,
+   "end_s": 37.88,
+   "ok": true,
+   "note": "Settings app open: find Bluetooth menu or Connected devices"
+  },
+  {
+   "step": 6,
+   "tool": "key",
+   "start_s": 39.3,
+   "end_s": 40.37,
+   "ok": true,
+   "note": "Close notification shade, then launch Settings"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 41.36,
+   "end_s": 42.68,
+   "ok": true,
+   "note": "Read Connected devices page for the Bluetooth toggle"
+  },
+  {
+   "step": 8,
+   "tool": "launch",
+   "start_s": 44.14,
+   "end_s": 44.14,
+   "ok": true,
+   "note": "Read Bluetooth settings page and find the toggle/switch state"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 45.09,
+   "end_s": 46.3,
+   "ok": true,
+   "note": "Read Connection preferences list for Bluetooth entry"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 47.16,
+   "end_s": 48.21,
+   "ok": true,
+   "note": "Read Bluetooth page and locate its on/off toggle"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 49.25,
+   "end_s": 49.79,
+   "ok": true,
+   "note": "Verify Use Bluetooth switch is now Unchecked"
+  },
+  {
+   "step": 12,
+   "tool": "done",
+   "start_s": 51.37,
+   "end_s": 51.38,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

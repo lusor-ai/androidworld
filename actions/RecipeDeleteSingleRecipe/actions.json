@@ -1,0 +1,137 @@
+{
+ "task": "RecipeDeleteSingleRecipe",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.05,
+   "end_s": 29.06,
+   "ok": true,
+   "args": {
+    "path": "skill://broccoli/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.81,
+   "end_s": 29.82,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.59,
+   "end_s": 34.24,
+   "ok": true,
+   "args": {
+    "app": "com.flauschcode.broccoli"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.37,
+   "end_s": 36.94,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 540,
+    "y": 601
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.85,
+   "end_s": 38.77,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 6,
+    "x": 1028,
+    "y": 201
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 39.4,
+   "end_s": 40.26,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 813,
+    "y": 601
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 41.09,
+   "end_s": 42.04,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "DELETE",
+    "index": 3,
+    "x": 861,
+    "y": 1296
+   }
+  },
+  {
+   "step": 8,
+   "tool": "map_app",
+   "start_s": 42.79,
+   "end_s": 42.8,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 9,
+   "tool": "done",
+   "start_s": 44.66,
+   "end_s": 44.66,
+   "ok": true,
+   "args": {
+    "summary": "I deleted the Turkey and Cheese Panini recipe from Broccoli. The recipe list now shows \"No recipes found.\" with zero entries.",
+    "evidence": {
+     "objective_evidence": "After tapping Delete and confirming with DELETE, the Recipes screen shows the empty-state text \"No recipes found.\" and the recycler_view reports 0 rows. A map_app levels 1 walk of the list returned count 0 with the end proven.",
+     "key_signals": [
+      "Recipe page title was \"Turkey and Cheese Panini\"",
+      "More options menu contained Delete",
+      "Confirmation dialog \"Delete this recipe?\" with DELETE button",
+      "List read shows 0 rows and \"No recipes found.\"",
+      "map_app count 0, end_proven true"
+     ]
+    },
+    "rows": [
+     {
+      "recipe": "Turkey and Cheese Panini",
+      "action": "deleted",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

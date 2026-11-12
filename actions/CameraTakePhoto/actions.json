@@ -1,0 +1,92 @@
+{
+ "task": "CameraTakePhoto",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.02,
+   "end_s": 29.05,
+   "ok": true,
+   "args": {
+    "path": "skill://camera/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.02,
+   "end_s": 29.05,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.03,
+   "end_s": 34.01,
+   "ok": true,
+   "args": {
+    "app": "com.android.camera2"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.06,
+   "end_s": 36.83,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "Shutter",
+    "index": 2,
+    "x": 540,
+    "y": 2180
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.64,
+   "end_s": 38.81,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 986,
+    "y": 1770
+   }
+  },
+  {
+   "step": 6,
+   "tool": "done",
+   "start_s": 40.71,
+   "end_s": 40.72,
+   "ok": true,
+   "args": {
+    "summary": "I took one photo with the Camera app. The filmstrip confirms the capture, labeled \"Photo taken on Oct 15, 2023 15:34:11\", and it is the only shot taken.",
+    "evidence": {
+     "objective_evidence": "After pressing Shutter once, a thumbnail appeared; opening the filmstrip showed one image labeled \"Photo taken on Oct 15, 2023 15:34:11\".",
+     "key_signals": [
+      "Camera app launched (com.android.camera2)",
+      "Shutter pressed once",
+      "Filmstrip shows single photo dated Oct 15, 2023 15:34:11"
+     ]
+    },
+    "rows": [
+     {
+      "action": "Took one photo",
+      "result": "Saved, labeled \"Photo taken on Oct 15, 2023 15:34:11\"",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

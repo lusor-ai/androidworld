@@ -1,0 +1,258 @@
+{
+ "task": "AudioRecorderRecordAudioWithFileName",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 30.33,
+   "end_s": 30.38,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 31.42,
+   "end_s": 35.14,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1800,
+    "endX": 540,
+    "endY": 600
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 35.95,
+   "end_s": 36.7,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "capture": true
+   },
+   "tapped": {
+    "label": "Audio Recorder",
+    "index": 3,
+    "x": 419,
+    "y": 883
+   }
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 37.54,
+   "end_s": 38.22,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 39.0,
+   "end_s": 40.31,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 3
+   },
+   "tapped": {
+    "label": "Get started",
+    "index": 3,
+    "x": 540,
+    "y": 2201
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 41.82,
+   "end_s": 42.81,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 25
+   },
+   "tapped": {
+    "label": "Apply",
+    "index": 25,
+    "x": 808,
+    "y": 2253
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 43.58,
+   "end_s": 44.71,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4
+   },
+   "tapped": {
+    "label": "Recording: %s",
+    "index": 4,
+    "x": 543,
+    "y": 2185
+   }
+  },
+  {
+   "step": 8,
+   "tool": "chain",
+   "start_s": 45.63,
+   "end_s": 50.23,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "verb": "wait",
+      "params": {
+       "duration_ms": 4000
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "Recording: %s"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 51.27,
+   "end_s": 52.8,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 742,
+    "y": 2184
+   }
+  },
+  {
+   "step": 10,
+   "tool": "type",
+   "start_s": 55.37,
+   "end_s": 58.21,
+   "ok": true,
+   "args": {
+    "index": 1,
+    "text": "2023_06_24_training"
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 59.13,
+   "end_s": 59.61,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4
+   },
+   "tapped": {
+    "label": "Save",
+    "index": 4,
+    "x": 821,
+    "y": 999
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 60.56,
+   "end_s": 62.0,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 970,
+    "y": 2185
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 63.83,
+   "end_s": 64.83,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 1033,
+    "y": 470
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 65.77,
+   "end_s": 66.2,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 823,
+    "y": 754
+   }
+  },
+  {
+   "step": 15,
+   "tool": "get_ui_state",
+   "start_s": 67.03,
+   "end_s": 67.05,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 16,
+   "tool": "done",
+   "start_s": 69.26,
+   "end_s": 69.27,
+   "ok": true,
+   "args": {
+    "summary": "I recorded a 5-second audio clip in the Audio Recorder app and saved it as 2023_06_24_training.m4a. The app's Information screen for the clip lists the name 2023_06_24_training, format m4a, and file location /storage/emulated/0/Android/data/com.dimowner.audiorecorder/files/Music/records/2023_06_24_training.m4a.",
+    "evidence": {
+     "objective_evidence": "Records list shows one clip named 2023_06_24_training; its Information page shows Name: 2023_06_24_training, Format: m4a, Duration 00:05, Size 0.06 Mb, Created 10/15/23 15:34, File location /storage/emulated/0/Android/data/com.dimowner.audiorecorder/files/Music/records/2023_06_24_training.m4a",
+     "key_signals": [
+      "Audio Recorder recording screen showed 00:05 and 0.04 Mb while recording",
+      "Save dialog pre-filled Record-1, replaced with 2023_06_24_training",
+      "Information page confirms full file name with .m4a extension"
+     ]
+    },
+    "rows": [
+     {
+      "recording": "2023_06_24_training.m4a",
+      "format": "m4a",
+      "duration": "00:05",
+      "location": "/storage/emulated/0/Android/data/com.dimowner.audiorecorder/files/Music/records/2023_06_24_training.m4a",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

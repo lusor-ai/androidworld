@@ -1,0 +1,111 @@
+{
+ "task": "ContactsAddContact",
+ "video_duration_s": 80.2,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 28.94,
+   "end_s": 28.95,
+   "ok": true,
+   "note": "Observe current screen, then open Contacts app"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 29.82,
+   "end_s": 31.11,
+   "ok": true,
+   "note": "Open Contacts app and create new contact"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 32.04,
+   "end_s": 35.63,
+   "ok": true,
+   "note": "Dismiss notification permission with Don't allow, then open new contact form"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 36.47,
+   "end_s": 37.44,
+   "ok": true,
+   "note": "Tap Create contact FAB and fill name and phone"
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 38.13,
+   "end_s": 38.8,
+   "ok": true,
+   "note": "Read the new contact form"
+  },
+  {
+   "step": 6,
+   "tool": "chain",
+   "start_s": 40.11,
+   "end_s": 47.75,
+   "ok": true,
+   "note": "Fill first name, last name, and phone number fields"
+  },
+  {
+   "step": 7,
+   "tool": "clear",
+   "start_s": 51.11,
+   "end_s": 52.01,
+   "ok": true,
+   "note": "Clear number from Organization field, delete that empty field, then type number in Mobile phone field"
+  },
+  {
+   "step": 8,
+   "tool": "swipe",
+   "start_s": 54.05,
+   "end_s": 55.77,
+   "ok": true,
+   "note": "Scroll to reveal phone field with Mobile spinner and type the number there"
+  },
+  {
+   "step": 9,
+   "tool": "type",
+   "start_s": 56.73,
+   "end_s": 58.49,
+   "ok": true,
+   "note": "Type +14240925675 into the Mobile phone field and verify"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 59.49,
+   "end_s": 60.4,
+   "ok": true,
+   "note": "Tap Save and verify the contact appears in the list"
+  },
+  {
+   "step": 11,
+   "tool": "get_ui_state",
+   "start_s": 61.22,
+   "end_s": 61.7,
+   "ok": true,
+   "note": "Check result of save; verify contact in list"
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 62.96,
+   "end_s": 63.87,
+   "ok": true,
+   "note": "Go up to the contact list and confirm Emilia Gonzalez is listed"
+  },
+  {
+   "step": 13,
+   "tool": "done",
+   "start_s": 65.83,
+   "end_s": 65.84,
+   "ok": true,
+   "note": "Task complete; contact saved and verified"
+  }
+ ]
+}

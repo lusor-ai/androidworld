@@ -1,0 +1,178 @@
+{
+ "task": "RecipeDeleteDuplicateRecipes3",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 33.55,
+   "end_s": 33.56,
+   "ok": true,
+   "args": {
+    "path": "skill://broccoli/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 33.55,
+   "end_s": 33.56,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 34.74,
+   "end_s": 38.71,
+   "ok": true,
+   "args": {
+    "app": "com.flauschcode.broccoli"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "map_app",
+   "start_s": 40.43,
+   "end_s": 211.88,
+   "ok": true,
+   "args": {
+    "levels": 2
+   }
+  },
+  {
+   "step": 5,
+   "tool": "scroll_to",
+   "start_s": 218.3,
+   "end_s": 221.04,
+   "ok": true,
+   "args": {
+    "page": true
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 222.71,
+   "end_s": 223.92,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 1944
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 225.57,
+   "end_s": 226.33,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 6,
+    "x": 1028,
+    "y": 201
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 227.17,
+   "end_s": 228.0,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 813,
+    "y": 601
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 229.15,
+   "end_s": 230.39,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "DELETE",
+    "index": 3,
+    "x": 861,
+    "y": 1296
+   }
+  },
+  {
+   "step": 10,
+   "tool": "map_app",
+   "start_s": 231.98,
+   "end_s": 260.31,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 11,
+   "tool": "get_ui_state",
+   "start_s": 263.15,
+   "end_s": 263.18,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 12,
+   "tool": "done",
+   "start_s": 266.55,
+   "end_s": 266.55,
+   "ok": false,
+   "args": {
+    "summary": "I found 32 recipes in Broccoli and exactly one pair of true exact duplicates, two \"Veggie and Hummus Sandwich\" recipes with identical servings (1 serving), time (20 mins), description, ingredients (\"varies\") and directions. I deleted one of them, leaving 31 recipes with a single copy of each unique recipe. The other same-named recipes are not duplicates: their servings, times, ingredients or directions differ (for example the three Avocado Toast with Egg entries and the six remaining Veggie and Hummus Sandwich entries all have different details)."
+   }
+  },
+  {
+   "step": 13,
+   "tool": "done",
+   "start_s": 269.26,
+   "end_s": 269.26,
+   "ok": true,
+   "args": {
+    "evidence": {
+     "objective_evidence": "Recipe list went from 32 items to 31 after deleting one of two identical Veggie and Hummus Sandwich entries; the titles-only recount shows 31 rows with end of list proven.",
+     "key_signals": [
+      "map_app levels 2 on 32 recipes found one identical group: two Veggie and Hummus Sandwiches with 1 serving, 20 mins, 'varies', and identical directions",
+      "Delete confirmed via Delete this recipe? dialog",
+      "map_app levels 1 after the change: 31 recipes, end proven, single copy of each unique recipe remains"
+     ]
+    },
+    "rows": [
+     {
+      "item": "Veggie and Hummus Sandwich (1 serving, 20 mins, ingredients: varies)",
+      "action": "Deleted one of two exact duplicate copies",
+      "lusor_status": "succeeded"
+     },
+     {
+      "item": "Recipe library",
+      "action": "32 recipes reduced to 31; one copy of every unique recipe remains",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "summary": "I found 32 recipes in Broccoli and exactly one pair of true exact duplicates: two \"Veggie and Hummus Sandwich\" recipes with identical servings (1 serving), time (20 mins), description, ingredients (\"varies\") and directions. I deleted one of them, leaving 31 recipes with a single copy of each unique recipe. The other same-named recipes are not duplicates, because their servings, times, ingredients or directions differ (for example the three Avocado Toast with Egg entries and the six remaining Veggie and Hummus Sandwich entries all differ in at least one of those fields)."
+   }
+  }
+ ]
+}

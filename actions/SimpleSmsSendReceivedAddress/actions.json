@@ -1,0 +1,283 @@
+{
+ "task": "SimpleSmsSendReceivedAddress",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 47.81,
+   "end_s": 47.83,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "tap_element",
+   "start_s": 49.01,
+   "end_s": 49.95,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": "Messages",
+    "index": 9,
+    "x": 415,
+    "y": 1971
+   }
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 51.25,
+   "end_s": 52.43,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 54.2,
+   "end_s": 56.24,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "Set default SMS app",
+    "index": 4,
+    "x": 540,
+    "y": 1516
+   }
+  },
+  {
+   "step": 5,
+   "tool": "key",
+   "start_s": 58.91,
+   "end_s": 59.45,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 6,
+   "tool": "key",
+   "start_s": 61.9,
+   "end_s": 63.54,
+   "ok": true,
+   "args": {
+    "key": "home"
+   }
+  },
+  {
+   "step": 7,
+   "tool": "swipe",
+   "start_s": 64.7,
+   "end_s": 67.27,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1900,
+    "endX": 540,
+    "endY": 600
+   }
+  },
+  {
+   "step": 8,
+   "tool": "scroll_to",
+   "start_s": 71.62,
+   "end_s": 72.8,
+   "ok": true,
+   "args": {
+    "target": "SMS Messenger"
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 73.73,
+   "end_s": 76.12,
+   "ok": true,
+   "args": {
+    "index": 26
+   },
+   "tapped": {
+    "label": "SMS Messenger",
+    "index": 26,
+    "x": 178,
+    "y": 2218
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 78.25,
+   "end_s": 80.22,
+   "ok": true,
+   "args": {
+    "index": 9,
+    "plan": "[\"Find the event address in Theo Mohamed's message\", \"Open the conversation with Leon Ibrahim\", \"Send the address\", \"Verify the sent message\"]}"
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 423
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 82.29,
+   "end_s": 83.44,
+   "ok": true,
+   "args": {
+    "index": 1,
+    "plan": [
+     "Find the event address in Theo Mohamed's message",
+     "Open the conversation with Leon Ibrahim",
+     "Send the address",
+     "Verify the sent message"
+    ]
+   },
+   "tapped": {
+    "label": "Back",
+    "index": 1,
+    "x": 74,
+    "y": 212
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 84.91,
+   "end_s": 86.14,
+   "ok": true,
+   "args": {
+    "index": 10,
+    "plan": [
+     "Find the event address in Theo Mohamed's message",
+     "Open the conversation with Leon Ibrahim",
+     "Send the address",
+     "Verify the sent message"
+    ]
+   },
+   "tapped": {
+    "label": null,
+    "index": 10,
+    "x": 964,
+    "y": 2222
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 87.22,
+   "end_s": 87.72,
+   "ok": true,
+   "args": {
+    "index": 6,
+    "plan": [
+     "Find the event address in Theo Mohamed's message",
+     "Open the conversation with Leon Ibrahim",
+     "Send the address",
+     "Verify the sent message"
+    ]
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 541,
+    "y": 989
+   }
+  },
+  {
+   "step": 14,
+   "tool": "get_ui_state",
+   "start_s": 88.88,
+   "end_s": 88.89,
+   "ok": true,
+   "args": {
+    "plan": [
+     "Find the event address in Theo Mohamed's message",
+     "Open the conversation with Leon Ibrahim",
+     "Send the address",
+     "Verify the sent message"
+    ]
+   }
+  },
+  {
+   "step": 15,
+   "tool": "type",
+   "start_s": 90.4,
+   "end_s": 93.21,
+   "ok": true,
+   "args": {
+    "index": 7,
+    "text": "1415 W Cedar Ave Denver, CO, 80223"
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 94.58,
+   "end_s": 95.55,
+   "ok": true,
+   "args": {
+    "index": 8,
+    "irreversible": true,
+    "plan": [
+     "Find the event address in Theo Mohamed's message",
+     "Open the conversation with Leon Ibrahim",
+     "Send the address",
+     "Verify the sent message"
+    ]
+   },
+   "tapped": {
+    "label": "SMS",
+    "index": 8,
+    "x": 1006,
+    "y": 1454
+   }
+  },
+  {
+   "step": 17,
+   "tool": "get_ui_state",
+   "start_s": 96.72,
+   "end_s": 96.73,
+   "ok": true,
+   "args": {
+    "plan": "[\"Find the event address in Theo Mohamed's message\", \"Open the conversation with Leon Ibrahim\", \"Send the address\", \"Verify the sent message\"]}"
+   }
+  },
+  {
+   "step": 18,
+   "tool": "done",
+   "start_s": 99.22,
+   "end_s": 99.22,
+   "ok": true,
+   "args": {
+    "summary": "I texted Theo Mohamed's event address, \"1415 W Cedar Ave Denver, CO, 80223\", to Leon Ibrahim (+11154695785) in Simple SMS Messenger. The message shows in the Leon Ibrahim thread at 15:35 with a success checkmark.",
+    "evidence": {
+     "objective_evidence": "The Leon Ibrahim thread shows the outgoing bubble \"1415 W Cedar Ave Denver, CO, 80223\" at 15:35 with the success indicator (thread_success) and the compose field cleared; the source message from Theo Mohamed at 15:34 contained the same address.",
+     "key_signals": [
+      "Theo Mohamed conversation body: \"1415 W Cedar Ave Denver, CO, 80223\"",
+      "New conversation picker listed Leon Ibrahim at +11154695785",
+      "Sent bubble with matching text and success mark in Leon Ibrahim thread"
+     ]
+    },
+    "rows": [
+     {
+      "recipient": "Leon Ibrahim (+11154695785)",
+      "message": "1415 W Cedar Ave Denver, CO, 80223",
+      "app": "SMS Messenger",
+      "status": "sent, success indicator shown",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

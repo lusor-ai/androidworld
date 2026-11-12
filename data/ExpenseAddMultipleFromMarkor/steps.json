@@ -1,0 +1,335 @@
+{
+ "task": "ExpenseAddMultipleFromMarkor",
+ "video_duration_s": 169.1,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 31.18,
+   "end_s": 31.19,
+   "ok": true,
+   "note": "Read Markor skill and observe screen"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 31.18,
+   "end_s": 31.19,
+   "ok": true,
+   "note": "Read Markor skill and observe screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 32.63,
+   "end_s": 34.76,
+   "ok": true,
+   "note": "Open Markor file browser and locate my_expenses.txt"
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 36.06,
+   "end_s": 36.27,
+   "ok": true,
+   "note": "Inspect Markor file list for my_expenses.txt"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.61,
+   "end_s": 38.22,
+   "ok": true,
+   "note": "Read contents of my_expenses.txt"
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 39.32,
+   "end_s": 39.42,
+   "ok": true,
+   "note": "Read contents of my_expenses.txt"
+  },
+  {
+   "step": 7,
+   "tool": "pull_file",
+   "start_s": 41.13,
+   "end_s": 41.14,
+   "ok": true,
+   "note": "Read full text of my_expenses.txt via pull_file"
+  },
+  {
+   "step": 8,
+   "tool": "launch",
+   "start_s": 47.31,
+   "end_s": 51.27,
+   "ok": true,
+   "note": "Open file:///sdcard/Documents/my_expenses.txt in Chrome to read full text"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 52.63,
+   "end_s": 53.64,
+   "ok": true,
+   "note": "Type file URL into Chrome address bar"
+  },
+  {
+   "step": 10,
+   "tool": "type",
+   "start_s": 54.78,
+   "end_s": 61.82,
+   "ok": true,
+   "note": "Navigate to the file URL in Chrome"
+  },
+  {
+   "step": 11,
+   "tool": "key",
+   "start_s": 63.17,
+   "end_s": 64.23,
+   "ok": true,
+   "note": "Load file URL and read content"
+  },
+  {
+   "step": 12,
+   "tool": "launch",
+   "start_s": 70.24,
+   "end_s": 71.55,
+   "ok": true,
+   "note": "Return to Markor editor and scroll to read remaining lines"
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 72.62,
+   "end_s": 72.94,
+   "ok": true,
+   "note": "Open my_expenses.txt editor"
+  },
+  {
+   "step": 14,
+   "tool": "get_ui_state",
+   "start_s": 73.96,
+   "end_s": 74.12,
+   "ok": true,
+   "note": "Scroll editor down to read remaining lines"
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 76.41,
+   "end_s": 77.02,
+   "ok": true,
+   "note": "Switch Markor to view mode to read lines as separate nodes"
+  },
+  {
+   "step": 16,
+   "tool": "calculate",
+   "start_s": 81.25,
+   "end_s": 81.39,
+   "ok": true,
+   "note": "Identify reimbursable rows and open the Pro Expense app"
+  },
+  {
+   "step": 17,
+   "tool": "key",
+   "start_s": 81.25,
+   "end_s": 82.72,
+   "ok": true,
+   "note": "Go home and find the Pro Expense app"
+  },
+  {
+   "step": 18,
+   "tool": "swipe",
+   "start_s": 84.24,
+   "end_s": 87.85,
+   "ok": true,
+   "note": "Open app drawer and locate Pro Expense app"
+  },
+  {
+   "step": 19,
+   "tool": "swipe",
+   "start_s": 89.61,
+   "end_s": 91.36,
+   "ok": true,
+   "note": "Scroll app drawer to find Pro Expense"
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 92.22,
+   "end_s": 93.27,
+   "ok": true,
+   "note": "Open Pro Expense app and inspect its UI"
+  },
+  {
+   "step": 21,
+   "tool": "get_ui_state",
+   "start_s": 94.22,
+   "end_s": 95.53,
+   "ok": true,
+   "note": "Inspect Pro Expense home screen"
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 96.92,
+   "end_s": 98.15,
+   "ok": true,
+   "note": "Tap add button to open new expense form"
+  },
+  {
+   "step": 23,
+   "tool": "type",
+   "start_s": 102.37,
+   "end_s": 104.61,
+   "ok": true,
+   "note": "Fill name 'Cleaning Services'"
+  },
+  {
+   "step": 24,
+   "tool": "type",
+   "start_s": 105.88,
+   "end_s": 106.89,
+   "ok": true,
+   "note": "Fill amount 31.8"
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 108.13,
+   "end_s": 108.52,
+   "ok": true,
+   "note": "Select Housing category"
+  },
+  {
+   "step": 26,
+   "tool": "type",
+   "start_s": 110.25,
+   "end_s": 113.99,
+   "ok": true,
+   "note": "Fill note for Cleaning Services entry"
+  },
+  {
+   "step": 27,
+   "tool": "tap_element",
+   "start_s": 115.54,
+   "end_s": 117.15,
+   "ok": true,
+   "note": "Save Cleaning Services entry and verify it appears"
+  },
+  {
+   "step": 28,
+   "tool": "get_ui_state",
+   "start_s": 119.32,
+   "end_s": 119.34,
+   "ok": true,
+   "note": "Add second entry: tap add FAB"
+  },
+  {
+   "step": 29,
+   "tool": "tap_element",
+   "start_s": 120.94,
+   "end_s": 121.84,
+   "ok": true,
+   "note": "Open new expense form for Dental Care"
+  },
+  {
+   "step": 30,
+   "tool": "type",
+   "start_s": 124.11,
+   "end_s": 125.93,
+   "ok": true,
+   "note": "Fill name Dental Care"
+  },
+  {
+   "step": 31,
+   "tool": "type",
+   "start_s": 127.72,
+   "end_s": 128.69,
+   "ok": true,
+   "note": "Fill amount 490.07"
+  },
+  {
+   "step": 32,
+   "tool": "swipe",
+   "start_s": 130.84,
+   "end_s": 132.7,
+   "ok": true,
+   "note": "Scroll category chips to find Health Care"
+  },
+  {
+   "step": 33,
+   "tool": "tap_element",
+   "start_s": 133.96,
+   "end_s": 134.3,
+   "ok": true,
+   "note": "Select Health Care category"
+  },
+  {
+   "step": 34,
+   "tool": "type",
+   "start_s": 135.43,
+   "end_s": 138.72,
+   "ok": true,
+   "note": "Fill note for Dental Care then save"
+  },
+  {
+   "step": 35,
+   "tool": "tap_element",
+   "start_s": 139.96,
+   "end_s": 141.03,
+   "ok": true,
+   "note": "Save Dental Care entry and verify recent list"
+  },
+  {
+   "step": 36,
+   "tool": "scroll_to",
+   "start_s": 142.29,
+   "end_s": 142.34,
+   "ok": true,
+   "note": "Verify Dental Care entry in recent list"
+  },
+  {
+   "step": 37,
+   "tool": "tap_element",
+   "start_s": 144.15,
+   "end_s": 145.05,
+   "ok": true,
+   "note": "Open Dental Care entry to confirm its category"
+  },
+  {
+   "step": 38,
+   "tool": "get_ui_state",
+   "start_s": 146.1,
+   "end_s": 146.11,
+   "ok": true,
+   "note": "Read Dental Care entry details (category)"
+  },
+  {
+   "step": 39,
+   "tool": "tap_element",
+   "start_s": 147.42,
+   "end_s": 148.41,
+   "ok": true,
+   "note": "Open edit form to confirm selected category"
+  },
+  {
+   "step": 40,
+   "tool": "key",
+   "start_s": 149.69,
+   "end_s": 150.32,
+   "ok": true,
+   "note": "Back out of the edit form without changes"
+  },
+  {
+   "step": 41,
+   "tool": "done",
+   "start_s": 154.01,
+   "end_s": 154.01,
+   "ok": true,
+   "note": "Task complete; both reimbursable transactions logged and verified"
+  }
+ ]
+}

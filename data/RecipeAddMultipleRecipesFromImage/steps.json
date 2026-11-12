@@ -1,0 +1,343 @@
+{
+ "task": "RecipeAddMultipleRecipesFromImage",
+ "video_duration_s": 265.5,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.9,
+   "end_s": 30.91,
+   "ok": true,
+   "note": "Read broccoli skill"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.9,
+   "end_s": 30.91,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 32.08,
+   "end_s": 34.63,
+   "ok": true,
+   "note": "View recipes.jpg in Simple Gallery Pro"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.45,
+   "end_s": 36.33,
+   "ok": true,
+   "note": "Open DCIM folder and tap recipes.jpg"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.29,
+   "end_s": 37.95,
+   "ok": true,
+   "note": "Open the photo fullscreen to read it"
+  },
+  {
+   "step": 6,
+   "tool": "screenshot",
+   "start_s": 38.8,
+   "end_s": 40.88,
+   "ok": true,
+   "note": "Read recipes.jpg text from the screenshot"
+  },
+  {
+   "step": 7,
+   "tool": "launch",
+   "start_s": 43.24,
+   "end_s": 47.13,
+   "ok": true,
+   "note": "Open Broccoli app and find add recipe button"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 49.03,
+   "end_s": 50.44,
+   "ok": true,
+   "note": "Fill the new recipe form for Classic Margherita Pizza"
+  },
+  {
+   "step": 9,
+   "tool": "chain",
+   "start_s": 55.19,
+   "end_s": 59.36,
+   "ok": true,
+   "note": "Fill first recipe form fields"
+  },
+  {
+   "step": 10,
+   "tool": "type",
+   "start_s": 61.63,
+   "end_s": 65.65,
+   "ok": true,
+   "note": "Fill description, servings, time, ingredients, directions for recipe 1"
+  },
+  {
+   "step": 11,
+   "tool": "swipe",
+   "start_s": 67.52,
+   "end_s": 69.22,
+   "ok": true,
+   "note": "Scroll to servings field"
+  },
+  {
+   "step": 12,
+   "tool": "type",
+   "start_s": 70.4,
+   "end_s": 71.84,
+   "ok": true,
+   "note": "Type servings 6 servings"
+  },
+  {
+   "step": 13,
+   "tool": "type",
+   "start_s": 73.11,
+   "end_s": 74.4,
+   "ok": true,
+   "note": "Type prep time 1 hrs"
+  },
+  {
+   "step": 14,
+   "tool": "type",
+   "start_s": 76.13,
+   "end_s": 77.46,
+   "ok": true,
+   "note": "Type ingredients 'as needed'"
+  },
+  {
+   "step": 15,
+   "tool": "swipe",
+   "start_s": 78.67,
+   "end_s": 80.87,
+   "ok": true,
+   "note": "Scroll to directions field and fill it"
+  },
+  {
+   "step": 16,
+   "tool": "type",
+   "start_s": 82.25,
+   "end_s": 101.03,
+   "ok": true,
+   "note": "Type directions for pizza and save"
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 102.64,
+   "end_s": 105.03,
+   "ok": true,
+   "note": "Save recipe 1 and verify it in the list"
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 106.85,
+   "end_s": 108.02,
+   "ok": true,
+   "note": "Return to list and open New Recipe for BBQ Chicken Quesadillas"
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 110.6,
+   "end_s": 111.84,
+   "ok": true,
+   "note": "Fill BBQ Chicken Quesadillas form"
+  },
+  {
+   "step": 20,
+   "tool": "type",
+   "start_s": 114.12,
+   "end_s": 116.95,
+   "ok": true,
+   "note": "Type title for recipe 2"
+  },
+  {
+   "step": 21,
+   "tool": "type",
+   "start_s": 118.7,
+   "end_s": 122.74,
+   "ok": true,
+   "note": "Type description for recipe 2"
+  },
+  {
+   "step": 22,
+   "tool": "swipe",
+   "start_s": 124.58,
+   "end_s": 126.35,
+   "ok": true,
+   "note": "Scroll to servings and type 6 servings"
+  },
+  {
+   "step": 23,
+   "tool": "type",
+   "start_s": 128.09,
+   "end_s": 129.53,
+   "ok": true,
+   "note": "Type servings for recipe 2"
+  },
+  {
+   "step": 24,
+   "tool": "type",
+   "start_s": 131.08,
+   "end_s": 132.31,
+   "ok": true,
+   "note": "Type prep time for recipe 2"
+  },
+  {
+   "step": 25,
+   "tool": "type",
+   "start_s": 133.94,
+   "end_s": 135.49,
+   "ok": true,
+   "note": "Type ingredients for recipe 2"
+  },
+  {
+   "step": 26,
+   "tool": "swipe",
+   "start_s": 137.49,
+   "end_s": 139.35,
+   "ok": true,
+   "note": "Scroll to directions for recipe 2 and type them"
+  },
+  {
+   "step": 27,
+   "tool": "type",
+   "start_s": 141.13,
+   "end_s": 157.76,
+   "ok": true,
+   "note": "Type directions for recipe 2 and save"
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 159.9,
+   "end_s": 162.44,
+   "ok": true,
+   "note": "Save recipe 2 and verify details screen"
+  },
+  {
+   "step": 29,
+   "tool": "tap_element",
+   "start_s": 164.79,
+   "end_s": 165.83,
+   "ok": true,
+   "note": "Back to list, open New Recipe for Grilled Cheese"
+  },
+  {
+   "step": 30,
+   "tool": "tap_element",
+   "start_s": 168.08,
+   "end_s": 169.43,
+   "ok": true,
+   "note": "Fill Grilled Cheese form: title"
+  },
+  {
+   "step": 31,
+   "tool": "type",
+   "start_s": 171.43,
+   "end_s": 175.29,
+   "ok": true,
+   "note": "Type title for recipe 3"
+  },
+  {
+   "step": 32,
+   "tool": "type",
+   "start_s": 177.72,
+   "end_s": 181.61,
+   "ok": true,
+   "note": "Type description for recipe 3"
+  },
+  {
+   "step": 33,
+   "tool": "swipe",
+   "start_s": 184.19,
+   "end_s": 185.75,
+   "ok": true,
+   "note": "Scroll to servings for recipe 3"
+  },
+  {
+   "step": 34,
+   "tool": "type",
+   "start_s": 187.91,
+   "end_s": 188.99,
+   "ok": true,
+   "note": "Type servings 8 servings"
+  },
+  {
+   "step": 35,
+   "tool": "type",
+   "start_s": 191.51,
+   "end_s": 192.61,
+   "ok": true,
+   "note": "Type prep time for recipe 3"
+  },
+  {
+   "step": 36,
+   "tool": "type",
+   "start_s": 194.71,
+   "end_s": 196.1,
+   "ok": true,
+   "note": "Type ingredients for recipe 3"
+  },
+  {
+   "step": 37,
+   "tool": "swipe",
+   "start_s": 198.86,
+   "end_s": 200.75,
+   "ok": true,
+   "note": "Scroll to directions for recipe 3"
+  },
+  {
+   "step": 38,
+   "tool": "type",
+   "start_s": 203.14,
+   "end_s": 219.45,
+   "ok": true,
+   "note": "Type directions for recipe 3 and save"
+  },
+  {
+   "step": 39,
+   "tool": "tap_element",
+   "start_s": 222.12,
+   "end_s": 223.54,
+   "ok": true,
+   "note": "Save recipe 3 and verify details"
+  },
+  {
+   "step": 40,
+   "tool": "tap_element",
+   "start_s": 226.64,
+   "end_s": 227.44,
+   "ok": true,
+   "note": "Return to recipe list and map it"
+  },
+  {
+   "step": 41,
+   "tool": "map_app",
+   "start_s": 229.93,
+   "end_s": 243.85,
+   "ok": true,
+   "note": "Map full recipe list to confirm all recipes present"
+  },
+  {
+   "step": 42,
+   "tool": "done",
+   "start_s": 248.32,
+   "end_s": 248.33,
+   "ok": true,
+   "note": "Task complete, all three recipes added and verified"
+  }
+ ]
+}

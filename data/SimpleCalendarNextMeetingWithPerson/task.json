@@ -1,0 +1,263 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SimpleCalendarNextMeetingWithPerson",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 81.2,
+  "mobilerun_published_time_s": 170.3,
+  "speed_ratio": 0.477,
+  "lusor_cost_usd": 0.0379,
+  "mobilerun_published_actions": 7,
+  "mobilerun_est_cost_usd": 0.536,
+  "lusor_tool_calls": 27,
+  "disclosure": null,
+  "skills_read": [
+   "simple-calendar"
+  ],
+  "skill_assisted": [],
+  "goal": "When is my next meeting with Muhammad in Simple Calendar Pro? Express your answer in the format <month name> <day> <year> <hour in 24-hour format>:<minutes>.",
+  "final_answer": "October 15 2023 12:00",
+  "final_summary": "Your next meeting with Muhammad is Drinks with Muhammad on October 15 2023 at 12:00. It's the only event on the calendar involving Muhammad (it runs 12:00 to 12:30 today and doesn't repeat).",
+  "video_duration_s": 164.9,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 72.01,
+    "end_s": 72.03,
+    "ok": true,
+    "note": "Read simple-calendar skill and observe screen"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 72.01,
+    "end_s": 72.03,
+    "ok": true,
+    "note": "Read simple-calendar skill and observe screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 73.08,
+    "end_s": 75.57,
+    "ok": true,
+    "note": "Launch Simple Calendar Pro and search for events with Muhammad"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 76.39,
+    "end_s": 77.16,
+    "ok": true,
+    "note": "Type Muhammad in calendar search"
+   },
+   {
+    "step": 5,
+    "tool": "type",
+    "start_s": 78.39,
+    "end_s": 80.52,
+    "ok": true,
+    "note": "Read search results for Muhammad events"
+   },
+   {
+    "step": 6,
+    "tool": "map_app",
+    "start_s": 81.46,
+    "end_s": 81.51,
+    "ok": true,
+    "note": "Map full search results list for Muhammad"
+   },
+   {
+    "step": 7,
+    "tool": "key",
+    "start_s": 82.13,
+    "end_s": 82.58,
+    "ok": true,
+    "note": "Close keyboard then map search results"
+   },
+   {
+    "step": 8,
+    "tool": "map_app",
+    "start_s": 84.01,
+    "end_s": 85.06,
+    "ok": true,
+    "note": "Map search results list to confirm complete set"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 88.4,
+    "end_s": 89.09,
+    "ok": true,
+    "note": "Open Drinks with Muhammad event to check date/repeat details"
+   },
+   {
+    "step": 10,
+    "tool": "get_ui_state",
+    "start_s": 89.92,
+    "end_s": 89.94,
+    "ok": true,
+    "note": "Inspect current screen after tap"
+   },
+   {
+    "step": 11,
+    "tool": "key",
+    "start_s": 91.75,
+    "end_s": 92.39,
+    "ok": true,
+    "note": "Back out of edit event to search results"
+   },
+   {
+    "step": 12,
+    "tool": "type",
+    "start_s": 100.31,
+    "end_s": 102.02,
+    "ok": true,
+    "note": "Search broad term 'e' to test whether search spans all months"
+   },
+   {
+    "step": 13,
+    "tool": "key",
+    "start_s": 102.9,
+    "end_s": 103.28,
+    "ok": true,
+    "note": "Close keyboard and map broad search results to see month coverage"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 104.88,
+    "end_s": 105.73,
+    "ok": true,
+    "note": "Focus search field and inspect results list for 'e'"
+   },
+   {
+    "step": 15,
+    "tool": "get_ui_state",
+    "start_s": 106.67,
+    "end_s": 106.73,
+    "ok": true,
+    "note": "Observe search results for 'e' after focus"
+   },
+   {
+    "step": 16,
+    "tool": "type",
+    "start_s": 109.11,
+    "end_s": 109.95,
+    "ok": true,
+    "note": "Trigger filter by typing and observe sections"
+   },
+   {
+    "step": 17,
+    "tool": "map_app",
+    "start_s": 112.12,
+    "end_s": 112.16,
+    "ok": true,
+    "note": "Map 'ee' search results to see if it spans months beyond October"
+   },
+   {
+    "step": 18,
+    "tool": "key",
+    "start_s": 113.04,
+    "end_s": 113.53,
+    "ok": true,
+    "note": "Close keyboard, map 'ee' results for month span"
+   },
+   {
+    "step": 19,
+    "tool": "scroll_to",
+    "start_s": 114.42,
+    "end_s": 120.39,
+    "ok": true,
+    "note": "Page down the 'ee' results looking for months after October"
+   },
+   {
+    "step": 20,
+    "tool": "type",
+    "start_s": 126.02,
+    "end_s": 127.14,
+    "ok": true,
+    "note": "Search 't' to inventory all events and see if any fall outside October"
+   },
+   {
+    "step": 21,
+    "tool": "get_ui_state",
+    "start_s": 128.16,
+    "end_s": 128.19,
+    "ok": true,
+    "note": "Read 't' search results to inventory events"
+   },
+   {
+    "step": 22,
+    "tool": "tap_element",
+    "start_s": 131.59,
+    "end_s": 132.66,
+    "ok": true,
+    "note": "Check Change view options for a list view of all events"
+   },
+   {
+    "step": 23,
+    "tool": "key",
+    "start_s": 137.59,
+    "end_s": 138.01,
+    "ok": true,
+    "note": "Close dialog without changing view and finalize answer"
+   },
+   {
+    "step": 24,
+    "tool": "chain",
+    "start_s": 139.9,
+    "end_s": 141.36,
+    "ok": true,
+    "note": "Re-verify Muhammad search shows the single Oct 15 12:00 event"
+   },
+   {
+    "step": 25,
+    "tool": "tap_element",
+    "start_s": 142.57,
+    "end_s": 143.18,
+    "ok": true,
+    "note": "Focus search field and clear/type Muhammad"
+   },
+   {
+    "step": 26,
+    "tool": "type",
+    "start_s": 144.27,
+    "end_s": 146.3,
+    "ok": true,
+    "note": "Type Muhammad and read results"
+   },
+   {
+    "step": 27,
+    "tool": "done",
+    "start_s": 148.83,
+    "end_s": 148.84,
+    "ok": true,
+    "note": "Task complete; answer reported"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextMeetingWithPerson/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextMeetingWithPerson/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextMeetingWithPerson/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextMeetingWithPerson/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextMeetingWithPerson/task.json"
+  }
+ }
+}

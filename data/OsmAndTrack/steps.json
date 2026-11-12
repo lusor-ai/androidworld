@@ -1,0 +1,479 @@
+{
+ "task": "OsmAndTrack",
+ "video_duration_s": 193.9,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.83,
+   "end_s": 30.84,
+   "ok": true,
+   "note": "Read OsmAnd skill guidance"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.83,
+   "end_s": 30.84,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 32.11,
+   "end_s": 35.68,
+   "ok": true,
+   "note": "OsmAnd launched; open Menu"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 36.66,
+   "end_s": 39.34,
+   "ok": true,
+   "note": "Open OsmAnd menu drawer"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 40.37,
+   "end_s": 41.51,
+   "ok": true,
+   "note": "Open Plan a route screen"
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 42.38,
+   "end_s": 42.4,
+   "ok": true,
+   "note": "Read plan-route screen"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 43.43,
+   "end_s": 44.4,
+   "ok": true,
+   "note": "Tap Create new route; then find Add button"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 46.07,
+   "end_s": 47.01,
+   "ok": true,
+   "note": "Search for Liechtenstein region to centre map"
+  },
+  {
+   "step": 9,
+   "tool": "type",
+   "start_s": 47.91,
+   "end_s": 52.49,
+   "ok": true,
+   "note": "Type Bendern search and read results"
+  },
+  {
+   "step": 10,
+   "tool": "get_ui_state",
+   "start_s": 54.17,
+   "end_s": 54.18,
+   "ok": true,
+   "note": "Read Bendern search results"
+  },
+  {
+   "step": 11,
+   "tool": "tap",
+   "start_s": 55.96,
+   "end_s": 57.79,
+   "ok": true,
+   "note": "Open Liechtenstein country result to centre map"
+  },
+  {
+   "step": 12,
+   "tool": "key",
+   "start_s": 59.1,
+   "end_s": 59.89,
+   "ok": true,
+   "note": "Return to planner; search Bendern"
+  },
+  {
+   "step": 13,
+   "tool": "type",
+   "start_s": 62.38,
+   "end_s": 65.57,
+   "ok": true,
+   "note": "Re-search 'Bendern' after centring on Liechtenstein"
+  },
+  {
+   "step": 14,
+   "tool": "tap",
+   "start_s": 66.92,
+   "end_s": 67.6,
+   "ok": true,
+   "note": "Open Bendern village result"
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 69.22,
+   "end_s": 70.87,
+   "ok": true,
+   "note": "Tap SHOW BENDERN ON THE MAP"
+  },
+  {
+   "step": 16,
+   "tool": "key",
+   "start_s": 72.07,
+   "end_s": 72.82,
+   "ok": true,
+   "note": "Back to planner; press Add for Bendern"
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 73.97,
+   "end_s": 74.38,
+   "ok": true,
+   "note": "Navigate up to return to planner, then press Add"
+  },
+  {
+   "step": 18,
+   "tool": "key",
+   "start_s": 75.29,
+   "end_s": 75.77,
+   "ok": true,
+   "note": "Return to planner screen"
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 76.68,
+   "end_s": 77.29,
+   "ok": true,
+   "note": "Tap Add to add Bendern as first point; verify points count"
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 78.44,
+   "end_s": 79.39,
+   "ok": true,
+   "note": "Search Ruggell"
+  },
+  {
+   "step": 21,
+   "tool": "type",
+   "start_s": 80.44,
+   "end_s": 82.48,
+   "ok": true,
+   "note": "Read Ruggell search results"
+  },
+  {
+   "step": 22,
+   "tool": "get_ui_state",
+   "start_s": 83.36,
+   "end_s": 83.39,
+   "ok": true,
+   "note": "Read Ruggell search results"
+  },
+  {
+   "step": 23,
+   "tool": "tap",
+   "start_s": 84.71,
+   "end_s": 85.28,
+   "ok": true,
+   "note": "Select Ruggell village result"
+  },
+  {
+   "step": 24,
+   "tool": "tap_element",
+   "start_s": 86.3,
+   "end_s": 88.02,
+   "ok": true,
+   "note": "Show Ruggell on map, then Back twice and Add"
+  },
+  {
+   "step": 25,
+   "tool": "key",
+   "start_s": 89.6,
+   "end_s": 90.31,
+   "ok": true,
+   "note": "Back from card to search screen"
+  },
+  {
+   "step": 26,
+   "tool": "key",
+   "start_s": 91.41,
+   "end_s": 91.8,
+   "ok": true,
+   "note": "Return to planner and press Add for Ruggell"
+  },
+  {
+   "step": 27,
+   "tool": "key",
+   "start_s": 94.95,
+   "end_s": 95.4,
+   "ok": true,
+   "note": "Inspect planner centre after Ruggell selection"
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 97.76,
+   "end_s": 98.2,
+   "ok": true,
+   "note": "Press Add to add Ruggell, verify points: 2"
+  },
+  {
+   "step": 29,
+   "tool": "tap_element",
+   "start_s": 100.14,
+   "end_s": 101.21,
+   "ok": true,
+   "note": "Search Nendeln"
+  },
+  {
+   "step": 30,
+   "tool": "type",
+   "start_s": 102.42,
+   "end_s": 104.48,
+   "ok": true,
+   "note": "Read Nendeln search results"
+  },
+  {
+   "step": 31,
+   "tool": "get_ui_state",
+   "start_s": 105.48,
+   "end_s": 105.79,
+   "ok": true,
+   "note": "Read Nendeln results and tap first village row"
+  },
+  {
+   "step": 32,
+   "tool": "tap",
+   "start_s": 106.95,
+   "end_s": 107.88,
+   "ok": true,
+   "note": "Select Nendeln village result"
+  },
+  {
+   "step": 33,
+   "tool": "tap_element",
+   "start_s": 109.03,
+   "end_s": 110.97,
+   "ok": true,
+   "note": "Show Nendeln on map"
+  },
+  {
+   "step": 34,
+   "tool": "key",
+   "start_s": 112.54,
+   "end_s": 113.33,
+   "ok": true,
+   "note": "Back from Nendeln card to search screen"
+  },
+  {
+   "step": 35,
+   "tool": "key",
+   "start_s": 114.39,
+   "end_s": 115.01,
+   "ok": true,
+   "note": "Back to history screen, then planner"
+  },
+  {
+   "step": 36,
+   "tool": "key",
+   "start_s": 116.63,
+   "end_s": 117.14,
+   "ok": true,
+   "note": "Return to planner and press Add for Nendeln"
+  },
+  {
+   "step": 37,
+   "tool": "tap_element",
+   "start_s": 118.42,
+   "end_s": 119.2,
+   "ok": true,
+   "note": "Press Add for Nendeln; verify points: 3"
+  },
+  {
+   "step": 38,
+   "tool": "tap_element",
+   "start_s": 121.24,
+   "end_s": 122.57,
+   "ok": true,
+   "note": "Search Rotenboden"
+  },
+  {
+   "step": 39,
+   "tool": "type",
+   "start_s": 123.97,
+   "end_s": 125.88,
+   "ok": true,
+   "note": "Read Rotenboden search results"
+  },
+  {
+   "step": 40,
+   "tool": "get_ui_state",
+   "start_s": 126.88,
+   "end_s": 126.91,
+   "ok": true,
+   "note": "Read Rotenboden results"
+  },
+  {
+   "step": 41,
+   "tool": "tap",
+   "start_s": 128.24,
+   "end_s": 128.99,
+   "ok": true,
+   "note": "Select Rotenboden village result"
+  },
+  {
+   "step": 42,
+   "tool": "tap_element",
+   "start_s": 130.12,
+   "end_s": 131.9,
+   "ok": true,
+   "note": "Show Rotenboden on map"
+  },
+  {
+   "step": 43,
+   "tool": "key",
+   "start_s": 133.03,
+   "end_s": 133.74,
+   "ok": true,
+   "note": "Back from Rotenboden card to search"
+  },
+  {
+   "step": 44,
+   "tool": "key",
+   "start_s": 135.5,
+   "end_s": 135.84,
+   "ok": true,
+   "note": "Back to history screen, then planner"
+  },
+  {
+   "step": 45,
+   "tool": "key",
+   "start_s": 137.02,
+   "end_s": 137.53,
+   "ok": true,
+   "note": "Back to planner; press Add for Rotenboden"
+  },
+  {
+   "step": 46,
+   "tool": "tap_element",
+   "start_s": 138.9,
+   "end_s": 139.3,
+   "ok": true,
+   "note": "Press Add for Rotenboden; verify points: 4"
+  },
+  {
+   "step": 47,
+   "tool": "tap_element",
+   "start_s": 140.94,
+   "end_s": 141.77,
+   "ok": true,
+   "note": "Open Options menu to save the track"
+  },
+  {
+   "step": 48,
+   "tool": "tap_element",
+   "start_s": 143.06,
+   "end_s": 144.49,
+   "ok": true,
+   "note": "Tap 'Save as new track' and inspect the save dialog"
+  },
+  {
+   "step": 49,
+   "tool": "tap_element",
+   "start_s": 146.84,
+   "end_s": 148.18,
+   "ok": true,
+   "note": "Tap Save to create the track"
+  },
+  {
+   "step": 50,
+   "tool": "tap_element",
+   "start_s": 149.71,
+   "end_s": 151.07,
+   "ok": true,
+   "note": "Open the saved track to verify point order"
+  },
+  {
+   "step": 51,
+   "tool": "tap_element",
+   "start_s": 153.09,
+   "end_s": 153.69,
+   "ok": true,
+   "note": "Open the track's Points tab to verify order"
+  },
+  {
+   "step": 52,
+   "tool": "tap_element",
+   "start_s": 156.64,
+   "end_s": 157.2,
+   "ok": true,
+   "note": "Inspect Track tab for point order"
+  },
+  {
+   "step": 53,
+   "tool": "tap_element",
+   "start_s": 159.66,
+   "end_s": 159.99,
+   "ok": true,
+   "note": "Back out of track detail to check planner point order"
+  },
+  {
+   "step": 54,
+   "tool": "tap_element",
+   "start_s": 161.79,
+   "end_s": 162.59,
+   "ok": true,
+   "note": "Open menu, then Plan a route to reopen last route"
+  },
+  {
+   "step": 55,
+   "tool": "tap_element",
+   "start_s": 164.34,
+   "end_s": 165.47,
+   "ok": true,
+   "note": "Open Plan a route dialog to resume last route"
+  },
+  {
+   "step": 56,
+   "tool": "get_ui_state",
+   "start_s": 166.8,
+   "end_s": 166.82,
+   "ok": true,
+   "note": "Read Plan a route dialog for Last edited entry"
+  },
+  {
+   "step": 57,
+   "tool": "tap",
+   "start_s": 168.67,
+   "end_s": 169.98,
+   "ok": true,
+   "note": "Open last-edited track in planner and expand point list"
+  },
+  {
+   "step": 58,
+   "tool": "tap_element",
+   "start_s": 171.58,
+   "end_s": 172.2,
+   "ok": true,
+   "note": "Expand points list to read order"
+  },
+  {
+   "step": 59,
+   "tool": "done",
+   "start_s": 180.3,
+   "end_s": 180.3,
+   "ok": true,
+   "note": "Task complete; report saved track"
+  }
+ ]
+}

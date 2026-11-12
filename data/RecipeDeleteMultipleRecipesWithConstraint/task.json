@@ -1,0 +1,239 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "RecipeDeleteMultipleRecipesWithConstraint",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 282.3,
+  "mobilerun_published_time_s": 539.8,
+  "speed_ratio": 0.523,
+  "lusor_cost_usd": 0.0458,
+  "mobilerun_published_actions": 30,
+  "mobilerun_est_cost_usd": 2.298,
+  "lusor_tool_calls": 24,
+  "disclosure": null,
+  "skills_read": [
+   "broccoli"
+  ],
+  "skill_assisted": [],
+  "goal": "Delete the recipes from Broccoli app that use almond butter in the directions.",
+  "final_answer": null,
+  "final_summary": "I deleted all three Raspberry Almond Smoothie recipes, the only ones in the app whose directions use almond butter (each says to blend in a scoop of almond butter). I checked all 32 recipes' directions one by one; no other recipe mentions almond butter. The list now has 29 recipes.",
+  "video_duration_s": 324.0,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 30.53,
+    "end_s": 30.53,
+    "ok": true,
+    "note": "Read Broccoli skill"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 31.36,
+    "end_s": 31.38,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 32.06,
+    "end_s": 36.42,
+    "ok": true,
+    "note": "Launch Broccoli app"
+   },
+   {
+    "step": 4,
+    "tool": "map_app",
+    "start_s": 37.66,
+    "end_s": 64.63,
+    "ok": true,
+    "note": "Map full recipe list to count recipes"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 65.62,
+    "end_s": 66.1,
+    "ok": true,
+    "note": "Tap Search to look for almond butter"
+   },
+   {
+    "step": 6,
+    "tool": "type",
+    "start_s": 66.9,
+    "end_s": 69.76,
+    "ok": true,
+    "note": "Type almond butter in search and see results"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 71.48,
+    "end_s": 72.0,
+    "ok": true,
+    "note": "Clear search query to restore full list"
+   },
+   {
+    "step": 8,
+    "tool": "map_app",
+    "start_s": 73.45,
+    "end_s": 73.47,
+    "ok": true,
+    "note": "Map all recipes with their contents to find almond butter in directions"
+   },
+   {
+    "step": 9,
+    "tool": "key",
+    "start_s": 74.23,
+    "end_s": 74.6,
+    "ok": true,
+    "note": "Close keyboard then map recipes"
+   },
+   {
+    "step": 10,
+    "tool": "map_app",
+    "start_s": 75.84,
+    "end_s": 246.42,
+    "ok": true,
+    "note": null
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 248.78,
+    "end_s": 249.0,
+    "ok": true,
+    "note": "Exit search mode, then open the first Raspberry Almond Smoothie recipe"
+   },
+   {
+    "step": 12,
+    "tool": "scroll_to",
+    "start_s": 250.23,
+    "end_s": 254.74,
+    "ok": true,
+    "note": null
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 255.65,
+    "end_s": 255.65,
+    "ok": true,
+    "note": "Open first Raspberry Almond Smoothie recipe to find delete option"
+   },
+   {
+    "step": 14,
+    "tool": "tap",
+    "start_s": 256.6,
+    "end_s": 257.77,
+    "ok": true,
+    "note": "Open first Raspberry Almond Smoothie recipe to find delete option"
+   },
+   {
+    "step": 15,
+    "tool": "tap_element",
+    "start_s": 258.53,
+    "end_s": 259.28,
+    "ok": true,
+    "note": "Open More options menu to find Delete"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 260.02,
+    "end_s": 260.89,
+    "ok": true,
+    "note": "Confirm delete dialog for this smoothie"
+   },
+   {
+    "step": 17,
+    "tool": "tap_element",
+    "start_s": 261.61,
+    "end_s": 262.71,
+    "ok": true,
+    "note": "Delete first smoothie, then delete the other two"
+   },
+   {
+    "step": 18,
+    "tool": "tap_element",
+    "start_s": 263.72,
+    "end_s": 265.27,
+    "ok": true,
+    "note": "Open second Raspberry Almond Smoothie (e109) and delete"
+   },
+   {
+    "step": 19,
+    "tool": "chain",
+    "start_s": 266.26,
+    "end_s": 268.99,
+    "ok": true,
+    "note": "Delete second smoothie (1 serving), then the third remaining smoothie"
+   },
+   {
+    "step": 20,
+    "tool": "tap_element",
+    "start_s": 269.87,
+    "end_s": 271.19,
+    "ok": true,
+    "note": "Open last Raspberry Almond Smoothie (2 servings) and delete"
+   },
+   {
+    "step": 21,
+    "tool": "chain",
+    "start_s": 272.21,
+    "end_s": 274.5,
+    "ok": true,
+    "note": "Delete last smoothie, then verify list count"
+   },
+   {
+    "step": 22,
+    "tool": "map_app",
+    "start_s": 275.38,
+    "end_s": 303.47,
+    "ok": true,
+    "note": "Verify list count and absence of Raspberry Almond Smoothie"
+   },
+   {
+    "step": 23,
+    "tool": "get_ui_state",
+    "start_s": 305.46,
+    "end_s": 305.48,
+    "ok": true,
+    "note": "Report deletions"
+   },
+   {
+    "step": 24,
+    "tool": "done",
+    "start_s": 308.3,
+    "end_s": 308.31,
+    "ok": true,
+    "note": "Done"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithConstraint/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithConstraint/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithConstraint/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithConstraint/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithConstraint/task.json"
+  }
+ }
+}

@@ -1,0 +1,175 @@
+{
+ "task": "RecipeDeleteMultipleRecipesWithNoise",
+ "video_duration_s": 149.3,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.01,
+   "end_s": 30.01,
+   "ok": true,
+   "note": "Read Broccoli skill guidance"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 31.19,
+   "end_s": 31.21,
+   "ok": true,
+   "note": "Observe current screen, launch Broccoli if needed"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 32.3,
+   "end_s": 36.24,
+   "ok": true,
+   "note": "Launch Broccoli app and view recipe list"
+  },
+  {
+   "step": 4,
+   "tool": "map_app",
+   "start_s": 37.34,
+   "end_s": 64.62,
+   "ok": true,
+   "note": "Map the recipe list to find the three target recipes"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 66.12,
+   "end_s": 66.55,
+   "ok": true,
+   "note": "Search for Avocado Toast with Egg"
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 67.56,
+   "end_s": 71.08,
+   "ok": true,
+   "note": "Type search query for Avocado Toast with Egg"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 72.36,
+   "end_s": 73.62,
+   "ok": true,
+   "note": "Open Avocado Toast with Egg recipe"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 74.72,
+   "end_s": 75.74,
+   "ok": true,
+   "note": "Open More options menu on Avocado Toast with Egg to find Delete"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 76.54,
+   "end_s": 77.46,
+   "ok": true,
+   "note": "Tap Delete for Avocado Toast with Egg"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 78.29,
+   "end_s": 79.41,
+   "ok": true,
+   "note": "Confirm delete, then search for Classic Margherita Pizza"
+  },
+  {
+   "step": 11,
+   "tool": "type",
+   "start_s": 80.54,
+   "end_s": 84.19,
+   "ok": true,
+   "note": "Search for Classic Margherita Pizza"
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 85.12,
+   "end_s": 86.81,
+   "ok": true,
+   "note": "Open Classic Margherita Pizza and delete it"
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 88.47,
+   "end_s": 89.22,
+   "ok": true,
+   "note": "Tap More options on Classic Margherita Pizza"
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 90.26,
+   "end_s": 91.21,
+   "ok": true,
+   "note": "Tap Delete menu item for Classic Margherita Pizza"
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 92.32,
+   "end_s": 93.52,
+   "ok": true,
+   "note": "Confirm delete, then search for Thai Peanut Noodle Salad"
+  },
+  {
+   "step": 16,
+   "tool": "chain",
+   "start_s": 94.67,
+   "end_s": 102.93,
+   "ok": true,
+   "note": "Search and delete Thai Peanut Noodle Salad"
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 104.21,
+   "end_s": 104.92,
+   "ok": true,
+   "note": "Close search and recount list with map_app levels 1"
+  },
+  {
+   "step": 18,
+   "tool": "map_app",
+   "start_s": 106.04,
+   "end_s": 106.06,
+   "ok": true,
+   "note": "Recount full list with map_app levels 1 to confirm 29 recipes and no targets"
+  },
+  {
+   "step": 19,
+   "tool": "key",
+   "start_s": 107.14,
+   "end_s": 107.45,
+   "ok": true,
+   "note": "Close keyboard, then map_app levels 1 to recount"
+  },
+  {
+   "step": 20,
+   "tool": "map_app",
+   "start_s": 108.95,
+   "end_s": 132.37,
+   "ok": true,
+   "note": "Recount full list to confirm 29 recipes with no targets"
+  },
+  {
+   "step": 21,
+   "tool": "done",
+   "start_s": 134.61,
+   "end_s": 134.62,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

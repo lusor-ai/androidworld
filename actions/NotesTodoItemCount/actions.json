@@ -1,0 +1,110 @@
+{
+ "task": "NotesTodoItemCount",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 33.23,
+   "end_s": 33.24,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 34.6,
+   "end_s": 35.96,
+   "ok": true,
+   "args": {
+    "app": "net.cozic.joplin"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 37.36,
+   "end_s": 38.3,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 39.55,
+   "end_s": 41.15,
+   "ok": true,
+   "args": {
+    "index": 1
+   },
+   "tapped": {
+    "label": "Sidebar",
+    "index": 1,
+    "x": 69,
+    "y": 196
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 42.15,
+   "end_s": 44.1,
+   "ok": true,
+   "args": {
+    "index": 43
+   },
+   "tapped": {
+    "label": null,
+    "index": 43,
+    "x": 327,
+    "y": 580
+   }
+  },
+  {
+   "step": 6,
+   "tool": "map_app",
+   "start_s": 45.68,
+   "end_s": 53.18,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 7,
+   "tool": "scroll_to",
+   "start_s": 57.22,
+   "end_s": 57.31,
+   "ok": true,
+   "args": {
+    "target": "Food Diary"
+   }
+  },
+  {
+   "step": 8,
+   "tool": "done",
+   "start_s": 60.19,
+   "end_s": 60.2,
+   "ok": true,
+   "args": {
+    "summary": "You have 3 to-dos in the Health folder: Travel Itinerary, Financial Plan, and Study Notes. The other 18 items in that folder are regular notes.",
+    "rows": [
+     {
+      "answer": "3",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "Joplin Health notebook listed 21 items; only three rows carried a to-do checkbox (Travel Itinerary, Financial Plan, Study Notes), confirmed by a full map_app walk to the proven end of the list and a second read at the bottom of the list showing Food Diary and others with no checkbox.",
+     "key_signals": [
+      "Joplin sidebar > Notebooks > Health selected, title bar shows 'Health'",
+      "map_app levels 1: 21 items, end_proven true",
+      "Only rows 1-3 show CheckBox 'to-do: ...' in the accessibility tree",
+      "Bottom-screen read: Study Notes has a CheckBox; Nutrition Tips, Medication Schedule, Food Diary etc. show plain titles without checkboxes"
+     ]
+    }
+   }
+  }
+ ]
+}

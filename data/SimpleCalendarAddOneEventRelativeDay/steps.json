@@ -1,0 +1,255 @@
+{
+ "task": "SimpleCalendarAddOneEventRelativeDay",
+ "video_duration_s": 121.4,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 31.1,
+   "end_s": 31.1,
+   "ok": true,
+   "note": "Read simple-calendar skill, then get_ui_state"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 32.26,
+   "end_s": 32.28,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 33.58,
+   "end_s": 36.21,
+   "ok": true,
+   "note": "Calendar app launched; observe screen"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 37.73,
+   "end_s": 38.64,
+   "ok": true,
+   "note": "New event editor opened; observe fields"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 39.64,
+   "end_s": 40.74,
+   "ok": true,
+   "note": "Event editor opened; read fields"
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 41.79,
+   "end_s": 43.99,
+   "ok": true,
+   "note": "Type title and description"
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 44.89,
+   "end_s": 49.1,
+   "ok": true,
+   "note": "Type description, then set start date to Oct 21"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 50.17,
+   "end_s": 50.73,
+   "ok": true,
+   "note": "Date picker opened for start date"
+  },
+  {
+   "step": 9,
+   "tool": "get_ui_state",
+   "start_s": 51.84,
+   "end_s": 51.93,
+   "ok": true,
+   "note": "Read date picker dialog"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 52.88,
+   "end_s": 53.19,
+   "ok": true,
+   "note": "Tap 21 in date picker then OK"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 54.55,
+   "end_s": 55.21,
+   "ok": true,
+   "note": "Start date set to Oct 21; set end date to Oct 21"
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 56.46,
+   "end_s": 57.91,
+   "ok": true,
+   "note": "Time picker opened for start time"
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 58.77,
+   "end_s": 59.92,
+   "ok": true,
+   "note": "Text input mode; type hour 00"
+  },
+  {
+   "step": 14,
+   "tool": "type",
+   "start_s": 60.87,
+   "end_s": 61.96,
+   "ok": true,
+   "note": "Hour set to 00; set minute 00 and read fields"
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 62.96,
+   "end_s": 63.52,
+   "ok": true,
+   "note": "Start time 00:00 set; set end time 00:45"
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 64.46,
+   "end_s": 65.61,
+   "ok": true,
+   "note": "Time picker opened for end time"
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 66.38,
+   "end_s": 67.42,
+   "ok": true,
+   "note": "Text mode; set minute to 45"
+  },
+  {
+   "step": 18,
+   "tool": "tap",
+   "start_s": 68.62,
+   "end_s": 69.84,
+   "ok": true,
+   "note": "Minute field focused; type 45"
+  },
+  {
+   "step": 19,
+   "tool": "type",
+   "start_s": 71.17,
+   "end_s": 72.16,
+   "ok": true,
+   "note": "Minute 45 typed; verify both fields then OK"
+  },
+  {
+   "step": 20,
+   "tool": "get_ui_state",
+   "start_s": 73.87,
+   "end_s": 73.93,
+   "ok": true,
+   "note": "Read time picker state after odd minute entry"
+  },
+  {
+   "step": 21,
+   "tool": "type",
+   "start_s": 75.93,
+   "end_s": 77.02,
+   "ok": true,
+   "note": "Hour fixed to 00; then set minute 45"
+  },
+  {
+   "step": 22,
+   "tool": "get_ui_state",
+   "start_s": 78.8,
+   "end_s": 78.81,
+   "ok": true,
+   "note": "Re-read time picker text fields after typing"
+  },
+  {
+   "step": 23,
+   "tool": "type",
+   "start_s": 81.57,
+   "end_s": 84.06,
+   "ok": true,
+   "note": "Type 45 into minute field, then verify"
+  },
+  {
+   "step": 24,
+   "tool": "tap_element",
+   "start_s": 85.33,
+   "end_s": 86.21,
+   "ok": true,
+   "note": "Read editor to confirm end time 00:45"
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 87.56,
+   "end_s": 88.79,
+   "ok": true,
+   "note": "Event saved; read it back from the calendar"
+  },
+  {
+   "step": 26,
+   "tool": "tap_element",
+   "start_s": 89.78,
+   "end_s": 91.48,
+   "ok": true,
+   "note": "Dismiss disclaimer; view saved event in calendar"
+  },
+  {
+   "step": 27,
+   "tool": "tap",
+   "start_s": 92.81,
+   "end_s": 94.44,
+   "ok": true,
+   "note": "Open Oct 21 day view to read saved event"
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 95.72,
+   "end_s": 96.28,
+   "ok": true,
+   "note": "Read Oct 21 day view events"
+  },
+  {
+   "step": 29,
+   "tool": "key",
+   "start_s": 99.92,
+   "end_s": 100.24,
+   "ok": true,
+   "note": "Return to month view and tap Oct 21 cell (row 4, col 7)"
+  },
+  {
+   "step": 30,
+   "tool": "tap",
+   "start_s": 103.17,
+   "end_s": 103.82,
+   "ok": true,
+   "note": "Check which date the tapped cell opened"
+  },
+  {
+   "step": 31,
+   "tool": "done",
+   "start_s": 106.25,
+   "end_s": 106.26,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "task": "SystemWifiTurnOn",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 27.74,
+   "end_s": 27.75,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 28.98,
+   "end_s": 32.02,
+   "ok": true,
+   "args": {
+    "app": "com.android.settings"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 32.77,
+   "end_s": 34.52,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 540,
+    "y": 886
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.4,
+   "end_s": 37.47,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 540,
+    "y": 701
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 38.29,
+   "end_s": 39.41,
+   "ok": true,
+   "args": {
+    "index": 8,
+    "toggle": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 965,
+    "y": 889
+   }
+  },
+  {
+   "step": 6,
+   "tool": "done",
+   "start_s": 40.85,
+   "end_s": 40.85,
+   "ok": true,
+   "args": {
+    "summary": "Wi-Fi is now on. I opened Settings, then Network & internet, then Internet, and turned the Wi-Fi switch on; it now reads Checked and saved network AndroidWifi is listed.",
+    "evidence": {
+     "objective_evidence": "On the Internet settings screen the Wi-Fi switch_widget shows Checked after tapping it, and available/saved networks including AndroidWifi now appear in the list.",
+     "key_signals": [
+      "Wi-Fi switch Unchecked before tap on s6b73",
+      "Wi-Fi switch Checked after tap",
+      "AndroidWifi 'Saved' entry listed after enabling"
+     ]
+    },
+    "rows": [
+     {
+      "action": "Turned Wi-Fi on",
+      "result": "Wi-Fi switch is Checked in Settings > Network & internet > Internet",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "task": "SimpleCalendarNextEvent",
+ "video_duration_s": 68.1,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.71,
+   "end_s": 29.73,
+   "ok": true,
+   "note": "Read Simple Calendar skill"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.71,
+   "end_s": 29.73,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.49,
+   "end_s": 33.13,
+   "ok": true,
+   "note": "Launch Simple Calendar Pro and read current view"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 34.42,
+   "end_s": 35.52,
+   "ok": true,
+   "note": "Open view menu to switch to event list"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 36.28,
+   "end_s": 37.33,
+   "ok": true,
+   "note": "Open simple event list view"
+  },
+  {
+   "step": 6,
+   "tool": "swipe",
+   "start_s": 39.12,
+   "end_s": 41.06,
+   "ok": true,
+   "note": "Scroll list to top to check earlier today items"
+  },
+  {
+   "step": 7,
+   "tool": "swipe",
+   "start_s": 44.65,
+   "end_s": 46.47,
+   "ok": true,
+   "note": "Confirm top of event list"
+  },
+  {
+   "step": 8,
+   "tool": "scroll_to",
+   "start_s": 48.52,
+   "end_s": 49.71,
+   "ok": true,
+   "note": "Scroll to Concert row and verify it's the last Sunday event"
+  },
+  {
+   "step": 9,
+   "tool": "done",
+   "start_s": 52.25,
+   "end_s": 52.25,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

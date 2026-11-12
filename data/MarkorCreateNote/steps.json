@@ -1,0 +1,111 @@
+{
+ "task": "MarkorCreateNote",
+ "video_duration_s": 72.2,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.13,
+   "end_s": 30.13,
+   "ok": true,
+   "note": "Load Markor skill guidance, then observe screen"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.81,
+   "end_s": 30.82,
+   "ok": true,
+   "note": "Observe current screen; then launch Markor"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.66,
+   "end_s": 34.03,
+   "ok": true,
+   "note": "Launch Markor and observe its home screen"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.09,
+   "end_s": 36.39,
+   "ok": true,
+   "note": "Tap the create new file FAB and choose a filename"
+  },
+  {
+   "step": 5,
+   "tool": "type",
+   "start_s": 37.59,
+   "end_s": 40.18,
+   "ok": true,
+   "note": "Type filename brave_violin_2c5o in the name field (extension .md already set)"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 40.87,
+   "end_s": 42.58,
+   "ok": true,
+   "note": "Tap OK to create the file, then type the note text"
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 43.57,
+   "end_s": 47.75,
+   "ok": true,
+   "note": "Type the note text into the editor, then save"
+  },
+  {
+   "step": 8,
+   "tool": "key",
+   "start_s": 49.56,
+   "end_s": 49.89,
+   "ok": true,
+   "note": "Go back to files list to save, then verify note exists"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 50.74,
+   "end_s": 51.37,
+   "ok": true,
+   "note": null
+  },
+  {
+   "step": 10,
+   "tool": "key",
+   "start_s": 52.29,
+   "end_s": 53.19,
+   "ok": true,
+   "note": "Verify note appears in the files list"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 54.58,
+   "end_s": 55.3,
+   "ok": true,
+   "note": "Reopen the note to read back its saved text"
+  },
+  {
+   "step": 12,
+   "tool": "get_ui_state",
+   "start_s": 56.25,
+   "end_s": 56.27,
+   "ok": true,
+   "note": "Read the reopened note content to verify saved text"
+  },
+  {
+   "step": 13,
+   "tool": "done",
+   "start_s": 58.46,
+   "end_s": 58.47,
+   "ok": true,
+   "note": "Done: note created, saved and verified"
+  }
+ ]
+}

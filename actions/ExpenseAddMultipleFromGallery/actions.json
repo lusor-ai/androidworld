@@ -1,0 +1,515 @@
+{
+ "task": "ExpenseAddMultipleFromGallery",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 33.4,
+   "end_s": 33.41,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 34.88,
+   "end_s": 37.56,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.gallery.pro"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 38.46,
+   "end_s": 39.68,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 270,
+    "y": 566
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 40.93,
+   "end_s": 41.37,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "Toggle filename visibility",
+    "index": 5,
+    "x": 732,
+    "y": 212
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 42.39,
+   "end_s": 43.56,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": null,
+    "index": 14,
+    "x": 900,
+    "y": 836
+   }
+  },
+  {
+   "step": 6,
+   "tool": "screenshot",
+   "start_s": 44.54,
+   "end_s": 46.11,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 7,
+   "tool": "launch",
+   "start_s": 47.98,
+   "end_s": 49.24,
+   "ok": true,
+   "args": {
+    "app": "com.arduia.expense"
+   }
+  },
+  {
+   "step": 8,
+   "tool": "get_ui_state",
+   "start_s": 50.8,
+   "end_s": 50.87,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 52.05,
+   "end_s": 53.3,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 965,
+    "y": 2180
+   }
+  },
+  {
+   "step": 10,
+   "tool": "type",
+   "start_s": 55.3,
+   "end_s": 57.74,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "School Supplies"
+   }
+  },
+  {
+   "step": 11,
+   "tool": "type",
+   "start_s": 59.01,
+   "end_s": 59.97,
+   "ok": true,
+   "args": {
+    "index": 6,
+    "text": "441.58"
+   }
+  },
+  {
+   "step": 12,
+   "tool": "swipe",
+   "start_s": 61.49,
+   "end_s": 63.19,
+   "ok": true,
+   "args": {
+    "startX": 1000,
+    "startY": 820,
+    "endX": 100,
+    "endY": 820,
+    "durationMs": 300
+   }
+  },
+  {
+   "step": 13,
+   "tool": "swipe",
+   "start_s": 64.55,
+   "end_s": 66.39,
+   "ok": true,
+   "args": {
+    "startX": 1000,
+    "startY": 820,
+    "endX": 100,
+    "endY": 820,
+    "durationMs": 300
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 67.92,
+   "end_s": 68.17,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": null,
+    "index": 10,
+    "x": 481,
+    "y": 817
+   }
+  },
+  {
+   "step": 15,
+   "tool": "type",
+   "start_s": 69.45,
+   "end_s": 71.32,
+   "ok": true,
+   "args": {
+    "index": 13,
+    "text": "Paid by card"
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 72.74,
+   "end_s": 74.16,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 14,
+    "x": 454,
+    "y": 1303
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 75.62,
+   "end_s": 76.46,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 965,
+    "y": 2180
+   }
+  },
+  {
+   "step": 18,
+   "tool": "type",
+   "start_s": 77.98,
+   "end_s": 79.96,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Video Games"
+   }
+  },
+  {
+   "step": 19,
+   "tool": "type",
+   "start_s": 81.61,
+   "end_s": 82.52,
+   "ok": true,
+   "args": {
+    "index": 6,
+    "text": "196.73"
+   }
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 83.68,
+   "end_s": 84.2,
+   "ok": true,
+   "args": {
+    "index": 12
+   },
+   "tapped": {
+    "label": null,
+    "index": 12,
+    "x": 933,
+    "y": 817
+   }
+  },
+  {
+   "step": 21,
+   "tool": "type",
+   "start_s": 85.48,
+   "end_s": 87.28,
+   "ok": true,
+   "args": {
+    "index": 13,
+    "text": "Urgent"
+   }
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 89.0,
+   "end_s": 90.64,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 14,
+    "x": 454,
+    "y": 1303
+   }
+  },
+  {
+   "step": 23,
+   "tool": "tap_element",
+   "start_s": 92.01,
+   "end_s": 92.45,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 965,
+    "y": 2180
+   }
+  },
+  {
+   "step": 24,
+   "tool": "type",
+   "start_s": 93.85,
+   "end_s": 96.33,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Home Insurance"
+   }
+  },
+  {
+   "step": 25,
+   "tool": "type",
+   "start_s": 98.75,
+   "end_s": 99.72,
+   "ok": true,
+   "args": {
+    "index": 6,
+    "text": "304.65"
+   }
+  },
+  {
+   "step": 26,
+   "tool": "tap_element",
+   "start_s": 100.71,
+   "end_s": 100.97,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": null,
+    "index": 10,
+    "x": 519,
+    "y": 817
+   }
+  },
+  {
+   "step": 27,
+   "tool": "type",
+   "start_s": 102.16,
+   "end_s": 103.82,
+   "ok": true,
+   "args": {
+    "index": 13,
+    "text": "Want to have"
+   }
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 105.02,
+   "end_s": 106.19,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 14,
+    "x": 454,
+    "y": 1303
+   }
+  },
+  {
+   "step": 29,
+   "tool": "tap_element",
+   "start_s": 107.84,
+   "end_s": 108.56,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 540,
+    "y": 2177
+   }
+  },
+  {
+   "step": 30,
+   "tool": "get_ui_state",
+   "start_s": 109.8,
+   "end_s": 109.81,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 31,
+   "tool": "tap_element",
+   "start_s": 111.7,
+   "end_s": 112.32,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 992,
+    "y": 1469
+   }
+  },
+  {
+   "step": 32,
+   "tool": "tap_element",
+   "start_s": 113.45,
+   "end_s": 114.36,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 540,
+    "y": 1991
+   }
+  },
+  {
+   "step": 33,
+   "tool": "tap_element",
+   "start_s": 115.7,
+   "end_s": 116.4,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 992,
+    "y": 1469
+   }
+  },
+  {
+   "step": 34,
+   "tool": "tap_element",
+   "start_s": 117.98,
+   "end_s": 118.84,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 540,
+    "y": 1805
+   }
+  },
+  {
+   "step": 35,
+   "tool": "tap_element",
+   "start_s": 121.09,
+   "end_s": 121.76,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 992,
+    "y": 1469
+   }
+  },
+  {
+   "step": 36,
+   "tool": "done",
+   "start_s": 124.16,
+   "end_s": 124.16,
+   "ok": true,
+   "args": {
+    "summary": "I added all three expenses from expenses.jpg to Pro Expense. School Supplies for $441.58 under Education with the note \"Paid by card\", Video Games for $196.73 under Entertainment with the note \"Urgent\", and Home Insurance for $304.65 under Housing with the note \"Want to have\". The app's home total now reads 942.96 USD, matching the three amounts.",
+    "rows": [
+     {
+      "name": "School Supplies",
+      "amount": "441.58",
+      "category": "Education",
+      "note": "Paid by card",
+      "lusor_status": "succeeded"
+     },
+     {
+      "name": "Video Games",
+      "amount": "196.73",
+      "category": "Entertainment",
+      "note": "Urgent",
+      "lusor_status": "succeeded"
+     },
+     {
+      "name": "Home Insurance",
+      "amount": "304.65",
+      "category": "Housing",
+      "note": "Want to have",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "Pro Expense home screen shows Recent entries Home Insurance 304.65, Video Games 196.73, School Supplies 441.58 with OUTCOME 942.96 USD; each opened detail sheet showed the matching amount and note (Paid by card, Urgent, Want to have).",
+     "key_signals": [
+      "expenses.jpg listed 3 expenses with amounts, categories and notes",
+      "Category chips Education, Entertainment, Housing were checked at save time",
+      "Total 942.96 equals 441.58 + 196.73 + 304.65"
+     ]
+    }
+   }
+  }
+ ]
+}

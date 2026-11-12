@@ -1,0 +1,201 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "RecipeAddSingleRecipe",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 93.2,
+  "mobilerun_published_time_s": 244.8,
+  "speed_ratio": 0.381,
+  "lusor_cost_usd": 0.0209,
+  "mobilerun_published_actions": 16,
+  "mobilerun_est_cost_usd": 1.226,
+  "lusor_tool_calls": 19,
+  "disclosure": null,
+  "skills_read": [
+   "broccoli"
+  ],
+  "skill_assisted": [
+   "broccoli"
+  ],
+  "goal": "Add the following recipes into the Broccoli app:\ntitle|description|servings|preparationTime|ingredients|directions\nVeggie and Hummus Sandwich|A delicious and healthy choice for any time of the day.|2 servings|20 mins|to preference|Spread hummus on bread, add cucumber, bell pepper, carrot, and lettuce. Garnish with fresh herbs for a more vibrant taste.",
+  "final_answer": null,
+  "final_summary": "I added the recipe \"Veggie and Hummus Sandwich\" to the Broccoli app with the description, 2 servings, 20 mins preparation time, \"to preference\" as the ingredients, and the full directions text. I reopened it after saving and every field matched the request exactly, and the recipe list now shows it at the end of all 11 recipes.",
+  "video_duration_s": 133.3,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 29.21,
+    "end_s": 29.22,
+    "ok": true,
+    "note": "Read the broccoli skill guidance"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 29.21,
+    "end_s": 29.22,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 30.19,
+    "end_s": 34.09,
+    "ok": true,
+    "note": "Launch Broccoli and find add recipe button"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 35.06,
+    "end_s": 36.3,
+    "ok": true,
+    "note": "Tap New Recipe fab and observe form"
+   },
+   {
+    "step": 5,
+    "tool": "chain",
+    "start_s": 38.63,
+    "end_s": 48.92,
+    "ok": true,
+    "note": "Type all recipe fields then save"
+   },
+   {
+    "step": 6,
+    "tool": "scroll_to",
+    "start_s": 50.38,
+    "end_s": 64.95,
+    "ok": true,
+    "note": "Scroll to lower fields and type servings, time, ingredients, directions"
+   },
+   {
+    "step": 7,
+    "tool": "key",
+    "start_s": 66.15,
+    "end_s": 66.63,
+    "ok": true,
+    "note": "Hide keyboard and scroll to servings field"
+   },
+   {
+    "step": 8,
+    "tool": "chain",
+    "start_s": 69.42,
+    "end_s": 71.72,
+    "ok": true,
+    "note": "Type servings, prep time, ingredients, directions"
+   },
+   {
+    "step": 9,
+    "tool": "get_ui_state",
+    "start_s": 73.1,
+    "end_s": 73.14,
+    "ok": true,
+    "note": "Read current form to locate prep time field"
+   },
+   {
+    "step": 10,
+    "tool": "type",
+    "start_s": 74.42,
+    "end_s": 76.7,
+    "ok": true,
+    "note": "Type preparation time"
+   },
+   {
+    "step": 11,
+    "tool": "key",
+    "start_s": 77.78,
+    "end_s": 78.28,
+    "ok": true,
+    "note": "Hide keyboard, then type ingredients"
+   },
+   {
+    "step": 12,
+    "tool": "type",
+    "start_s": 79.22,
+    "end_s": 81.29,
+    "ok": true,
+    "note": "Type ingredients"
+   },
+   {
+    "step": 13,
+    "tool": "key",
+    "start_s": 82.34,
+    "end_s": 82.8,
+    "ok": true,
+    "note": "Hide keyboard then type directions"
+   },
+   {
+    "step": 14,
+    "tool": "type",
+    "start_s": 83.63,
+    "end_s": 98.4,
+    "ok": true,
+    "note": "Type directions"
+   },
+   {
+    "step": 15,
+    "tool": "key",
+    "start_s": 99.28,
+    "end_s": 99.58,
+    "ok": true,
+    "note": "Hide keyboard and verify all fields before saving"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 101.06,
+    "end_s": 102.52,
+    "ok": true,
+    "note": "Save recipe and read it back"
+   },
+   {
+    "step": 17,
+    "tool": "key",
+    "start_s": 103.39,
+    "end_s": 103.9,
+    "ok": true,
+    "note": "Return to recipe list and map titles"
+   },
+   {
+    "step": 18,
+    "tool": "map_app",
+    "start_s": 105.07,
+    "end_s": 118.26,
+    "ok": true,
+    "note": "Map the recipe list titles to confirm the new recipe is saved"
+   },
+   {
+    "step": 19,
+    "tool": "done",
+    "start_s": 120.48,
+    "end_s": 120.49,
+    "ok": true,
+    "note": "Task complete; recipe saved and verified"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeAddSingleRecipe/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/RecipeAddSingleRecipe/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/RecipeAddSingleRecipe/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/RecipeAddSingleRecipe/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/RecipeAddSingleRecipe/task.json"
+  }
+ }
+}

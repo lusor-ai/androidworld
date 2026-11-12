@@ -1,0 +1,199 @@
+{
+ "task": "MarkorChangeNoteContent",
+ "video_duration_s": 95.2,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.22,
+   "end_s": 30.24,
+   "ok": true,
+   "note": "Read Markor skill, then observe screen"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.22,
+   "end_s": 30.24,
+   "ok": true,
+   "note": "Read Markor skill, then observe screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.01,
+   "end_s": 33.63,
+   "ok": true,
+   "note": "Launch Markor and inspect the file list"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 37.77,
+   "end_s": 38.4,
+   "ok": true,
+   "note": "Open friendly_violin_Id6l.md in editor"
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 39.31,
+   "end_s": 39.32,
+   "ok": true,
+   "note": "Check whether friendly_violin_Id6l.md opened in the editor"
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 40.94,
+   "end_s": 44.39,
+   "ok": true,
+   "note": "Type new content into editor and save"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 45.51,
+   "end_s": 45.8,
+   "ok": true,
+   "note": "Save the edited note with the Save action"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 46.8,
+   "end_s": 47.87,
+   "ok": true,
+   "note": "Open More options menu to find Rename"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 48.66,
+   "end_s": 49.29,
+   "ok": true,
+   "note": "Open File settings submenu to find Rename"
+  },
+  {
+   "step": 10,
+   "tool": "get_ui_state",
+   "start_s": 50.12,
+   "end_s": 50.13,
+   "ok": true,
+   "note": "Inspect File settings submenu entries"
+  },
+  {
+   "step": 11,
+   "tool": "key",
+   "start_s": 51.31,
+   "end_s": 51.7,
+   "ok": true,
+   "note": "Close menu and go back to file list to rename via long press"
+  },
+  {
+   "step": 12,
+   "tool": "key",
+   "start_s": 52.57,
+   "end_s": 52.97,
+   "ok": true,
+   "note": "Return to file list and long-press friendly_violin_Id6l.md for rename"
+  },
+  {
+   "step": 13,
+   "tool": "key",
+   "start_s": 53.78,
+   "end_s": 54.75,
+   "ok": true,
+   "note": "Return to file list"
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 55.83,
+   "end_s": 56.91,
+   "ok": true,
+   "note": "Long-press friendly_violin_Id6l.md to open context menu with Rename"
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 57.79,
+   "end_s": 58.7,
+   "ok": true,
+   "note": "Tap Rename in selection toolbar and enter new name"
+  },
+  {
+   "step": 16,
+   "tool": "type",
+   "start_s": 59.83,
+   "end_s": 63.07,
+   "ok": true,
+   "note": "Type new filename fancy_goat_2023_10_10.txt and tap OK"
+  },
+  {
+   "step": 17,
+   "tool": "get_ui_state",
+   "start_s": 63.88,
+   "end_s": 63.93,
+   "ok": true,
+   "note": "Inspect rename dialog state after typing attempt"
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 65.13,
+   "end_s": 66.32,
+   "ok": true,
+   "note": "Long-press friendly_violin_Id6l.md again and retry rename"
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 67.59,
+   "end_s": 69.08,
+   "ok": true,
+   "note": "Tap Rename, then tap the name field explicitly before typing"
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 70.38,
+   "end_s": 71.47,
+   "ok": true,
+   "note": "Focus name field then clear and type new name"
+  },
+  {
+   "step": 21,
+   "tool": "type",
+   "start_s": 72.55,
+   "end_s": 74.13,
+   "ok": true,
+   "note": "Type new filename into the focused field"
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 74.86,
+   "end_s": 75.99,
+   "ok": true,
+   "note": "Tap OK to confirm rename"
+  },
+  {
+   "step": 23,
+   "tool": "tap_element",
+   "start_s": 77.5,
+   "end_s": 78.5,
+   "ok": true,
+   "note": "Open fancy_goat_2023_10_10.txt to verify its content and title"
+  },
+  {
+   "step": 24,
+   "tool": "done",
+   "start_s": 81.37,
+   "end_s": 81.37,
+   "ok": true,
+   "note": "Task complete; no further steps"
+  }
+ ]
+}

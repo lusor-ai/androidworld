@@ -1,0 +1,657 @@
+{
+ "task": "RecipeAddMultipleRecipesFromMarkor2",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.38,
+   "end_s": 29.38,
+   "ok": true,
+   "args": {
+    "path": "skill://markor/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "read",
+   "start_s": 29.38,
+   "end_s": 29.38,
+   "ok": true,
+   "args": {
+    "path": "skill://broccoli/SKILL.md"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 30.03,
+   "end_s": 30.05,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 4,
+   "tool": "launch",
+   "start_s": 30.81,
+   "end_s": 33.05,
+   "ok": true,
+   "args": {
+    "app": "net.gsantner.markor"
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 34.37,
+   "end_s": 35.14,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "File recipes.txt ",
+    "index": 11,
+    "x": 540,
+    "y": 479
+   }
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 37.2,
+   "end_s": 37.22,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 7,
+   "tool": "pull_file",
+   "start_s": 40.64,
+   "end_s": 40.64,
+   "ok": true,
+   "args": {
+    "path": "/sdcard/Documents/recipes.txt"
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 45.74,
+   "end_s": 46.39,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "View mode",
+    "index": 2,
+    "x": 713,
+    "y": 201
+   }
+  },
+  {
+   "step": 9,
+   "tool": "launch",
+   "start_s": 50.84,
+   "end_s": 54.55,
+   "ok": true,
+   "args": {
+    "app": "com.flauschcode.broccoli"
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 56.55,
+   "end_s": 57.05,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Search",
+    "index": 3,
+    "x": 1017,
+    "y": 348
+   }
+  },
+  {
+   "step": 11,
+   "tool": "type",
+   "start_s": 59.4,
+   "end_s": 61.95,
+   "ok": true,
+   "args": {
+    "text": "Chicken Caesar",
+    "index": 4
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 64.66,
+   "end_s": 66.03,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": "New Recipe",
+    "index": 9,
+    "x": 965,
+    "y": 1402
+   }
+  },
+  {
+   "step": 13,
+   "tool": "type",
+   "start_s": 67.55,
+   "end_s": 70.81,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Chicken Caesar Salad Wrap"
+   }
+  },
+  {
+   "step": 14,
+   "tool": "type",
+   "start_s": 72.28,
+   "end_s": 77.84,
+   "ok": true,
+   "args": {
+    "index": 10,
+    "text": "An ideal recipe for experimenting with different flavors and ingredients."
+   }
+  },
+  {
+   "step": 15,
+   "tool": "swipe",
+   "start_s": 79.2,
+   "end_s": 80.82,
+   "ok": true,
+   "args": {
+    "endX": 540,
+    "endY": 800,
+    "startX": 540,
+    "startY": 1300
+   }
+  },
+  {
+   "step": 16,
+   "tool": "type",
+   "start_s": 82.4,
+   "end_s": 83.92,
+   "ok": true,
+   "args": {
+    "index": 14,
+    "text": "8 servings"
+   }
+  },
+  {
+   "step": 17,
+   "tool": "type",
+   "start_s": 85.05,
+   "end_s": 86.43,
+   "ok": true,
+   "args": {
+    "index": 16,
+    "text": "3 hrs"
+   }
+  },
+  {
+   "step": 18,
+   "tool": "swipe",
+   "start_s": 88.24,
+   "end_s": 90.35,
+   "ok": true,
+   "args": {
+    "endX": 540,
+    "endY": 700,
+    "startX": 540,
+    "startY": 1400
+   }
+  },
+  {
+   "step": 19,
+   "tool": "type",
+   "start_s": 91.74,
+   "end_s": 93.24,
+   "ok": true,
+   "args": {
+    "index": 12,
+    "text": "as per recipe"
+   }
+  },
+  {
+   "step": 20,
+   "tool": "type",
+   "start_s": 94.69,
+   "end_s": 112.84,
+   "ok": true,
+   "args": {
+    "index": 14,
+    "text": "Toss chopped romaine lettuce with Caesar dressing, grilled chicken strips, and Parmesan cheese. Wrap in a large tortilla. Garnish with fresh herbs for a more vibrant taste."
+   }
+  },
+  {
+   "step": 21,
+   "tool": "tap_element",
+   "start_s": 114.37,
+   "end_s": 115.65,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 2,
+    "x": 954,
+    "y": 201
+   }
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 118.21,
+   "end_s": 119.34,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 4,
+    "x": 74,
+    "y": 202
+   }
+  },
+  {
+   "step": 23,
+   "tool": "tap_element",
+   "start_s": 121.11,
+   "end_s": 122.54,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": "New Recipe",
+    "index": 10,
+    "x": 961,
+    "y": 1402
+   }
+  },
+  {
+   "step": 24,
+   "tool": "type",
+   "start_s": 124.03,
+   "end_s": 128.2,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Spinach and Feta Stuffed Chicken"
+   }
+  },
+  {
+   "step": 25,
+   "tool": "type",
+   "start_s": 129.86,
+   "end_s": 133.84,
+   "ok": true,
+   "args": {
+    "index": 10,
+    "text": "A quick and easy meal, perfect for busy weekdays."
+   }
+  },
+  {
+   "step": 26,
+   "tool": "swipe",
+   "start_s": 135.25,
+   "end_s": 136.99,
+   "ok": true,
+   "args": {
+    "endX": 540,
+    "endY": 800,
+    "startX": 540,
+    "startY": 1300
+   }
+  },
+  {
+   "step": 27,
+   "tool": "type",
+   "start_s": 138.36,
+   "end_s": 140.22,
+   "ok": true,
+   "args": {
+    "index": 14,
+    "text": "2 servings"
+   }
+  },
+  {
+   "step": 28,
+   "tool": "type",
+   "start_s": 141.55,
+   "end_s": 142.7,
+   "ok": true,
+   "args": {
+    "index": 16,
+    "text": "3 hrs"
+   }
+  },
+  {
+   "step": 29,
+   "tool": "swipe",
+   "start_s": 144.09,
+   "end_s": 146.08,
+   "ok": true,
+   "args": {
+    "endX": 540,
+    "endY": 700,
+    "startX": 540,
+    "startY": 1400
+   }
+  },
+  {
+   "step": 30,
+   "tool": "type",
+   "start_s": 147.11,
+   "end_s": 149.1,
+   "ok": true,
+   "args": {
+    "index": 12,
+    "text": "subject to change"
+   }
+  },
+  {
+   "step": 31,
+   "tool": "type",
+   "start_s": 150.35,
+   "end_s": 167.64,
+   "ok": true,
+   "args": {
+    "index": 14,
+    "text": "Stuff chicken breasts with a mixture of spinach, feta, garlic, and herbs. Bake until chicken is cooked through. Try adding a pinch of your favorite spices for extra flavor."
+   }
+  },
+  {
+   "step": 32,
+   "tool": "tap_element",
+   "start_s": 169.08,
+   "end_s": 171.05,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 2,
+    "x": 954,
+    "y": 201
+   }
+  },
+  {
+   "step": 33,
+   "tool": "tap_element",
+   "start_s": 172.6,
+   "end_s": 173.65,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 4,
+    "x": 74,
+    "y": 202
+   }
+  },
+  {
+   "step": 34,
+   "tool": "tap_element",
+   "start_s": 174.77,
+   "end_s": 176.23,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": "New Recipe",
+    "index": 10,
+    "x": 965,
+    "y": 1402
+   }
+  },
+  {
+   "step": 35,
+   "tool": "type",
+   "start_s": 177.63,
+   "end_s": 180.51,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Avocado Toast with Egg"
+   }
+  },
+  {
+   "step": 36,
+   "tool": "type",
+   "start_s": 181.76,
+   "end_s": 187.21,
+   "ok": true,
+   "args": {
+    "index": 10,
+    "text": "An ideal recipe for experimenting with different flavors and ingredients."
+   }
+  },
+  {
+   "step": 37,
+   "tool": "swipe",
+   "start_s": 188.52,
+   "end_s": 190.13,
+   "ok": true,
+   "args": {
+    "endX": 540,
+    "endY": 800,
+    "startX": 540,
+    "startY": 1300
+   }
+  },
+  {
+   "step": 38,
+   "tool": "type",
+   "start_s": 191.34,
+   "end_s": 193.05,
+   "ok": true,
+   "args": {
+    "index": 14,
+    "text": "2 servings"
+   }
+  },
+  {
+   "step": 39,
+   "tool": "type",
+   "start_s": 194.24,
+   "end_s": 195.42,
+   "ok": true,
+   "args": {
+    "index": 16,
+    "text": "3 hrs"
+   }
+  },
+  {
+   "step": 40,
+   "tool": "swipe",
+   "start_s": 196.65,
+   "end_s": 198.57,
+   "ok": true,
+   "args": {
+    "endX": 540,
+    "endY": 700,
+    "startX": 540,
+    "startY": 1400
+   }
+  },
+  {
+   "step": 41,
+   "tool": "type",
+   "start_s": 199.65,
+   "end_s": 201.31,
+   "ok": true,
+   "args": {
+    "index": 12,
+    "text": "to preference"
+   }
+  },
+  {
+   "step": 42,
+   "tool": "type",
+   "start_s": 202.47,
+   "end_s": 216.73,
+   "ok": true,
+   "args": {
+    "index": 14,
+    "text": "Toast bread, top with mashed avocado, a fried egg, salt, pepper, and chili flakes. Try adding a pinch of your favorite spices for extra flavor."
+   }
+  },
+  {
+   "step": 43,
+   "tool": "tap_element",
+   "start_s": 217.81,
+   "end_s": 219.93,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 2,
+    "x": 954,
+    "y": 201
+   }
+  },
+  {
+   "step": 44,
+   "tool": "tap_element",
+   "start_s": 221.15,
+   "end_s": 222.33,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 4,
+    "x": 79,
+    "y": 202
+   }
+  },
+  {
+   "step": 45,
+   "tool": "tap_element",
+   "start_s": 224.63,
+   "end_s": 225.1,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "Clear query",
+    "index": 5,
+    "x": 1007,
+    "y": 348
+   }
+  },
+  {
+   "step": 46,
+   "tool": "map_app",
+   "start_s": 226.41,
+   "end_s": 226.66,
+   "ok": true,
+   "args": {
+    "levels": 1,
+    "pagination": true
+   }
+  },
+  {
+   "step": 47,
+   "tool": "key",
+   "start_s": 227.68,
+   "end_s": 228.06,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 48,
+   "tool": "map_app",
+   "start_s": 229.53,
+   "end_s": 269.29,
+   "ok": true,
+   "args": {
+    "levels": 1,
+    "pagination": true
+   }
+  },
+  {
+   "step": 49,
+   "tool": "get_ui_state",
+   "start_s": 272.47,
+   "end_s": 272.49,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 50,
+   "tool": "done",
+   "start_s": 275.55,
+   "end_s": 275.55,
+   "ok": true,
+   "args": {
+    "summary": "I added the three recipes from recipes.txt in Markor that have a 3 hrs preparation time to the Broccoli app: Chicken Caesar Salad Wrap (8 servings), Spinach and Feta Stuffed Chicken (2 servings), and Avocado Toast with Egg (2 servings). Each was saved and read back on its own detail page with the time, servings, description, ingredients and directions matching the file exactly, and all three now appear in the recipes list.",
+    "evidence": {
+     "objective_evidence": "Recipes list shows the new rows Avocado Toast with Egg (\"An ideal recipe for experimenting with different flavors and ingredients.\"), Chicken Caesar Salad Wrap (same description), and Spinach and Feta Stuffed Chicken (\"A quick and easy meal, perfect for busy weekdays.\"). Each saved recipe's detail page showed its time, servings, ingredients and directions matching the source.",
+     "key_signals": [
+      "recipes.txt in Markor listed 3 recipes with \"preparationTime: 3 hrs\"",
+      "Broccoli detail page for Chicken Caesar Salad Wrap: 8 servings, 3 hrs, ingredients \"as per recipe\"",
+      "Broccoli detail page for Spinach and Feta Stuffed Chicken: 2 servings, 3 hrs, ingredients \"subject to change\"",
+      "Broccoli detail page for Avocado Toast with Egg: 2 servings, 3 hrs, ingredients \"to preference\"",
+      "All three appear in the Broccoli recipe list"
+     ]
+    },
+    "rows": [
+     {
+      "title": "Chicken Caesar Salad Wrap",
+      "servings": "8 servings",
+      "preparation_time": "3 hrs",
+      "ingredients": "as per recipe",
+      "description": "An ideal recipe for experimenting with different flavors and ingredients.",
+      "directions": "Toss chopped romaine lettuce with Caesar dressing, grilled chicken strips, and Parmesan cheese. Wrap in a large tortilla. Garnish with fresh herbs for a more vibrant taste.",
+      "lusor_status": "succeeded"
+     },
+     {
+      "title": "Spinach and Feta Stuffed Chicken",
+      "servings": "2 servings",
+      "preparation_time": "3 hrs",
+      "ingredients": "subject to change",
+      "description": "A quick and easy meal, perfect for busy weekdays.",
+      "directions": "Stuff chicken breasts with a mixture of spinach, feta, garlic, and herbs. Bake until chicken is cooked through. Try adding a pinch of your favorite spices for extra flavor.",
+      "lusor_status": "succeeded"
+     },
+     {
+      "title": "Avocado Toast with Egg",
+      "servings": "2 servings",
+      "preparation_time": "3 hrs",
+      "ingredients": "to preference",
+      "description": "An ideal recipe for experimenting with different flavors and ingredients.",
+      "directions": "Toast bread, top with mashed avocado, a fried egg, salt, pepper, and chili flakes. Try adding a pinch of your favorite spices for extra flavor.",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

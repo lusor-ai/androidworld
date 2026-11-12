@@ -1,0 +1,135 @@
+{
+ "task": "MarkorCreateNoteFromClipboard",
+ "video_duration_s": 84.9,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 36.94,
+   "end_s": 36.96,
+   "ok": true,
+   "note": "Read the Markor skill guidance"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 36.94,
+   "end_s": 36.96,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 38.24,
+   "end_s": 40.74,
+   "ok": true,
+   "note": "Launch Markor and inspect its main screen"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 42.29,
+   "end_s": 43.6,
+   "ok": true,
+   "note": "Tap Create a new file or folder FAB and choose new note"
+  },
+  {
+   "step": 5,
+   "tool": "type",
+   "start_s": 44.92,
+   "end_s": 47.78,
+   "ok": true,
+   "note": "Set name field and extension to .txt"
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 49.98,
+   "end_s": 51.08,
+   "ok": true,
+   "note": "Set extension to .txt and confirm the dialog"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 52.17,
+   "end_s": 53.5,
+   "ok": true,
+   "note": "Tap OK to create copy_bold_pig.txt and open the editor"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 54.89,
+   "end_s": 56.05,
+   "ok": true,
+   "note": "Focus the editor and invoke paste (long press for the context menu)"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 57.16,
+   "end_s": 58.63,
+   "ok": true,
+   "note": "Long press in editor to open the Paste context menu"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 59.64,
+   "end_s": 60.72,
+   "ok": true,
+   "note": "Tap Paste and read the resulting note content"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 61.78,
+   "end_s": 62.02,
+   "ok": true,
+   "note": "Tap Save, then go back and verify the file exists"
+  },
+  {
+   "step": 12,
+   "tool": "key",
+   "start_s": 62.99,
+   "end_s": 63.42,
+   "ok": true,
+   "note": "Back to file list and verify copy_bold_pig.txt is listed"
+  },
+  {
+   "step": 13,
+   "tool": "key",
+   "start_s": 64.35,
+   "end_s": 65.26,
+   "ok": true,
+   "note": "Back again to reach the Files list"
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 66.3,
+   "end_s": 66.8,
+   "ok": true,
+   "note": "Reopen copy_bold_pig.txt to confirm saved content"
+  },
+  {
+   "step": 15,
+   "tool": "get_ui_state",
+   "start_s": 68.77,
+   "end_s": 68.8,
+   "ok": true,
+   "note": "Confirm the note body shows the pasted text"
+  },
+  {
+   "step": 16,
+   "tool": "done",
+   "start_s": 71.14,
+   "end_s": 71.14,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

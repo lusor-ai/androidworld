@@ -1,0 +1,63 @@
+{
+ "task": "SystemBluetoothTurnOnVerify",
+ "video_duration_s": 64.0,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 28.72,
+   "end_s": 28.74,
+   "ok": true,
+   "note": "Observe current screen; then open Settings/quick settings to turn Bluetooth on"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 29.57,
+   "end_s": 32.34,
+   "ok": true,
+   "note": "In Settings, find Bluetooth and toggle it on"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 33.41,
+   "end_s": 34.72,
+   "ok": true,
+   "note": "Open Connected devices to reach Bluetooth settings"
+  },
+  {
+   "step": 4,
+   "tool": "scroll_to",
+   "start_s": 36.11,
+   "end_s": 44.09,
+   "ok": true,
+   "note": "Scroll up in Connected devices to reveal Bluetooth toggle"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 44.78,
+   "end_s": 46.02,
+   "ok": true,
+   "note": "Tap Connection preferences, then Bluetooth"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 46.95,
+   "end_s": 48.11,
+   "ok": true,
+   "note": "On Bluetooth page, toggle Bluetooth on"
+  },
+  {
+   "step": 7,
+   "tool": "done",
+   "start_s": 49.83,
+   "end_s": 49.84,
+   "ok": true,
+   "note": "Task complete: Bluetooth verified on"
+  }
+ ]
+}

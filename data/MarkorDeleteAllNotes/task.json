@@ -1,0 +1,191 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "MarkorDeleteAllNotes",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 48.2,
+  "mobilerun_published_time_s": 198.6,
+  "speed_ratio": 0.243,
+  "lusor_cost_usd": 0.0218,
+  "mobilerun_published_actions": 9,
+  "mobilerun_est_cost_usd": 0.689,
+  "lusor_tool_calls": 18,
+  "disclosure": null,
+  "skills_read": [
+   "markor"
+  ],
+  "skill_assisted": [],
+  "goal": "Delete all my notes in Markor.",
+  "final_answer": null,
+  "final_summary": "I deleted all six notes in Markor's Documents/markor folder: the project team meeting notes, the weekly grocery list, the summer vacation plans, the art project sketches copy, the home renovation budget, and the fW01A backup. The Files list now shows only the \"..\" folder row with the empty-folder hint, so no notes are left.",
+  "video_duration_s": 88.4,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 29.59,
+    "end_s": 29.59,
+    "ok": true,
+    "note": "Read Markor skill guidance"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 30.24,
+    "end_s": 30.25,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 31.14,
+    "end_s": 33.44,
+    "ok": true,
+    "note": "Launch Markor and read the note list"
+   },
+   {
+    "step": 4,
+    "tool": "map_app",
+    "start_s": 34.85,
+    "end_s": 35.95,
+    "ok": true,
+    "note": "Map the Files list in Markor to inventory all notes"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 37.91,
+    "end_s": 38.81,
+    "ok": true,
+    "note": "Check QuickNote tab contents for notes"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 40.26,
+    "end_s": 41.11,
+    "ok": true,
+    "note": "Return to Files list to delete notes"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 44.72,
+    "end_s": 45.98,
+    "ok": true,
+    "note": "Long-press first note row to open its context menu and find Delete"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 47.04,
+    "end_s": 47.92,
+    "ok": true,
+    "note": "Confirm deletion of the first selected note"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 49.38,
+    "end_s": 50.2,
+    "ok": true,
+    "note": "Confirm OK, then delete the remaining 5 notes one by one"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 54.16,
+    "end_s": 55.42,
+    "ok": true,
+    "note": "Long-press grocery list row to start multi-select, then select remaining notes"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 56.5,
+    "end_s": 57.19,
+    "ok": true,
+    "note": "Select remaining note rows in selection mode"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 58.86,
+    "end_s": 59.32,
+    "ok": true,
+    "note": "Select art_project row, then budget and fW01A rows"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 60.69,
+    "end_s": 61.19,
+    "ok": true,
+    "note": "Select budget row, then fW01A row, then Delete"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 62.08,
+    "end_s": 62.63,
+    "ok": true,
+    "note": "Select fW01A row then tap Delete and confirm"
+   },
+   {
+    "step": 15,
+    "tool": "tap_element",
+    "start_s": 63.72,
+    "end_s": 64.49,
+    "ok": true,
+    "note": "Tap Delete for the 5 selected notes, then confirm OK"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 66.25,
+    "end_s": 67.06,
+    "ok": true,
+    "note": "Confirm OK then verify with map_app levels 1"
+   },
+   {
+    "step": 17,
+    "tool": "map_app",
+    "start_s": 69.02,
+    "end_s": 70.1,
+    "ok": true,
+    "note": "Recount the Files list with map_app levels 1 to confirm no notes remain, then done()"
+   },
+   {
+    "step": 18,
+    "tool": "done",
+    "start_s": 74.18,
+    "end_s": 74.18,
+    "ok": true,
+    "note": "Task complete; all notes deleted and verified"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorDeleteAllNotes/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/MarkorDeleteAllNotes/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/MarkorDeleteAllNotes/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/MarkorDeleteAllNotes/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/MarkorDeleteAllNotes/task.json"
+  }
+ }
+}

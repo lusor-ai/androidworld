@@ -1,0 +1,327 @@
+{
+ "task": "OsmAndFavorite",
+ "video_duration_s": 157.6,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.34,
+   "end_s": 29.34,
+   "ok": true,
+   "note": "Read OsmAnd skill, then observe screen"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.55,
+   "end_s": 30.57,
+   "ok": true,
+   "note": "Observe current screen in OsmAnd"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.42,
+   "end_s": 35.72,
+   "ok": true,
+   "note": "Launch OsmAnd and observe map screen"
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 36.39,
+   "end_s": 36.91,
+   "ok": true,
+   "note": "Observe OsmAnd screen"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 39.7,
+   "end_s": 40.62,
+   "ok": true,
+   "note": "Tap Search in OsmAnd to search coordinates"
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 41.47,
+   "end_s": 43.93,
+   "ok": true,
+   "note": "Type coordinates into OsmAnd search"
+  },
+  {
+   "step": 7,
+   "tool": "get_ui_state",
+   "start_s": 44.88,
+   "end_s": 45.01,
+   "ok": true,
+   "note": "Read coordinate search results"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 45.84,
+   "end_s": 46.17,
+   "ok": true,
+   "note": "Tap the coordinate search result"
+  },
+  {
+   "step": 9,
+   "tool": "tap",
+   "start_s": 47.41,
+   "end_s": 49.43,
+   "ok": true,
+   "note": "Tap coordinate result row title"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 53.04,
+   "end_s": 53.61,
+   "ok": true,
+   "note": "Open Actions menu to find Add favorite"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 56.49,
+   "end_s": 56.93,
+   "ok": true,
+   "note": "Close Actions sheet and use context menu star/favorite icon"
+  },
+  {
+   "step": 12,
+   "tool": "tap",
+   "start_s": 58.32,
+   "end_s": 59.32,
+   "ok": true,
+   "note": "Tap context menu icon to add favorite"
+  },
+  {
+   "step": 13,
+   "tool": "tap",
+   "start_s": 64.32,
+   "end_s": 65.38,
+   "ok": true,
+   "note": "Tap star/favorite icon in expanded context menu"
+  },
+  {
+   "step": 14,
+   "tool": "key",
+   "start_s": 66.61,
+   "end_s": 67.41,
+   "ok": true,
+   "note": "Close context menu and open main menu"
+  },
+  {
+   "step": 15,
+   "tool": "key",
+   "start_s": 68.52,
+   "end_s": 68.87,
+   "ok": true,
+   "note": "Return to map screen and open menu"
+  },
+  {
+   "step": 16,
+   "tool": "key",
+   "start_s": 69.62,
+   "end_s": 69.97,
+   "ok": true,
+   "note": "Return to map screen"
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 71.39,
+   "end_s": 72.14,
+   "ok": true,
+   "note": "Open OsmAnd main menu"
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 72.92,
+   "end_s": 73.64,
+   "ok": true,
+   "note": "Tap My Places"
+  },
+  {
+   "step": 19,
+   "tool": "get_ui_state",
+   "start_s": 74.43,
+   "end_s": 74.51,
+   "ok": true,
+   "note": "Read My Places screen"
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 75.67,
+   "end_s": 76.73,
+   "ok": true,
+   "note": "Tap Add to Favorites to open new favorite dialog"
+  },
+  {
+   "step": 21,
+   "tool": "key",
+   "start_s": 88.12,
+   "end_s": 88.53,
+   "ok": true,
+   "note": "Return to map to add favorite from map selection"
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 89.55,
+   "end_s": 91.15,
+   "ok": true,
+   "note": "Navigate up from My Places to menu"
+  },
+  {
+   "step": 23,
+   "tool": "get_ui_state",
+   "start_s": 92.96,
+   "end_s": 93.02,
+   "ok": true,
+   "note": "Check map screen state and close drawer if open"
+  },
+  {
+   "step": 24,
+   "tool": "tap",
+   "start_s": 98.59,
+   "end_s": 99.86,
+   "ok": true,
+   "note": "Long press map center to open context menu on the point"
+  },
+  {
+   "step": 25,
+   "tool": "screenshot",
+   "start_s": 101.74,
+   "end_s": 103.45,
+   "ok": true,
+   "note": "Inspect context menu header icons visually to identify add-favorite"
+  },
+  {
+   "step": 26,
+   "tool": "key",
+   "start_s": 106.8,
+   "end_s": 107.42,
+   "ok": true,
+   "note": "Close context menu and re-search exact coordinates"
+  },
+  {
+   "step": 27,
+   "tool": "tap_element",
+   "start_s": 108.67,
+   "end_s": 109.45,
+   "ok": true,
+   "note": "Open search and enter coordinates"
+  },
+  {
+   "step": 28,
+   "tool": "tap",
+   "start_s": 110.87,
+   "end_s": 112.42,
+   "ok": true,
+   "note": "Open coordinate point to show on map"
+  },
+  {
+   "step": 29,
+   "tool": "tap_element",
+   "start_s": 114.34,
+   "end_s": 115.55,
+   "ok": true,
+   "note": "Tap Add (star) to create favorite for this point"
+  },
+  {
+   "step": 30,
+   "tool": "tap_element",
+   "start_s": 117.94,
+   "end_s": 119.12,
+   "ok": true,
+   "note": "Save the new favorite"
+  },
+  {
+   "step": 31,
+   "tool": "chain",
+   "start_s": 121.04,
+   "end_s": 122.33,
+   "ok": true,
+   "note": "Open My Places Favorites to verify saved favorite"
+  },
+  {
+   "step": 32,
+   "tool": "key",
+   "start_s": 123.93,
+   "end_s": 124.63,
+   "ok": true,
+   "note": "Close context menu then open menu > My Places"
+  },
+  {
+   "step": 33,
+   "tool": "tap_element",
+   "start_s": 125.86,
+   "end_s": 126.38,
+   "ok": true,
+   "note": "Navigate up to map screen"
+  },
+  {
+   "step": 34,
+   "tool": "chain",
+   "start_s": 127.72,
+   "end_s": 129.43,
+   "ok": true,
+   "note": "Open My Places > Favorites to verify the favorite row"
+  },
+  {
+   "step": 35,
+   "tool": "get_ui_state",
+   "start_s": 130.77,
+   "end_s": 130.9,
+   "ok": true,
+   "note": "Check screen after My Places tap"
+  },
+  {
+   "step": 36,
+   "tool": "tap_element",
+   "start_s": 132.45,
+   "end_s": 132.86,
+   "ok": true,
+   "note": "Expand Favorites group to see the saved favorite"
+  },
+  {
+   "step": 37,
+   "tool": "tap_element",
+   "start_s": 136.03,
+   "end_s": 137.21,
+   "ok": true,
+   "note": "Open the saved favorite and verify its coordinates"
+  },
+  {
+   "step": 38,
+   "tool": "get_ui_state",
+   "start_s": 138.54,
+   "end_s": 138.75,
+   "ok": true,
+   "note": "Read the opened favorite screen"
+  },
+  {
+   "step": 39,
+   "tool": "tap",
+   "start_s": 140.6,
+   "end_s": 141.42,
+   "ok": true,
+   "note": "Expand context menu to read the point's coordinates"
+  },
+  {
+   "step": 40,
+   "tool": "done",
+   "start_s": 144.24,
+   "end_s": 144.24,
+   "ok": true,
+   "note": "Done"
+  }
+ ]
+}

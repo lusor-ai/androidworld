@@ -1,0 +1,103 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SimpleCalendarEventsInTimeRange",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 21.2,
+  "mobilerun_published_time_s": 110.1,
+  "speed_ratio": 0.193,
+  "lusor_cost_usd": 0.0073,
+  "mobilerun_published_actions": 4,
+  "mobilerun_est_cost_usd": 0.306,
+  "lusor_tool_calls": 7,
+  "disclosure": null,
+  "skills_read": [
+   "simple-calendar"
+  ],
+  "skill_assisted": [],
+  "goal": "Do I have any events between 4pm and 8pm October 17 2023 in Simple Calendar Pro? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.",
+  "final_answer": "Happy Hour",
+  "final_summary": "Yes, there's one event on October 17, 2023 between 4pm and 8pm: Happy Hour (16:00 to 16:20). The day's other events (Review session for Budget Planning at 05:01, Call with Dr. Smith at 13:51, and Review session for Budget Planning at 21:41) fall outside that window.",
+  "video_duration_s": 61.2,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 28.77,
+    "end_s": 28.79,
+    "ok": true,
+    "note": "Load simple-calendar skill"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 28.77,
+    "end_s": 28.79,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 29.55,
+    "end_s": 31.99,
+    "ok": true,
+    "note": "Launch Simple Calendar Pro and observe"
+   },
+   {
+    "step": 4,
+    "tool": "tap",
+    "start_s": 33.66,
+    "end_s": 34.7,
+    "ok": true,
+    "note": "Tap Oct 17 in month view then open day view"
+   },
+   {
+    "step": 5,
+    "tool": "chain",
+    "start_s": 37.43,
+    "end_s": 41.54,
+    "ok": true,
+    "note": "Advance day view 7 days to Oct 17 and read events"
+   },
+   {
+    "step": 6,
+    "tool": "scroll_to",
+    "start_s": 43.27,
+    "end_s": 45.76,
+    "ok": true,
+    "note": "Confirm end of Oct 17 day list"
+   },
+   {
+    "step": 7,
+    "tool": "done",
+    "start_s": 47.59,
+    "end_s": 47.59,
+    "ok": true,
+    "note": "Report answer"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInTimeRange/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInTimeRange/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInTimeRange/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInTimeRange/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInTimeRange/task.json"
+  }
+ }
+}

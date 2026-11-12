@@ -1,0 +1,671 @@
+{
+ "task": "RecipeAddMultipleRecipesFromImage",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.9,
+   "end_s": 30.91,
+   "ok": true,
+   "args": {
+    "path": "skill://broccoli/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.9,
+   "end_s": 30.91,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 32.08,
+   "end_s": 34.63,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.gallery.pro"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.45,
+   "end_s": 36.33,
+   "ok": true,
+   "args": {
+    "index": 9,
+    "capture": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 270,
+    "y": 566
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.29,
+   "end_s": 37.95,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 180,
+    "y": 476
+   }
+  },
+  {
+   "step": 6,
+   "tool": "screenshot",
+   "start_s": 38.8,
+   "end_s": 40.88,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 7,
+   "tool": "launch",
+   "start_s": 43.24,
+   "end_s": 47.13,
+   "ok": true,
+   "args": {
+    "app": "com.flauschcode.broccoli",
+    "capture": true
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 49.03,
+   "end_s": 50.44,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 11
+   },
+   "tapped": {
+    "label": "New Recipe",
+    "index": 11,
+    "x": 965,
+    "y": 2222
+   }
+  },
+  {
+   "step": 9,
+   "tool": "chain",
+   "start_s": 55.19,
+   "end_s": 59.36,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 5
+      }
+     },
+     {
+      "verb": "type",
+      "params": {
+       "text": "Classic Margherita Pizza"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 10
+      }
+     },
+     {
+      "verb": "type",
+      "params": {
+       "text": "A delicious and healthy choice for any time of the day."
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 14
+      }
+     },
+     {
+      "verb": "type",
+      "params": {
+       "text": "6 servings"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 16
+      }
+     },
+     {
+      "verb": "type",
+      "params": {
+       "text": "1 hrs"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 18
+      }
+     },
+     {
+      "verb": "type",
+      "params": {
+       "text": "as needed"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 20
+      }
+     },
+     {
+      "verb": "type",
+      "params": {
+       "text": "Spread pizza dough with tomato sauce, top with slices of mozzarella cheese and fresh basil leaves. Bake until crust is golden. Try adding a pinch of your favorite spices for extra flavor."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "step": 10,
+   "tool": "type",
+   "start_s": 61.63,
+   "end_s": 65.65,
+   "ok": true,
+   "args": {
+    "index": 10,
+    "capture": true,
+    "text": "A delicious and healthy choice for any time of the day."
+   }
+  },
+  {
+   "step": 11,
+   "tool": "swipe",
+   "start_s": 67.52,
+   "end_s": 69.22,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "endX": 540,
+    "endY": 1200,
+    "startX": 540,
+    "startY": 1900
+   }
+  },
+  {
+   "step": 12,
+   "tool": "type",
+   "start_s": 70.4,
+   "end_s": 71.84,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 13,
+    "text": "6 servings"
+   }
+  },
+  {
+   "step": 13,
+   "tool": "type",
+   "start_s": 73.11,
+   "end_s": 74.4,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 15,
+    "text": "1 hrs"
+   }
+  },
+  {
+   "step": 14,
+   "tool": "type",
+   "start_s": 76.13,
+   "end_s": 77.46,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 17,
+    "text": "as needed"
+   }
+  },
+  {
+   "step": 15,
+   "tool": "swipe",
+   "start_s": 78.67,
+   "end_s": 80.87,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "endX": 540,
+    "endY": 900,
+    "startX": 540,
+    "startY": 1400
+   }
+  },
+  {
+   "step": 16,
+   "tool": "type",
+   "start_s": 82.25,
+   "end_s": 101.03,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 14,
+    "text": "Spread pizza dough with tomato sauce, top with slices of mozzarella cheese and fresh basil leaves. Bake until crust is golden. Try adding a pinch of your favorite spices for extra flavor."
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 102.64,
+   "end_s": 105.03,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 2
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 2,
+    "x": 954,
+    "y": 201
+   }
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 106.85,
+   "end_s": 108.02,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 4,
+    "x": 74,
+    "y": 202
+   }
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 110.6,
+   "end_s": 111.84,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 11
+   },
+   "tapped": {
+    "label": "New Recipe",
+    "index": 11,
+    "x": 965,
+    "y": 2222
+   }
+  },
+  {
+   "step": 20,
+   "tool": "type",
+   "start_s": 114.12,
+   "end_s": 116.95,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 5,
+    "text": "BBQ Chicken Quesadillas"
+   }
+  },
+  {
+   "step": 21,
+   "tool": "type",
+   "start_s": 118.7,
+   "end_s": 122.74,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 10,
+    "text": "A delicious and healthy choice for any time of the day."
+   }
+  },
+  {
+   "step": 22,
+   "tool": "swipe",
+   "start_s": 124.58,
+   "end_s": 126.35,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "endX": 540,
+    "endY": 1200,
+    "startX": 540,
+    "startY": 1900
+   }
+  },
+  {
+   "step": 23,
+   "tool": "type",
+   "start_s": 128.09,
+   "end_s": 129.53,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 11,
+    "text": "6 servings"
+   }
+  },
+  {
+   "step": 24,
+   "tool": "type",
+   "start_s": 131.08,
+   "end_s": 132.31,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 13,
+    "text": "1 hrs"
+   }
+  },
+  {
+   "step": 25,
+   "tool": "type",
+   "start_s": 133.94,
+   "end_s": 135.49,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 15,
+    "text": "to preference"
+   }
+  },
+  {
+   "step": 26,
+   "tool": "swipe",
+   "start_s": 137.49,
+   "end_s": 139.35,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "endX": 540,
+    "endY": 900,
+    "startX": 540,
+    "startY": 1400
+   }
+  },
+  {
+   "step": 27,
+   "tool": "type",
+   "start_s": 141.13,
+   "end_s": 157.76,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 14,
+    "text": "Mix shredded cooked chicken with BBQ sauce. Place on tortillas with cheese, fold and cook until crispy. Feel free to substitute with ingredients you have on hand."
+   }
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 159.9,
+   "end_s": 162.44,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 2
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 2,
+    "x": 954,
+    "y": 201
+   }
+  },
+  {
+   "step": 29,
+   "tool": "tap_element",
+   "start_s": 164.79,
+   "end_s": 165.83,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 4,
+    "x": 74,
+    "y": 202
+   }
+  },
+  {
+   "step": 30,
+   "tool": "tap_element",
+   "start_s": 168.08,
+   "end_s": 169.43,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 11
+   },
+   "tapped": {
+    "label": "New Recipe",
+    "index": 11,
+    "x": 964,
+    "y": 2222
+   }
+  },
+  {
+   "step": 31,
+   "tool": "type",
+   "start_s": 171.43,
+   "end_s": 175.29,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 5,
+    "text": "Grilled Cheese with Tomato and Basil"
+   }
+  },
+  {
+   "step": 32,
+   "tool": "type",
+   "start_s": 177.72,
+   "end_s": 181.61,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 10,
+    "text": "A quick and easy meal, perfect for busy weekdays."
+   }
+  },
+  {
+   "step": 33,
+   "tool": "swipe",
+   "start_s": 184.19,
+   "end_s": 185.75,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "endX": 540,
+    "endY": 1200,
+    "startX": 540,
+    "startY": 1900
+   }
+  },
+  {
+   "step": 34,
+   "tool": "type",
+   "start_s": 187.91,
+   "end_s": 188.99,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 13,
+    "text": "8 servings"
+   }
+  },
+  {
+   "step": 35,
+   "tool": "type",
+   "start_s": 191.51,
+   "end_s": 192.61,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 15,
+    "text": "1 hrs"
+   }
+  },
+  {
+   "step": 36,
+   "tool": "type",
+   "start_s": 194.71,
+   "end_s": 196.1,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 17,
+    "text": "subject to change"
+   }
+  },
+  {
+   "step": 37,
+   "tool": "swipe",
+   "start_s": 198.86,
+   "end_s": 200.75,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "endX": 540,
+    "endY": 900,
+    "startX": 540,
+    "startY": 1400
+   }
+  },
+  {
+   "step": 38,
+   "tool": "type",
+   "start_s": 203.14,
+   "end_s": 219.45,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 14,
+    "text": "Butter bread slices, layer with cheese, tomato slices, and basil. Grill until bread is toasted and cheese is melted. Try adding a pinch of your favorite spices for extra flavor."
+   }
+  },
+  {
+   "step": 39,
+   "tool": "tap_element",
+   "start_s": 222.12,
+   "end_s": 223.54,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 2
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 2,
+    "x": 954,
+    "y": 201
+   }
+  },
+  {
+   "step": 40,
+   "tool": "tap_element",
+   "start_s": 226.64,
+   "end_s": 227.44,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 4,
+    "x": 74,
+    "y": 202
+   }
+  },
+  {
+   "step": 41,
+   "tool": "map_app",
+   "start_s": 229.93,
+   "end_s": 243.85,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 42,
+   "tool": "done",
+   "start_s": 248.32,
+   "end_s": 248.33,
+   "ok": true,
+   "args": {
+    "summary": "I added all three recipes from recipes.jpg into the Broccoli app. Classic Margherita Pizza (6 servings, 1 hrs, ingredients \"as needed\"), BBQ Chicken Quesadillas (6 servings, 1 hrs, \"to preference\") and Grilled Cheese with Tomato and Basil (8 servings, 1 hrs, \"subject to change\") each saved with their description, ingredients and directions, and each one opened correctly right after saving. The recipe list now holds 13 entries, with all three new ones in place.",
+    "evidence": {
+     "objective_evidence": "After saving, each recipe's own details page showed its exact title, servings, time, description, ingredients and directions from the image. A final map of the Recipes list (13 rows, end proven) shows BBQ Chicken Quesadillas at position 2, the newly added Classic Margherita Pizza with \"A delicious and healthy choice for any time of the day.\" at position 4, and Grilled Cheese with Tomato and Basil with \"A quick and easy meal, perfect for busy weekdays.\" at position 7.",
+     "key_signals": [
+      "recipes.jpg listed three recipes with title, description, servings, preparationTime, ingredients and directions",
+      "Details screen for Classic Margherita Pizza showed 6 servings, 1 hrs, as needed",
+      "Details screen for BBQ Chicken Quesadillas showed 6 servings, 1 hrs, to preference",
+      "Details screen for Grilled Cheese with Tomato and Basil showed 8 servings, 1 hrs, subject to change",
+      "Recipe list map: 13 rows total with the three added titles present"
+     ]
+    },
+    "rows": [
+     {
+      "title": "Classic Margherita Pizza",
+      "description": "A delicious and healthy choice for any time of the day.",
+      "servings": "6 servings",
+      "preparation_time": "1 hrs",
+      "ingredients": "as needed",
+      "directions": "Spread pizza dough with tomato sauce, top with slices of mozzarella cheese and fresh basil leaves. Bake until crust is golden. Try adding a pinch of your favorite spices for extra flavor.",
+      "lusor_status": "succeeded"
+     },
+     {
+      "title": "BBQ Chicken Quesadillas",
+      "description": "A delicious and healthy choice for any time of the day.",
+      "servings": "6 servings",
+      "preparation_time": "1 hrs",
+      "ingredients": "to preference",
+      "directions": "Mix shredded cooked chicken with BBQ sauce. Place on tortillas with cheese, fold and cook until crispy. Feel free to substitute with ingredients you have on hand.",
+      "lusor_status": "succeeded"
+     },
+     {
+      "title": "Grilled Cheese with Tomato and Basil",
+      "description": "A quick and easy meal, perfect for busy weekdays.",
+      "servings": "8 servings",
+      "preparation_time": "1 hrs",
+      "ingredients": "subject to change",
+      "directions": "Butter bread slices, layer with cheese, tomato slices, and basil. Grill until bread is toasted and cheese is melted. Try adding a pinch of your favorite spices for extra flavor.",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "task": "SystemWifiTurnOffVerify",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 28.92,
+   "end_s": 28.94,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 30.0,
+   "end_s": 32.86,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 20,
+    "endX": 540,
+    "endY": 1200,
+    "durationMs": 300
+   }
+  },
+  {
+   "step": 3,
+   "tool": "swipe",
+   "start_s": 34.19,
+   "end_s": 35.24,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "endX": 540,
+    "endY": 1600,
+    "durationMs": 300,
+    "startY": 600
+   }
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 35.95,
+   "end_s": 35.98,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 5,
+   "tool": "key",
+   "start_s": 37.11,
+   "end_s": 37.64,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 6,
+   "tool": "launch",
+   "start_s": 38.29,
+   "end_s": 41.17,
+   "ok": true,
+   "args": {
+    "app": "com.android.settings"
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 41.96,
+   "end_s": 43.42,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 540,
+    "y": 886
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 44.33,
+   "end_s": 46.22,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 580,
+    "y": 701
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap",
+   "start_s": 48.68,
+   "end_s": 49.74,
+   "ok": true,
+   "args": {
+    "x": 400,
+    "y": 889
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 51.29,
+   "end_s": 52.34,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 965,
+    "y": 889
+   }
+  },
+  {
+   "step": 11,
+   "tool": "get_ui_state",
+   "start_s": 53.17,
+   "end_s": 53.18,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 12,
+   "tool": "done",
+   "start_s": 54.7,
+   "end_s": 54.7,
+   "ok": true,
+   "args": {
+    "summary": "Wi-Fi is off. The Wi-Fi switch on the Internet settings screen now shows Unchecked, and no Wi-Fi networks are listed, only the mobile connection.",
+    "evidence": {
+     "objective_evidence": "Internet settings screen shows Wi-Fi Switch id=switch_widget as Unchecked and no available networks listed; the network list begins with the T-Mobile mobile connection.",
+     "key_signals": [
+      "Wi-Fi switch Unchecked after tapping it",
+      "Network list shows no Wi-Fi networks, only T-Mobile Connected / 3G"
+     ]
+    },
+    "rows": [
+     {
+      "action": "Turned Wi-Fi off in Settings",
+      "setting": "Wi-Fi",
+      "state": "off",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,237 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SaveCopyOfReceiptTaskEval",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 51.2,
+  "mobilerun_published_time_s": 266.3,
+  "speed_ratio": 0.192,
+  "lusor_cost_usd": 0.0216,
+  "mobilerun_published_actions": 13,
+  "mobilerun_est_cost_usd": 0.996,
+  "lusor_tool_calls": 24,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "In Simple Gallery Pro, copy receipt_copy_proud_monkey.jpg in DCIM and save a copy with the same name in Download",
+  "final_answer": null,
+  "final_summary": "I copied receipt_copy_proud_monkey.jpg from DCIM into Download in Simple Gallery Pro. The copy kept the same name: its Properties show Name \"receipt_copy_proud_monkey.jpg\", Path /storage/emulated/0/Download, size 14.6 kB, matching the original in DCIM. The folder list now shows 1 item in DCIM and 1 in Download.",
+  "video_duration_s": 94.8,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 31.59,
+    "end_s": 31.6,
+    "ok": true,
+    "note": "Observe current screen; find Simple Gallery Pro skill or launch app"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 33.19,
+    "end_s": 35.91,
+    "ok": true,
+    "note": "Launch Simple Gallery Pro and observe its screen"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 37.17,
+    "end_s": 38.01,
+    "ok": true,
+    "note": "Open DCIM folder and view its contents"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 39.28,
+    "end_s": 40.22,
+    "ok": true,
+    "note": "Long press the DCIM image to select it, then choose Copy"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 41.67,
+    "end_s": 42.71,
+    "ok": true,
+    "note": "Toggle filename visibility to confirm the file name"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 43.83,
+    "end_s": 44.94,
+    "ok": true,
+    "note": "Open the selection More options menu to find Copy"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 46.24,
+    "end_s": 47.16,
+    "ok": true,
+    "note": "Open Properties to confirm filename is receipt_copy_proud_monkey.jpg"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 48.32,
+    "end_s": 48.95,
+    "ok": true,
+    "note": "Tap More options then Copy to and pick Download folder"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 49.77,
+    "end_s": 50.83,
+    "ok": true,
+    "note": "Choose 'Copy to' from the selection menu"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 51.7,
+    "end_s": 52.85,
+    "ok": true,
+    "note": "In Copy to folder picker, choose Download and confirm"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 53.93,
+    "end_s": 55.66,
+    "ok": true,
+    "note": "Use 'Other folder' picker to navigate to Download"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 56.75,
+    "end_s": 57.35,
+    "ok": true,
+    "note": "Navigate breadcrumb to Internal root to find Download folder"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 58.35,
+    "end_s": 58.94,
+    "ok": true,
+    "note": "Enter Download folder in picker, then confirm OK to copy"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 60.0,
+    "end_s": 60.53,
+    "ok": true,
+    "note": "Confirm OK on the folder picker to copy into Download, then check for result toast"
+   },
+   {
+    "step": 15,
+    "tool": "tap_element",
+    "start_s": 62.05,
+    "end_s": 62.45,
+    "ok": true,
+    "note": "Exit selection mode and go back to folders to open Download and verify the copy"
+   },
+   {
+    "step": 16,
+    "tool": "key",
+    "start_s": 63.79,
+    "end_s": 64.85,
+    "ok": true,
+    "note": "Back to folder list, open Download, verify the copied file exists"
+   },
+   {
+    "step": 17,
+    "tool": "tap_element",
+    "start_s": 65.87,
+    "end_s": 66.76,
+    "ok": true,
+    "note": "Open Download folder and verify the file name via Properties"
+   },
+   {
+    "step": 18,
+    "tool": "tap_element",
+    "start_s": 68.41,
+    "end_s": 69.32,
+    "ok": true,
+    "note": "Long press Download item and open Properties to confirm name and path"
+   },
+   {
+    "step": 19,
+    "tool": "tap_element",
+    "start_s": 70.25,
+    "end_s": 71.35,
+    "ok": true,
+    "note": "Open More options and choose Properties to confirm the copy's name and path"
+   },
+   {
+    "step": 20,
+    "tool": "tap_element",
+    "start_s": 72.23,
+    "end_s": 72.91,
+    "ok": true,
+    "note": "Read Properties of the Download item to confirm name and path"
+   },
+   {
+    "step": 21,
+    "tool": "tap",
+    "start_s": 74.32,
+    "end_s": 74.96,
+    "ok": true,
+    "note": "Tap OK to close Properties, then exit selection mode and confirm final screen"
+   },
+   {
+    "step": 22,
+    "tool": "tap_element",
+    "start_s": 75.84,
+    "end_s": 76.11,
+    "ok": true,
+    "note": "Exit selection mode with Done and confirm Download shows one item"
+   },
+   {
+    "step": 23,
+    "tool": "key",
+    "start_s": 77.17,
+    "end_s": 77.64,
+    "ok": true,
+    "note": "Press back to exit selection mode and confirm the Download folder screen"
+   },
+   {
+    "step": 24,
+    "tool": "done",
+    "start_s": 80.37,
+    "end_s": 80.37,
+    "ok": true,
+    "note": "Task complete; no further steps"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SaveCopyOfReceiptTaskEval/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SaveCopyOfReceiptTaskEval/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SaveCopyOfReceiptTaskEval/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SaveCopyOfReceiptTaskEval/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SaveCopyOfReceiptTaskEval/task.json"
+  }
+ }
+}

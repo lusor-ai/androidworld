@@ -1,0 +1,379 @@
+{
+ "task": "TasksIncompleteTasksOnDate",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.09,
+   "end_s": 30.1,
+   "ok": true,
+   "args": {
+    "path": "skill://tasks/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.09,
+   "end_s": 30.1,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.9,
+   "end_s": 34.84,
+   "ok": true,
+   "args": {
+    "app": "org.tasks"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "swipe",
+   "start_s": 38.58,
+   "end_s": 40.61,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1900,
+    "endX": 540,
+    "endY": 700,
+    "durationMs": 600
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 44.08,
+   "end_s": 44.09,
+   "ok": true,
+   "args": {
+    "index": 40
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap",
+   "start_s": 45.05,
+   "end_s": 47.24,
+   "ok": true,
+   "args": {
+    "x": 1027,
+    "y": 2263
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 48.93,
+   "end_s": 49.55,
+   "ok": true,
+   "args": {
+    "index": 49
+   },
+   "tapped": {
+    "label": "CANCEL",
+    "index": 49,
+    "x": 727,
+    "y": 2274
+   }
+  },
+  {
+   "step": 8,
+   "tool": "scroll_to",
+   "start_s": 51.39,
+   "end_s": 52.56,
+   "ok": true,
+   "args": {
+    "target": "My Tasks",
+    "direction": "up"
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 54.65,
+   "end_s": 55.72,
+   "ok": true,
+   "args": {
+    "index": 41
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 41,
+    "x": 1028,
+    "y": 2263
+   }
+  },
+  {
+   "step": 10,
+   "tool": "key",
+   "start_s": 58.55,
+   "end_s": 59.05,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 11,
+   "tool": "screenshot",
+   "start_s": 59.91,
+   "end_s": 61.42,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 12,
+   "tool": "swipe",
+   "start_s": 64.76,
+   "end_s": 67.07,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1900,
+    "endX": 540,
+    "endY": 900,
+    "durationMs": 600,
+    "capture": {
+     "screenshot": true
+    }
+   }
+  },
+  {
+   "step": 13,
+   "tool": "map_app",
+   "start_s": 69.17,
+   "end_s": 84.24,
+   "ok": true,
+   "args": {
+    "levels": 1,
+    "pagination": true
+   }
+  },
+  {
+   "step": 14,
+   "tool": "swipe",
+   "start_s": 88.65,
+   "end_s": 90.86,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 2000,
+    "endX": 540,
+    "endY": 600,
+    "durationMs": 600
+   }
+  },
+  {
+   "step": 15,
+   "tool": "swipe",
+   "start_s": 92.29,
+   "end_s": 94.88,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 800,
+    "endX": 540,
+    "endY": 1600,
+    "durationMs": 800,
+    "capture": {
+     "screenshot": true
+    }
+   }
+  },
+  {
+   "step": 16,
+   "tool": "screenshot",
+   "start_s": 96.21,
+   "end_s": 97.66,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 17,
+   "tool": "swipe",
+   "start_s": 100.55,
+   "end_s": 102.74,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 700,
+    "endX": 540,
+    "endY": 1100,
+    "durationMs": 800
+   }
+  },
+  {
+   "step": 18,
+   "tool": "screenshot",
+   "start_s": 104.44,
+   "end_s": 105.89,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 19,
+   "tool": "scroll_to",
+   "start_s": 108.33,
+   "end_s": 126.65,
+   "ok": true,
+   "args": {
+    "target": "Back Up Computer Files",
+    "direction": "down"
+   }
+  },
+  {
+   "step": 20,
+   "tool": "swipe",
+   "start_s": 128.67,
+   "end_s": 132.22,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1900,
+    "endX": 540,
+    "endY": 400,
+    "durationMs": 600
+   }
+  },
+  {
+   "step": 21,
+   "tool": "swipe",
+   "start_s": 133.9,
+   "end_s": 138.64,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1900,
+    "endX": 540,
+    "endY": 400,
+    "durationMs": 600
+   }
+  },
+  {
+   "step": 22,
+   "tool": "screenshot",
+   "start_s": 140.07,
+   "end_s": 142.95,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 23,
+   "tool": "tap",
+   "start_s": 147.43,
+   "end_s": 148.73,
+   "ok": true,
+   "args": {
+    "x": 73,
+    "y": 2263
+   }
+  },
+  {
+   "step": 24,
+   "tool": "scroll_to",
+   "start_s": 152.07,
+   "end_s": 181.83,
+   "ok": true,
+   "args": {
+    "target": "Exercise session with coach",
+    "direction": "up"
+   }
+  },
+  {
+   "step": 25,
+   "tool": "scroll_to",
+   "start_s": 184.48,
+   "end_s": 219.43,
+   "ok": true,
+   "args": {
+    "target": "Exercise session with coach",
+    "direction": "up"
+   }
+  },
+  {
+   "step": 26,
+   "tool": "swipe",
+   "start_s": 221.47,
+   "end_s": 225.74,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 500,
+    "endX": 540,
+    "endY": 2000,
+    "durationMs": 600
+   }
+  },
+  {
+   "step": 27,
+   "tool": "swipe",
+   "start_s": 227.44,
+   "end_s": 233.82,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 500,
+    "endX": 540,
+    "endY": 2100,
+    "durationMs": 500
+   }
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 236.94,
+   "end_s": 238.63,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 540,
+    "y": 465
+   }
+  },
+  {
+   "step": 29,
+   "tool": "key",
+   "start_s": 240.65,
+   "end_s": 241.21,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 30,
+   "tool": "done",
+   "start_s": 244.67,
+   "end_s": 244.68,
+   "ok": true,
+   "args": {
+    "summary": "You have three incomplete tasks due by October 25, 2023: Exercise session with coach, Plan team outing, Review code changes. All three are due Oct 25; every other task in My Tasks (23 rows, Show completed on) is already completed.",
+    "rows": [
+     {
+      "answer": "Exercise session with coach, Plan team outing, Review code changes",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "My Tasks list (Show completed enabled, 23 rows, end of list reached) shows only three rows with empty checkboxes and normal text: Exercise session with coach (Oct 25), Plan team outing (Oct 25), Review code changes (Oct 25). All other rows show filled checkboxes and struck-through titles. Opened Plan team outing: due date field reads \"Wednesday, October 25\" and no completion timestamp.",
+     "key_signals": [
+      "Show completed = Checked in the app's More options menu",
+      "map_app listed 23 rows with end_proven true",
+      "Screenshots show checked boxes and strikethrough for all rows except the first three",
+      "Plan team outing detail: Wednesday, October 25"
+     ]
+    }
+   }
+  }
+ ]
+}

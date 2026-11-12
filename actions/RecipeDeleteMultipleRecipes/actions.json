@@ -1,0 +1,274 @@
+{
+ "task": "RecipeDeleteMultipleRecipes",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.09,
+   "end_s": 30.1,
+   "ok": true,
+   "args": {
+    "path": "skill://broccoli/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.09,
+   "end_s": 30.1,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.11,
+   "end_s": 35.14,
+   "ok": true,
+   "args": {
+    "app": "com.flauschcode.broccoli"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 36.28,
+   "end_s": 37.82,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 540,
+    "y": 601
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 40.22,
+   "end_s": 41.25,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 6,
+    "x": 1028,
+    "y": 201
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 42.43,
+   "end_s": 43.33,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 813,
+    "y": 601
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 44.29,
+   "end_s": 45.53,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "DELETE",
+    "index": 3,
+    "x": 861,
+    "y": 1296
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 46.64,
+   "end_s": 48.15,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 539,
+    "y": 601
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 49.24,
+   "end_s": 50.14,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 6,
+    "x": 1028,
+    "y": 201
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 51.22,
+   "end_s": 52.03,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 813,
+    "y": 601
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 53.07,
+   "end_s": 54.14,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "DELETE",
+    "index": 3,
+    "x": 861,
+    "y": 1296
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 55.14,
+   "end_s": 56.33,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 531,
+    "y": 633
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 57.52,
+   "end_s": 58.31,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 6,
+    "x": 1028,
+    "y": 201
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 59.41,
+   "end_s": 60.22,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 813,
+    "y": 601
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 61.28,
+   "end_s": 62.12,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "DELETE",
+    "index": 3,
+    "x": 861,
+    "y": 1296
+   }
+  },
+  {
+   "step": 16,
+   "tool": "map_app",
+   "start_s": 63.29,
+   "end_s": 63.41,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 17,
+   "tool": "done",
+   "start_s": 65.64,
+   "end_s": 65.65,
+   "ok": true,
+   "args": {
+    "summary": "I deleted all three recipes from Broccoli: Moroccan Chickpea Stew, Eggplant Parmesan, and Quinoa Salad with Vegetables. The recipe list now shows \"No recipes found.\", so the list holds no rows at all.",
+    "rows": [
+     {
+      "recipe": "Moroccan Chickpea Stew",
+      "action": "deleted",
+      "lusor_status": "succeeded"
+     },
+     {
+      "recipe": "Eggplant Parmesan",
+      "action": "deleted",
+      "lusor_status": "succeeded"
+     },
+     {
+      "recipe": "Quinoa Salad with Vegetables",
+      "action": "deleted",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "Each recipe was opened, deleted via its More options > Delete menu with the \"Delete this recipe?\" confirmation, and the app returned to the Recipes list with one fewer card each time. The final read of the Recipes list shows the \"No recipes found.\" empty state, and a full list walk reports 0 rows with its end proven.",
+     "key_signals": [
+      "Recipes list initially showed 3 cards: Eggplant Parmesan, Moroccan Chickpea Stew, Quinoa Salad with Vegetables",
+      "Each delete confirmation dialog read \"Delete this recipe?\" with DELETE tapped",
+      "After each deletion the list showed one fewer recipe",
+      "Final screen: \"No recipes found.\"",
+      "map_app levels 1 on the Recipes list: count 0, end_proven true"
+     ]
+    }
+   }
+  }
+ ]
+}

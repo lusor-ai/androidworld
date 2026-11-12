@@ -1,0 +1,786 @@
+{
+ "task": "OsmAndTrack",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.83,
+   "end_s": 30.84,
+   "ok": true,
+   "args": {
+    "path": "skill://osmand/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.83,
+   "end_s": 30.84,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 32.11,
+   "end_s": 35.68,
+   "ok": true,
+   "args": {
+    "app": "net.osmand"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 36.66,
+   "end_s": 39.34,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "Back to menu",
+    "index": 5,
+    "x": 85,
+    "y": 2253
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 40.37,
+   "end_s": 41.51,
+   "ok": true,
+   "args": {
+    "index": 19
+   },
+   "tapped": {
+    "label": null,
+    "index": 19,
+    "x": 368,
+    "y": 1413
+   }
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 42.38,
+   "end_s": 42.4,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 43.43,
+   "end_s": 44.4,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 540,
+    "y": 1727
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 46.07,
+   "end_s": 47.01,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": "Search",
+    "index": 6,
+    "x": 203,
+    "y": 349
+   }
+  },
+  {
+   "step": 9,
+   "tool": "type",
+   "start_s": 47.91,
+   "end_s": 52.49,
+   "ok": true,
+   "args": {
+    "text": "Bendern, Liechtenstein",
+    "index": 3
+   }
+  },
+  {
+   "step": 10,
+   "tool": "get_ui_state",
+   "start_s": 54.17,
+   "end_s": 54.18,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 11,
+   "tool": "tap",
+   "start_s": 55.96,
+   "end_s": 57.79,
+   "ok": true,
+   "args": {
+    "x": 492,
+    "y": 503
+   }
+  },
+  {
+   "step": 12,
+   "tool": "key",
+   "start_s": 59.1,
+   "end_s": 59.89,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 13,
+   "tool": "type",
+   "start_s": 62.38,
+   "end_s": 65.57,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "text": "Bendern"
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap",
+   "start_s": 66.92,
+   "end_s": 67.6,
+   "ok": true,
+   "args": {
+    "x": 492,
+    "y": 503
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 69.22,
+   "end_s": 70.87,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 540,
+    "y": 341
+   }
+  },
+  {
+   "step": 16,
+   "tool": "key",
+   "start_s": 72.07,
+   "end_s": 72.82,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 73.97,
+   "end_s": 74.38,
+   "ok": true,
+   "args": {
+    "index": 1
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 1,
+    "x": 74,
+    "y": 202
+   }
+  },
+  {
+   "step": 18,
+   "tool": "key",
+   "start_s": 75.29,
+   "end_s": 75.77,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 76.68,
+   "end_s": 77.29,
+   "ok": true,
+   "args": {
+    "index": 17
+   },
+   "tapped": {
+    "label": null,
+    "index": 17,
+    "x": 933,
+    "y": 2269
+   }
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 78.44,
+   "end_s": 79.39,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": "Search",
+    "index": 6,
+    "x": 203,
+    "y": 349
+   }
+  },
+  {
+   "step": 21,
+   "tool": "type",
+   "start_s": 80.44,
+   "end_s": 82.48,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "text": "Ruggell"
+   }
+  },
+  {
+   "step": 22,
+   "tool": "get_ui_state",
+   "start_s": 83.36,
+   "end_s": 83.39,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 23,
+   "tool": "tap",
+   "start_s": 84.71,
+   "end_s": 85.28,
+   "ok": true,
+   "args": {
+    "x": 492,
+    "y": 503
+   }
+  },
+  {
+   "step": 24,
+   "tool": "tap_element",
+   "start_s": 86.3,
+   "end_s": 88.02,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 540,
+    "y": 341
+   }
+  },
+  {
+   "step": 25,
+   "tool": "key",
+   "start_s": 89.6,
+   "end_s": 90.31,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 26,
+   "tool": "key",
+   "start_s": 91.41,
+   "end_s": 91.8,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 27,
+   "tool": "key",
+   "start_s": 94.95,
+   "end_s": 95.4,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 97.76,
+   "end_s": 98.2,
+   "ok": true,
+   "args": {
+    "index": 18
+   },
+   "tapped": {
+    "label": null,
+    "index": 18,
+    "x": 933,
+    "y": 2269
+   }
+  },
+  {
+   "step": 29,
+   "tool": "tap_element",
+   "start_s": 100.14,
+   "end_s": 101.21,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": "Search",
+    "index": 6,
+    "x": 203,
+    "y": 349
+   }
+  },
+  {
+   "step": 30,
+   "tool": "type",
+   "start_s": 102.42,
+   "end_s": 104.48,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "text": "Nendeln"
+   }
+  },
+  {
+   "step": 31,
+   "tool": "get_ui_state",
+   "start_s": 105.48,
+   "end_s": 105.79,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 32,
+   "tool": "tap",
+   "start_s": 106.95,
+   "end_s": 107.88,
+   "ok": true,
+   "args": {
+    "x": 492,
+    "y": 503
+   }
+  },
+  {
+   "step": 33,
+   "tool": "tap_element",
+   "start_s": 109.03,
+   "end_s": 110.97,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 540,
+    "y": 341
+   }
+  },
+  {
+   "step": 34,
+   "tool": "key",
+   "start_s": 112.54,
+   "end_s": 113.33,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 35,
+   "tool": "key",
+   "start_s": 114.39,
+   "end_s": 115.01,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 36,
+   "tool": "key",
+   "start_s": 116.63,
+   "end_s": 117.14,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 37,
+   "tool": "tap_element",
+   "start_s": 118.42,
+   "end_s": 119.2,
+   "ok": true,
+   "args": {
+    "index": 18
+   },
+   "tapped": {
+    "label": null,
+    "index": 18,
+    "x": 933,
+    "y": 2269
+   }
+  },
+  {
+   "step": 38,
+   "tool": "tap_element",
+   "start_s": 121.24,
+   "end_s": 122.57,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": "Search",
+    "index": 6,
+    "x": 203,
+    "y": 349
+   }
+  },
+  {
+   "step": 39,
+   "tool": "type",
+   "start_s": 123.97,
+   "end_s": 125.88,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "text": "Rotenboden"
+   }
+  },
+  {
+   "step": 40,
+   "tool": "get_ui_state",
+   "start_s": 126.88,
+   "end_s": 126.91,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 41,
+   "tool": "tap",
+   "start_s": 128.24,
+   "end_s": 128.99,
+   "ok": true,
+   "args": {
+    "x": 492,
+    "y": 503
+   }
+  },
+  {
+   "step": 42,
+   "tool": "tap_element",
+   "start_s": 130.12,
+   "end_s": 131.9,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 540,
+    "y": 341
+   }
+  },
+  {
+   "step": 43,
+   "tool": "key",
+   "start_s": 133.03,
+   "end_s": 133.74,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 44,
+   "tool": "key",
+   "start_s": 135.5,
+   "end_s": 135.84,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 45,
+   "tool": "key",
+   "start_s": 137.02,
+   "end_s": 137.53,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 46,
+   "tool": "tap_element",
+   "start_s": 138.9,
+   "end_s": 139.3,
+   "ok": true,
+   "args": {
+    "index": 18
+   },
+   "tapped": {
+    "label": null,
+    "index": 18,
+    "x": 933,
+    "y": 2269
+   }
+  },
+  {
+   "step": 47,
+   "tool": "tap_element",
+   "start_s": 140.94,
+   "end_s": 141.77,
+   "ok": true,
+   "args": {
+    "index": 16
+   },
+   "tapped": {
+    "label": "Options",
+    "index": 16,
+    "x": 107,
+    "y": 2269
+   }
+  },
+  {
+   "step": 48,
+   "tool": "tap_element",
+   "start_s": 143.06,
+   "end_s": 144.49,
+   "ok": true,
+   "args": {
+    "index": 7
+   },
+   "tapped": {
+    "label": null,
+    "index": 7,
+    "x": 540,
+    "y": 1278
+   }
+  },
+  {
+   "step": 49,
+   "tool": "tap_element",
+   "start_s": 146.84,
+   "end_s": 148.18,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": null,
+    "index": 14,
+    "x": 800,
+    "y": 2268
+   }
+  },
+  {
+   "step": 50,
+   "tool": "tap_element",
+   "start_s": 149.71,
+   "end_s": 151.07,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 540,
+    "y": 1843
+   }
+  },
+  {
+   "step": 51,
+   "tool": "tap_element",
+   "start_s": 153.09,
+   "end_s": 153.69,
+   "ok": true,
+   "args": {
+    "index": 13
+   },
+   "tapped": {
+    "label": "Points",
+    "index": 13,
+    "x": 675,
+    "y": 2264
+   }
+  },
+  {
+   "step": 52,
+   "tool": "tap_element",
+   "start_s": 156.64,
+   "end_s": 157.2,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "Track",
+    "index": 11,
+    "x": 405,
+    "y": 2264
+   }
+  },
+  {
+   "step": 53,
+   "tool": "tap_element",
+   "start_s": 159.66,
+   "end_s": 159.99,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 94,
+    "y": 222
+   }
+  },
+  {
+   "step": 54,
+   "tool": "tap_element",
+   "start_s": 161.79,
+   "end_s": 162.59,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Back to menu",
+    "index": 3,
+    "x": 85,
+    "y": 2253
+   }
+  },
+  {
+   "step": 55,
+   "tool": "tap_element",
+   "start_s": 164.34,
+   "end_s": 165.47,
+   "ok": true,
+   "args": {
+    "index": 18
+   },
+   "tapped": {
+    "label": null,
+    "index": 18,
+    "x": 368,
+    "y": 1413
+   }
+  },
+  {
+   "step": 56,
+   "tool": "get_ui_state",
+   "start_s": 166.8,
+   "end_s": 166.82,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 57,
+   "tool": "tap",
+   "start_s": 168.67,
+   "end_s": 169.98,
+   "ok": true,
+   "args": {
+    "x": 490,
+    "y": 2070
+   }
+  },
+  {
+   "step": 58,
+   "tool": "tap_element",
+   "start_s": 171.58,
+   "end_s": 172.2,
+   "ok": true,
+   "args": {
+    "index": 13
+   },
+   "tapped": {
+    "label": null,
+    "index": 13,
+    "x": 540,
+    "y": 1991
+   }
+  },
+  {
+   "step": 59,
+   "tool": "done",
+   "start_s": 180.3,
+   "end_s": 180.3,
+   "ok": true,
+   "args": {
+    "summary": "I saved the track with the four places in the order you listed. In OsmAnd I built the route point by point (Bendern, then Ruggell, then Nendeln, then Rotenboden, all in Liechtenstein), then used Options and Save as new track, which stored it in the Tracks folder as \"Sun 15 Oct 2023.gpx\" (total length about 10 miles). Reopening it shows 4 points in that same order: start at Bendern, then 2.12 mi to Ruggell, 5.16 mi to Nendeln, and 9.98 mi to Rotenboden at the end.",
+    "evidence": {
+     "objective_evidence": "After Save, a dialog confirmed \"Sun 15 Oct 2023.gpx is saved\". The saved track's detail screen showed \"Sun 15 Oct 2023\", 9.98 mi, region Bendern, and Plan a route's \"Last edited\" list showed the same track. Reopening it in the planner showed \"points: 4\" and 9.99 mi, and expanding the point list showed Point 1 \"Start\", Point 2 \"2.12 mi • 26°\", Point 3 \"5.16 mi • 165°\", Point 4 \"9.98 mi • -178°\" — matching the distances measured when each place was added",
+     "key_signals": [
+      "Planner counter went points: 1 → 2 → 3 → 4 as each place was added",
+      "Distance to map centre matched each searched place (Ruggell 2.13 mi, Nendeln 3.03 mi, Rotenboden 4.83 mi) before pressing Add",
+      "Save dialog: \"Sun 15 Oct 2023.gpx is saved\"",
+      "Track detail: Sun 15 Oct 2023, 9.98 mi",
+      "Planner reopened track: points: 4, 9.99 mi"
+     ]
+    },
+    "rows": [
+     {
+      "position": 1,
+      "place": "Bendern, Liechtenstein",
+      "track": "Sun 15 Oct 2023.gpx",
+      "lusor_status": "succeeded"
+     },
+     {
+      "position": 2,
+      "place": "Ruggell, Liechtenstein",
+      "track": "Sun 15 Oct 2023.gpx",
+      "lusor_status": "succeeded"
+     },
+     {
+      "position": 3,
+      "place": "Nendeln, Liechtenstein",
+      "track": "Sun 15 Oct 2023.gpx",
+      "lusor_status": "succeeded"
+     },
+     {
+      "position": 4,
+      "place": "Rotenboden, Liechtenstein",
+      "track": "Sun 15 Oct 2023.gpx",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

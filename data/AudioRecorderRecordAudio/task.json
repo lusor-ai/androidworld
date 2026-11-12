@@ -1,0 +1,125 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "AudioRecorderRecordAudio",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 27.2,
+  "mobilerun_published_time_s": 147.0,
+  "speed_ratio": 0.185,
+  "lusor_cost_usd": 0.0082,
+  "mobilerun_published_actions": 7,
+  "mobilerun_est_cost_usd": 0.536,
+  "lusor_tool_calls": 10,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Record an audio clip using Audio Recorder app and save it.",
+  "final_answer": null,
+  "final_summary": "Recorded and saved an audio clip in Audio Recorder. I recorded about seven seconds of audio, stopped it, and saved it under the suggested name Record-1. The Records list now shows Record-1 dated Today, 0.09 Mb, M4a, 44.1kHz, duration 00:07.",
+  "video_duration_s": 67.3,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 29.27,
+    "end_s": 29.31,
+    "ok": true,
+    "note": "Observe current screen; find Audio Recorder app"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 30.64,
+    "end_s": 32.12,
+    "ok": true,
+    "note": "Launch Audio Recorder app and observe its main screen"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 32.97,
+    "end_s": 34.5,
+    "ok": true,
+    "note": "Tap Get started and dismiss intro"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 35.35,
+    "end_s": 36.46,
+    "ok": true,
+    "note": "Tap Apply on setup screen and continue to main recorder screen"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 37.27,
+    "end_s": 39.06,
+    "ok": true,
+    "note": "Tap record button and check for permission dialog"
+   },
+   {
+    "step": 6,
+    "tool": "chain",
+    "start_s": 40.2,
+    "end_s": 44.52,
+    "ok": true,
+    "note": "Wait 3 seconds, then tap stop to finish the recording"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 45.5,
+    "end_s": 46.77,
+    "ok": true,
+    "note": "Tap stop button to end recording"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 47.64,
+    "end_s": 48.07,
+    "ok": true,
+    "note": "Tap Save to store the recording as Record-1"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 49.04,
+    "end_s": 50.16,
+    "ok": true,
+    "note": "Open records list and confirm Record-1 is saved"
+   },
+   {
+    "step": 10,
+    "tool": "done",
+    "start_s": 52.19,
+    "end_s": 52.19,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudio/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudio/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudio/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudio/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudio/task.json"
+  }
+ }
+}

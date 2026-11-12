@@ -1,0 +1,289 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "TasksIncompleteTasksOnDate",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 219.2,
+  "mobilerun_published_time_s": 126.2,
+  "speed_ratio": 1.737,
+  "lusor_cost_usd": 0.0572,
+  "mobilerun_published_actions": 3,
+  "mobilerun_est_cost_usd": 0.23,
+  "lusor_tool_calls": 30,
+  "disclosure": null,
+  "skills_read": [
+   "tasks"
+  ],
+  "skill_assisted": [
+   "tasks"
+  ],
+  "goal": "What incomplete tasks do I have still have to do by October 25 2023 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.",
+  "final_answer": "Exercise session with coach, Plan team outing, Review code changes",
+  "final_summary": "You have three incomplete tasks due by October 25, 2023: Exercise session with coach, Plan team outing, Review code changes. All three are due Oct 25; every other task in My Tasks (23 rows, Show completed on) is already completed.",
+  "video_duration_s": 260.6,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 30.09,
+    "end_s": 30.1,
+    "ok": true,
+    "note": "Load tasks skill then observe screen"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 30.09,
+    "end_s": 30.1,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 30.9,
+    "end_s": 34.84,
+    "ok": true,
+    "note": "Launch Tasks app and observe list"
+   },
+   {
+    "step": 4,
+    "tool": "swipe",
+    "start_s": 38.58,
+    "end_s": 40.61,
+    "ok": true,
+    "note": "Scroll Tasks list to see remaining rows and check Show completed"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 44.08,
+    "end_s": 44.09,
+    "ok": true,
+    "note": "Read More options menu to check Show completed state"
+   },
+   {
+    "step": 6,
+    "tool": "tap",
+    "start_s": 45.05,
+    "end_s": 47.24,
+    "ok": true,
+    "note": "Read More options menu to check Show completed state"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 48.93,
+    "end_s": 49.55,
+    "ok": true,
+    "note": "Cancel date picker and return to list"
+   },
+   {
+    "step": 8,
+    "tool": "scroll_to",
+    "start_s": 51.39,
+    "end_s": 52.56,
+    "ok": true,
+    "note": "Scroll list to top to see toolbar and menu"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 54.65,
+    "end_s": 55.72,
+    "ok": true,
+    "note": "Check More options menu for Show completed state"
+   },
+   {
+    "step": 10,
+    "tool": "key",
+    "start_s": 58.55,
+    "end_s": 59.05,
+    "ok": true,
+    "note": "Close menu; screenshot list to identify completed rows visually"
+   },
+   {
+    "step": 11,
+    "tool": "screenshot",
+    "start_s": 59.91,
+    "end_s": 61.42,
+    "ok": true,
+    "note": "Screenshot list to see which rows are completed (checked box/strikethrough)"
+   },
+   {
+    "step": 12,
+    "tool": "swipe",
+    "start_s": 64.76,
+    "end_s": 67.07,
+    "ok": true,
+    "note": "Scroll down and screenshot remaining rows to check completion states"
+   },
+   {
+    "step": 13,
+    "tool": "map_app",
+    "start_s": 69.17,
+    "end_s": 84.24,
+    "ok": true,
+    "note": "Map full list to prove end and titles"
+   },
+   {
+    "step": 14,
+    "tool": "swipe",
+    "start_s": 88.65,
+    "end_s": 90.86,
+    "ok": true,
+    "note": "Scroll to rows 11-16 and screenshot to verify completion checkboxes"
+   },
+   {
+    "step": 15,
+    "tool": "swipe",
+    "start_s": 92.29,
+    "end_s": 94.88,
+    "ok": true,
+    "note": "Scroll up to rows 11-16 and read checkboxes from screenshot"
+   },
+   {
+    "step": 16,
+    "tool": "screenshot",
+    "start_s": 96.21,
+    "end_s": 97.66,
+    "ok": true,
+    "note": "Read checkbox states for rows 12-22 from screenshot"
+   },
+   {
+    "step": 17,
+    "tool": "swipe",
+    "start_s": 100.55,
+    "end_s": 102.74,
+    "ok": true,
+    "note": "Scroll slightly up to see Take Dog to the Vet (Thu 21:52) row checkbox"
+   },
+   {
+    "step": 18,
+    "tool": "screenshot",
+    "start_s": 104.44,
+    "end_s": 105.89,
+    "ok": true,
+    "note": "Read checkbox of Take Dog to the Vet (Thu 21:52) row"
+   },
+   {
+    "step": 19,
+    "tool": "scroll_to",
+    "start_s": 108.33,
+    "end_s": 126.65,
+    "ok": true,
+    "note": "Scroll to bottom to check Take Dog to the Vet (Fri 04:11) and Back Up Computer Files rows"
+   },
+   {
+    "step": 20,
+    "tool": "swipe",
+    "start_s": 128.67,
+    "end_s": 132.22,
+    "ok": true,
+    "note": "Swipe to bottom rows and check Back Up Computer Files / Take Dog to the Vet (Fri 04:11)"
+   },
+   {
+    "step": 21,
+    "tool": "swipe",
+    "start_s": 133.9,
+    "end_s": 138.64,
+    "ok": true,
+    "note": "Scroll to the last rows to check Take Dog to the Vet (Fri 04:11) and Back Up Computer Files"
+   },
+   {
+    "step": 22,
+    "tool": "screenshot",
+    "start_s": 140.07,
+    "end_s": 142.95,
+    "ok": true,
+    "note": "Read checkbox states of last two rows"
+   },
+   {
+    "step": 23,
+    "tool": "tap",
+    "start_s": 147.43,
+    "end_s": 148.73,
+    "ok": true,
+    "note": "Open drawer to confirm no other task lists are hidden"
+   },
+   {
+    "step": 24,
+    "tool": "scroll_to",
+    "start_s": 152.07,
+    "end_s": 181.83,
+    "ok": true,
+    "note": "Open Exercise session with coach to verify due date year and incomplete state"
+   },
+   {
+    "step": 25,
+    "tool": "scroll_to",
+    "start_s": 184.48,
+    "end_s": 219.43,
+    "ok": true,
+    "note": "Reach top of list, open first task to verify due date"
+   },
+   {
+    "step": 26,
+    "tool": "swipe",
+    "start_s": 221.47,
+    "end_s": 225.74,
+    "ok": true,
+    "note": "Swipe up repeatedly to reach top of list"
+   },
+   {
+    "step": 27,
+    "tool": "swipe",
+    "start_s": 227.44,
+    "end_s": 233.82,
+    "ok": true,
+    "note": "Continue swiping up to top"
+   },
+   {
+    "step": 28,
+    "tool": "tap_element",
+    "start_s": 236.94,
+    "end_s": 238.63,
+    "ok": true,
+    "note": "Open Plan team outing to read its due date and completion state"
+   },
+   {
+    "step": 29,
+    "tool": "key",
+    "start_s": 240.65,
+    "end_s": 241.21,
+    "ok": true,
+    "note": "Return to list and confirm final state"
+   },
+   {
+    "step": 30,
+    "tool": "done",
+    "start_s": 244.67,
+    "end_s": 244.68,
+    "ok": true,
+    "note": "Done"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/TasksIncompleteTasksOnDate/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/TasksIncompleteTasksOnDate/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/TasksIncompleteTasksOnDate/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/TasksIncompleteTasksOnDate/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/TasksIncompleteTasksOnDate/task.json"
+  }
+ }
+}

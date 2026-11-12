@@ -1,0 +1,167 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "RecipeDeleteDuplicateRecipes",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 51.2,
+  "mobilerun_published_time_s": 250.3,
+  "speed_ratio": 0.205,
+  "lusor_cost_usd": 0.0155,
+  "mobilerun_published_actions": 10,
+  "mobilerun_est_cost_usd": 0.766,
+  "lusor_tool_calls": 15,
+  "disclosure": null,
+  "skills_read": [
+   "broccoli"
+  ],
+  "skill_assisted": [],
+  "goal": "Delete all but one of any recipes in the Broccoli app that are exact duplicates, ensuring at least one instance of each unique recipe remains",
+  "final_answer": null,
+  "final_summary": "The only exact duplicates were two identical \"Eggplant Parmesan\" recipes, and I deleted one of them, so one copy remains. The other five recipes (Baked Cod with Lemon and Dill, BBQ Chicken Quesadillas, Raspberry Almond Smoothie, Shrimp Avocado Salad, Spicy Tuna Wraps) each had only one instance, so nothing else was touched. The recipe list now holds six recipes.",
+  "video_duration_s": 92.3,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 30.51,
+    "end_s": 30.53,
+    "ok": true,
+    "note": "Read the Broccoli skill guidance"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 30.51,
+    "end_s": 30.53,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 31.59,
+    "end_s": 35.52,
+    "ok": true,
+    "note": "Launch Broccoli and read recipe list"
+   },
+   {
+    "step": 4,
+    "tool": "map_app",
+    "start_s": 36.37,
+    "end_s": 43.95,
+    "ok": true,
+    "note": "Map full recipe list titles"
+   },
+   {
+    "step": 5,
+    "tool": "get_ui_state",
+    "start_s": 45.6,
+    "end_s": 45.61,
+    "ok": true,
+    "note": "Read the recipe list screen and open the first Eggplant Parmesan"
+   },
+   {
+    "step": 6,
+    "tool": "get_ui_state",
+    "start_s": 46.5,
+    "end_s": 46.52,
+    "ok": true,
+    "note": "Read recipe card titles to locate the two Eggplant Parmesan entries"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 47.69,
+    "end_s": 49.25,
+    "ok": true,
+    "note": "Open first Eggplant Parmesan card and read its details"
+   },
+   {
+    "step": 8,
+    "tool": "key",
+    "start_s": 50.8,
+    "end_s": 51.26,
+    "ok": true,
+    "note": "Back to list, open second Eggplant Parmesan card"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 52.56,
+    "end_s": 54.05,
+    "ok": true,
+    "note": "Read second Eggplant Parmesan details to compare"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 56.28,
+    "end_s": 57.33,
+    "ok": true,
+    "note": "Open More options menu to delete this duplicate"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 58.81,
+    "end_s": 59.74,
+    "ok": true,
+    "note": "Tap Delete and confirm the confirmation dialog"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 61.24,
+    "end_s": 62.24,
+    "ok": true,
+    "note": "Confirm DELETE and verify list has one Eggplant Parmesan"
+   },
+   {
+    "step": 13,
+    "tool": "map_app",
+    "start_s": 63.63,
+    "end_s": 71.56,
+    "ok": true,
+    "note": "Recount recipe list titles to confirm 6 unique recipes"
+   },
+   {
+    "step": 14,
+    "tool": "get_ui_state",
+    "start_s": 73.43,
+    "end_s": 73.44,
+    "ok": true,
+    "note": "Final list read then done()"
+   },
+   {
+    "step": 15,
+    "tool": "done",
+    "start_s": 76.8,
+    "end_s": 76.8,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes/task.json"
+  }
+ }
+}

@@ -1,0 +1,335 @@
+{
+ "task": "TasksDueNextWeek",
+ "video_duration_s": 221.4,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.8,
+   "end_s": 29.81,
+   "ok": true,
+   "note": "Read the Tasks skill guidance"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.8,
+   "end_s": 29.81,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.81,
+   "end_s": 34.53,
+   "ok": true,
+   "note": "Launch Tasks app and inspect task list"
+  },
+  {
+   "step": 4,
+   "tool": "map_app",
+   "start_s": 36.49,
+   "end_s": 52.66,
+   "ok": true,
+   "note": "Map full task list to count all tasks"
+  },
+  {
+   "step": 5,
+   "tool": "scroll_to",
+   "start_s": 56.2,
+   "end_s": 87.98,
+   "ok": true,
+   "note": "Scroll list to top and open 'Meal Prep for the Week' to check its due date"
+  },
+  {
+   "step": 6,
+   "tool": "swipe",
+   "start_s": 89.46,
+   "end_s": 97.01,
+   "ok": true,
+   "note": "Scroll task list to top"
+  },
+  {
+   "step": 7,
+   "tool": "swipe",
+   "start_s": 98.32,
+   "end_s": 103.31,
+   "ok": true,
+   "note": "Reach top of task list"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 104.78,
+   "end_s": 106.31,
+   "ok": true,
+   "note": "Open 'Review code changes' and inspect its due date picker"
+  },
+  {
+   "step": 9,
+   "tool": "tap",
+   "start_s": 107.55,
+   "end_s": 108.38,
+   "ok": true,
+   "note": "Tap the due date row to open date picker for 'Review code changes'"
+  },
+  {
+   "step": 10,
+   "tool": "get_ui_state",
+   "start_s": 109.9,
+   "end_s": 110.12,
+   "ok": true,
+   "note": "Observe whether a date picker dialog opened"
+  },
+  {
+   "step": 11,
+   "tool": "chain",
+   "start_s": 119.22,
+   "end_s": 120.39,
+   "ok": true,
+   "note": "Cancel picker, go back to list, open next weekday-labelled task"
+  },
+  {
+   "step": 12,
+   "tool": "chain",
+   "start_s": 122.36,
+   "end_s": 123.33,
+   "ok": true,
+   "note": "Open 'Organize files and folders' and observe its detail screen"
+  },
+  {
+   "step": 13,
+   "tool": "chain",
+   "start_s": 124.73,
+   "end_s": 124.74,
+   "ok": true,
+   "note": "Tap due date row for 'Organize files and folders' and read picker"
+  },
+  {
+   "step": 14,
+   "tool": "tap",
+   "start_s": 125.82,
+   "end_s": 127.48,
+   "ok": true,
+   "note": "Tap due date row (540,1076) and read picker selection"
+  },
+  {
+   "step": 15,
+   "tool": "chain",
+   "start_s": 130.21,
+   "end_s": 133.8,
+   "ok": true,
+   "note": "Cancel picker, back, open 'Organize movie night' and read its screen"
+  },
+  {
+   "step": 16,
+   "tool": "chain",
+   "start_s": 137.17,
+   "end_s": 138.04,
+   "ok": true,
+   "note": "Open 'Organize movie night' rowBody [25] and read detail"
+  },
+  {
+   "step": 17,
+   "tool": "tap",
+   "start_s": 139.37,
+   "end_s": 141.3,
+   "ok": true,
+   "note": "Tap due date row for 'Organize movie night' and read picker"
+  },
+  {
+   "step": 18,
+   "tool": "chain",
+   "start_s": 143.41,
+   "end_s": 144.4,
+   "ok": true,
+   "note": "Cancel, back, open 'Prepare agenda for weekly meeting' [28]"
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 146.33,
+   "end_s": 147.39,
+   "ok": true,
+   "note": "Open 'Prepare agenda for weekly meeting' detail"
+  },
+  {
+   "step": 20,
+   "tool": "swipe",
+   "start_s": 148.79,
+   "end_s": 148.8,
+   "ok": false,
+   "note": "Scroll list slightly then open 'Prepare agenda for weekly meeting'"
+  },
+  {
+   "step": 21,
+   "tool": "swipe",
+   "start_s": 149.84,
+   "end_s": 151.59,
+   "ok": true,
+   "note": "Scroll list slightly then open 'Prepare agenda for weekly meeting'"
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 152.35,
+   "end_s": 153.11,
+   "ok": true,
+   "note": "Open 'Prepare agenda for weekly meeting' detail"
+  },
+  {
+   "step": 23,
+   "tool": "tap",
+   "start_s": 154.05,
+   "end_s": 155.8,
+   "ok": true,
+   "note": "Tap due date row for 'Prepare agenda for weekly meeting' and read selected date"
+  },
+  {
+   "step": 24,
+   "tool": "chain",
+   "start_s": 158.07,
+   "end_s": 158.99,
+   "ok": true,
+   "note": "Cancel, back, scroll list to top for the first group of tasks"
+  },
+  {
+   "step": 25,
+   "tool": "chain",
+   "start_s": 160.65,
+   "end_s": 161.48,
+   "ok": true,
+   "note": "Open 'Grocery Shopping' (Wed 12:02) detail via [4]"
+  },
+  {
+   "step": 26,
+   "tool": "tap",
+   "start_s": 162.6,
+   "end_s": 164.21,
+   "ok": true,
+   "note": "Tap due date row for 'Grocery Shopping' and read selected day"
+  },
+  {
+   "step": 27,
+   "tool": "chain",
+   "start_s": 165.87,
+   "end_s": 166.72,
+   "ok": true,
+   "note": "Cancel, back to list, then open 'Learn to Play Guitar'"
+  },
+  {
+   "step": 28,
+   "tool": "chain",
+   "start_s": 168.34,
+   "end_s": 169.07,
+   "ok": true,
+   "note": "Open 'Learn to Play Guitar' [7] detail"
+  },
+  {
+   "step": 29,
+   "tool": "tap",
+   "start_s": 170.05,
+   "end_s": 171.59,
+   "ok": true,
+   "note": "Tap due date row for 'Learn to Play Guitar' and read selected day"
+  },
+  {
+   "step": 30,
+   "tool": "chain",
+   "start_s": 173.51,
+   "end_s": 174.31,
+   "ok": true,
+   "note": "Cancel, back, then scroll up toward top of list"
+  },
+  {
+   "step": 31,
+   "tool": "swipe",
+   "start_s": 175.4,
+   "end_s": 177.22,
+   "ok": true,
+   "note": "Scroll list up toward top"
+  },
+  {
+   "step": 32,
+   "tool": "chain",
+   "start_s": 178.6,
+   "end_s": 179.31,
+   "ok": true,
+   "note": "Open 'Meal Prep for the Week' [7] detail"
+  },
+  {
+   "step": 33,
+   "tool": "tap",
+   "start_s": 180.39,
+   "end_s": 182.11,
+   "ok": true,
+   "note": "Tap due date row for 'Meal Prep for the Week' and read selected day"
+  },
+  {
+   "step": 34,
+   "tool": "chain",
+   "start_s": 183.74,
+   "end_s": 184.62,
+   "ok": true,
+   "note": "Cancel, back, then open 'Renew Driver's License'"
+  },
+  {
+   "step": 35,
+   "tool": "chain",
+   "start_s": 186.03,
+   "end_s": 186.82,
+   "ok": true,
+   "note": "Open 'Renew Driver's License' [10] detail"
+  },
+  {
+   "step": 36,
+   "tool": "tap",
+   "start_s": 187.84,
+   "end_s": 189.41,
+   "ok": true,
+   "note": "Tap due date row for 'Renew Driver's License' and read selected day"
+  },
+  {
+   "step": 37,
+   "tool": "chain",
+   "start_s": 190.85,
+   "end_s": 191.72,
+   "ok": true,
+   "note": "Cancel, back, open 'Submit Expense Report' (Tue 07:58)"
+  },
+  {
+   "step": 38,
+   "tool": "chain",
+   "start_s": 194.31,
+   "end_s": 195.01,
+   "ok": true,
+   "note": "Open 'Submit Expense Report' (Tue 07:58) via [16] detail"
+  },
+  {
+   "step": 39,
+   "tool": "tap",
+   "start_s": 196.25,
+   "end_s": 198.01,
+   "ok": true,
+   "note": "Tap due date row for 'Submit Expense Report' and read selected day"
+  },
+  {
+   "step": 40,
+   "tool": "chain",
+   "start_s": 201.81,
+   "end_s": 202.79,
+   "ok": true,
+   "note": "Close date picker and detail screen, then report count of tasks due Oct 16-22"
+  },
+  {
+   "step": 41,
+   "tool": "done",
+   "start_s": 206.17,
+   "end_s": 206.18,
+   "ok": true,
+   "note": "Report answer 6"
+  }
+ ]
+}

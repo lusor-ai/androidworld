@@ -1,0 +1,63 @@
+{
+ "task": "NotesIsTodo",
+ "video_duration_s": 60.0,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 33.26,
+   "end_s": 33.28,
+   "ok": true,
+   "note": "Observe current screen; no Joplin skill listed, so navigate to Joplin app directly"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 34.28,
+   "end_s": 35.6,
+   "ok": true,
+   "note": "Launch Joplin and observe its note list"
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 36.4,
+   "end_s": 36.42,
+   "ok": true,
+   "note": "Read Joplin note list after launch"
+  },
+  {
+   "step": 4,
+   "tool": "chain",
+   "start_s": 37.54,
+   "end_s": 41.65,
+   "ok": true,
+   "note": "Wait for Joplin to load then read screen"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 42.84,
+   "end_s": 42.85,
+   "ok": true,
+   "note": "Open the 'Travel Itinerary' note and confirm its type is Todo"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 43.57,
+   "end_s": 44.33,
+   "ok": true,
+   "note": "Open the 'Travel Itinerary' note and confirm its type is Todo"
+  },
+  {
+   "step": 7,
+   "tool": "done",
+   "start_s": 46.06,
+   "end_s": 46.06,
+   "ok": true,
+   "note": "Task complete: answer is True"
+  }
+ ]
+}

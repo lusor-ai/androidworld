@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "Lusor on AndroidWorld: results and method, 9 November 2026"
+message: "If you use these results or data, please cite them as below."
+type: dataset
+authors:
+  - name: "Lusor, Inc."
+version: "2026-11-09"
+date-released: 2026-11-12
+url: "https://lusor.ai/benchmarks/androidworld"
+repository-code: "https://github.com/lusor-ai/androidworld"
+license: CC-BY-4.0
+keywords:
+  - AndroidWorld
+  - mobile agents
+  - benchmark
+references:
+  - type: conference-paper
+    title: "AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents"
+    authors:
+      - family-names: Rawles
+        given-names: Christopher
+      - name: "and others"
+    year: 2025
+    conference:
+      name: "The Thirteenth International Conference on Learning Representations (ICLR 2025)"
+    url: "https://arxiv.org/abs/2405.14573"

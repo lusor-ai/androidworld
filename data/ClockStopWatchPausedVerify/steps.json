@@ -1,0 +1,71 @@
+{
+ "task": "ClockStopWatchPausedVerify",
+ "video_duration_s": 60.3,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 28.59,
+   "end_s": 28.61,
+   "ok": true,
+   "note": "Observe the screen to find the stopwatch app state"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 29.65,
+   "end_s": 32.22,
+   "ok": true,
+   "note": "Open the Clock app and go to its stopwatch tab"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 32.9,
+   "end_s": 33.93,
+   "ok": true,
+   "note": "Tap the Stopwatch tab and check its state"
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 36.81,
+   "end_s": 36.83,
+   "ok": true,
+   "note": "Re-read the stopwatch screen to see if the timer is running"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 39.81,
+   "end_s": 40.93,
+   "ok": true,
+   "note": "Start the stopwatch, then pause it so it holds a paused state"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 42.15,
+   "end_s": 42.81,
+   "ok": true,
+   "note": "Tap Pause and verify the stopwatch is paused"
+  },
+  {
+   "step": 7,
+   "tool": "get_ui_state",
+   "start_s": 43.66,
+   "end_s": 43.68,
+   "ok": true,
+   "note": "Confirm the stopwatch stays paused and finish"
+  },
+  {
+   "step": 8,
+   "tool": "done",
+   "start_s": 45.5,
+   "end_s": 45.5,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

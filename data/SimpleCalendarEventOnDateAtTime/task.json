@@ -1,0 +1,143 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SimpleCalendarEventOnDateAtTime",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 33.2,
+  "mobilerun_published_time_s": 122.3,
+  "speed_ratio": 0.271,
+  "lusor_cost_usd": 0.0122,
+  "mobilerun_published_actions": 4,
+  "mobilerun_est_cost_usd": 0.306,
+  "lusor_tool_calls": 12,
+  "disclosure": null,
+  "skills_read": [
+   "simple-calendar"
+  ],
+  "skill_assisted": [],
+  "goal": "What is on my schedule for October 18 2023 at 9:45am in Simple Calendar Pro? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.",
+  "final_answer": "Volunteer cleanup",
+  "final_summary": "Your only event at 9:45am on October 18 2023 is \"Volunteer cleanup\" (09:45 to 11:15). The day's other events are at 14:55 and 16:14.",
+  "video_duration_s": 74.2,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 29.67,
+    "end_s": 29.69,
+    "ok": true,
+    "note": "Read simple-calendar skill"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 29.67,
+    "end_s": 29.69,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 30.44,
+    "end_s": 32.77,
+    "ok": true,
+    "note": "Launch Simple Calendar Pro and observe screen"
+   },
+   {
+    "step": 4,
+    "tool": "tap",
+    "start_s": 34.57,
+    "end_s": 35.47,
+    "ok": true,
+    "note": "Tap Oct 18 cell to open day view"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 37.04,
+    "end_s": 37.61,
+    "ok": true,
+    "note": "Advance day view to Oct 18"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 39.37,
+    "end_s": 40.49,
+    "ok": true,
+    "note": "Tap day view title to open date picker"
+   },
+   {
+    "step": 7,
+    "tool": "type",
+    "start_s": 41.81,
+    "end_s": 44.91,
+    "ok": true,
+    "note": "Type 18 in day field and confirm the picker"
+   },
+   {
+    "step": 8,
+    "tool": "get_ui_state",
+    "start_s": 45.78,
+    "end_s": 45.8,
+    "ok": true,
+    "note": "Re-read date picker state"
+   },
+   {
+    "step": 9,
+    "tool": "type",
+    "start_s": 46.82,
+    "end_s": 47.06,
+    "ok": true,
+    "note": "Type 18 into focused number picker field"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 48.17,
+    "end_s": 49.07,
+    "ok": true,
+    "note": "Confirm picker OK and read Oct 18 events"
+   },
+   {
+    "step": 11,
+    "tool": "chain",
+    "start_s": 53.07,
+    "end_s": 56.49,
+    "ok": true,
+    "note": "Advance day view 6 days to Oct 18"
+   },
+   {
+    "step": 12,
+    "tool": "done",
+    "start_s": 59.3,
+    "end_s": 59.3,
+    "ok": true,
+    "note": "Task complete; answer reported"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventOnDateAtTime/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventOnDateAtTime/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventOnDateAtTime/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventOnDateAtTime/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventOnDateAtTime/task.json"
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "task": "OpenAppTaskEval",
+ "video_duration_s": 65.4,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 30.05,
+   "end_s": 30.06,
+   "ok": true,
+   "note": "Observe current screen to find contacts app"
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 31.22,
+   "end_s": 33.16,
+   "ok": true,
+   "note": "Open app drawer to find Contacts app"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 33.85,
+   "end_s": 34.75,
+   "ok": true,
+   "note": "Tap Contacts icon to launch app"
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 35.76,
+   "end_s": 35.76,
+   "ok": true,
+   "note": "Read contacts app screen / permission dialog"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 36.71,
+   "end_s": 40.17,
+   "ok": true,
+   "note": "Tap Allow on permission dialog"
+  },
+  {
+   "step": 6,
+   "tool": "tap",
+   "start_s": 41.48,
+   "end_s": 42.46,
+   "ok": true,
+   "note": "Dismiss tooltip pop-up by tapping outside it"
+  },
+  {
+   "step": 7,
+   "tool": "key",
+   "start_s": 43.68,
+   "end_s": 44.78,
+   "ok": true,
+   "note": "Press back to dismiss tooltip overlay"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 45.83,
+   "end_s": 46.47,
+   "ok": true,
+   "note": "Relaunch Contacts app"
+  },
+  {
+   "step": 9,
+   "tool": "get_ui_state",
+   "start_s": 48.05,
+   "end_s": 48.07,
+   "ok": true,
+   "note": "Confirm contacts app is open with no pop-ups remaining"
+  },
+  {
+   "step": 10,
+   "tool": "done",
+   "start_s": 49.95,
+   "end_s": 49.96,
+   "ok": true,
+   "note": "Task complete; no further steps"
+  }
+ ]
+}

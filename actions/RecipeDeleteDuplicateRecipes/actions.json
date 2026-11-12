@@ -1,0 +1,242 @@
+{
+ "task": "RecipeDeleteDuplicateRecipes",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.51,
+   "end_s": 30.53,
+   "ok": true,
+   "args": {
+    "path": "skill://broccoli/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.51,
+   "end_s": 30.53,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.59,
+   "end_s": 35.52,
+   "ok": true,
+   "args": {
+    "app": "com.flauschcode.broccoli"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "map_app",
+   "start_s": 36.37,
+   "end_s": 43.95,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 45.6,
+   "end_s": 45.61,
+   "ok": true,
+   "args": {
+    "options": {
+     "verbosity": "compact"
+    }
+   }
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 46.5,
+   "end_s": 46.52,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 47.69,
+   "end_s": 49.25,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 540,
+    "y": 600
+   }
+  },
+  {
+   "step": 8,
+   "tool": "key",
+   "start_s": 50.8,
+   "end_s": 51.26,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 52.56,
+   "end_s": 54.05,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 476,
+    "y": 936
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 56.28,
+   "end_s": 57.33,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 6,
+    "x": 1028,
+    "y": 201
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 58.81,
+   "end_s": 59.74,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 813,
+    "y": 601
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 61.24,
+   "end_s": 62.24,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "DELETE",
+    "index": 3,
+    "x": 861,
+    "y": 1296
+   }
+  },
+  {
+   "step": 13,
+   "tool": "map_app",
+   "start_s": 63.63,
+   "end_s": 71.56,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 14,
+   "tool": "get_ui_state",
+   "start_s": 73.43,
+   "end_s": 73.44,
+   "ok": true,
+   "args": {
+    "options": {
+     "verbosity": "compact"
+    }
+   }
+  },
+  {
+   "step": 15,
+   "tool": "done",
+   "start_s": 76.8,
+   "end_s": 76.8,
+   "ok": true,
+   "args": {
+    "summary": "The only exact duplicates were two identical \"Eggplant Parmesan\" recipes, and I deleted one of them, so one copy remains. The other five recipes (Baked Cod with Lemon and Dill, BBQ Chicken Quesadillas, Raspberry Almond Smoothie, Shrimp Avocado Salad, Spicy Tuna Wraps) each had only one instance, so nothing else was touched. The recipe list now holds six recipes.",
+    "rows": [
+     {
+      "recipe": "Eggplant Parmesan",
+      "action": "deleted one duplicate copy (identical title, description \"An ideal recipe for experimenting with different flavors and ingredients.\", 6 servings, 3 hrs, ingredients \"as per recipe\", identical directions)",
+      "copies_before": 2,
+      "copies_after": 1,
+      "lusor_status": "succeeded"
+     },
+     {
+      "recipe": "Baked Cod with Lemon and Dill",
+      "action": "kept, only one instance",
+      "copies_before": 1,
+      "copies_after": 1,
+      "lusor_status": "succeeded"
+     },
+     {
+      "recipe": "BBQ Chicken Quesadillas",
+      "action": "kept, only one instance",
+      "copies_before": 1,
+      "copies_after": 1,
+      "lusor_status": "succeeded"
+     },
+     {
+      "recipe": "Raspberry Almond Smoothie",
+      "action": "kept, only one instance",
+      "copies_before": 1,
+      "copies_after": 1,
+      "lusor_status": "succeeded"
+     },
+     {
+      "recipe": "Shrimp Avocado Salad",
+      "action": "kept, only one instance",
+      "copies_before": 1,
+      "copies_after": 1,
+      "lusor_status": "succeeded"
+     },
+     {
+      "recipe": "Spicy Tuna Wraps",
+      "action": "kept, only one instance",
+      "copies_before": 1,
+      "copies_after": 1,
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "Initial map_app of the Broccoli recipe list showed 7 items with two rows titled \"Eggplant Parmesan\"; both opened pages showed identical fields (6 servings, 3 hrs, same description, ingredients \"as per recipe\", same directions). After confirming the delete dialog (\"Delete this recipe?\" → DELETE), the list read 6 items with a single Eggplant Parmesan.",
+     "key_signals": [
+      "Before: 7 recipes, Eggplant Parmesan twice (pos 3 and 4)",
+      "Both Eggplant Parmesan detail pages identical: 6 servings, 3 hrs, as per recipe, same directions text",
+      "Delete confirmation dialog accepted; list IDs noted one row deleted",
+      "After: 6 recipes, one Eggplant Parmesan remaining"
+     ]
+    }
+   }
+  }
+ ]
+}

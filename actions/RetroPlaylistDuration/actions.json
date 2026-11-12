@@ -1,0 +1,1270 @@
+{
+ "task": "RetroPlaylistDuration",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 36.82,
+   "end_s": 36.88,
+   "ok": true,
+   "args": {
+    "path": "skill://broccoli/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 36.82,
+   "end_s": 36.88,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "list_sheets",
+   "start_s": 38.45,
+   "end_s": 38.45,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 4,
+   "tool": "launch",
+   "start_s": 39.56,
+   "end_s": 44.52,
+   "ok": true,
+   "args": {
+    "app": "code.name.monkey.retromusic"
+   }
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 45.23,
+   "end_s": 46.35,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 47.89,
+   "end_s": 50.82,
+   "ok": true,
+   "args": {
+    "index": 28
+   },
+   "tapped": {
+    "label": "Songs",
+    "index": 28,
+    "x": 324,
+    "y": 2232
+   }
+  },
+  {
+   "step": 7,
+   "tool": "map_app",
+   "start_s": 52.65,
+   "end_s": 60.27,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 8,
+   "tool": "get_ui_state",
+   "start_s": 61.88,
+   "end_s": 61.92,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 63.0,
+   "end_s": 64.07,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 1014,
+    "y": 289
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 65.34,
+   "end_s": 65.54,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 823,
+    "y": 1324
+   }
+  },
+  {
+   "step": 11,
+   "tool": "get_ui_state",
+   "start_s": 66.61,
+   "end_s": 66.63,
+   "ok": true,
+   "args": {
+    "options": {
+     "verbosity": "full"
+    }
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 69.08,
+   "end_s": 69.68,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 2,
+    "x": 842,
+    "y": 1740
+   }
+  },
+  {
+   "step": 13,
+   "tool": "chain",
+   "start_s": 75.22,
+   "end_s": 78.77,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 8
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "Details"
+      }
+     },
+     {
+      "verb": "get_ui_state",
+      "params": {
+       "verbosity": "full"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "OK"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "step": 14,
+   "tool": "get_ui_state",
+   "start_s": 80.23,
+   "end_s": 80.24,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 81.31,
+   "end_s": 82.4,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 2,
+    "x": 842,
+    "y": 1740
+   }
+  },
+  {
+   "step": 16,
+   "tool": "chain",
+   "start_s": 87.76,
+   "end_s": 91.01,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 10
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Details"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "verbosity": "full"
+      },
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 17,
+   "tool": "chain",
+   "start_s": 95.24,
+   "end_s": 118.01,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 12
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Details"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "verbosity": "full"
+      },
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {
+       "index": 14
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Details"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "verbosity": "full"
+      },
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {
+       "index": 16
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Details"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "verbosity": "full"
+      },
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {
+       "index": 18
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Details"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "verbosity": "full"
+      },
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {
+       "index": 20
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Details"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "verbosity": "full"
+      },
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {
+       "index": 22
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Details"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "verbosity": "full"
+      },
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {
+       "index": 24
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Details"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "verbosity": "full"
+      },
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     }
+    ]
+   }
+  },
+  {
+   "step": 18,
+   "tool": "scroll_to",
+   "start_s": 121.42,
+   "end_s": 123.51,
+   "ok": true,
+   "args": {
+    "target": "Beyond the Horizon",
+    "direction": "up"
+   }
+  },
+  {
+   "step": 19,
+   "tool": "chain",
+   "start_s": 126.76,
+   "end_s": 145.58,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 6
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 600
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Details"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "verbosity": "full"
+      },
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {
+       "index": 8
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 600
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Details"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "verbosity": "full"
+      },
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {
+       "index": 10
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 600
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Details"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "verbosity": "full"
+      },
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {
+       "index": 12
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 600
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Details"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "verbosity": "full"
+      },
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     },
+     {
+      "params": {
+       "index": 14
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 600
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Details"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "verbosity": "full"
+      },
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     }
+    ]
+   }
+  },
+  {
+   "step": 20,
+   "tool": "chain",
+   "start_s": 148.95,
+   "end_s": 152.88,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 12
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 800
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Details"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "verbosity": "full"
+      },
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {},
+      "verb": "back"
+     }
+    ]
+   }
+  },
+  {
+   "step": 21,
+   "tool": "tap_element",
+   "start_s": 155.32,
+   "end_s": 156.44,
+   "ok": true,
+   "args": {
+    "index": 12
+   },
+   "tapped": {
+    "label": null,
+    "index": 12,
+    "x": 1014,
+    "y": 839
+   }
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 157.54,
+   "end_s": 158.73,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 823,
+    "y": 1870
+   }
+  },
+  {
+   "step": 23,
+   "tool": "tap_element",
+   "start_s": 160.15,
+   "end_s": 161.22,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 2,
+    "x": 842,
+    "y": 1740
+   }
+  },
+  {
+   "step": 24,
+   "tool": "scroll_to",
+   "start_s": 162.5,
+   "end_s": 164.51,
+   "ok": true,
+   "args": {
+    "direction": "down",
+    "target": "Twilight Calling"
+   }
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 165.46,
+   "end_s": 166.24,
+   "ok": true,
+   "args": {
+    "index": 22
+   },
+   "tapped": {
+    "label": null,
+    "index": 22,
+    "x": 1014,
+    "y": 1768
+   }
+  },
+  {
+   "step": 26,
+   "tool": "tap_element",
+   "start_s": 167.33,
+   "end_s": 168.53,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 823,
+    "y": 1239
+   }
+  },
+  {
+   "step": 27,
+   "tool": "calculate",
+   "start_s": 172.29,
+   "end_s": 172.49,
+   "ok": true,
+   "args": {
+    "code": "const songs = {\n\"Beyond the Horizon\":588,\"Bright Lights\":133,\"City of Stars\":197,\"Dreamer's Awake\":287,\"Echoes of Silence\":207,\"Endless Summer\":294,\"Eternal Flame\":232,\"Heartbeat Away\":620,\"Moments\":282,\"My Heart is Yours\":235,\"Mystic Journey\":60,\"Rising Sun\":84,\"Twilight Calling\":637,\"Under the Sky\":149,\"Voices in the Hall\":378};\nconst names = Object.keys(songs);\nlet best=null;\nfor(let mask=1;mask<(1<<names.length);mask++){\n  let t=0, sel=[];\n  for(let i=0;i<names.length;i++){ if(mask&(1<<i)){ t+=songs[names[i]]; sel.push(names[i]); } }\n  if(t>=2700 && t<=3000){ if(!best || t>best.t) best={t,sel}; }\n}\nreturn best;"
+   }
+  },
+  {
+   "step": 28,
+   "tool": "calculate",
+   "start_s": 174.97,
+   "end_s": 175.15,
+   "ok": true,
+   "args": {
+    "code": "const songs = {\n\"Beyond the Horizon\":588,\"Bright Lights\":133,\"City of Stars\":197,\"Dreamer's Awake\":287,\"Echoes of Silence\":207,\"Endless Summer\":294,\"Eternal Flame\":232,\"Heartbeat Away\":620,\"Moments\":282,\"My Heart is Yours\":235,\"Mystic Journey\":60,\"Rising Sun\":84,\"Twilight Calling\":637,\"Under the Sky\":149,\"Voices in the Hall\":378};\nconst names = Object.keys(songs);\nlet cands=[];\nfor(let mask=1;mask<(1<<names.length);mask++){\n  let t=0, sel=[];\n  for(let i=0;i<names.length;i++){ if(mask&(1<<i)){ t+=songs[names[i]]; sel.push(names[i]); } }\n  if(t>=2750 && t<=2950) cands.push({t, n:sel.length, sel});\n}\ncands.sort((a,b)=> Math.abs(a.t-2850)-Math.abs(b.t-2850));\nreturn cands.slice(0,5);"
+   }
+  },
+  {
+   "step": 29,
+   "tool": "tap_element",
+   "start_s": 177.17,
+   "end_s": 178.24,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 2,
+    "x": 842,
+    "y": 1740
+   }
+  },
+  {
+   "step": 30,
+   "tool": "tap_element",
+   "start_s": 179.47,
+   "end_s": 180.47,
+   "ok": true,
+   "args": {
+    "index": 34
+   },
+   "tapped": {
+    "label": "Playlists",
+    "index": 34,
+    "x": 972,
+    "y": 2232
+   }
+  },
+  {
+   "step": 31,
+   "tool": "tap_element",
+   "start_s": 181.97,
+   "end_s": 182.97,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 3,
+    "x": 1028,
+    "y": 211
+   }
+  },
+  {
+   "step": 32,
+   "tool": "tap_element",
+   "start_s": 183.96,
+   "end_s": 185.24,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 813,
+    "y": 490
+   }
+  },
+  {
+   "step": 33,
+   "tool": "chain",
+   "start_s": 186.45,
+   "end_s": 191.93,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 1,
+       "text": "Country Classics 417"
+      },
+      "verb": "type"
+     },
+     {
+      "params": {
+       "target": "Create"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 34,
+   "tool": "tap_element",
+   "start_s": 193.35,
+   "end_s": 194.24,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 270,
+    "y": 658
+   }
+  },
+  {
+   "step": 35,
+   "tool": "tap_element",
+   "start_s": 195.37,
+   "end_s": 196.43,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 5,
+    "x": 1000,
+    "y": 269
+   }
+  },
+  {
+   "step": 36,
+   "tool": "key",
+   "start_s": 198.48,
+   "end_s": 198.93,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 37,
+   "tool": "key",
+   "start_s": 200.3,
+   "end_s": 201.38,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 38,
+   "tool": "tap_element",
+   "start_s": 202.85,
+   "end_s": 204.21,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "Songs",
+    "index": 11,
+    "x": 324,
+    "y": 2232
+   }
+  },
+  {
+   "step": 39,
+   "tool": "chain",
+   "start_s": 206.24,
+   "end_s": 208.36,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 10
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Add to playlist"
+      },
+      "verb": "tap_element"
+     }
+    ]
+   }
+  },
+  {
+   "step": 40,
+   "tool": "get_ui_state",
+   "start_s": 209.49,
+   "end_s": 209.76,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 41,
+   "tool": "tap_element",
+   "start_s": 211.51,
+   "end_s": 212.37,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Country Classics 417",
+    "index": 3,
+    "x": 540,
+    "y": 1282
+   }
+  },
+  {
+   "step": 42,
+   "tool": "chain",
+   "start_s": 215.48,
+   "end_s": 230.99,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 12
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Add to playlist"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 600
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Country Classics 417"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 600
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "index": 14
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Add to playlist"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 600
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Country Classics 417"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 600
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "index": 16
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Add to playlist"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 600
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Country Classics 417"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 600
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "index": 24
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Add to playlist"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 600
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Country Classics 417"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 43,
+   "tool": "scroll_to",
+   "start_s": 232.26,
+   "end_s": 234.49,
+   "ok": true,
+   "args": {
+    "direction": "up",
+    "target": "Beyond the Horizon"
+   }
+  },
+  {
+   "step": 44,
+   "tool": "chain",
+   "start_s": 235.97,
+   "end_s": 242.66,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "index": 6
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Add to playlist"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 700
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Country Classics 417"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 700
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "index": 10
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Add to playlist"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 700
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Country Classics 417"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 45,
+   "tool": "tap_element",
+   "start_s": 244.46,
+   "end_s": 245.56,
+   "ok": true,
+   "args": {
+    "index": 37
+   },
+   "tapped": {
+    "label": "Playlists",
+    "index": 37,
+    "x": 972,
+    "y": 2232
+   }
+  },
+  {
+   "step": 46,
+   "tool": "tap_element",
+   "start_s": 247.33,
+   "end_s": 248.44,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 270,
+    "y": 658
+   }
+  },
+  {
+   "step": 47,
+   "tool": "map_app",
+   "start_s": 250.73,
+   "end_s": 265.87,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 48,
+   "tool": "get_ui_state",
+   "start_s": 267.8,
+   "end_s": 267.86,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 49,
+   "tool": "done",
+   "start_s": 273.27,
+   "end_s": 273.27,
+   "ok": true,
+   "args": {
+    "summary": "I created the playlist \"Country Classics 417\" in Retro Music with 7 songs from the device library, and its own header shows 7 Songs and a total of 47:32, inside your 45 to 50 minute range. The songs, in playlist order, are Endless Summer (4:54), Eternal Flame (3:52), Heartbeat Away (10:20), Moments (4:42), Twilight Calling (10:37), Beyond the Horizon (9:48) and City of Stars (3:17). I picked these from the 15 songs on the phone so the total lands comfortably inside the window rather than on its edge.",
+    "rows": [
+     {
+      "playlist": "Country Classics 417",
+      "song": "Endless Summer",
+      "artist": "Amina",
+      "duration": "04:54",
+      "position": 1,
+      "lusor_status": "succeeded"
+     },
+     {
+      "playlist": "Country Classics 417",
+      "song": "Eternal Flame",
+      "artist": "Mariam",
+      "duration": "03:52",
+      "position": 2,
+      "lusor_status": "succeeded"
+     },
+     {
+      "playlist": "Country Classics 417",
+      "song": "Heartbeat Away",
+      "artist": "Isabella",
+      "duration": "10:20",
+      "position": 3,
+      "lusor_status": "succeeded"
+     },
+     {
+      "playlist": "Country Classics 417",
+      "song": "Moments",
+      "artist": "Elias",
+      "duration": "04:42",
+      "position": 4,
+      "lusor_status": "succeeded"
+     },
+     {
+      "playlist": "Country Classics 417",
+      "song": "Twilight Calling",
+      "artist": "Mateo",
+      "duration": "10:37",
+      "position": 5,
+      "lusor_status": "succeeded"
+     },
+     {
+      "playlist": "Country Classics 417",
+      "song": "Beyond the Horizon",
+      "artist": "Oscar",
+      "duration": "09:48",
+      "position": 6,
+      "lusor_status": "succeeded"
+     },
+     {
+      "playlist": "Country Classics 417",
+      "song": "City of Stars",
+      "artist": "Emily",
+      "duration": "03:17",
+      "position": 7,
+      "lusor_status": "succeeded"
+     },
+     {
+      "playlist": "Country Classics 417",
+      "song": "playlist total",
+      "artist": null,
+      "duration": "47:32",
+      "position": null,
+      "lusor_status": "succeeded",
+      "lusor_status_note": "Playlist header shows 7 Songs • 47:32"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "The playlist page for \"Country Classics 417\" shows the title and subtitle \"7 Songs • 47:32\", and its list shows exactly seven rows: Endless Summer (Amina), Eternal Flame (Mariam), Heartbeat Away (Isabella), Moments (Elias), Twilight Calling (Mateo), Beyond the Horizon (Oscar), City of Stars (Emily). The Playlists grid card for the same playlist shows \"7 Songs • 47:32\".",
+     "key_signals": [
+      "Playlists tab was empty before creation; a New playlist dialog was used with the name Country Classics 417",
+      "Each song was added through its song menu > Add to playlist > Country Classics 417",
+      "Per-song lengths read from each song's Details dialog: 04:54, 03:52, 10:20, 04:42, 10:37, 09:48, 03:17",
+      "Sum of the seven selected songs is 47:32, inside the requested 45 to 50 minutes"
+     ]
+    }
+   }
+  }
+ ]
+}

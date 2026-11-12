@@ -1,0 +1,352 @@
+{
+ "task": "RecipeDeleteMultipleRecipesWithNoise",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.01,
+   "end_s": 30.01,
+   "ok": true,
+   "args": {
+    "path": "skill://broccoli/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 31.19,
+   "end_s": 31.21,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 32.3,
+   "end_s": 36.24,
+   "ok": true,
+   "args": {
+    "app": "com.flauschcode.broccoli"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "map_app",
+   "start_s": 37.34,
+   "end_s": 64.62,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 66.12,
+   "end_s": 66.55,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "capture": true
+   },
+   "tapped": {
+    "label": "Search",
+    "index": 3,
+    "x": 1017,
+    "y": 348
+   }
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 67.56,
+   "end_s": 71.08,
+   "ok": true,
+   "args": {
+    "text": "Avocado Toast with Egg",
+    "index": 4,
+    "capture": true
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 72.36,
+   "end_s": 73.62,
+   "ok": true,
+   "args": {
+    "index": 7,
+    "capture": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 7,
+    "x": 540,
+    "y": 601
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 74.72,
+   "end_s": 75.74,
+   "ok": true,
+   "args": {
+    "index": 6,
+    "capture": true
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 6,
+    "x": 1028,
+    "y": 201
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 76.54,
+   "end_s": 77.46,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "capture": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 813,
+    "y": 601
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 78.29,
+   "end_s": 79.41,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "capture": true,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "DELETE",
+    "index": 3,
+    "x": 861,
+    "y": 1296
+   }
+  },
+  {
+   "step": 11,
+   "tool": "type",
+   "start_s": 80.54,
+   "end_s": 84.19,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4,
+    "text": "Classic Margherita Pizza"
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 85.12,
+   "end_s": 86.81,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 7
+   },
+   "tapped": {
+    "label": null,
+    "index": 7,
+    "x": 540,
+    "y": 601
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 88.47,
+   "end_s": 89.22,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 6
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 6,
+    "x": 1028,
+    "y": 201
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 90.26,
+   "end_s": 91.21,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 813,
+    "y": 601
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 92.32,
+   "end_s": 93.52,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 3,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "DELETE",
+    "index": 3,
+    "x": 861,
+    "y": 1296
+   }
+  },
+  {
+   "step": 16,
+   "tool": "chain",
+   "start_s": 94.67,
+   "end_s": 102.93,
+   "ok": true,
+   "args": {
+    "items": [
+     "Thai Peanut Noodle Salad"
+    ],
+    "steps": [
+     {
+      "verb": "type",
+      "params": {
+       "text": "{item}",
+       "target": "Classic Margherita Pizza"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "Recipe photo"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "More options"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "Delete"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "DELETE"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 104.21,
+   "end_s": 104.92,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 5
+   },
+   "tapped": {
+    "label": "Clear query",
+    "index": 5,
+    "x": 1006,
+    "y": 348
+   }
+  },
+  {
+   "step": 18,
+   "tool": "map_app",
+   "start_s": 106.04,
+   "end_s": 106.06,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 19,
+   "tool": "key",
+   "start_s": 107.14,
+   "end_s": 107.45,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 20,
+   "tool": "map_app",
+   "start_s": 108.95,
+   "end_s": 132.37,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 21,
+   "tool": "done",
+   "start_s": 134.61,
+   "end_s": 134.62,
+   "ok": true,
+   "args": {
+    "summary": "I deleted all three recipes from Broccoli: Avocado Toast with Egg, Classic Margherita Pizza, and Thai Peanut Noodle Salad. After each deletion the app confirmed it, and the recipe list now holds 29 recipes with none of the three remaining.",
+    "evidence": {
+     "key_signals": [
+      "Search for each title returned only that recipe; opening it, choosing More options > Delete, then DELETE removed it and showed 'No recipes found.'",
+      "The app log confirmed 'e37 avocado toast with egg: deleted', 'e42 classic margherita pizza: deleted', 'e43 thai peanut noodle salad: deleted'",
+      "Final list walk found 29 recipes and none of the three titles"
+     ],
+     "objective_evidence": "After deletion the recipe list was recounted from top to proven end: 29 recipes, starting with Baked Cod with Lemon and Dill and ending with Zucchini Noodles with Pesto, with no Avocado Toast with Egg, Classic Margherita Pizza or Thai Peanut Noodle Salad."
+    },
+    "rows": [
+     {
+      "recipe": "Avocado Toast with Egg",
+      "action": "deleted",
+      "lusor_status": "succeeded"
+     },
+     {
+      "recipe": "Classic Margherita Pizza",
+      "action": "deleted",
+      "lusor_status": "succeeded"
+     },
+     {
+      "recipe": "Thai Peanut Noodle Salad",
+      "action": "deleted",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,238 @@
+{
+ "task": "ExpenseDeleteMultiple",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.95,
+   "end_s": 29.99,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 31.07,
+   "end_s": 32.33,
+   "ok": true,
+   "args": {
+    "app": "com.arduia.expense"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 33.33,
+   "end_s": 33.84,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.13,
+   "end_s": 36.41,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 540,
+    "y": 1805
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.3,
+   "end_s": 38.24,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 971,
+    "y": 1660
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 39.29,
+   "end_s": 40.41,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "CONFIRM",
+    "index": 3,
+    "x": 540,
+    "y": 2222
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 41.36,
+   "end_s": 42.52,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 540,
+    "y": 1991
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 43.98,
+   "end_s": 45.0,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 971,
+    "y": 1660
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 45.95,
+   "end_s": 46.58,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "CONFIRM",
+    "index": 3,
+    "x": 540,
+    "y": 2222
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 47.59,
+   "end_s": 48.54,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 540,
+    "y": 1805
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 49.63,
+   "end_s": 50.42,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 971,
+    "y": 1660
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 51.45,
+   "end_s": 52.04,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "CONFIRM",
+    "index": 3,
+    "x": 540,
+    "y": 2222
+   }
+  },
+  {
+   "step": 13,
+   "tool": "map_app",
+   "start_s": 53.35,
+   "end_s": 53.37,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 14,
+   "tool": "get_ui_state",
+   "start_s": 54.63,
+   "end_s": 54.65,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 15,
+   "tool": "done",
+   "start_s": 58.13,
+   "end_s": 58.13,
+   "ok": true,
+   "args": {
+    "summary": "I deleted all three expenses from Pro Expense: Religious, Flight Tickets and School Supplies. Each deletion showed the \"Item Deleted\" confirmation, and the Home screen now has no Recent expenses card, so nothing named in the task remains.",
+    "rows": [
+     {
+      "expense": "School Supplies",
+      "amount": "42.44 USD",
+      "date": "2023 Oct 3",
+      "lusor_status": "succeeded"
+     },
+     {
+      "expense": "Religious",
+      "amount": "319.29 USD",
+      "date": "2023 Oct 13",
+      "lusor_status": "succeeded"
+     },
+     {
+      "expense": "Flight Tickets",
+      "amount": "326.37 USD",
+      "date": "2023 Oct 3",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "Each of the three expense detail sheets showed its name and amount, the delete icon opened a Delete Items dialog, and after CONFIRM the Home screen showed the 'Item Deleted' snackbar. Final Home screen has only the Totals and Expenses in this Week cards, with the Recent expenses card gone entirely.",
+     "key_signals": [
+      "Religious detail showed 319.29 USD, 2023 Oct 13, note 'Want to have'",
+      "School Supplies detail showed 42.44 USD, 2023 Oct 3, note 'Monthly recurring'",
+      "Flight Tickets detail showed 326.37 USD, 2023 Oct 3, note 'Paid by card'",
+      "Snackbar 'Item Deleted' appeared after each confirmation",
+      "Recent expenses list went from 3 rows to 2 to 1 to no card"
+     ]
+    }
+   }
+  }
+ ]
+}

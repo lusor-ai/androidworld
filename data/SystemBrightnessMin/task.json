@@ -1,0 +1,125 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SystemBrightnessMin",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 33.2,
+  "mobilerun_published_time_s": 129.7,
+  "speed_ratio": 0.256,
+  "lusor_cost_usd": 0.0121,
+  "mobilerun_published_actions": 6,
+  "mobilerun_est_cost_usd": 0.46,
+  "lusor_tool_calls": 10,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Turn brightness to the min value.",
+  "final_answer": "brightness set to 0",
+  "final_summary": "Brightness is now at the minimum: the quick settings brightness slider reads 0 (min 0, max 65535).",
+  "video_duration_s": 115.0,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 28.5,
+    "end_s": 28.52,
+    "ok": true,
+    "note": "Observe current screen and open brightness settings"
+   },
+   {
+    "step": 2,
+    "tool": "swipe",
+    "start_s": 29.68,
+    "end_s": 32.59,
+    "ok": true,
+    "note": "Open notification shade to reach brightness slider"
+   },
+   {
+    "step": 3,
+    "tool": "swipe",
+    "start_s": 33.66,
+    "end_s": 36.74,
+    "ok": true,
+    "note": "Expand quick settings to reveal brightness slider"
+   },
+   {
+    "step": 4,
+    "tool": "swipe",
+    "start_s": 38.04,
+    "end_s": 40.78,
+    "ok": true,
+    "note": "Drag brightness slider to far left and read value"
+   },
+   {
+    "step": 5,
+    "tool": "swipe",
+    "start_s": 42.01,
+    "end_s": 44.69,
+    "ok": true,
+    "note": "Reopen QS panel and read slider value"
+   },
+   {
+    "step": 6,
+    "tool": "tap",
+    "start_s": 46.4,
+    "end_s": 47.17,
+    "ok": true,
+    "note": "Tap left end of brightness slider and read value"
+   },
+   {
+    "step": 7,
+    "tool": "swipe",
+    "start_s": 49.2,
+    "end_s": 51.05,
+    "ok": true,
+    "note": "Drag brightness thumb from current position to far left, read slider value"
+   },
+   {
+    "step": 8,
+    "tool": "tap",
+    "start_s": 52.98,
+    "end_s": 53.31,
+    "ok": true,
+    "note": "Tap far-left track edge of brightness slider, read value"
+   },
+   {
+    "step": 9,
+    "tool": "tap",
+    "start_s": 55.6,
+    "end_s": 55.92,
+    "ok": true,
+    "note": "Tap exact left bound of slider and record value"
+   },
+   {
+    "step": 10,
+    "tool": "done",
+    "start_s": 57.49,
+    "end_s": 57.49,
+    "ok": true,
+    "note": "Task complete; brightness slider at 0"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SystemBrightnessMin/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SystemBrightnessMin/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SystemBrightnessMin/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SystemBrightnessMin/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SystemBrightnessMin/task.json"
+  }
+ }
+}

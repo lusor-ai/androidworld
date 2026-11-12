@@ -1,0 +1,79 @@
+{
+ "task": "SimpleCalendarLocationOfEvent",
+ "video_duration_s": 58.9,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.35,
+   "end_s": 29.36,
+   "ok": true,
+   "note": "Load Simple Calendar skill and observe screen"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.35,
+   "end_s": 29.36,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.27,
+   "end_s": 32.59,
+   "ok": true,
+   "note": "Launch Simple Calendar Pro"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 33.4,
+   "end_s": 34.17,
+   "ok": true,
+   "note": "Tap search field and type Movie night"
+  },
+  {
+   "step": 5,
+   "tool": "type",
+   "start_s": 35.08,
+   "end_s": 37.06,
+   "ok": true,
+   "note": "Type Movie night in search"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 37.8,
+   "end_s": 38.82,
+   "ok": true,
+   "note": "Open Movie night event to read location"
+  },
+  {
+   "step": 7,
+   "tool": "get_ui_state",
+   "start_s": 39.43,
+   "end_s": 39.6,
+   "ok": true,
+   "note": "Read event details screen for location"
+  },
+  {
+   "step": 8,
+   "tool": "key",
+   "start_s": 40.62,
+   "end_s": 41.29,
+   "ok": true,
+   "note": "Back out of edit view without changes and finish"
+  },
+  {
+   "step": 9,
+   "tool": "done",
+   "start_s": 43.92,
+   "end_s": 43.92,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

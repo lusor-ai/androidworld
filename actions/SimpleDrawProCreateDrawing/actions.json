@@ -1,0 +1,257 @@
+{
+ "task": "SimpleDrawProCreateDrawing",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 36.78,
+   "end_s": 36.8,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 38.04,
+   "end_s": 39.55,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.draw.pro"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "swipe",
+   "start_s": 41.41,
+   "end_s": 43.37,
+   "ok": true,
+   "args": {
+    "startX": 300,
+    "startY": 900,
+    "endX": 800,
+    "endY": 1400,
+    "durationMs": 500
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 44.27,
+   "end_s": 45.55,
+   "ok": true,
+   "args": {
+    "index": 1
+   },
+   "tapped": {
+    "label": "Save",
+    "index": 1,
+    "x": 658,
+    "y": 211
+   }
+  },
+  {
+   "step": 5,
+   "tool": "type",
+   "start_s": 47.52,
+   "end_s": 50.65,
+   "ok": true,
+   "args": {
+    "index": 2,
+    "text": "lorem_tough_dog_final"
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 51.46,
+   "end_s": 51.97,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": ".jpg",
+    "index": 5,
+    "x": 540,
+    "y": 1016
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 53.16,
+   "end_s": 56.36,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 8,
+    "x": 842,
+    "y": 1174
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 57.68,
+   "end_s": 58.68,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": "Show roots",
+    "index": 6,
+    "x": 74,
+    "y": 191
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 59.78,
+   "end_s": 61.29,
+   "ok": true,
+   "args": {
+    "index": 15
+   },
+   "tapped": {
+    "label": null,
+    "index": 15,
+    "x": 368,
+    "y": 563
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 62.62,
+   "end_s": 63.17,
+   "ok": true,
+   "args": {
+    "index": 19
+   },
+   "tapped": {
+    "label": null,
+    "index": 19,
+    "x": 784,
+    "y": 1212
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 64.21,
+   "end_s": 64.78,
+   "ok": true,
+   "args": {
+    "index": 13
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 13,
+    "x": 928,
+    "y": 2274
+   }
+  },
+  {
+   "step": 12,
+   "tool": "pull_file",
+   "start_s": 66.1,
+   "end_s": 66.1,
+   "ok": true,
+   "args": {
+    "path": "/sdcard/Pictures/lorem_tough_dog_final.jpg"
+   }
+  },
+  {
+   "step": 13,
+   "tool": "launch",
+   "start_s": 68.04,
+   "end_s": 69.29,
+   "ok": true,
+   "args": {
+    "app": "com.google.android.documentsui"
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 70.19,
+   "end_s": 71.28,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "Show roots",
+    "index": 11,
+    "x": 74,
+    "y": 191
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 72.16,
+   "end_s": 73.11,
+   "ok": true,
+   "args": {
+    "index": 23
+   },
+   "tapped": {
+    "label": null,
+    "index": 23,
+    "x": 368,
+    "y": 1298
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 74.18,
+   "end_s": 74.86,
+   "ok": true,
+   "args": {
+    "index": 24
+   },
+   "tapped": {
+    "label": null,
+    "index": 24,
+    "x": 784,
+    "y": 1338
+   }
+  },
+  {
+   "step": 17,
+   "tool": "done",
+   "start_s": 77.08,
+   "end_s": 77.09,
+   "ok": true,
+   "args": {
+    "summary": "Created a new drawing in Simple Draw Pro and saved it as lorem_tough_dog_final.jpg in the Pictures folder of the device's internal storage (sdk_gphone64_x86_64/Pictures). The Files app now lists it there as lorem_tough_dog_final.jpg, 20.24 kB, saved today at 15:34.",
+    "evidence": {
+     "objective_evidence": "Files app showing breadcrumb sdk_gphone64_x86_64 > Pictures, header \"Files in Pictures\", with a single row \"lorem_tough_dog_final.jpg\", 20.24 kB, 15:34.",
+     "key_signals": [
+      "Simple Draw Pro save dialog: filename lorem_tough_dog_final with .jpg radio checked, OK tapped",
+      "SAF picker set to sdk_gphone64_x86_64 > Pictures and SAVE tapped",
+      "Pictures folder listing shows lorem_tough_dog_final.jpg (20.24 kB)"
+     ]
+    },
+    "rows": [
+     {
+      "file_name": "lorem_tough_dog_final.jpg",
+      "folder": "Pictures (sdk_gphone64_x86_64 internal storage)",
+      "path": "/sdcard/Pictures/lorem_tough_dog_final.jpg",
+      "size": "20.24 kB",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

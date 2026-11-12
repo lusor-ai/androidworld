@@ -1,0 +1,223 @@
+{
+ "task": "OsmAndMarker",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 57.78,
+   "end_s": 57.8,
+   "ok": true,
+   "args": {
+    "path": "skill://osmand/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 57.78,
+   "end_s": 57.8,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 58.83,
+   "end_s": 63.3,
+   "ok": true,
+   "args": {
+    "app": "net.osmand"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 64.01,
+   "end_s": 64.63,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 65.73,
+   "end_s": 67.34,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Search",
+    "index": 3,
+    "x": 203,
+    "y": 202
+   }
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 68.01,
+   "end_s": 70.6,
+   "ok": true,
+   "args": {
+    "text": "47.2122151, 9.5062101",
+    "index": 3
+   }
+  },
+  {
+   "step": 7,
+   "tool": "get_ui_state",
+   "start_s": 71.29,
+   "end_s": 71.73,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 72.81,
+   "end_s": 73.09,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 540,
+    "y": 961
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap",
+   "start_s": 74.09,
+   "end_s": 76.5,
+   "ok": true,
+   "args": {
+    "x": 493,
+    "y": 503
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 77.98,
+   "end_s": 78.81,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 407,
+    "y": 2130
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 81.02,
+   "end_s": 81.71,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Back to menu",
+    "index": 3,
+    "x": 85,
+    "y": 2253
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 82.99,
+   "end_s": 83.82,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 368,
+    "y": 496
+   }
+  },
+  {
+   "step": 13,
+   "tool": "get_ui_state",
+   "start_s": 84.44,
+   "end_s": 84.47,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 85.79,
+   "end_s": 87.02,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 540,
+    "y": 352
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 88.26,
+   "end_s": 89.62,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": "DETAILS",
+    "index": 10,
+    "x": 348,
+    "y": 2274
+   }
+  },
+  {
+   "step": 16,
+   "tool": "done",
+   "start_s": 92.12,
+   "end_s": 92.13,
+   "ok": true,
+   "args": {
+    "summary": "I added the location marker in OsmAnd. I searched for 47.2122151, 9.5062101, opened the matching result, and used the context menu's Marker action. The Map markers list now contains one new marker, \"Breita, Bendern\", dated Oct 15, and its details show the coordinates 47.21222° N, 9.50621° E, matching what you gave.",
+    "evidence": {
+     "objective_evidence": "Map markers list shows a single row titled \"Breita, Bendern\" added Oct 15; opening that marker and expanding DETAILS displays \"Map marker\" and the coordinate line \"47.21222° N, 9.50621° E\".",
+     "key_signals": [
+      "Search result row \"47.21222° N, 9.50621° E\" selected for the typed coordinates",
+      "Context menu button \"Marker\" tapped at that point, map recentred to 0.5 mi scale",
+      "Map markers screen lists the new marker with today's date",
+      "Marker details confirm 47.21222° N, 9.50621° E"
+     ]
+    },
+    "rows": [
+     {
+      "lusor_status": "succeeded",
+      "marker_title": "Breita, Bendern",
+      "latitude": "47.21222",
+      "longitude": "9.50621",
+      "requested_coordinates": "47.2122151, 9.5062101",
+      "type": "Map marker",
+      "date": "Oct 15"
+     }
+    ]
+   }
+  }
+ ]
+}

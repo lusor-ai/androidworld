@@ -1,0 +1,79 @@
+{
+ "task": "NotesRecipeIngredientCount",
+ "video_duration_s": 65.3,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 33.14,
+   "end_s": 33.16,
+   "ok": true,
+   "note": "Observe current screen, then launch Joplin"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 34.13,
+   "end_s": 35.51,
+   "ok": true,
+   "note": "Launch Joplin and observe its notes list"
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 36.58,
+   "end_s": 38.22,
+   "ok": true,
+   "note": "Read Joplin UI after load"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 39.2,
+   "end_s": 40.02,
+   "ok": true,
+   "note": "Search for Pancake Recipe"
+  },
+  {
+   "step": 5,
+   "tool": "type",
+   "start_s": 40.84,
+   "end_s": 43.74,
+   "ok": true,
+   "note": "Type Pancake Recipe in search and read results"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 44.52,
+   "end_s": 45.03,
+   "ok": true,
+   "note": "Open Pancake Recipe note and read ingredients"
+  },
+  {
+   "step": 7,
+   "tool": "tap",
+   "start_s": 46.49,
+   "end_s": 47.12,
+   "ok": true,
+   "note": "Tap the Pancake Recipe search result again and check whether the note opens"
+  },
+  {
+   "step": 8,
+   "tool": "get_ui_state",
+   "start_s": 49.14,
+   "end_s": 49.17,
+   "ok": true,
+   "note": "Read note body text via full UI tree"
+  },
+  {
+   "step": 9,
+   "tool": "done",
+   "start_s": 51.63,
+   "end_s": 51.64,
+   "ok": true,
+   "note": "Answer reported; task complete"
+  }
+ ]
+}

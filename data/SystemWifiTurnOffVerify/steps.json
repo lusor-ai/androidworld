@@ -1,0 +1,103 @@
+{
+ "task": "SystemWifiTurnOffVerify",
+ "video_duration_s": 69.9,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 28.92,
+   "end_s": 28.94,
+   "ok": true,
+   "note": "Observe current screen; then open Settings wifi controls and turn wifi off"
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 30.0,
+   "end_s": 32.86,
+   "ok": true,
+   "note": "Open quick settings and tap Wi-Fi tile to turn it off"
+  },
+  {
+   "step": 3,
+   "tool": "swipe",
+   "start_s": 34.19,
+   "end_s": 35.24,
+   "ok": true,
+   "note": null
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 35.95,
+   "end_s": 35.98,
+   "ok": true,
+   "note": "Inspect screen after expand attempt"
+  },
+  {
+   "step": 5,
+   "tool": "key",
+   "start_s": 37.11,
+   "end_s": 37.64,
+   "ok": true,
+   "note": "Close notification shade and open Settings app to toggle Wi-Fi"
+  },
+  {
+   "step": 6,
+   "tool": "launch",
+   "start_s": 38.29,
+   "end_s": 41.17,
+   "ok": true,
+   "note": "Open Settings and navigate to Network & internet / Wi-Fi"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 41.96,
+   "end_s": 43.42,
+   "ok": true,
+   "note": "Open Network & internet page"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 44.33,
+   "end_s": 46.22,
+   "ok": true,
+   "note": "Open Internet page to find Wi-Fi toggle"
+  },
+  {
+   "step": 9,
+   "tool": "tap",
+   "start_s": 48.68,
+   "end_s": 49.74,
+   "ok": true,
+   "note": "Open Wi-Fi details page to confirm Wi-Fi state"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 51.29,
+   "end_s": 52.34,
+   "ok": true,
+   "note": "Tap Wi-Fi switch to turn it off, then verify Unchecked"
+  },
+  {
+   "step": 11,
+   "tool": "get_ui_state",
+   "start_s": 53.17,
+   "end_s": 53.18,
+   "ok": true,
+   "note": "Re-read final screen to confirm Wi-Fi unchecked"
+  },
+  {
+   "step": 12,
+   "tool": "done",
+   "start_s": 54.7,
+   "end_s": 54.7,
+   "ok": true,
+   "note": "Task complete; Wi-Fi verified off"
+  }
+ ]
+}

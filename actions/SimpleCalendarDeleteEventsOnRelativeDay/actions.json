@@ -1,0 +1,220 @@
+{
+ "task": "SimpleCalendarDeleteEventsOnRelativeDay",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.59,
+   "end_s": 29.61,
+   "ok": true,
+   "args": {
+    "path": "skill://simple-calendar/SKILL.md",
+    "plan": [
+     "Load the calendar skill guidance",
+     "Determine this Thursday's date",
+     "Find all events on Thursday",
+     "Delete each Thursday event",
+     "Verify the day is empty"
+    ]
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.59,
+   "end_s": 29.61,
+   "ok": true,
+   "args": {
+    "plan": [
+     "Load the calendar skill guidance",
+     "Determine this Thursday's date",
+     "Find all events on Thursday",
+     "Delete each Thursday event",
+     "Verify the day is empty"
+    ]
+   }
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.57,
+   "end_s": 32.76,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.calendar.pro"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap",
+   "start_s": 34.56,
+   "end_s": 35.23,
+   "ok": true,
+   "args": {
+    "x": 694,
+    "y": 1272
+   }
+  },
+  {
+   "step": 5,
+   "tool": "key",
+   "start_s": 38.81,
+   "end_s": 39.12,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap",
+   "start_s": 41.27,
+   "end_s": 41.95,
+   "ok": true,
+   "args": {
+    "x": 694,
+    "y": 1577
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 43.99,
+   "end_s": 45.04,
+   "ok": true,
+   "args": {
+    "index": 16
+   },
+   "tapped": {
+    "label": null,
+    "index": 16,
+    "x": 540,
+    "y": 548
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 46.3,
+   "end_s": 47.35,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Delete",
+    "index": 3,
+    "x": 785,
+    "y": 211
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 48.33,
+   "end_s": 49.44,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Yes",
+    "index": 3,
+    "x": 842,
+    "y": 1317
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 50.27,
+   "end_s": 51.15,
+   "ok": true,
+   "args": {
+    "index": 16
+   },
+   "tapped": {
+    "label": null,
+    "index": 16,
+    "x": 535,
+    "y": 548
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 51.98,
+   "end_s": 52.72,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Delete",
+    "index": 3,
+    "x": 786,
+    "y": 211
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 53.54,
+   "end_s": 54.65,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Yes",
+    "index": 3,
+    "x": 842,
+    "y": 1317
+   }
+  },
+  {
+   "step": 13,
+   "tool": "get_ui_state",
+   "start_s": 56.47,
+   "end_s": 56.59,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 14,
+   "tool": "done",
+   "start_s": 59.13,
+   "end_s": 59.13,
+   "ok": true,
+   "args": {
+    "summary": "I deleted both events scheduled for this Thursday, October 19: \"Call with Marketing\" (12:00 to 13:00) and \"Meeting with HR\" (23:00 to midnight into October 20). The Thursday, October 19 day view now shows no events.",
+    "evidence": {
+     "objective_evidence": "The day view header reads \"October 19 (Thu)\" and its event list shows 0 rows after both deletions, with the deletion confirmation dialog answered Yes for each.",
+     "key_signals": [
+      "Device date: Sun 2023-10-15, so this Thursday is 2023-10-19",
+      "Before deletion, Oct 19 list held 2 rows: Call with Marketing 12:00-13:00 and Meeting with HR 23:00 - 00:00 (October 20), both with No repetition",
+      "After the first deletion the list showed 1 row; after the second it showed 0 rows"
+     ]
+    },
+    "rows": [
+     {
+      "event": "Call with Marketing",
+      "date": "October 19 (Thu)",
+      "time": "12:00 - 13:00",
+      "action": "deleted",
+      "lusor_status": "succeeded"
+     },
+     {
+      "event": "Meeting with HR",
+      "date": "October 19 (Thu)",
+      "time": "23:00 - 00:00 (October 20)",
+      "action": "deleted",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

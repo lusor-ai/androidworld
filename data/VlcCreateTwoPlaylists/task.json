@@ -1,0 +1,445 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "VlcCreateTwoPlaylists",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 114.2,
+  "mobilerun_published_time_s": 420.5,
+  "speed_ratio": 0.272,
+  "lusor_cost_usd": 0.0616,
+  "mobilerun_published_actions": 26,
+  "mobilerun_est_cost_usd": 1.992,
+  "lusor_tool_calls": 50,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Create a playlist titled \"Tech Reviews Favorites\" with the following files in VLC (located in Internal Memory/VLCVideos), in order: edited_moment_6_export.mp4, backup_footage_11_.mp4, Qdnm_clip_10_export.mp4. And then, create a playlist titled \"Mystery and Thrills Essentials\" with the following files in VLC, in order: footage_32_HD_kVus.mp4, edited_moment_23_4K.mp4, episode_57_raw_final.mp4, edited_episode_82_raw.mp4, scene_64_HD_2023_06_20.mp4.",
+  "final_answer": null,
+  "final_summary": "Both playlists are created in VLC from the videos in Internal memory/VLCVideos, in the order you asked for. \"Tech Reviews Favorites\" holds edited_moment_6_export.mp4, backup_footage_11_.mp4 and Qdnm_clip_10_export.mp4. \"Mystery and Thrills Essentials\" holds footage_32_HD_kVus.mp4, edited_moment_23_4K.mp4, episode_57_raw_final.mp4, edited_episode_82_raw.mp4 and scene_64_HD_2023_06_20.mp4. I opened each playlist and checked the track list and count.",
+  "video_duration_s": 164.2,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 37.35,
+    "end_s": 37.37,
+    "ok": true,
+    "note": "Observe current screen and open VLC"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 38.36,
+    "end_s": 40.88,
+    "ok": true,
+    "note": "Launch VLC and observe screen"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 42.67,
+    "end_s": 43.27,
+    "ok": true,
+    "note": "Check VLC media library preferences to locate VLCVideos folder"
+   },
+   {
+    "step": 4,
+    "tool": "get_ui_state",
+    "start_s": 44.5,
+    "end_s": 44.51,
+    "ok": true,
+    "note": "Read VLC preferences screen after tap"
+   },
+   {
+    "step": 5,
+    "tool": "key",
+    "start_s": 46.88,
+    "end_s": 47.96,
+    "ok": true,
+    "note": "Return to VLC main screen and open navigation drawer to browse internal memory"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 48.93,
+    "end_s": 50.05,
+    "ok": true,
+    "note": "Browse internal memory in VLC"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 50.96,
+    "end_s": 51.83,
+    "ok": true,
+    "note": "Open Internal memory folder listing"
+   },
+   {
+    "step": 8,
+    "tool": "get_ui_state",
+    "start_s": 52.71,
+    "end_s": 52.76,
+    "ok": true,
+    "note": "Read Internal memory folder listing"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 53.69,
+    "end_s": 54.65,
+    "ok": true,
+    "note": "Open VLCVideos folder listing media files"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 56.43,
+    "end_s": 57.46,
+    "ok": true,
+    "note": "Open More Actions menu for edited_moment_6_export.mp4 to see playlist options"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 58.37,
+    "end_s": 59.35,
+    "ok": true,
+    "note": "Open Add to playlist dialog for first file"
+   },
+   {
+    "step": 12,
+    "tool": "type",
+    "start_s": 60.85,
+    "end_s": 64.17,
+    "ok": true,
+    "note": "Type playlist name Tech Reviews Favorites and save"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 65.2,
+    "end_s": 65.78,
+    "ok": true,
+    "note": "Add backup_footage_11_.mp4 to Tech Reviews Favorites"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 66.78,
+    "end_s": 67.56,
+    "ok": true,
+    "note": "Open More Actions for backup_footage_11_.mp4"
+   },
+   {
+    "step": 15,
+    "tool": "tap_element",
+    "start_s": 68.64,
+    "end_s": 69.64,
+    "ok": true,
+    "note": "Open Add to playlist dialog and add backup_footage_11_.mp4 to existing Tech Reviews Favorites"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 70.7,
+    "end_s": 71.25,
+    "ok": true,
+    "note": "Add Qdnm_clip_10_export.mp4 to Tech Reviews Favorites"
+   },
+   {
+    "step": 17,
+    "tool": "tap_element",
+    "start_s": 72.21,
+    "end_s": 73.16,
+    "ok": true,
+    "note": "Open More Actions for Qdnm_clip_10_export.mp4"
+   },
+   {
+    "step": 18,
+    "tool": "tap_element",
+    "start_s": 74.02,
+    "end_s": 74.65,
+    "ok": true,
+    "note": "Choose existing Tech Reviews Favorites playlist for Qdnm_clip_10_export.mp4"
+   },
+   {
+    "step": 19,
+    "tool": "tap_element",
+    "start_s": 75.93,
+    "end_s": 76.53,
+    "ok": true,
+    "note": "Create Mystery and Thrills Essentials playlist starting with footage_32_HD_kVus.mp4"
+   },
+   {
+    "step": 20,
+    "tool": "tap_element",
+    "start_s": 78.21,
+    "end_s": 79.14,
+    "ok": true,
+    "note": "Open More Actions for footage_32_HD_kVus.mp4"
+   },
+   {
+    "step": 21,
+    "tool": "tap_element",
+    "start_s": 80.01,
+    "end_s": 80.85,
+    "ok": true,
+    "note": "Open Add to new playlist dialog for footage_32_HD_kVus.mp4"
+   },
+   {
+    "step": 22,
+    "tool": "type",
+    "start_s": 82.49,
+    "end_s": 87.49,
+    "ok": true,
+    "note": "Type new playlist name Mystery and Thrills Essentials and save"
+   },
+   {
+    "step": 23,
+    "tool": "tap_element",
+    "start_s": 88.36,
+    "end_s": 89.05,
+    "ok": true,
+    "note": "Add edited_moment_23_4K.mp4 to Mystery and Thrills Essentials"
+   },
+   {
+    "step": 24,
+    "tool": "tap_element",
+    "start_s": 90.48,
+    "end_s": 91.35,
+    "ok": true,
+    "note": "Open More Actions for edited_moment_23_4K.mp4"
+   },
+   {
+    "step": 25,
+    "tool": "tap_element",
+    "start_s": 93.39,
+    "end_s": 94.45,
+    "ok": true,
+    "note": "Choose existing Mystery and Thrills Essentials playlist for edited_moment_23_4K.mp4"
+   },
+   {
+    "step": 26,
+    "tool": "tap_element",
+    "start_s": 95.29,
+    "end_s": 96.38,
+    "ok": true,
+    "note": "Add episode_57_raw_final.mp4 to Mystery and Thrills Essentials"
+   },
+   {
+    "step": 27,
+    "tool": "tap_element",
+    "start_s": 97.41,
+    "end_s": 98.62,
+    "ok": true,
+    "note": "Open More Actions for episode_57_raw_final.mp4"
+   },
+   {
+    "step": 28,
+    "tool": "tap_element",
+    "start_s": 99.66,
+    "end_s": 101.03,
+    "ok": true,
+    "note": "Choose existing Mystery and Thrills Essentials playlist for episode_57_raw_final.mp4"
+   },
+   {
+    "step": 29,
+    "tool": "tap_element",
+    "start_s": 102.07,
+    "end_s": 103.73,
+    "ok": true,
+    "note": "Add edited_episode_82_raw.mp4 to Mystery and Thrills Essentials"
+   },
+   {
+    "step": 30,
+    "tool": "tap_element",
+    "start_s": 105.42,
+    "end_s": 106.26,
+    "ok": true,
+    "note": "Open More Actions for edited_episode_82_raw.mp4"
+   },
+   {
+    "step": 31,
+    "tool": "tap_element",
+    "start_s": 107.34,
+    "end_s": 108.14,
+    "ok": true,
+    "note": "Choose existing Mystery and Thrills Essentials playlist for edited_episode_82_raw.mp4"
+   },
+   {
+    "step": 32,
+    "tool": "tap_element",
+    "start_s": 109.29,
+    "end_s": 109.77,
+    "ok": true,
+    "note": "Scroll to find scene_64_HD_2023_06_20.mp4 and add it to Mystery and Thrills Essentials"
+   },
+   {
+    "step": 33,
+    "tool": "swipe",
+    "start_s": 111.03,
+    "end_s": 113.18,
+    "ok": true,
+    "note": "Scroll file list down to reveal remaining files"
+   },
+   {
+    "step": 34,
+    "tool": "tap_element",
+    "start_s": 114.22,
+    "end_s": 115.15,
+    "ok": true,
+    "note": "Open More Actions for scene_64_HD_2023_06_20.mp4"
+   },
+   {
+    "step": 35,
+    "tool": "tap_element",
+    "start_s": 116.09,
+    "end_s": 117.03,
+    "ok": true,
+    "note": "Choose existing Mystery and Thrills Essentials playlist for scene_64_HD_2023_06_20.mp4"
+   },
+   {
+    "step": 36,
+    "tool": "tap_element",
+    "start_s": 118.03,
+    "end_s": 118.48,
+    "ok": true,
+    "note": "Verify both playlists in Playlists tab"
+   },
+   {
+    "step": 37,
+    "tool": "tap",
+    "start_s": 120.07,
+    "end_s": 120.65,
+    "ok": true,
+    "note": "Open Playlists tab to verify both playlists"
+   },
+   {
+    "step": 38,
+    "tool": "get_ui_state",
+    "start_s": 122.04,
+    "end_s": 122.34,
+    "ok": true,
+    "note": "Exit accidental playback and go to Playlists tab"
+   },
+   {
+    "step": 39,
+    "tool": "tap_element",
+    "start_s": 123.36,
+    "end_s": 123.85,
+    "ok": true,
+    "note": "Dismiss full-screen tip and stop playback"
+   },
+   {
+    "step": 40,
+    "tool": "tap_element",
+    "start_s": 124.8,
+    "end_s": 125.03,
+    "ok": true,
+    "note": "Close player tips then stop playback"
+   },
+   {
+    "step": 41,
+    "tool": "key",
+    "start_s": 125.84,
+    "end_s": 126.88,
+    "ok": true,
+    "note": "Stop playback and return to file list"
+   },
+   {
+    "step": 42,
+    "tool": "swipe",
+    "start_s": 128.64,
+    "end_s": 131.3,
+    "ok": true,
+    "note": "Restore navigation bar visibility and open Playlists tab"
+   },
+   {
+    "step": 43,
+    "tool": "key",
+    "start_s": 132.54,
+    "end_s": 133.07,
+    "ok": true,
+    "note": "Back to Browse root and open Playlists tab"
+   },
+   {
+    "step": 44,
+    "tool": "key",
+    "start_s": 134.47,
+    "end_s": 135.25,
+    "ok": true,
+    "note": "Back to Browse root to access bottom navigation"
+   },
+   {
+    "step": 45,
+    "tool": "tap_element",
+    "start_s": 136.3,
+    "end_s": 136.76,
+    "ok": true,
+    "note": "Open Playlists tab to review both playlists"
+   },
+   {
+    "step": 46,
+    "tool": "get_ui_state",
+    "start_s": 137.73,
+    "end_s": 137.76,
+    "ok": true,
+    "note": "Read Playlists list"
+   },
+   {
+    "step": 47,
+    "tool": "tap_element",
+    "start_s": 139.07,
+    "end_s": 140.45,
+    "ok": true,
+    "note": "Open Tech Reviews Favorites playlist to verify track order"
+   },
+   {
+    "step": 48,
+    "tool": "key",
+    "start_s": 142.3,
+    "end_s": 142.85,
+    "ok": true,
+    "note": "Open Mystery and Thrills Essentials playlist to verify track order"
+   },
+   {
+    "step": 49,
+    "tool": "tap_element",
+    "start_s": 144.13,
+    "end_s": 145.65,
+    "ok": true,
+    "note": "Open Mystery and Thrills Essentials to read track list"
+   },
+   {
+    "step": 50,
+    "tool": "done",
+    "start_s": 149.11,
+    "end_s": 149.11,
+    "ok": true,
+    "note": "Report results"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/VlcCreateTwoPlaylists/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/VlcCreateTwoPlaylists/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/VlcCreateTwoPlaylists/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/VlcCreateTwoPlaylists/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/VlcCreateTwoPlaylists/task.json"
+  }
+ }
+}

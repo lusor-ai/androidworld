@@ -1,0 +1,222 @@
+{
+ "task": "SimpleCalendarFirstEventAfterStartTime",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.47,
+   "end_s": 30.47,
+   "ok": true,
+   "args": {
+    "path": "skill://simple-calendar/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 31.49,
+   "end_s": 31.55,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 32.56,
+   "end_s": 35.2,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.calendar.pro"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap",
+   "start_s": 36.89,
+   "end_s": 37.91,
+   "ok": true,
+   "args": {
+    "x": 540,
+    "y": 1270
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 39.26,
+   "end_s": 40.64,
+   "ok": true,
+   "args": {
+    "index": 13
+   },
+   "tapped": {
+    "label": "October 11 (Wed)",
+    "index": 13,
+    "x": 540,
+    "y": 388
+   }
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 41.58,
+   "end_s": 44.63,
+   "ok": true,
+   "args": {
+    "index": 7,
+    "text": "18"
+   }
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 45.53,
+   "end_s": 45.8,
+   "ok": true,
+   "args": {
+    "text": "18"
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 46.66,
+   "end_s": 47.76,
+   "ok": true,
+   "args": {
+    "index": 15
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 15,
+    "x": 842,
+    "y": 1159
+   }
+  },
+  {
+   "step": 9,
+   "tool": "chain",
+   "start_s": 52.24,
+   "end_s": 56.36,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 14
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 14
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 14
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 14
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 14
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 14
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 14
+      }
+     },
+     {
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 10,
+   "tool": "scroll_to",
+   "start_s": 57.6,
+   "end_s": 59.37,
+   "ok": true,
+   "args": {
+    "page": true
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 64.1,
+   "end_s": 64.68,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": null,
+    "index": 10,
+    "x": 1007,
+    "y": 388
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 66.58,
+   "end_s": 67.16,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 74,
+    "y": 388
+   }
+  },
+  {
+   "step": 13,
+   "tool": "done",
+   "start_s": 69.05,
+   "end_s": 69.05,
+   "ok": true,
+   "args": {
+    "summary": "Your first event after 3:15pm on October 18 2023 is Client Meeting. That day had only three events (Appointment for Campaign at 12:30, Call with HR at 12:39, and Client Meeting at 15:15), so Client Meeting is the only one at or after 3:15pm.",
+    "rows": [
+     {
+      "answer": "Client Meeting",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "Simple Calendar day view for October 18 (Wed) 2023 listed three events: 'Appointment for Campaign' 12:30-13:15, 'Call with HR' 12:39-13:24, and 'Client Meeting' 15:15-16:05; scrolling the day list reached the end with no further rows.",
+     "key_signals": [
+      "Day view title read 'October 18 (Wed)'",
+      "Client Meeting shown at 15:15 - 16:05",
+      "Other two events ended before 15:15",
+      "End of day list reached with 3 rows"
+     ]
+    }
+   }
+  }
+ ]
+}

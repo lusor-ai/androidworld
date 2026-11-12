@@ -1,0 +1,403 @@
+{
+ "task": "TasksCompletedTasksForDate",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 31.33,
+   "end_s": 31.35,
+   "ok": true,
+   "args": {
+    "path": "skill://tasks/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 31.33,
+   "end_s": 31.35,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 32.1,
+   "end_s": 35.56,
+   "ok": true,
+   "args": {
+    "app": "org.tasks"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "map_app",
+   "start_s": 38.49,
+   "end_s": 51.81,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 55.95,
+   "end_s": 55.97,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 58.63,
+   "end_s": 59.76,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 540,
+    "y": 182
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 60.93,
+   "end_s": 62.81,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 1077
+   }
+  },
+  {
+   "step": 8,
+   "tool": "screenshot",
+   "start_s": 64.98,
+   "end_s": 66.42,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 68.29,
+   "end_s": 68.95,
+   "ok": true,
+   "args": {
+    "index": 48
+   },
+   "tapped": {
+    "label": "CANCEL",
+    "index": 48,
+    "x": 727,
+    "y": 2274
+   }
+  },
+  {
+   "step": 10,
+   "tool": "key",
+   "start_s": 70.34,
+   "end_s": 70.75,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 72.23,
+   "end_s": 73.42,
+   "ok": true,
+   "args": {
+    "index": 21
+   },
+   "tapped": {
+    "label": null,
+    "index": 21,
+    "x": 540,
+    "y": 1247
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 74.58,
+   "end_s": 76.21,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 1077
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 78.07,
+   "end_s": 78.53,
+   "ok": true,
+   "args": {
+    "index": 49
+   },
+   "tapped": {
+    "label": "CANCEL",
+    "index": 49,
+    "x": 727,
+    "y": 2274
+   }
+  },
+  {
+   "step": 14,
+   "tool": "key",
+   "start_s": 79.63,
+   "end_s": 80.03,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 81.2,
+   "end_s": 82.22,
+   "ok": true,
+   "args": {
+    "index": 33
+   },
+   "tapped": {
+    "label": null,
+    "index": 33,
+    "x": 540,
+    "y": 1972
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 83.31,
+   "end_s": 84.83,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 1077
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 86.51,
+   "end_s": 87.02,
+   "ok": true,
+   "args": {
+    "index": 49
+   },
+   "tapped": {
+    "label": "CANCEL",
+    "index": 49,
+    "x": 727,
+    "y": 2274
+   }
+  },
+  {
+   "step": 18,
+   "tool": "key",
+   "start_s": 88.21,
+   "end_s": 88.54,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 19,
+   "tool": "scroll_to",
+   "start_s": 89.79,
+   "end_s": 114.61,
+   "ok": true,
+   "args": {
+    "target": "Book flights for conference",
+    "direction": "up"
+   }
+  },
+  {
+   "step": 20,
+   "tool": "swipe",
+   "start_s": 117.06,
+   "end_s": 121.13,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 900,
+    "endX": 540,
+    "endY": 2000,
+    "durationMs": 400
+   }
+  },
+  {
+   "step": 21,
+   "tool": "tap_element",
+   "start_s": 122.38,
+   "end_s": 123.5,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 540,
+    "y": 540
+   }
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 124.63,
+   "end_s": 126.33,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 1077
+   }
+  },
+  {
+   "step": 23,
+   "tool": "tap_element",
+   "start_s": 129.07,
+   "end_s": 129.53,
+   "ok": true,
+   "args": {
+    "index": 48
+   },
+   "tapped": {
+    "label": "CANCEL",
+    "index": 48,
+    "x": 727,
+    "y": 2274
+   }
+  },
+  {
+   "step": 24,
+   "tool": "key",
+   "start_s": 130.56,
+   "end_s": 131.12,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 132.48,
+   "end_s": 133.28,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 760
+   }
+  },
+  {
+   "step": 26,
+   "tool": "tap_element",
+   "start_s": 134.35,
+   "end_s": 135.91,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 1077
+   }
+  },
+  {
+   "step": 27,
+   "tool": "tap_element",
+   "start_s": 140.49,
+   "end_s": 140.92,
+   "ok": true,
+   "args": {
+    "index": 48
+   },
+   "tapped": {
+    "label": "CANCEL",
+    "index": 48,
+    "x": 727,
+    "y": 2274
+   }
+  },
+  {
+   "step": 28,
+   "tool": "key",
+   "start_s": 142.67,
+   "end_s": 142.98,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 29,
+   "tool": "done",
+   "start_s": 145.46,
+   "end_s": 145.46,
+   "ok": true,
+   "args": {
+    "summary": "The completed tasks due October 17 2023 are Book flights for conference, Send report to manager, Dinner with friends.",
+    "rows": [
+     {
+      "answer": "Book flights for conference, Send report to manager, Dinner with friends",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "The Tasks list showed 23 rows (10 incomplete, 13 completed). Three completed rows had a bare 'Tue' due label; opening each and tapping its due date opened the October 2023 picker with day 17 Selected: Book flights for conference, Send report to manager and Dinner with friends. The other two completed 'Tue' tasks (Brainstorm Blog Post Ideas, Change Air Filter) had day 10 Selected, and the remaining completed tasks carried non-Tuesday labels (Yest, Thu, Mon, Oct 8, time-only).",
+     "key_signals": [
+      "My Tasks list mapped to its proven end: 23 rows, 13 completed",
+      "Dinner with friends picker: header 'October 2023', 17 Selected",
+      "Book flights for conference picker: 17 Selected on the October 2023 grid",
+      "Send report to manager picker: 17 Selected on the October 2023 grid",
+      "Brainstorm Blog Post Ideas and Change Air Filter pickers: 10 Selected",
+      "No data was changed; pickers left with Cancel"
+     ]
+    }
+   }
+  }
+ ]
+}

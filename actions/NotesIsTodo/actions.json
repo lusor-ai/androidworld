@@ -1,0 +1,103 @@
+{
+ "task": "NotesIsTodo",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 33.26,
+   "end_s": 33.28,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 34.28,
+   "end_s": 35.6,
+   "ok": true,
+   "args": {
+    "app": "net.cozic.joplin"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 36.4,
+   "end_s": 36.42,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 4,
+   "tool": "chain",
+   "start_s": 37.54,
+   "end_s": 41.65,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "verb": "wait",
+      "params": {
+       "duration_ms": 3000
+      }
+     },
+     {
+      "verb": "get_ui_state",
+      "params": {}
+     }
+    ]
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 42.84,
+   "end_s": 42.85,
+   "ok": true,
+   "args": {
+    "index": 27
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 43.57,
+   "end_s": 44.33,
+   "ok": true,
+   "args": {
+    "index": 26
+   },
+   "tapped": {
+    "label": null,
+    "index": 26,
+    "x": 540,
+    "y": 1495
+   }
+  },
+  {
+   "step": 7,
+   "tool": "done",
+   "start_s": 46.06,
+   "end_s": 46.06,
+   "ok": true,
+   "args": {
+    "summary": "True. The note 'Travel Itinerary' in Joplin is a to-do item: it appears in the notes list with a to-do checkbox, and opening it shows the completed checkbox in its title bar, which Joplin only displays for to-do notes.",
+    "evidence": {
+     "objective_evidence": "Notes list row for 'Travel Itinerary' (e11) shows a CheckBox labelled 'to-do: Travel Itinerary'; opening the note shows a CheckBox next to its title field 'Travel Itinerary'.",
+     "key_signals": [
+      "Joplin notes list row e11: CheckBox 'to-do: Travel Itinerary' Unchecked",
+      "Opened note screen: CheckBox [8] above EditText 'Travel Itinerary'"
+     ]
+    },
+    "rows": [
+     {
+      "answer": "True",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

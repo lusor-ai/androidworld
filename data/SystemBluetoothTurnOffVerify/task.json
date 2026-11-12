@@ -1,0 +1,101 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SystemBluetoothTurnOffVerify",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 15.2,
+  "mobilerun_published_time_s": 136.9,
+  "speed_ratio": 0.111,
+  "lusor_cost_usd": 0.0057,
+  "mobilerun_published_actions": 4,
+  "mobilerun_est_cost_usd": 0.306,
+  "lusor_tool_calls": 7,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Turn bluetooth off.",
+  "final_answer": null,
+  "final_summary": "Bluetooth is already off. I opened Settings, then Connected devices, then Connection preferences, then Bluetooth, and the \"Use Bluetooth\" switch was unchecked, with the page noting it will turn on only when needed. I changed nothing.",
+  "video_duration_s": 54.8,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 28.9,
+    "end_s": 28.92,
+    "ok": true,
+    "note": "Observe current screen to find Settings/Bluetooth toggle"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 29.74,
+    "end_s": 31.19,
+    "ok": true,
+    "note": "Open Settings and find Bluetooth toggle"
+   },
+   {
+    "step": 3,
+    "tool": "get_ui_state",
+    "start_s": 32.24,
+    "end_s": 32.49,
+    "ok": true,
+    "note": "Read Settings screen to find Bluetooth"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 33.11,
+    "end_s": 34.62,
+    "ok": true,
+    "note": "Open Connected devices to reach Bluetooth"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 35.69,
+    "end_s": 37.46,
+    "ok": true,
+    "note": "Open Connection preferences to check Bluetooth switch state"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 38.23,
+    "end_s": 39.45,
+    "ok": true,
+    "note": "Open Bluetooth screen and inspect the toggle"
+   },
+   {
+    "step": 7,
+    "tool": "done",
+    "start_s": 40.8,
+    "end_s": 40.8,
+    "ok": true,
+    "note": "Task complete; Bluetooth verified off"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOffVerify/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOffVerify/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOffVerify/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOffVerify/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOffVerify/task.json"
+  }
+ }
+}

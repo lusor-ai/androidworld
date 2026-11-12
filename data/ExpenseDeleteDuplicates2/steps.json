@@ -1,0 +1,151 @@
+{
+ "task": "ExpenseDeleteDuplicates2",
+ "video_duration_s": 135.3,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 30.3,
+   "end_s": 30.32,
+   "ok": true,
+   "note": "Observe current screen to find Pro Expense app"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 31.73,
+   "end_s": 33.02,
+   "ok": true,
+   "note": "Launch Pro Expense and observe home/list"
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 33.98,
+   "end_s": 34.44,
+   "ok": true,
+   "note": "Read Pro Expense main screen"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.51,
+   "end_s": 36.46,
+   "ok": true,
+   "note": "Open drawer menu to find full expense list"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.77,
+   "end_s": 38.57,
+   "ok": true,
+   "note": "Open Expense Logs to see full list"
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 39.63,
+   "end_s": 39.7,
+   "ok": true,
+   "note": "Read expense log rows"
+  },
+  {
+   "step": 7,
+   "tool": "map_app",
+   "start_s": 41.12,
+   "end_s": 61.47,
+   "ok": true,
+   "note": "Map full expense list titles in rv_expense"
+  },
+  {
+   "step": 8,
+   "tool": "scroll_to",
+   "start_s": 68.17,
+   "end_s": 73.79,
+   "ok": true,
+   "note": "Scroll down toward the Consulting Fees Oct 5 89.09 duplicate pair"
+  },
+  {
+   "step": 9,
+   "tool": "tap",
+   "start_s": 76.73,
+   "end_s": 77.76,
+   "ok": true,
+   "note": "Open second Consulting Fees 89.09 row to verify its full date/time"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 79.32,
+   "end_s": 79.85,
+   "ok": true,
+   "note": "Close detail and open the other Consulting Fees 89.09 row"
+  },
+  {
+   "step": 11,
+   "tool": "tap",
+   "start_s": 80.93,
+   "end_s": 81.85,
+   "ok": true,
+   "note": "Read first Consulting Fees 89.09 row detail"
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 83.84,
+   "end_s": 84.52,
+   "ok": true,
+   "note": "Delete this duplicate Consulting Fees 89.09 Oct 5 row"
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 85.56,
+   "end_s": 86.43,
+   "ok": true,
+   "note": "Confirm deletion and return to list"
+  },
+  {
+   "step": 14,
+   "tool": "map_app",
+   "start_s": 88.11,
+   "end_s": 110.23,
+   "ok": true,
+   "note": "Recount list with map_app levels 1 to confirm 41 rows and one Consulting Fees 89.09 remains"
+  },
+  {
+   "step": 15,
+   "tool": "get_ui_state",
+   "start_s": 111.61,
+   "end_s": 111.66,
+   "ok": true,
+   "note": "Read final screen then report"
+  },
+  {
+   "step": 16,
+   "tool": "done",
+   "start_s": 114.47,
+   "end_s": 114.47,
+   "ok": true,
+   "note": "Task complete"
+  },
+  {
+   "step": 17,
+   "tool": "done",
+   "start_s": 118.37,
+   "end_s": 118.38,
+   "ok": true,
+   "note": "Task complete"
+  },
+  {
+   "step": 18,
+   "tool": "done",
+   "start_s": 120.84,
+   "end_s": 120.84,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SystemWifiTurnOffVerify",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 30.2,
+  "mobilerun_published_time_s": 93.7,
+  "speed_ratio": 0.322,
+  "lusor_cost_usd": 0.011,
+  "mobilerun_published_actions": 3,
+  "mobilerun_est_cost_usd": 0.23,
+  "lusor_tool_calls": 12,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Turn wifi off.",
+  "final_answer": null,
+  "final_summary": "Wi-Fi is off. The Wi-Fi switch on the Internet settings screen now shows Unchecked, and no Wi-Fi networks are listed, only the mobile connection.",
+  "video_duration_s": 69.9,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 28.92,
+    "end_s": 28.94,
+    "ok": true,
+    "note": "Observe current screen; then open Settings wifi controls and turn wifi off"
+   },
+   {
+    "step": 2,
+    "tool": "swipe",
+    "start_s": 30.0,
+    "end_s": 32.86,
+    "ok": true,
+    "note": "Open quick settings and tap Wi-Fi tile to turn it off"
+   },
+   {
+    "step": 3,
+    "tool": "swipe",
+    "start_s": 34.19,
+    "end_s": 35.24,
+    "ok": true,
+    "note": null
+   },
+   {
+    "step": 4,
+    "tool": "get_ui_state",
+    "start_s": 35.95,
+    "end_s": 35.98,
+    "ok": true,
+    "note": "Inspect screen after expand attempt"
+   },
+   {
+    "step": 5,
+    "tool": "key",
+    "start_s": 37.11,
+    "end_s": 37.64,
+    "ok": true,
+    "note": "Close notification shade and open Settings app to toggle Wi-Fi"
+   },
+   {
+    "step": 6,
+    "tool": "launch",
+    "start_s": 38.29,
+    "end_s": 41.17,
+    "ok": true,
+    "note": "Open Settings and navigate to Network & internet / Wi-Fi"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 41.96,
+    "end_s": 43.42,
+    "ok": true,
+    "note": "Open Network & internet page"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 44.33,
+    "end_s": 46.22,
+    "ok": true,
+    "note": "Open Internet page to find Wi-Fi toggle"
+   },
+   {
+    "step": 9,
+    "tool": "tap",
+    "start_s": 48.68,
+    "end_s": 49.74,
+    "ok": true,
+    "note": "Open Wi-Fi details page to confirm Wi-Fi state"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 51.29,
+    "end_s": 52.34,
+    "ok": true,
+    "note": "Tap Wi-Fi switch to turn it off, then verify Unchecked"
+   },
+   {
+    "step": 11,
+    "tool": "get_ui_state",
+    "start_s": 53.17,
+    "end_s": 53.18,
+    "ok": true,
+    "note": "Re-read final screen to confirm Wi-Fi unchecked"
+   },
+   {
+    "step": 12,
+    "tool": "done",
+    "start_s": 54.7,
+    "end_s": 54.7,
+    "ok": true,
+    "note": "Task complete; Wi-Fi verified off"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOffVerify/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOffVerify/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOffVerify/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOffVerify/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOffVerify/task.json"
+  }
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SimpleCalendarNextEvent",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 27.2,
+  "mobilerun_published_time_s": 116.5,
+  "speed_ratio": 0.233,
+  "lusor_cost_usd": 0.0106,
+  "mobilerun_published_actions": 3,
+  "mobilerun_est_cost_usd": 0.23,
+  "lusor_tool_calls": 9,
+  "disclosure": null,
+  "skills_read": [
+   "simple-calendar"
+  ],
+  "skill_assisted": [],
+  "goal": "What is my next upcoming event in Simple Calendar Pro? Answer with the title only. If there are multiples titles, format your answer in a comma separated list.",
+  "final_answer": "Concert",
+  "final_summary": "Your next upcoming event is Concert, today (Sunday 15 October) from 19:00 to 20:00. The current clock reads 15:34, and the three earlier events today (02:24, 03:32 and 06:50) have already passed; no other event is scheduled later today.",
+  "video_duration_s": 68.1,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 29.71,
+    "end_s": 29.73,
+    "ok": true,
+    "note": "Read Simple Calendar skill"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 29.71,
+    "end_s": 29.73,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 30.49,
+    "end_s": 33.13,
+    "ok": true,
+    "note": "Launch Simple Calendar Pro and read current view"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 34.42,
+    "end_s": 35.52,
+    "ok": true,
+    "note": "Open view menu to switch to event list"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 36.28,
+    "end_s": 37.33,
+    "ok": true,
+    "note": "Open simple event list view"
+   },
+   {
+    "step": 6,
+    "tool": "swipe",
+    "start_s": 39.12,
+    "end_s": 41.06,
+    "ok": true,
+    "note": "Scroll list to top to check earlier today items"
+   },
+   {
+    "step": 7,
+    "tool": "swipe",
+    "start_s": 44.65,
+    "end_s": 46.47,
+    "ok": true,
+    "note": "Confirm top of event list"
+   },
+   {
+    "step": 8,
+    "tool": "scroll_to",
+    "start_s": 48.52,
+    "end_s": 49.71,
+    "ok": true,
+    "note": "Scroll to Concert row and verify it's the last Sunday event"
+   },
+   {
+    "step": 9,
+    "tool": "done",
+    "start_s": 52.25,
+    "end_s": 52.25,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextEvent/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextEvent/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextEvent/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextEvent/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextEvent/task.json"
+  }
+ }
+}

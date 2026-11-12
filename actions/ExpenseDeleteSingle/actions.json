@@ -1,0 +1,251 @@
+{
+ "task": "ExpenseDeleteSingle",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 30.48,
+   "end_s": 30.51,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "key",
+   "start_s": 32.25,
+   "end_s": 33.4,
+   "ok": true,
+   "args": {
+    "keyCode": 187,
+    "capture": true
+   }
+  },
+  {
+   "step": 3,
+   "tool": "swipe",
+   "start_s": 34.34,
+   "end_s": 35.77,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1600,
+    "endX": 540,
+    "endY": 400,
+    "capture": true
+   }
+  },
+  {
+   "step": 4,
+   "tool": "key",
+   "start_s": 36.49,
+   "end_s": 36.97,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 5,
+   "tool": "launch",
+   "start_s": 38.59,
+   "end_s": 39.81,
+   "ok": true,
+   "args": {
+    "app": "com.ktwapps.pro_expense",
+    "capture": true
+   }
+  },
+  {
+   "step": 6,
+   "tool": "swipe",
+   "start_s": 41.58,
+   "end_s": 44.62,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "endX": 540,
+    "endY": 500,
+    "startX": 540,
+    "startY": 1200,
+    "durationMs": 600
+   }
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 45.71,
+   "end_s": 48.83,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 31,
+    "text": "Pro Expense"
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 49.63,
+   "end_s": 50.57,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 2
+   },
+   "tapped": {
+    "label": "Pro Expense",
+    "index": 2,
+    "x": 178,
+    "y": 470
+   }
+  },
+  {
+   "step": 9,
+   "tool": "get_ui_state",
+   "start_s": 51.48,
+   "end_s": 52.96,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 54.38,
+   "end_s": 54.78,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 5
+   },
+   "tapped": {
+    "label": "MORE",
+    "index": 5,
+    "x": 540,
+    "y": 1972
+   }
+  },
+  {
+   "step": 11,
+   "tool": "get_ui_state",
+   "start_s": 55.67,
+   "end_s": 55.69,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 12,
+   "tool": "map_app",
+   "start_s": 57.14,
+   "end_s": 58.16,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 59.87,
+   "end_s": 59.87,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 5,
+    "irreversible": true
+   }
+  },
+  {
+   "step": 14,
+   "tool": "swipe",
+   "start_s": 61.42,
+   "end_s": 63.27,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "durationMs": 400,
+    "endX": 200,
+    "endY": 368,
+    "startX": 900,
+    "startY": 368
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 64.37,
+   "end_s": 65.28,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 6,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 971,
+    "y": 343
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 66.23,
+   "end_s": 66.77,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 3,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "CONFIRM",
+    "index": 3,
+    "x": 540,
+    "y": 2222
+   }
+  },
+  {
+   "step": 17,
+   "tool": "map_app",
+   "start_s": 67.88,
+   "end_s": 68.5,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 18,
+   "tool": "done",
+   "start_s": 71.4,
+   "end_s": 71.4,
+   "ok": true,
+   "args": {
+    "summary": "I deleted the Sponsorships expense (2023 Oct 11, 489.42 USD) from Pro Expense. The Expense Logs list now shows \"NO EXPENSE LOGS\", so no other expense rows remain.",
+    "rows": [
+     {
+      "expense": "Sponsorships",
+      "date": "2023 Oct 11",
+      "amount": "489.42",
+      "currency": "USD",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "Expense Logs list contained exactly one row, Sponsorships / 2023 Oct 11 / 489.42 $, with the list's end proven on the read. After swiping the row left, tapping its Delete icon and confirming in the 'Delete Items' sheet, the screen shows an empty list with 'NO EXPENSE LOGS' and a map_app read reports count 0 with end proven.",
+     "key_signals": [
+      "Expense Logs header: 2023 Oct 11 . DESC",
+      "Single row: Sponsorships, 2023 Oct 11, 489.42 USD",
+      "Delete confirmation bottom sheet with CONFIRM button tapped",
+      "Post-delete screen: NO EXPENSE LOGS, rv_expense 0 rows",
+      "map_app count 0, end_proven true"
+     ]
+    }
+   }
+  }
+ ]
+}

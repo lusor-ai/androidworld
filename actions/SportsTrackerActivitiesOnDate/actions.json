@@ -1,0 +1,298 @@
+{
+ "task": "SportsTrackerActivitiesOnDate",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.47,
+   "end_s": 29.49,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 30.65,
+   "end_s": 32.61,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1600,
+    "endX": 540,
+    "endY": 400
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 33.32,
+   "end_s": 33.68,
+   "ok": true,
+   "args": {
+    "index": 23
+   },
+   "tapped": {
+    "label": "OpenTracks",
+    "index": 23,
+    "x": 419,
+    "y": 2350
+   }
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 34.33,
+   "end_s": 34.98,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 35.66,
+   "end_s": 36.1,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 943,
+    "y": 2070
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 36.86,
+   "end_s": 38.38,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 943,
+    "y": 2017
+   }
+  },
+  {
+   "step": 7,
+   "tool": "map_app",
+   "start_s": 40.52,
+   "end_s": 50.23,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 8,
+   "tool": "map_app",
+   "start_s": 51.57,
+   "end_s": 73.91,
+   "ok": true,
+   "args": {
+    "levels": 2,
+    "rows": {
+     "contains": [
+      "Skill work",
+      "Trying and failing to keep up with John"
+     ]
+    }
+   }
+  },
+  {
+   "step": 9,
+   "tool": "scroll_to",
+   "start_s": 75.85,
+   "end_s": 75.89,
+   "ok": true,
+   "args": {
+    "target": "Skill work"
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 77.8,
+   "end_s": 78.59,
+   "ok": true,
+   "args": {
+    "index": 15
+   },
+   "tapped": {
+    "label": null,
+    "index": 15,
+    "x": 540,
+    "y": 1733
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 79.95,
+   "end_s": 81.1,
+   "ok": true,
+   "args": {
+    "index": 12
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 12,
+    "x": 444,
+    "y": 2232
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 81.99,
+   "end_s": 83.12,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 258,
+    "y": 1708
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 84.07,
+   "end_s": 84.99,
+   "ok": true,
+   "args": {
+    "index": 7
+   },
+   "tapped": {
+    "label": "Cancel",
+    "index": 7,
+    "x": 278,
+    "y": 2064
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 86.02,
+   "end_s": 86.9,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 9,
+    "x": 44,
+    "y": 2232
+   }
+  },
+  {
+   "step": 15,
+   "tool": "get_ui_state",
+   "start_s": 87.72,
+   "end_s": 87.8,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 88.6,
+   "end_s": 89.38,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": null,
+    "index": 14,
+    "x": 540,
+    "y": 1524
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 90.33,
+   "end_s": 91.12,
+   "ok": true,
+   "args": {
+    "index": 12
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 12,
+    "x": 444,
+    "y": 2232
+   }
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 91.85,
+   "end_s": 92.69,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 258,
+    "y": 1708
+   }
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 94.26,
+   "end_s": 94.89,
+   "ok": true,
+   "args": {
+    "index": 7
+   },
+   "tapped": {
+    "label": "Cancel",
+    "index": 7,
+    "x": 271,
+    "y": 2064
+   }
+  },
+  {
+   "step": 20,
+   "tool": "done",
+   "start_s": 98.21,
+   "end_s": 98.21,
+   "ok": true,
+   "args": {
+    "summary": "On October 5, 2023 you recorded two activities in OpenTracks: a snow boarding track (\"Trying and failing to keep up with John\", 4:00 PM) and a mountain biking track (\"Skill work\", 3:45 PM). So the activity types are snow boarding and mountain biking.",
+    "rows": [
+     {
+      "answer": "snow boarding, mountain biking",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "OpenTracks track list mapped to its end (21 tracks, end proven); only two rows carry the date 5 Oct. Opening each one's Edit form showed the activity type field: \"snow boarding\" for \"Trying and failing to keep up with John\" (Oct 5, 2023, 4:00:00 PM) and \"mountain biking\" for \"Skill work\" (Oct 5, 2023, 3:45:00 PM). Both edit screens were cancelled without saving.",
+     "key_signals": [
+      "Track list rows 'Trying and failing to keep up with John' and 'Skill work' both dated 5 Oct",
+      "stats_start_datetime_value: Oct 5, 2023, 4:00:00 PM and Oct 5, 2023, 3:45:00 PM",
+      "track_edit_activity_type = snow boarding",
+      "track_edit_activity_type = mountain biking",
+      "No other track in the 21-item list shows 5 Oct"
+     ]
+    }
+   }
+  }
+ ]
+}

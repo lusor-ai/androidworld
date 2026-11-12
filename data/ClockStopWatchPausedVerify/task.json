@@ -1,0 +1,109 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "ClockStopWatchPausedVerify",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 21.2,
+  "mobilerun_published_time_s": 216.7,
+  "speed_ratio": 0.098,
+  "lusor_cost_usd": 0.0086,
+  "mobilerun_published_actions": 4,
+  "mobilerun_est_cost_usd": 0.306,
+  "lusor_tool_calls": 8,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Pause the stopwatch.",
+  "final_answer": null,
+  "final_summary": "The stopwatch is paused. It was idle at zero when I opened it, so I started it, let it run a couple of seconds, and pressed Pause. It now holds at 02.36 with a Start button showing, and the reading stayed frozen across two checks, confirming it is not running.",
+  "video_duration_s": 60.3,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 28.59,
+    "end_s": 28.61,
+    "ok": true,
+    "note": "Observe the screen to find the stopwatch app state"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 29.65,
+    "end_s": 32.22,
+    "ok": true,
+    "note": "Open the Clock app and go to its stopwatch tab"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 32.9,
+    "end_s": 33.93,
+    "ok": true,
+    "note": "Tap the Stopwatch tab and check its state"
+   },
+   {
+    "step": 4,
+    "tool": "get_ui_state",
+    "start_s": 36.81,
+    "end_s": 36.83,
+    "ok": true,
+    "note": "Re-read the stopwatch screen to see if the timer is running"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 39.81,
+    "end_s": 40.93,
+    "ok": true,
+    "note": "Start the stopwatch, then pause it so it holds a paused state"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 42.15,
+    "end_s": 42.81,
+    "ok": true,
+    "note": "Tap Pause and verify the stopwatch is paused"
+   },
+   {
+    "step": 7,
+    "tool": "get_ui_state",
+    "start_s": 43.66,
+    "end_s": 43.68,
+    "ok": true,
+    "note": "Confirm the stopwatch stays paused and finish"
+   },
+   {
+    "step": 8,
+    "tool": "done",
+    "start_s": 45.5,
+    "end_s": 45.5,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/ClockStopWatchPausedVerify/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/ClockStopWatchPausedVerify/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/ClockStopWatchPausedVerify/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/ClockStopWatchPausedVerify/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/ClockStopWatchPausedVerify/task.json"
+  }
+ }
+}

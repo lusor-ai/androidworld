@@ -1,0 +1,103 @@
+{
+ "task": "SimpleCalendarAnyEventsOnDate",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.74,
+   "end_s": 29.75,
+   "ok": true,
+   "args": {
+    "path": "skill://simple-calendar/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.74,
+   "end_s": 29.75,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.08,
+   "end_s": 33.17,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.calendar.pro"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.61,
+   "end_s": 36.4,
+   "ok": true,
+   "args": {
+    "index": 29
+   },
+   "tapped": {
+    "label": null,
+    "index": 29,
+    "x": 694,
+    "y": 1272
+   }
+  },
+  {
+   "step": 5,
+   "tool": "key",
+   "start_s": 42.1,
+   "end_s": 42.41,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 43.55,
+   "end_s": 44.29,
+   "ok": true,
+   "args": {
+    "index": 43
+   },
+   "tapped": {
+    "label": null,
+    "index": 43,
+    "x": 694,
+    "y": 1881
+   }
+  },
+  {
+   "step": 7,
+   "tool": "done",
+   "start_s": 46.63,
+   "end_s": 46.63,
+   "ok": true,
+   "args": {
+    "summary": "Yes: Doctor's appointment, Concert, Movie night. I read Thursday Oct 26, 2023 (the Thursday after next, since today is Sunday Oct 15) in Simple Calendar Pro's day view, which shows those three events: Doctor's appointment (02:45-03:45), Concert (12:00-13:00) and Movie night (13:30-14:30).",
+    "rows": [
+     {
+      "answer": "Doctor's appointment, Concert, Movie night",
+      "lusor_status": "succeeded",
+      "lusor_status_note": "3 events listed in Simple Calendar day view for Thursday October 26 (Thu), 2023"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "Day view header read \"October 26 (Thu)\" with day_events list showing 3 rows: \"Doctor's appointment\" 02:45-03:45, \"Concert\" 12:00-13:00, \"Movie night\" 13:30-14:30; no further rows below.",
+     "key_signals": [
+      "Device clock Sun 2023-10-15",
+      "Month view October 2023",
+      "Day view top_value \"October 26 (Thu)\"",
+      "day_events: 3 rows shown"
+     ]
+    }
+   }
+  }
+ ]
+}

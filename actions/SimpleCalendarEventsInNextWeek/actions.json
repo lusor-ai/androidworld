@@ -1,0 +1,215 @@
+{
+ "task": "SimpleCalendarEventsInNextWeek",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.15,
+   "end_s": 30.15,
+   "ok": true,
+   "args": {
+    "path": "skill://simple-calendar/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 31.09,
+   "end_s": 31.11,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 32.79,
+   "end_s": 34.79,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.calendar.pro"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 36.75,
+   "end_s": 38.09,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "Change view",
+    "index": 4,
+    "x": 732,
+    "y": 212
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 39.31,
+   "end_s": 40.2,
+   "ok": true,
+   "args": {
+    "index": 7
+   },
+   "tapped": {
+    "label": "Simple event list",
+    "index": 7,
+    "x": 540,
+    "y": 1522
+   }
+  },
+  {
+   "step": 6,
+   "tool": "scroll_to",
+   "start_s": 43.45,
+   "end_s": 46.62,
+   "ok": true,
+   "args": {
+    "direction": "up",
+    "page": true
+   }
+  },
+  {
+   "step": 7,
+   "tool": "scroll_to",
+   "start_s": 48.62,
+   "end_s": 52.54,
+   "ok": true,
+   "args": {
+    "direction": "up",
+    "page": true
+   }
+  },
+  {
+   "step": 8,
+   "tool": "map_app",
+   "start_s": 58.32,
+   "end_s": 90.69,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 95.55,
+   "end_s": 96.47,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "Change view",
+    "index": 5,
+    "x": 859,
+    "y": 212
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 97.64,
+   "end_s": 98.74,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Weekly view",
+    "index": 3,
+    "x": 540,
+    "y": 1058
+   }
+  },
+  {
+   "step": 11,
+   "tool": "swipe",
+   "start_s": 101.52,
+   "end_s": 103.21,
+   "ok": true,
+   "args": {
+    "startX": 900,
+    "startY": 1800,
+    "endX": 900,
+    "endY": 900
+   }
+  },
+  {
+   "step": 12,
+   "tool": "swipe",
+   "start_s": 105.26,
+   "end_s": 107.53,
+   "ok": true,
+   "args": {
+    "endX": 250,
+    "endY": 1200,
+    "startX": 950,
+    "startY": 1200
+   }
+  },
+  {
+   "step": 13,
+   "tool": "swipe",
+   "start_s": 111.47,
+   "end_s": 111.48,
+   "ok": false,
+   "args": {
+    "endY": 1900,
+    "startX": 900,
+    "startY": 600
+   }
+  },
+  {
+   "step": 14,
+   "tool": "swipe",
+   "start_s": 112.85,
+   "end_s": 114.53,
+   "ok": true,
+   "args": {
+    "startX": 900,
+    "startY": 700,
+    "endX": 900,
+    "endY": 2000
+   }
+  },
+  {
+   "step": 15,
+   "tool": "get_ui_state",
+   "start_s": 116.95,
+   "end_s": 116.99,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 16,
+   "tool": "done",
+   "start_s": 120.28,
+   "end_s": 120.28,
+   "ok": true,
+   "args": {
+    "summary": "In the next week (Mon Oct 16 to Sun Oct 22, 2023, counting from the device date of Sun Oct 15 with weeks starting Monday) you have two events: Scrum meeting and Meet with Mia.",
+    "rows": [
+     {
+      "answer": "Scrum meeting, Meet with Mia",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "The app's Simple event list shows no events on Oct 15, 16, 17, 20, 21 or 22; the only entries in that range are 'Scrum meeting' (18 Wednesday, 15:15 - 15:30) and 'Meet with Mia' (19 Thursday, 20:00 - 20:30). The weekly view for Oct 15-21 (wk. 42) shows exactly those two event blocks and an empty day column for Oct 22 in the following week page, with no all-day events that week.",
+     "key_signals": [
+      "Device clock Sun 2023-10-15",
+      "Event list sections jump from '14 Saturday' to '18 Wednesday' to '19 Thursday' to '23 Monday'",
+      "Weekly view wk. 42 columns S15-M16-T17-W18-T19-F20-S21 show only 'Scrum meeting' and 'Meet with Mia'",
+      "Week 43 first column S22 empty"
+     ]
+    }
+   }
+  }
+ ]
+}

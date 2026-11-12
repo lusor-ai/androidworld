@@ -1,0 +1,143 @@
+{
+ "task": "TurnOnWifiAndOpenApp",
+ "video_duration_s": 93.3,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.3,
+   "end_s": 29.32,
+   "ok": true,
+   "note": "Observe current screen, then open Settings/quick settings to turn on Wi-Fi"
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 30.53,
+   "end_s": 33.77,
+   "ok": true,
+   "note": "Open quick settings panel and tap the Wi-Fi tile"
+  },
+  {
+   "step": 3,
+   "tool": "swipe",
+   "start_s": 34.67,
+   "end_s": 35.67,
+   "ok": true,
+   "note": "Expand quick settings fully to see Wi-Fi tile"
+  },
+  {
+   "step": 4,
+   "tool": "swipe",
+   "start_s": 37.44,
+   "end_s": 41.48,
+   "ok": true,
+   "note": "Expand quick settings fully via slow swipe from top"
+  },
+  {
+   "step": 5,
+   "tool": "swipe",
+   "start_s": 43.04,
+   "end_s": 45.14,
+   "ok": true,
+   "note": "Swipe tile pager left to find the Wi-Fi tile"
+  },
+  {
+   "step": 6,
+   "tool": "swipe",
+   "start_s": 46.3,
+   "end_s": 48.41,
+   "ok": true,
+   "note": "Swipe to page 1 of quick settings tiles to find Wi-Fi"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 49.79,
+   "end_s": 52.06,
+   "ok": true,
+   "note": "Open Settings app from quick settings and find Wi-Fi"
+  },
+  {
+   "step": 8,
+   "tool": "get_ui_state",
+   "start_s": 52.67,
+   "end_s": 53.06,
+   "ok": true,
+   "note": "Read Settings app screen"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 53.98,
+   "end_s": 55.69,
+   "ok": true,
+   "note": "Open Network & internet to check Wi-Fi state"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 56.97,
+   "end_s": 59.25,
+   "ok": true,
+   "note": "Open the Internet page and check the Wi-Fi switch state"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 60.01,
+   "end_s": 60.85,
+   "ok": true,
+   "note": "Turn on the Wi-Fi switch and confirm it is checked"
+  },
+  {
+   "step": 12,
+   "tool": "key",
+   "start_s": 62.33,
+   "end_s": 63.16,
+   "ok": true,
+   "note": "Launch the Contacts app from the home screen or app list"
+  },
+  {
+   "step": 13,
+   "tool": "launch",
+   "start_s": 64.15,
+   "end_s": 66.27,
+   "ok": true,
+   "note": "Launch the Contacts app and confirm it opened"
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 67.99,
+   "end_s": 71.07,
+   "ok": true,
+   "note": "Dismiss the notification permission prompt and confirm Contacts main screen"
+  },
+  {
+   "step": 15,
+   "tool": "tap",
+   "start_s": 72.02,
+   "end_s": 73.25,
+   "ok": true,
+   "note": "Dismiss tooltip and confirm Contacts main screen"
+  },
+  {
+   "step": 16,
+   "tool": "tap",
+   "start_s": 74.12,
+   "end_s": 75.16,
+   "ok": true,
+   "note": "Dismiss remaining tooltip scrim and confirm Contacts home screen"
+  },
+  {
+   "step": 17,
+   "tool": "done",
+   "start_s": 77.1,
+   "end_s": 77.1,
+   "ok": true,
+   "note": "No further steps; both tasks complete"
+  }
+ ]
+}

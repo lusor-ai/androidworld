@@ -1,0 +1,531 @@
+{
+ "task": "ExpenseAddMultipleFromMarkor",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 31.18,
+   "end_s": 31.19,
+   "ok": true,
+   "args": {
+    "path": "skill://markor/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 31.18,
+   "end_s": 31.19,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 32.63,
+   "end_s": 34.76,
+   "ok": true,
+   "args": {
+    "app": "net.gsantner.markor"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 36.06,
+   "end_s": 36.27,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.61,
+   "end_s": 38.22,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "File my_expenses.txt ",
+    "index": 11,
+    "x": 540,
+    "y": 479
+   }
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 39.32,
+   "end_s": 39.42,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 7,
+   "tool": "pull_file",
+   "start_s": 41.13,
+   "end_s": 41.14,
+   "ok": true,
+   "args": {
+    "path": "/sdcard/Documents/my_expenses.txt"
+   }
+  },
+  {
+   "step": 8,
+   "tool": "launch",
+   "start_s": 47.31,
+   "end_s": 51.27,
+   "ok": true,
+   "args": {
+    "app": "com.android.chrome"
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 52.63,
+   "end_s": 53.64,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 411,
+    "y": 729
+   }
+  },
+  {
+   "step": 10,
+   "tool": "type",
+   "start_s": 54.78,
+   "end_s": 61.82,
+   "ok": true,
+   "args": {
+    "index": 14,
+    "text": "file:///sdcard/Documents/my_expenses.txt"
+   }
+  },
+  {
+   "step": 11,
+   "tool": "key",
+   "start_s": 63.17,
+   "end_s": 64.23,
+   "ok": true,
+   "args": {
+    "keyCode": 66
+   }
+  },
+  {
+   "step": 12,
+   "tool": "launch",
+   "start_s": 70.24,
+   "end_s": 71.55,
+   "ok": true,
+   "args": {
+    "app": "net.gsantner.markor"
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 72.62,
+   "end_s": 72.94,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "File my_expenses.txt ",
+    "index": 11,
+    "x": 540,
+    "y": 479
+   }
+  },
+  {
+   "step": 14,
+   "tool": "get_ui_state",
+   "start_s": 73.96,
+   "end_s": 74.12,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 76.41,
+   "end_s": 77.02,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "View mode",
+    "index": 2,
+    "x": 713,
+    "y": 201
+   }
+  },
+  {
+   "step": 16,
+   "tool": "calculate",
+   "start_s": 81.25,
+   "end_s": 81.39,
+   "ok": true,
+   "args": {
+    "code": "const t = `name|amount_dollars|category_name|note\nPest Control|$408.2|Housing|A need\nCleaning Services|$31.8|Housing|I may repeat this. Reimbursable.\nDental Care|$490.07|Health Care|I may repeat this. Reimbursable.`;\nreturn t.split('\\n').filter(l=>/Reimbursable/i.test(l));"
+   }
+  },
+  {
+   "step": 17,
+   "tool": "key",
+   "start_s": 81.25,
+   "end_s": 82.72,
+   "ok": true,
+   "args": {
+    "keyCode": 3
+   }
+  },
+  {
+   "step": 18,
+   "tool": "swipe",
+   "start_s": 84.24,
+   "end_s": 87.85,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1800,
+    "endX": 540,
+    "endY": 600,
+    "durationMs": 400
+   }
+  },
+  {
+   "step": 19,
+   "tool": "swipe",
+   "start_s": 89.61,
+   "end_s": 91.36,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1900,
+    "endX": 540,
+    "endY": 900,
+    "durationMs": 400
+   }
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 92.22,
+   "end_s": 93.27,
+   "ok": true,
+   "args": {
+    "index": 23
+   },
+   "tapped": {
+    "label": "Pro Expense",
+    "index": 23,
+    "x": 419,
+    "y": 1794
+   }
+  },
+  {
+   "step": 21,
+   "tool": "get_ui_state",
+   "start_s": 94.22,
+   "end_s": 95.53,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 96.92,
+   "end_s": 98.15,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 965,
+    "y": 2180
+   }
+  },
+  {
+   "step": 23,
+   "tool": "type",
+   "start_s": 102.37,
+   "end_s": 104.61,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Cleaning Services"
+   }
+  },
+  {
+   "step": 24,
+   "tool": "type",
+   "start_s": 105.88,
+   "end_s": 106.89,
+   "ok": true,
+   "args": {
+    "index": 6,
+    "text": "31.8"
+   }
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 108.13,
+   "end_s": 108.52,
+   "ok": true,
+   "args": {
+    "index": 10,
+    "toggle": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 10,
+    "x": 519,
+    "y": 817
+   }
+  },
+  {
+   "step": 26,
+   "tool": "type",
+   "start_s": 110.25,
+   "end_s": 113.99,
+   "ok": true,
+   "args": {
+    "index": 13,
+    "text": "I may repeat this. Reimbursable."
+   }
+  },
+  {
+   "step": 27,
+   "tool": "tap_element",
+   "start_s": 115.54,
+   "end_s": 117.15,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 14,
+    "x": 454,
+    "y": 1303
+   }
+  },
+  {
+   "step": 28,
+   "tool": "get_ui_state",
+   "start_s": 119.32,
+   "end_s": 119.34,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 29,
+   "tool": "tap_element",
+   "start_s": 120.94,
+   "end_s": 121.84,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 965,
+    "y": 2180
+   }
+  },
+  {
+   "step": 30,
+   "tool": "type",
+   "start_s": 124.11,
+   "end_s": 125.93,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Dental Care"
+   }
+  },
+  {
+   "step": 31,
+   "tool": "type",
+   "start_s": 127.72,
+   "end_s": 128.69,
+   "ok": true,
+   "args": {
+    "index": 6,
+    "text": "490.07"
+   }
+  },
+  {
+   "step": 32,
+   "tool": "swipe",
+   "start_s": 130.84,
+   "end_s": 132.7,
+   "ok": true,
+   "args": {
+    "startX": 950,
+    "startY": 817,
+    "endX": 150,
+    "endY": 817,
+    "durationMs": 400
+   }
+  },
+  {
+   "step": 33,
+   "tool": "tap_element",
+   "start_s": 133.96,
+   "end_s": 134.3,
+   "ok": true,
+   "args": {
+    "index": 12,
+    "toggle": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 12,
+    "x": 995,
+    "y": 817
+   }
+  },
+  {
+   "step": 34,
+   "tool": "type",
+   "start_s": 135.43,
+   "end_s": 138.72,
+   "ok": true,
+   "args": {
+    "index": 13,
+    "text": "I may repeat this. Reimbursable."
+   }
+  },
+  {
+   "step": 35,
+   "tool": "tap_element",
+   "start_s": 139.96,
+   "end_s": 141.03,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 14,
+    "x": 454,
+    "y": 1303
+   }
+  },
+  {
+   "step": 36,
+   "tool": "scroll_to",
+   "start_s": 142.29,
+   "end_s": 142.34,
+   "ok": true,
+   "args": {
+    "target": "Dental Care"
+   }
+  },
+  {
+   "step": 37,
+   "tool": "tap_element",
+   "start_s": 144.15,
+   "end_s": 145.05,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 540,
+    "y": 2177
+   }
+  },
+  {
+   "step": 38,
+   "tool": "get_ui_state",
+   "start_s": 146.1,
+   "end_s": 146.11,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 39,
+   "tool": "tap_element",
+   "start_s": 147.42,
+   "end_s": 148.41,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "EDIT",
+    "index": 4,
+    "x": 540,
+    "y": 2222
+   }
+  },
+  {
+   "step": 40,
+   "tool": "key",
+   "start_s": 149.69,
+   "end_s": 150.32,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 41,
+   "tool": "done",
+   "start_s": 154.01,
+   "end_s": 154.01,
+   "ok": true,
+   "args": {
+    "summary": "I read my_expenses.txt in Markor and logged the two transactions whose notes say \"Reimbursable.\" into Pro Expense: Cleaning Services ($31.8, Housing) and Dental Care ($490.07, Health Care), both dated today (15 Oct 2023) with the source note kept in the note field. The app's Recent list now shows both entries and the weekly outcome total rose from 1,495.29 to 2,017.16.",
+    "evidence": {
+     "objective_evidence": "Markor view mode showed the full file contents; only two note values contained \"Reimbursable.\" — Cleaning Services|$31.8|Housing and Dental Care|$490.07|Health Care. Pro Expense's Recent list shows \"Dental Care ... 490.07 USD\" and \"Cleaning Services ... 31.8 USD\", both Today 3:35 PM, and the Totals card outcome went 1,495.29 → 1,527.09 → 2,017.16. The Dental Care edit screen confirms the Health Care chip is Checked along with the name, amount and note.",
+     "key_signals": [
+      "my_expenses.txt notes: 'I may repeat this. Reimbursable.' on exactly Cleaning Services and Dental Care",
+      "Pro Expense recent list rows for both entries with matching amounts",
+      "Outcome total increased by exactly 31.8 then 490.07",
+      "Dental Care update form: Health Care chip Checked, name/amount/note intact"
+     ]
+    },
+    "rows": [
+     {
+      "transaction": "Cleaning Services",
+      "amount_usd": 31.8,
+      "category": "Housing",
+      "date": "15 Oct 2023",
+      "note": "I may repeat this. Reimbursable.",
+      "logged_in": "Pro Expense",
+      "lusor_status": "succeeded"
+     },
+     {
+      "transaction": "Dental Care",
+      "amount_usd": 490.07,
+      "category": "Health Care",
+      "date": "15 Oct 2023",
+      "note": "I may repeat this. Reimbursable.",
+      "logged_in": "Pro Expense",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

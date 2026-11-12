@@ -1,0 +1,125 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "NotesMeetingAttendeeCount",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 24.2,
+  "mobilerun_published_time_s": 147.0,
+  "speed_ratio": 0.165,
+  "lusor_cost_usd": 0.0109,
+  "mobilerun_published_actions": 5,
+  "mobilerun_est_cost_usd": 0.383,
+  "lusor_tool_calls": 10,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "How many attendees were present in the meeting titled 'Project Status Update' in the Joplin app? Express your answer as just a single number.",
+  "final_answer": "75",
+  "final_summary": "The 'Project Status Update' note (in the Meeting Notes folder) has a bullet that reads \"75 attendees participated\", so the answer is 75.",
+  "video_duration_s": 69.6,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 33.85,
+    "end_s": 33.86,
+    "ok": true,
+    "note": "Observe current screen, then locate Joplin app"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 35.07,
+    "end_s": 36.3,
+    "ok": true,
+    "note": "Launch Joplin and observe notes list"
+   },
+   {
+    "step": 3,
+    "tool": "get_ui_state",
+    "start_s": 37.11,
+    "end_s": 37.19,
+    "ok": true,
+    "note": "Read Joplin screen after loading"
+   },
+   {
+    "step": 4,
+    "tool": "launch",
+    "start_s": 38.38,
+    "end_s": 40.4,
+    "ok": true,
+    "note": "Re-launch Joplin and read UI"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 41.35,
+    "end_s": 42.47,
+    "ok": true,
+    "note": "Type 'Project Status Update' in Joplin search"
+   },
+   {
+    "step": 6,
+    "tool": "type",
+    "start_s": 43.28,
+    "end_s": 46.62,
+    "ok": true,
+    "note": "Read search results for 'Project Status Update'"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 47.82,
+    "end_s": 48.28,
+    "ok": true,
+    "note": "Open 'Project Status Update' note and read body for attendees"
+   },
+   {
+    "step": 8,
+    "tool": "tap",
+    "start_s": 49.18,
+    "end_s": 50.29,
+    "ok": true,
+    "note": "Tap note row again to open note detail"
+   },
+   {
+    "step": 9,
+    "tool": "get_ui_state",
+    "start_s": 52.1,
+    "end_s": 52.14,
+    "ok": true,
+    "note": "Read full UI tree to see WebView note body"
+   },
+   {
+    "step": 10,
+    "tool": "done",
+    "start_s": 54.03,
+    "end_s": 54.04,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/NotesMeetingAttendeeCount/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/NotesMeetingAttendeeCount/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/NotesMeetingAttendeeCount/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/NotesMeetingAttendeeCount/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/NotesMeetingAttendeeCount/task.json"
+  }
+ }
+}

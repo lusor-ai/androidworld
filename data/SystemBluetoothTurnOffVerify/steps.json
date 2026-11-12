@@ -1,0 +1,63 @@
+{
+ "task": "SystemBluetoothTurnOffVerify",
+ "video_duration_s": 54.8,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 28.9,
+   "end_s": 28.92,
+   "ok": true,
+   "note": "Observe current screen to find Settings/Bluetooth toggle"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 29.74,
+   "end_s": 31.19,
+   "ok": true,
+   "note": "Open Settings and find Bluetooth toggle"
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 32.24,
+   "end_s": 32.49,
+   "ok": true,
+   "note": "Read Settings screen to find Bluetooth"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 33.11,
+   "end_s": 34.62,
+   "ok": true,
+   "note": "Open Connected devices to reach Bluetooth"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 35.69,
+   "end_s": 37.46,
+   "ok": true,
+   "note": "Open Connection preferences to check Bluetooth switch state"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 38.23,
+   "end_s": 39.45,
+   "ok": true,
+   "note": "Open Bluetooth screen and inspect the toggle"
+  },
+  {
+   "step": 7,
+   "tool": "done",
+   "start_s": 40.8,
+   "end_s": 40.8,
+   "ok": true,
+   "note": "Task complete; Bluetooth verified off"
+  }
+ ]
+}

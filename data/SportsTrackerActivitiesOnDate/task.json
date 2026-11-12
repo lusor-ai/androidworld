@@ -1,0 +1,205 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SportsTrackerActivitiesOnDate",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 72.2,
+  "mobilerun_published_time_s": 399.9,
+  "speed_ratio": 0.181,
+  "lusor_cost_usd": 0.0231,
+  "mobilerun_published_actions": 14,
+  "mobilerun_est_cost_usd": 1.072,
+  "lusor_tool_calls": 20,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "What activities did I do October 05 2023 in the OpenTracks app? Answer with the activity type only. If there are multiple types, format your answer in a comma separated list.",
+  "final_answer": "snow boarding, mountain biking",
+  "final_summary": "On October 5, 2023 you recorded two activities in OpenTracks: a snow boarding track (\"Trying and failing to keep up with John\", 4:00 PM) and a mountain biking track (\"Skill work\", 3:45 PM). So the activity types are snow boarding and mountain biking.",
+  "video_duration_s": 112.4,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 29.47,
+    "end_s": 29.49,
+    "ok": true,
+    "note": "Observe current screen to find OpenTracks app"
+   },
+   {
+    "step": 2,
+    "tool": "swipe",
+    "start_s": 30.65,
+    "end_s": 32.61,
+    "ok": true,
+    "note": null
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 33.32,
+    "end_s": 33.68,
+    "ok": true,
+    "note": "Open OpenTracks and view activity list"
+   },
+   {
+    "step": 4,
+    "tool": "get_ui_state",
+    "start_s": 34.33,
+    "end_s": 34.98,
+    "ok": true,
+    "note": "Read OpenTracks main screen"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 35.66,
+    "end_s": 36.1,
+    "ok": true,
+    "note": "Skip OpenTracks intro"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 36.86,
+    "end_s": 38.38,
+    "ok": true,
+    "note": "Continue skipping intro pages"
+   },
+   {
+    "step": 7,
+    "tool": "map_app",
+    "start_s": 40.52,
+    "end_s": 50.23,
+    "ok": true,
+    "note": "Map full track list to see all rows"
+   },
+   {
+    "step": 8,
+    "tool": "map_app",
+    "start_s": 51.57,
+    "end_s": 73.91,
+    "ok": true,
+    "note": "Open the two 5 Oct tracks and read their activity type"
+   },
+   {
+    "step": 9,
+    "tool": "scroll_to",
+    "start_s": 75.85,
+    "end_s": 75.89,
+    "ok": true,
+    "note": "Scroll to Skill work row and open it"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 77.8,
+    "end_s": 78.59,
+    "ok": true,
+    "note": "Open Skill work track detail"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 79.95,
+    "end_s": 81.1,
+    "ok": true,
+    "note": "Open More options menu on Skill work detail"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 81.99,
+    "end_s": 83.12,
+    "ok": true,
+    "note": "Open Edit form to read activity type of Skill work"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 84.07,
+    "end_s": 84.99,
+    "ok": true,
+    "note": "Cancel edit, back to list, open 'Trying and failing to keep up with John' and read its activity type"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 86.02,
+    "end_s": 86.9,
+    "ok": true,
+    "note": "Return to track list and open 'Trying and failing to keep up with John'"
+   },
+   {
+    "step": 15,
+    "tool": "get_ui_state",
+    "start_s": 87.72,
+    "end_s": 87.8,
+    "ok": true,
+    "note": "Confirm screen; navigate back to track list"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 88.6,
+    "end_s": 89.38,
+    "ok": true,
+    "note": "Open 'Trying and failing to keep up with John' detail"
+   },
+   {
+    "step": 17,
+    "tool": "tap_element",
+    "start_s": 90.33,
+    "end_s": 91.12,
+    "ok": true,
+    "note": "More options then Edit to read activity type of second track"
+   },
+   {
+    "step": 18,
+    "tool": "tap_element",
+    "start_s": 91.85,
+    "end_s": 92.69,
+    "ok": true,
+    "note": "Read activity type in edit form of second track"
+   },
+   {
+    "step": 19,
+    "tool": "tap_element",
+    "start_s": 94.26,
+    "end_s": 94.89,
+    "ok": true,
+    "note": "Cancel edit and answer"
+   },
+   {
+    "step": 20,
+    "tool": "done",
+    "start_s": 98.21,
+    "end_s": 98.21,
+    "ok": true,
+    "note": "Answered"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesOnDate/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesOnDate/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesOnDate/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesOnDate/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesOnDate/task.json"
+  }
+ }
+}

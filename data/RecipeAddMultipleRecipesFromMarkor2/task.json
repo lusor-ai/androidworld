@@ -1,0 +1,450 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "RecipeAddMultipleRecipesFromMarkor2",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 249.2,
+  "mobilerun_published_time_s": 517.5,
+  "speed_ratio": 0.482,
+  "lusor_cost_usd": 0.0677,
+  "mobilerun_published_actions": 50,
+  "mobilerun_est_cost_usd": 3.83,
+  "lusor_tool_calls": 50,
+  "disclosure": null,
+  "skills_read": [
+   "broccoli",
+   "markor"
+  ],
+  "skill_assisted": [
+   "broccoli"
+  ],
+  "goal": "Add the recipes from recipes.txt in Markor that take 3 hrs to prepare into the Broccoli recipe app.",
+  "final_answer": null,
+  "final_summary": "I added the three recipes from recipes.txt in Markor that have a 3 hrs preparation time to the Broccoli app: Chicken Caesar Salad Wrap (8 servings), Spinach and Feta Stuffed Chicken (2 servings), and Avocado Toast with Egg (2 servings). Each was saved and read back on its own detail page with the time, servings, description, ingredients and directions matching the file exactly, and all three now appear in the recipes list.",
+  "video_duration_s": 291.5,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 29.38,
+    "end_s": 29.38,
+    "ok": true,
+    "note": "Read Markor skill, then Broccoli skill"
+   },
+   {
+    "step": 2,
+    "tool": "read",
+    "start_s": 29.38,
+    "end_s": 29.38,
+    "ok": true,
+    "note": null
+   },
+   {
+    "step": 3,
+    "tool": "get_ui_state",
+    "start_s": 30.03,
+    "end_s": 30.05,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 4,
+    "tool": "launch",
+    "start_s": 30.81,
+    "end_s": 33.05,
+    "ok": true,
+    "note": "Open recipes.txt in Markor and read recipes"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 34.37,
+    "end_s": 35.14,
+    "ok": true,
+    "note": "Open recipes.txt and read its contents"
+   },
+   {
+    "step": 6,
+    "tool": "get_ui_state",
+    "start_s": 37.2,
+    "end_s": 37.22,
+    "ok": true,
+    "note": "Check if recipes.txt opened in editor"
+   },
+   {
+    "step": 7,
+    "tool": "pull_file",
+    "start_s": 40.64,
+    "end_s": 40.64,
+    "ok": true,
+    "note": "Read full recipes.txt text"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 45.74,
+    "end_s": 46.39,
+    "ok": true,
+    "note": "Switch editor to view mode to read whole file text"
+   },
+   {
+    "step": 9,
+    "tool": "launch",
+    "start_s": 50.84,
+    "end_s": 54.55,
+    "ok": true,
+    "note": "Open Broccoli app and add recipe Chicken Caesar Salad Wrap"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 56.55,
+    "end_s": 57.05,
+    "ok": true,
+    "note": "Search Broccoli for existing 3-hr recipes to avoid duplicates"
+   },
+   {
+    "step": 11,
+    "tool": "type",
+    "start_s": 59.4,
+    "end_s": 61.95,
+    "ok": true,
+    "note": "Search Broccoli for 'Chicken Caesar' to check existing recipes"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 64.66,
+    "end_s": 66.03,
+    "ok": true,
+    "note": "Open the New Recipe form in Broccoli"
+   },
+   {
+    "step": 13,
+    "tool": "type",
+    "start_s": 67.55,
+    "end_s": 70.81,
+    "ok": true,
+    "note": "Type title, then fill remaining fields"
+   },
+   {
+    "step": 14,
+    "tool": "type",
+    "start_s": 72.28,
+    "end_s": 77.84,
+    "ok": true,
+    "note": "Type description, then scroll to servings/time/ingredients"
+   },
+   {
+    "step": 15,
+    "tool": "swipe",
+    "start_s": 79.2,
+    "end_s": 80.82,
+    "ok": true,
+    "note": "Scroll form to servings/time fields"
+   },
+   {
+    "step": 16,
+    "tool": "type",
+    "start_s": 82.4,
+    "end_s": 83.92,
+    "ok": true,
+    "note": "Type servings, then preparation time 3 hrs"
+   },
+   {
+    "step": 17,
+    "tool": "type",
+    "start_s": 85.05,
+    "end_s": 86.43,
+    "ok": true,
+    "note": "Type prep time 3 hrs, then scroll to ingredients and directions"
+   },
+   {
+    "step": 18,
+    "tool": "swipe",
+    "start_s": 88.24,
+    "end_s": 90.35,
+    "ok": true,
+    "note": "Scroll to ingredients/directions fields"
+   },
+   {
+    "step": 19,
+    "tool": "type",
+    "start_s": 91.74,
+    "end_s": 93.24,
+    "ok": true,
+    "note": "Type ingredients then directions for recipe 1"
+   },
+   {
+    "step": 20,
+    "tool": "type",
+    "start_s": 94.69,
+    "end_s": 112.84,
+    "ok": true,
+    "note": "Type directions, then read back all fields and save recipe 1"
+   },
+   {
+    "step": 21,
+    "tool": "tap_element",
+    "start_s": 114.37,
+    "end_s": 115.65,
+    "ok": true,
+    "note": "Save recipe 1 and verify it appears"
+   },
+   {
+    "step": 22,
+    "tool": "tap_element",
+    "start_s": 118.21,
+    "end_s": 119.34,
+    "ok": true,
+    "note": "Return to recipe list and start new recipe Spinach and Feta Stuffed Chicken"
+   },
+   {
+    "step": 23,
+    "tool": "tap_element",
+    "start_s": 121.11,
+    "end_s": 122.54,
+    "ok": true,
+    "note": "Fill new recipe form for Spinach and Feta Stuffed Chicken"
+   },
+   {
+    "step": 24,
+    "tool": "type",
+    "start_s": 124.03,
+    "end_s": 128.2,
+    "ok": true,
+    "note": "Type title and description for recipe 2"
+   },
+   {
+    "step": 25,
+    "tool": "type",
+    "start_s": 129.86,
+    "end_s": 133.84,
+    "ok": true,
+    "note": "Type description, then scroll and fill servings/time"
+   },
+   {
+    "step": 26,
+    "tool": "swipe",
+    "start_s": 135.25,
+    "end_s": 136.99,
+    "ok": true,
+    "note": "Scroll to servings field and fill it"
+   },
+   {
+    "step": 27,
+    "tool": "type",
+    "start_s": 138.36,
+    "end_s": 140.22,
+    "ok": true,
+    "note": "Type servings 2 servings for recipe 2"
+   },
+   {
+    "step": 28,
+    "tool": "type",
+    "start_s": 141.55,
+    "end_s": 142.7,
+    "ok": true,
+    "note": "Type prep time 3 hrs for recipe 2, then scroll to ingredients"
+   },
+   {
+    "step": 29,
+    "tool": "swipe",
+    "start_s": 144.09,
+    "end_s": 146.08,
+    "ok": true,
+    "note": "Scroll to ingredients/directions for recipe 2"
+   },
+   {
+    "step": 30,
+    "tool": "type",
+    "start_s": 147.11,
+    "end_s": 149.1,
+    "ok": true,
+    "note": "Type ingredients, then directions for recipe 2"
+   },
+   {
+    "step": 31,
+    "tool": "type",
+    "start_s": 150.35,
+    "end_s": 167.64,
+    "ok": true,
+    "note": "Type directions for recipe 2 then save"
+   },
+   {
+    "step": 32,
+    "tool": "tap_element",
+    "start_s": 169.08,
+    "end_s": 171.05,
+    "ok": true,
+    "note": "Save recipe 2 and verify detail page"
+   },
+   {
+    "step": 33,
+    "tool": "tap_element",
+    "start_s": 172.6,
+    "end_s": 173.65,
+    "ok": true,
+    "note": "Go back and start new recipe Avocado Toast with Egg"
+   },
+   {
+    "step": 34,
+    "tool": "tap_element",
+    "start_s": 174.77,
+    "end_s": 176.23,
+    "ok": true,
+    "note": "Fill new recipe form for Avocado Toast with Egg"
+   },
+   {
+    "step": 35,
+    "tool": "type",
+    "start_s": 177.63,
+    "end_s": 180.51,
+    "ok": true,
+    "note": "Type title for recipe 3 then description"
+   },
+   {
+    "step": 36,
+    "tool": "type",
+    "start_s": 181.76,
+    "end_s": 187.21,
+    "ok": true,
+    "note": "Type description, then scroll to servings/time"
+   },
+   {
+    "step": 37,
+    "tool": "swipe",
+    "start_s": 188.52,
+    "end_s": 190.13,
+    "ok": true,
+    "note": "Scroll to servings and prep time for recipe 3"
+   },
+   {
+    "step": 38,
+    "tool": "type",
+    "start_s": 191.34,
+    "end_s": 193.05,
+    "ok": true,
+    "note": "Type servings for recipe 3 then prep time"
+   },
+   {
+    "step": 39,
+    "tool": "type",
+    "start_s": 194.24,
+    "end_s": 195.42,
+    "ok": true,
+    "note": "Type prep time, then scroll to ingredients/directions"
+   },
+   {
+    "step": 40,
+    "tool": "swipe",
+    "start_s": 196.65,
+    "end_s": 198.57,
+    "ok": true,
+    "note": "Scroll to ingredients and directions fields"
+   },
+   {
+    "step": 41,
+    "tool": "type",
+    "start_s": 199.65,
+    "end_s": 201.31,
+    "ok": true,
+    "note": "Type ingredients then directions for recipe 3"
+   },
+   {
+    "step": 42,
+    "tool": "type",
+    "start_s": 202.47,
+    "end_s": 216.73,
+    "ok": true,
+    "note": "Type directions for recipe 3 then save"
+   },
+   {
+    "step": 43,
+    "tool": "tap_element",
+    "start_s": 217.81,
+    "end_s": 219.93,
+    "ok": true,
+    "note": "Save recipe 3 and verify detail page"
+   },
+   {
+    "step": 44,
+    "tool": "tap_element",
+    "start_s": 221.15,
+    "end_s": 222.33,
+    "ok": true,
+    "note": "Back to list, clear search, map list to verify recipes"
+   },
+   {
+    "step": 45,
+    "tool": "tap_element",
+    "start_s": 224.63,
+    "end_s": 225.1,
+    "ok": true,
+    "note": "Clear search then map full recipe list to verify"
+   },
+   {
+    "step": 46,
+    "tool": "map_app",
+    "start_s": 226.41,
+    "end_s": 226.66,
+    "ok": true,
+    "note": "Map full recipe list to verify all three recipes exist"
+   },
+   {
+    "step": 47,
+    "tool": "key",
+    "start_s": 227.68,
+    "end_s": 228.06,
+    "ok": true,
+    "note": "Close keyboard then map recipe list"
+   },
+   {
+    "step": 48,
+    "tool": "map_app",
+    "start_s": 229.53,
+    "end_s": 269.29,
+    "ok": true,
+    "note": "Map full recipe list titles to recount"
+   },
+   {
+    "step": 49,
+    "tool": "get_ui_state",
+    "start_s": 272.47,
+    "end_s": 272.49,
+    "ok": true,
+    "note": "Confirm final recipes list screen then report"
+   },
+   {
+    "step": 50,
+    "tool": "done",
+    "start_s": 275.55,
+    "end_s": 275.55,
+    "ok": true,
+    "note": "Task complete: three 3-hr recipes added and verified"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor2/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor2/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor2/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor2/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor2/task.json"
+  }
+ }
+}

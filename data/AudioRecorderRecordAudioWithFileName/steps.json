@@ -1,0 +1,135 @@
+{
+ "task": "AudioRecorderRecordAudioWithFileName",
+ "video_duration_s": 84.8,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 30.33,
+   "end_s": 30.38,
+   "ok": true,
+   "note": "Observe current screen and open Audio Recorder app"
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 31.42,
+   "end_s": 35.14,
+   "ok": true,
+   "note": "Open app drawer to find Audio Recorder"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 35.95,
+   "end_s": 36.7,
+   "ok": true,
+   "note": "Open Audio Recorder app"
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 37.54,
+   "end_s": 38.22,
+   "ok": true,
+   "note": "Read Audio Recorder home screen"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 39.0,
+   "end_s": 40.31,
+   "ok": true,
+   "note": "Dismiss intro and view recorder screen"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 41.82,
+   "end_s": 42.81,
+   "ok": true,
+   "note": "Apply setup and view recorder home"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 43.58,
+   "end_s": 44.71,
+   "ok": true,
+   "note": "Start recording, wait a few seconds, then stop"
+  },
+  {
+   "step": 8,
+   "tool": "chain",
+   "start_s": 45.63,
+   "end_s": 50.23,
+   "ok": true,
+   "note": "Stop the recording after a few seconds"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 51.27,
+   "end_s": 52.8,
+   "ok": true,
+   "note": "Tap stop to finish recording"
+  },
+  {
+   "step": 10,
+   "tool": "type",
+   "start_s": 55.37,
+   "end_s": 58.21,
+   "ok": true,
+   "note": "Enter clip name (app appends .m4a) then tap Save"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 59.13,
+   "end_s": 59.61,
+   "ok": true,
+   "note": "Tap Save to store the recording"
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 60.56,
+   "end_s": 62.0,
+   "ok": true,
+   "note": "Open records list to verify saved name"
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 63.83,
+   "end_s": 64.83,
+   "ok": true,
+   "note": "Long-press/more on the clip to view its file name with extension"
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 65.77,
+   "end_s": 66.2,
+   "ok": true,
+   "note": "Open Information to read the file name with extension"
+  },
+  {
+   "step": 15,
+   "tool": "get_ui_state",
+   "start_s": 67.03,
+   "end_s": 67.05,
+   "ok": true,
+   "note": "Read Information dialog for file name"
+  },
+  {
+   "step": 16,
+   "tool": "done",
+   "start_s": 69.26,
+   "end_s": 69.27,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

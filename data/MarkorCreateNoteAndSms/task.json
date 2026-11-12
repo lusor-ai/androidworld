@@ -1,0 +1,223 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "MarkorCreateNoteAndSms",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 57.2,
+  "mobilerun_published_time_s": 351.5,
+  "speed_ratio": 0.163,
+  "lusor_cost_usd": 0.0175,
+  "mobilerun_published_actions": 16,
+  "mobilerun_est_cost_usd": 1.226,
+  "lusor_tool_calls": 22,
+  "disclosure": null,
+  "skills_read": [
+   "markor"
+  ],
+  "skill_assisted": [],
+  "goal": "Create a new note in Markor named glad_eagle_2023_05_21.txt with the following text: Better late than never.. Share the entire content of the note with the phone number +13660435839 via SMS using Simple SMS Messenger. Leave Simple SMS Messenger as the foreground app when finished.",
+  "final_answer": null,
+  "final_summary": "I created the note glad_eagle_2023_05_21.txt in Markor with the text \"Better late than never..\" (kept exactly as you wrote it, including the double period), saved it, and shared its full content by SMS to +13660435839 using Simple SMS Messenger. The conversation thread shows the message at 15:34 with a delivered checkmark, and Simple SMS Messenger is left open in the foreground.",
+  "video_duration_s": 114.3,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 37.94,
+    "end_s": 37.95,
+    "ok": true,
+    "note": "Read Markor skill, then observe screen"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 37.94,
+    "end_s": 37.95,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 39.16,
+    "end_s": 41.52,
+    "ok": true,
+    "note": "Launch Markor and create note"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 42.35,
+    "end_s": 43.66,
+    "ok": true,
+    "note": "Tap create new file FAB and choose note type"
+   },
+   {
+    "step": 5,
+    "tool": "type",
+    "start_s": 45.08,
+    "end_s": 48.08,
+    "ok": true,
+    "note": "Enter note name"
+   },
+   {
+    "step": 6,
+    "tool": "type",
+    "start_s": 49.0,
+    "end_s": 50.45,
+    "ok": true,
+    "note": "Set extension to .txt"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 52.89,
+    "end_s": 54.76,
+    "ok": true,
+    "note": "Tap OK to create the note"
+   },
+   {
+    "step": 8,
+    "tool": "type",
+    "start_s": 57.56,
+    "end_s": 61.34,
+    "ok": true,
+    "note": "Type note text exactly as given"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 62.07,
+    "end_s": 62.75,
+    "ok": true,
+    "note": "Save the note"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 63.82,
+    "end_s": 64.66,
+    "ok": true,
+    "note": "Open More options to share note content"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 65.54,
+    "end_s": 66.59,
+    "ok": true,
+    "note": "Tap Share and pick sharing method"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 67.6,
+    "end_s": 68.47,
+    "ok": true,
+    "note": "Share as Plain Text and choose SMS app"
+   },
+   {
+    "step": 13,
+    "tool": "get_ui_state",
+    "start_s": 69.24,
+    "end_s": 70.86,
+    "ok": true,
+    "note": "Inspect screen after tapping Plain Text"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 71.66,
+    "end_s": 73.49,
+    "ok": true,
+    "note": "Tap SMS Messenger in share sheet"
+   },
+   {
+    "step": 15,
+    "tool": "type",
+    "start_s": 74.73,
+    "end_s": 76.12,
+    "ok": true,
+    "note": "Enter recipient number in New conversation"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 76.78,
+    "end_s": 77.86,
+    "ok": true,
+    "note": "Confirm recipient to open conversation"
+   },
+   {
+    "step": 17,
+    "tool": "get_ui_state",
+    "start_s": 78.54,
+    "end_s": 78.56,
+    "ok": true,
+    "note": "Inspect conversation compose screen"
+   },
+   {
+    "step": 18,
+    "tool": "tap_element",
+    "start_s": 79.73,
+    "end_s": 80.78,
+    "ok": true,
+    "note": "Tap SMS to send message"
+   },
+   {
+    "step": 19,
+    "tool": "get_ui_state",
+    "start_s": 81.66,
+    "end_s": 81.68,
+    "ok": true,
+    "note": "Verify message appears in thread"
+   },
+   {
+    "step": 20,
+    "tool": "tap_element",
+    "start_s": 83.63,
+    "end_s": 85.0,
+    "ok": true,
+    "note": "Retry tapping SMS send button"
+   },
+   {
+    "step": 21,
+    "tool": "get_ui_state",
+    "start_s": 87.82,
+    "end_s": 87.83,
+    "ok": true,
+    "note": "Confirm SMS thread is foreground final screen"
+   },
+   {
+    "step": 22,
+    "tool": "done",
+    "start_s": 90.55,
+    "end_s": 90.56,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteAndSms/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteAndSms/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteAndSms/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteAndSms/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteAndSms/task.json"
+  }
+ }
+}

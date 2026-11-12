@@ -1,0 +1,313 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "TasksDueOnDate",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 171.3,
+  "mobilerun_published_time_s": 139.4,
+  "speed_ratio": 1.229,
+  "lusor_cost_usd": 0.0577,
+  "mobilerun_published_actions": 3,
+  "mobilerun_est_cost_usd": 0.23,
+  "lusor_tool_calls": 33,
+  "disclosure": null,
+  "skills_read": [
+   "tasks"
+  ],
+  "skill_assisted": [
+   "tasks"
+  ],
+  "goal": "What tasks do I have due Friday in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.",
+  "final_answer": "Follow up on support tickets, Review quarterly goals, Plan team outing",
+  "final_summary": "You have three tasks due Friday (Oct 20): Follow up on support tickets, Review quarterly goals, Plan team outing.",
+  "video_duration_s": 211.2,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 28.54,
+    "end_s": 28.54,
+    "ok": true,
+    "note": "Read tasks skill, then observe screen"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 29.31,
+    "end_s": 29.32,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 30.1,
+    "end_s": 33.6,
+    "ok": true,
+    "note": "Launch Tasks app and observe list"
+   },
+   {
+    "step": 4,
+    "tool": "map_app",
+    "start_s": 35.83,
+    "end_s": 50.37,
+    "ok": true,
+    "note": "Map the full task list titles/due labels"
+   },
+   {
+    "step": 5,
+    "tool": "map_app",
+    "start_s": 53.78,
+    "end_s": 103.17,
+    "ok": true,
+    "note": "Open the three incomplete Fri-badged tasks and read their full due dates"
+   },
+   {
+    "step": 6,
+    "tool": "scroll_to",
+    "start_s": 108.89,
+    "end_s": 124.9,
+    "ok": true,
+    "note": "Scroll to 'Follow up on support tickets' row and open it to check its due date in the picker"
+   },
+   {
+    "step": 7,
+    "tool": "swipe",
+    "start_s": 126.59,
+    "end_s": 130.51,
+    "ok": true,
+    "note": "Scroll down the task list to reach the Fri-badged rows"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 132.97,
+    "end_s": 134.12,
+    "ok": true,
+    "note": "Open 'Follow up on support tickets' and inspect its due date picker"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 135.67,
+    "end_s": 137.3,
+    "ok": true,
+    "note": "Tap the 'Friday' due date field to open the date picker and read the selected day"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 140.59,
+    "end_s": 141.31,
+    "ok": true,
+    "note": "Cancel picker, back to list, open 'Review quarterly goals' and check its due date"
+   },
+   {
+    "step": 11,
+    "tool": "key",
+    "start_s": 142.64,
+    "end_s": 143.2,
+    "ok": true,
+    "note": "Back to list, then open 'Review quarterly goals'"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 144.79,
+    "end_s": 145.71,
+    "ok": true,
+    "note": "Open 'Review quarterly goals' detail and check its due date picker"
+   },
+   {
+    "step": 13,
+    "tool": "key",
+    "start_s": 147.28,
+    "end_s": 147.62,
+    "ok": true,
+    "note": "Discard accidental blank new-task editor and return to list"
+   },
+   {
+    "step": 14,
+    "tool": "key",
+    "start_s": 149.3,
+    "end_s": 149.59,
+    "ok": true,
+    "note": "Exit blank new-task editor back to the list"
+   },
+   {
+    "step": 15,
+    "tool": "tap",
+    "start_s": 151.26,
+    "end_s": 152.14,
+    "ok": true,
+    "note": "Open 'Review quarterly goals' detail away from FAB and check due date"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 153.03,
+    "end_s": 154.52,
+    "ok": true,
+    "note": "Tap 'Friday' due field of Review quarterly goals and read selected day, then cancel"
+   },
+   {
+    "step": 17,
+    "tool": "tap_element",
+    "start_s": 155.58,
+    "end_s": 156.01,
+    "ok": true,
+    "note": "Cancel picker, back to list, scroll and open 'Plan team outing'"
+   },
+   {
+    "step": 18,
+    "tool": "key",
+    "start_s": 156.92,
+    "end_s": 157.32,
+    "ok": true,
+    "note": "Back on list; scroll down slightly and open 'Plan team outing'"
+   },
+   {
+    "step": 19,
+    "tool": "swipe",
+    "start_s": 158.49,
+    "end_s": 160.6,
+    "ok": true,
+    "note": "Scroll list slightly to reveal 'Plan team outing' row"
+   },
+   {
+    "step": 20,
+    "tool": "tap",
+    "start_s": 161.71,
+    "end_s": 162.4,
+    "ok": true,
+    "note": "Open 'Plan team outing' detail to verify due date"
+   },
+   {
+    "step": 21,
+    "tool": "tap_element",
+    "start_s": 163.32,
+    "end_s": 165.0,
+    "ok": true,
+    "note": "Tap 'Friday' due field of Plan team outing and read selected day"
+   },
+   {
+    "step": 22,
+    "tool": "tap_element",
+    "start_s": 169.65,
+    "end_s": 170.12,
+    "ok": true,
+    "note": "Cancel picker, back to list, check 'Reply to Emails' due date"
+   },
+   {
+    "step": 23,
+    "tool": "key",
+    "start_s": 170.94,
+    "end_s": 171.33,
+    "ok": true,
+    "note": "Back to list, scroll to 'Reply to Emails' and open to verify its due date"
+   },
+   {
+    "step": 24,
+    "tool": "tap",
+    "start_s": 172.4,
+    "end_s": 173.12,
+    "ok": true,
+    "note": "Open 'Reply to Emails' detail and verify its due date"
+   },
+   {
+    "step": 25,
+    "tool": "tap_element",
+    "start_s": 174.77,
+    "end_s": 176.41,
+    "ok": true,
+    "note": "Tap 'Friday 19:50' due field of Reply to Emails and read selected day"
+   },
+   {
+    "step": 26,
+    "tool": "tap_element",
+    "start_s": 179.07,
+    "end_s": 179.59,
+    "ok": true,
+    "note": "Cancel picker, back to list, check 'Read The Martian' due date"
+   },
+   {
+    "step": 27,
+    "tool": "key",
+    "start_s": 180.71,
+    "end_s": 181.02,
+    "ok": true,
+    "note": "Back to list, scroll down and open 'Read The Martian' to check due date"
+   },
+   {
+    "step": 28,
+    "tool": "swipe",
+    "start_s": 182.52,
+    "end_s": 184.88,
+    "ok": true,
+    "note": "Scroll to bottom of list to reach 'Read The Martian' row"
+   },
+   {
+    "step": 29,
+    "tool": "tap",
+    "start_s": 186.51,
+    "end_s": 187.21,
+    "ok": true,
+    "note": "Open 'Read The Martian' detail and check due date"
+   },
+   {
+    "step": 30,
+    "tool": "tap_element",
+    "start_s": 188.3,
+    "end_s": 189.8,
+    "ok": true,
+    "note": "Tap 'Friday 09:27' due field of Read The Martian and read selected day"
+   },
+   {
+    "step": 31,
+    "tool": "tap_element",
+    "start_s": 193.27,
+    "end_s": 193.64,
+    "ok": true,
+    "note": "Cancel picker, back out to list, re-read final screen, then answer"
+   },
+   {
+    "step": 32,
+    "tool": "key",
+    "start_s": 194.9,
+    "end_s": 195.2,
+    "ok": true,
+    "note": "Back to the task list and confirm the Friday rows one last time"
+   },
+   {
+    "step": 33,
+    "tool": "done",
+    "start_s": 197.85,
+    "end_s": 197.86,
+    "ok": true,
+    "note": "Answer delivered"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/TasksDueOnDate/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/TasksDueOnDate/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/TasksDueOnDate/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/TasksDueOnDate/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/TasksDueOnDate/task.json"
+  }
+ }
+}

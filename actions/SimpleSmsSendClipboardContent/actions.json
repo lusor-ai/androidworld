@@ -1,0 +1,162 @@
+{
+ "task": "SimpleSmsSendClipboardContent",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 37.97,
+   "end_s": 38.06,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 39.9,
+   "end_s": 41.56,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.smsmessenger"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 42.44,
+   "end_s": 44.05,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 965,
+    "y": 2275
+   }
+  },
+  {
+   "step": 4,
+   "tool": "type",
+   "start_s": 44.83,
+   "end_s": 46.07,
+   "ok": true,
+   "args": {
+    "index": 2,
+    "text": "+13204046764"
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 46.83,
+   "end_s": 47.58,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 1017,
+    "y": 359
+   }
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 48.45,
+   "end_s": 48.56,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 49.84,
+   "end_s": 51.7,
+   "ok": true,
+   "args": {
+    "index": 7,
+    "hold_ms": 1200
+   },
+   "tapped": {
+    "label": null,
+    "index": 7,
+    "x": 540,
+    "y": 1454
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 52.62,
+   "end_s": 53.66,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": "Paste",
+    "index": 9,
+    "x": 125,
+    "y": 1341
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 54.82,
+   "end_s": 55.23,
+   "ok": true,
+   "args": {
+    "index": 8,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "SMS",
+    "index": 8,
+    "x": 1006,
+    "y": 1454
+   }
+  },
+  {
+   "step": 10,
+   "tool": "get_ui_state",
+   "start_s": 56.24,
+   "end_s": 56.26,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 11,
+   "tool": "done",
+   "start_s": 58.29,
+   "end_s": 58.29,
+   "ok": true,
+   "args": {
+    "summary": "The message \"Dry cleaning is ready for pick-up.\" was pasted from the clipboard and sent to +13204046764 in Simple SMS Messenger. The thread for +13204046764 shows the outgoing message at 15:34 with the delivered/success indicator, and the compose field is empty again.",
+    "evidence": {
+     "objective_evidence": "Thread for +13204046764 displays outgoing bubble with body \"Dry cleaning is ready for pick-up.\" under timestamp \"15:34\" with the thread_success check mark; the message input field is empty and the SMS button is disabled, confirming the message left the compose box.",
+     "key_signals": [
+      "Recipient header shows +13204046764",
+      "Pasted clipboard text visible in compose field before sending",
+      "Sent bubble body matches pasted clipboard text exactly",
+      "thread_success image present next to the sent bubble",
+      "Compose field cleared after send"
+     ]
+    },
+    "rows": [
+     {
+      "recipient": "+13204046764",
+      "body": "Dry cleaning is ready for pick-up.",
+      "app": "Simple SMS Messenger",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

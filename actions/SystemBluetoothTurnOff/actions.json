@@ -1,0 +1,184 @@
+{
+ "task": "SystemBluetoothTurnOff",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 27.71,
+   "end_s": 27.72,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 29.04,
+   "end_s": 32.14,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 20,
+    "endX": 540,
+    "endY": 1200,
+    "durationMs": 300,
+    "capture": true
+   }
+  },
+  {
+   "step": 3,
+   "tool": "swipe",
+   "start_s": 33.18,
+   "end_s": 33.18,
+   "ok": false,
+   "args": {
+    "startX": 540,
+    "endY": 1800,
+    "durationMs": 300,
+    "startY": 600
+   }
+  },
+  {
+   "step": 4,
+   "tool": "swipe",
+   "start_s": 34.4,
+   "end_s": 35.59,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 600,
+    "endX": 540,
+    "endY": 1800,
+    "durationMs": 300,
+    "capture": true
+   }
+  },
+  {
+   "step": 5,
+   "tool": "launch",
+   "start_s": 36.46,
+   "end_s": 37.88,
+   "ok": true,
+   "args": {
+    "app": "com.android.settings",
+    "capture": true
+   }
+  },
+  {
+   "step": 6,
+   "tool": "key",
+   "start_s": 39.3,
+   "end_s": 40.37,
+   "ok": true,
+   "args": {
+    "key": "back",
+    "capture": true
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 41.36,
+   "end_s": 42.68,
+   "ok": true,
+   "args": {
+    "index": 9,
+    "capture": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 1117
+   }
+  },
+  {
+   "step": 8,
+   "tool": "launch",
+   "start_s": 44.14,
+   "end_s": 44.14,
+   "ok": true,
+   "args": {
+    "app": "com.android.settings",
+    "activity": "com.android.settings.Settings$BluetoothSettingsActivity",
+    "capture": true
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 45.09,
+   "end_s": 46.3,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 540,
+    "y": 1146
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 47.16,
+   "end_s": 48.21,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 589,
+    "y": 787
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 49.25,
+   "end_s": 49.79,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 913,
+    "y": 738
+   }
+  },
+  {
+   "step": 12,
+   "tool": "done",
+   "start_s": 51.37,
+   "end_s": 51.38,
+   "ok": true,
+   "args": {
+    "summary": "Bluetooth is now off. I opened Settings, went to Connection preferences, then Bluetooth, and switched \"Use Bluetooth\" off; the switch now reads Unchecked.",
+    "evidence": {
+     "objective_evidence": "On the Bluetooth settings page the \"Use Bluetooth\" switch now shows Unchecked Disabled, after previously showing Checked.",
+     "key_signals": [
+      "Path: Settings > Connected devices > Connection preferences > Bluetooth",
+      "Switch state changed from Checked to Unchecked"
+     ]
+    },
+    "rows": [
+     {
+      "action": "Turn Bluetooth off",
+      "state_after": "Unchecked",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

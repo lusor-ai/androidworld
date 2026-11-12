@@ -1,0 +1,281 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "TasksCompletedTasksForDate",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 117.3,
+  "mobilerun_published_time_s": 244.0,
+  "speed_ratio": 0.481,
+  "lusor_cost_usd": 0.0428,
+  "mobilerun_published_actions": 10,
+  "mobilerun_est_cost_usd": 0.766,
+  "lusor_tool_calls": 29,
+  "disclosure": null,
+  "skills_read": [
+   "tasks"
+  ],
+  "skill_assisted": [
+   "tasks"
+  ],
+  "goal": "Which completed tasks have a due date of October 17 2023 in Tasks app? Answer with the titles only. If there are multiples titles, format your answer in a comma separated list.",
+  "final_answer": "Book flights for conference, Send report to manager, Dinner with friends",
+  "final_summary": "The completed tasks due October 17 2023 are Book flights for conference, Send report to manager, Dinner with friends.",
+  "video_duration_s": 159.6,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 31.33,
+    "end_s": 31.35,
+    "ok": true,
+    "note": "Read the tasks skill guidance"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 31.33,
+    "end_s": 31.35,
+    "ok": true,
+    "note": "Observe the current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 32.1,
+    "end_s": 35.56,
+    "ok": true,
+    "note": "Launch Tasks app and observe the task list"
+   },
+   {
+    "step": 4,
+    "tool": "map_app",
+    "start_s": 38.49,
+    "end_s": 51.81,
+    "ok": true,
+    "note": "Inventory whole My Tasks list with map_app levels 1"
+   },
+   {
+    "step": 5,
+    "tool": "get_ui_state",
+    "start_s": 55.95,
+    "end_s": 55.97,
+    "ok": true,
+    "note": "Observe list position, then open completed 'Tue' candidates (Book flights, Send report, Dinner with friends, Brainstorm Blog Post Ideas, Change Air Filter) to read full due dates"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 58.63,
+    "end_s": 59.76,
+    "ok": true,
+    "note": "Read opened 'Dinner with friends' task page (completed) and its due date"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 60.93,
+    "end_s": 62.81,
+    "ok": true,
+    "note": "Read the date picker for 'Dinner with friends' due date"
+   },
+   {
+    "step": 8,
+    "tool": "screenshot",
+    "start_s": 64.98,
+    "end_s": 66.42,
+    "ok": true,
+    "note": "Screenshot to read month header for 'Dinner with friends' picker"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 68.29,
+    "end_s": 68.95,
+    "ok": true,
+    "note": "Cancel picker and go back to list, then open 'Brainstorm Blog Post Ideas'"
+   },
+   {
+    "step": 10,
+    "tool": "key",
+    "start_s": 70.34,
+    "end_s": 70.75,
+    "ok": true,
+    "note": "Return to list and open 'Brainstorm Blog Post Ideas'"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 72.23,
+    "end_s": 73.42,
+    "ok": true,
+    "note": "Open 'Brainstorm Blog Post Ideas' and tap its due date field"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 74.58,
+    "end_s": 76.21,
+    "ok": true,
+    "note": "Read picker for 'Brainstorm Blog Post Ideas'"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 78.07,
+    "end_s": 78.53,
+    "ok": true,
+    "note": "Back to list, open 'Change Air Filter' and its due date picker"
+   },
+   {
+    "step": 14,
+    "tool": "key",
+    "start_s": 79.63,
+    "end_s": 80.03,
+    "ok": true,
+    "note": "Back on list; open 'Change Air Filter' row body"
+   },
+   {
+    "step": 15,
+    "tool": "tap_element",
+    "start_s": 81.2,
+    "end_s": 82.22,
+    "ok": true,
+    "note": "Open 'Change Air Filter' page and tap due date"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 83.31,
+    "end_s": 84.83,
+    "ok": true,
+    "note": "Read picker for 'Change Air Filter'"
+   },
+   {
+    "step": 17,
+    "tool": "tap_element",
+    "start_s": 86.51,
+    "end_s": 87.02,
+    "ok": true,
+    "note": "Cancel, back to list, scroll up, open 'Book flights for conference'"
+   },
+   {
+    "step": 18,
+    "tool": "key",
+    "start_s": 88.21,
+    "end_s": 88.54,
+    "ok": true,
+    "note": "Back on list; scroll up and open 'Book flights for conference'"
+   },
+   {
+    "step": 19,
+    "tool": "scroll_to",
+    "start_s": 89.79,
+    "end_s": 114.61,
+    "ok": true,
+    "note": "Scroll up to 'Book flights for conference' and open it"
+   },
+   {
+    "step": 20,
+    "tool": "swipe",
+    "start_s": 117.06,
+    "end_s": 121.13,
+    "ok": true,
+    "note": "Scroll toward top of list to reach 'Book flights for conference'"
+   },
+   {
+    "step": 21,
+    "tool": "tap_element",
+    "start_s": 122.38,
+    "end_s": 123.5,
+    "ok": true,
+    "note": "Open 'Book flights for conference' and tap due date"
+   },
+   {
+    "step": 22,
+    "tool": "tap_element",
+    "start_s": 124.63,
+    "end_s": 126.33,
+    "ok": true,
+    "note": "Read picker for 'Book flights for conference'"
+   },
+   {
+    "step": 23,
+    "tool": "tap_element",
+    "start_s": 129.07,
+    "end_s": 129.53,
+    "ok": true,
+    "note": "Cancel, back to list, open 'Send report to manager' and tap due date"
+   },
+   {
+    "step": 24,
+    "tool": "key",
+    "start_s": 130.56,
+    "end_s": 131.12,
+    "ok": true,
+    "note": "Back on list; open 'Send report to manager' row body"
+   },
+   {
+    "step": 25,
+    "tool": "tap_element",
+    "start_s": 132.48,
+    "end_s": 133.28,
+    "ok": true,
+    "note": "Open 'Send report to manager' and tap due date"
+   },
+   {
+    "step": 26,
+    "tool": "tap_element",
+    "start_s": 134.35,
+    "end_s": 135.91,
+    "ok": true,
+    "note": "Read picker for 'Send report to manager'"
+   },
+   {
+    "step": 27,
+    "tool": "tap_element",
+    "start_s": 140.49,
+    "end_s": 140.92,
+    "ok": true,
+    "note": "Cancel picker, back to list, re-read final list screen"
+   },
+   {
+    "step": 28,
+    "tool": "key",
+    "start_s": 142.67,
+    "end_s": 142.98,
+    "ok": true,
+    "note": "Confirm final list screen unchanged, then done"
+   },
+   {
+    "step": 29,
+    "tool": "done",
+    "start_s": 145.46,
+    "end_s": 145.46,
+    "ok": true,
+    "note": "Answer delivered"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/TasksCompletedTasksForDate/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/TasksCompletedTasksForDate/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/TasksCompletedTasksForDate/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/TasksCompletedTasksForDate/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/TasksCompletedTasksForDate/task.json"
+  }
+ }
+}

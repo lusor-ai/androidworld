@@ -1,0 +1,218 @@
+{
+ "task": "ContactsAddContact",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 28.94,
+   "end_s": 28.95,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 29.82,
+   "end_s": 31.11,
+   "ok": true,
+   "args": {
+    "app": "com.google.android.contacts"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 32.04,
+   "end_s": 35.63,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "Don’t allow",
+    "index": 5,
+    "x": 456,
+    "y": 1785
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 36.47,
+   "end_s": 37.44,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": "Create contact",
+    "index": 10,
+    "x": 944,
+    "y": 2012
+   }
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 38.13,
+   "end_s": 38.8,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 6,
+   "tool": "chain",
+   "start_s": 40.11,
+   "end_s": 47.75,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 7
+      }
+     },
+     {
+      "verb": "type",
+      "params": {
+       "text": "Emilia"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 8
+      }
+     },
+     {
+      "verb": "type",
+      "params": {
+       "text": "Gonzalez"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 10
+      }
+     },
+     {
+      "verb": "type",
+      "params": {
+       "text": "+14240925675"
+      }
+     },
+     {
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 7,
+   "tool": "clear",
+   "start_s": 51.11,
+   "end_s": 52.01,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 10
+   }
+  },
+  {
+   "step": 8,
+   "tool": "swipe",
+   "start_s": 54.05,
+   "end_s": 55.77,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1300,
+    "endX": 540,
+    "endY": 700,
+    "capture": true
+   }
+  },
+  {
+   "step": 9,
+   "tool": "type",
+   "start_s": 56.73,
+   "end_s": 58.49,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 10,
+    "text": "+14240925675"
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 59.49,
+   "end_s": 60.4,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "Save",
+    "index": 2,
+    "x": 839,
+    "y": 211
+   }
+  },
+  {
+   "step": 11,
+   "tool": "get_ui_state",
+   "start_s": 61.22,
+   "end_s": 61.7,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 62.96,
+   "end_s": 63.87,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 2
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 2,
+    "x": 74,
+    "y": 212
+   }
+  },
+  {
+   "step": 13,
+   "tool": "done",
+   "start_s": 65.83,
+   "end_s": 65.84,
+   "ok": true,
+   "args": {
+    "summary": "I created a contact for Emilia Gonzalez with the mobile number +1 424-092-5675 (the number you gave, +14240925675, in the app's automatic formatting) and saved it. It now shows in the Contacts list as \"Emilia Gonzalez\", and its detail page shows the Mobile number +1 424-092-5675 with \"Added Oct 15, 2023\".",
+    "evidence": {
+     "objective_evidence": "Contact detail page shows large title \"Emilia Gonzalez\", card \"+1 424-092-5675\" with sub-header \"Mobile\", and \"Added Oct 15, 2023\". The Contacts list shows one Device contact row \"Emilia Gonzalez\" under the header \"Device • 1 contact\".",
+     "key_signals": [
+      "Contacts app saved the new contact without error",
+      "Detail page phone field: +1 424-092-5675 (Mobile)",
+      "List header counts 1 contact: Emilia Gonzalez"
+     ]
+    },
+    "rows": [
+     {
+      "name": "Emilia Gonzalez",
+      "phone": "+1 424-092-5675",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

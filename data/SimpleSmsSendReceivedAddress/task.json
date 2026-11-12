@@ -1,0 +1,189 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SimpleSmsSendReceivedAddress",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 54.2,
+  "mobilerun_published_time_s": 198.1,
+  "speed_ratio": 0.274,
+  "lusor_cost_usd": 0.0168,
+  "mobilerun_published_actions": 7,
+  "mobilerun_est_cost_usd": 0.536,
+  "lusor_tool_calls": 18,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Text the address of the event to Leon Ibrahim that Theo Mohamed just sent me in Simple SMS Messenger",
+  "final_answer": null,
+  "final_summary": "I texted Theo Mohamed's event address, \"1415 W Cedar Ave Denver, CO, 80223\", to Leon Ibrahim (+11154695785) in Simple SMS Messenger. The message shows in the Leon Ibrahim thread at 15:35 with a success checkmark.",
+  "video_duration_s": 118.8,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 47.81,
+    "end_s": 47.83,
+    "ok": true,
+    "note": "Observe the current screen to find Simple SMS Messenger and Theo Mohamed's message"
+   },
+   {
+    "step": 2,
+    "tool": "tap_element",
+    "start_s": 49.01,
+    "end_s": 49.95,
+    "ok": true,
+    "note": "Open Simple SMS Messenger via the Messages icon and read the conversation list"
+   },
+   {
+    "step": 3,
+    "tool": "get_ui_state",
+    "start_s": 51.25,
+    "end_s": 52.43,
+    "ok": true,
+    "note": "Read the Simple SMS Messenger conversation list"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 54.2,
+    "end_s": 56.24,
+    "ok": true,
+    "note": "Tap Set default SMS app and read the conversation list"
+   },
+   {
+    "step": 5,
+    "tool": "key",
+    "start_s": 58.91,
+    "end_s": 59.45,
+    "ok": true,
+    "note": "Dismiss the default-app dialog and open the app drawer to find Simple SMS Messenger"
+   },
+   {
+    "step": 6,
+    "tool": "key",
+    "start_s": 61.9,
+    "end_s": 63.54,
+    "ok": true,
+    "note": "Open app drawer to find the SMS Messenger app"
+   },
+   {
+    "step": 7,
+    "tool": "swipe",
+    "start_s": 64.7,
+    "end_s": 67.27,
+    "ok": true,
+    "note": "Open app drawer and locate the SMS Messenger app icon"
+   },
+   {
+    "step": 8,
+    "tool": "scroll_to",
+    "start_s": 71.62,
+    "end_s": 72.8,
+    "ok": true,
+    "note": "Scroll app drawer to check for an SMS Messenger entry"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 73.73,
+    "end_s": 76.12,
+    "ok": true,
+    "note": "Open SMS Messenger and read the conversation list"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 78.25,
+    "end_s": 80.22,
+    "ok": true,
+    "note": "Open Theo Mohamed's conversation to read the full message with the event address"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 82.29,
+    "end_s": 83.44,
+    "ok": true,
+    "note": "Go back to the conversation list and start a new message to Leon Ibrahim"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 84.91,
+    "end_s": 86.14,
+    "ok": true,
+    "note": "Tap the new-message FAB and search for Leon Ibrahim"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 87.22,
+    "end_s": 87.72,
+    "ok": true,
+    "note": "Open conversation with Leon Ibrahim (+11154695785) and type the address"
+   },
+   {
+    "step": 14,
+    "tool": "get_ui_state",
+    "start_s": 88.88,
+    "end_s": 88.89,
+    "ok": true,
+    "note": "Read the conversation screen for Leon Ibrahim and find the message field"
+   },
+   {
+    "step": 15,
+    "tool": "type",
+    "start_s": 90.4,
+    "end_s": 93.21,
+    "ok": true,
+    "note": "Type the address into Leon Ibrahim's message field"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 94.58,
+    "end_s": 95.55,
+    "ok": true,
+    "note": "Tap SMS to send the address to Leon Ibrahim, then verify the sent bubble"
+   },
+   {
+    "step": 17,
+    "tool": "get_ui_state",
+    "start_s": 96.72,
+    "end_s": 96.73,
+    "ok": true,
+    "note": "Confirm the message shows as sent (not Sending) in the Leon Ibrahim thread"
+   },
+   {
+    "step": 18,
+    "tool": "done",
+    "start_s": 99.22,
+    "end_s": 99.22,
+    "ok": true,
+    "note": "Task complete; no further steps"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleSmsSendReceivedAddress/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SimpleSmsSendReceivedAddress/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SimpleSmsSendReceivedAddress/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SimpleSmsSendReceivedAddress/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SimpleSmsSendReceivedAddress/task.json"
+  }
+ }
+}

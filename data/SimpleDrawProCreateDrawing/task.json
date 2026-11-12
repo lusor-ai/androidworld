@@ -1,0 +1,181 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SimpleDrawProCreateDrawing",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 42.2,
+  "mobilerun_published_time_s": 275.3,
+  "speed_ratio": 0.153,
+  "lusor_cost_usd": 0.0171,
+  "mobilerun_published_actions": 12,
+  "mobilerun_est_cost_usd": 0.919,
+  "lusor_tool_calls": 17,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Create a new drawing in Simple Draw Pro. Name it lorem_tough_dog_final.jpg. Save it in the Pictures folder within the sdk_gphone_x86_64 storage area.",
+  "final_answer": null,
+  "final_summary": "Created a new drawing in Simple Draw Pro and saved it as lorem_tough_dog_final.jpg in the Pictures folder of the device's internal storage (sdk_gphone64_x86_64/Pictures). The Files app now lists it there as lorem_tough_dog_final.jpg, 20.24 kB, saved today at 15:34.",
+  "video_duration_s": 91.6,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 36.78,
+    "end_s": 36.8,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 38.04,
+    "end_s": 39.55,
+    "ok": true,
+    "note": "Launch Simple Draw Pro and create a new drawing"
+   },
+   {
+    "step": 3,
+    "tool": "swipe",
+    "start_s": 41.41,
+    "end_s": 43.37,
+    "ok": true,
+    "note": "Draw a stroke on canvas, then tap Save"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 44.27,
+    "end_s": 45.55,
+    "ok": true,
+    "note": "Tap Save and handle the save dialog"
+   },
+   {
+    "step": 5,
+    "tool": "type",
+    "start_s": 47.52,
+    "end_s": 50.65,
+    "ok": true,
+    "note": "Select .jpg radio and tap OK"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 51.46,
+    "end_s": 51.97,
+    "ok": true,
+    "note": "Verify .jpg is checked, then tap OK"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 53.16,
+    "end_s": 56.36,
+    "ok": true,
+    "note": "Confirm save result toast and verify file location"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 57.68,
+    "end_s": 58.68,
+    "ok": true,
+    "note": "Open roots drawer and select sdk_gphone_x86_64 internal storage"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 59.78,
+    "end_s": 61.29,
+    "ok": true,
+    "note": "Tap Pictures folder in storage, then SAVE"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 62.62,
+    "end_s": 63.17,
+    "ok": true,
+    "note": "Confirm header says Pictures, then tap SAVE"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 64.21,
+    "end_s": 64.78,
+    "ok": true,
+    "note": "Check result screen/toast after SAVE and verify the file"
+   },
+   {
+    "step": 12,
+    "tool": "pull_file",
+    "start_s": 66.1,
+    "end_s": 66.1,
+    "ok": true,
+    "note": "Verify saved file in /sdcard/Pictures"
+   },
+   {
+    "step": 13,
+    "tool": "launch",
+    "start_s": 68.04,
+    "end_s": 69.29,
+    "ok": true,
+    "note": "Open Files app and browse to Pictures to confirm the saved file"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 70.19,
+    "end_s": 71.28,
+    "ok": true,
+    "note": "Select sdk_gphone64_x86_64 root then Pictures folder"
+   },
+   {
+    "step": 15,
+    "tool": "tap_element",
+    "start_s": 72.16,
+    "end_s": 73.11,
+    "ok": true,
+    "note": "Open Pictures folder in internal storage to see saved file"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 74.18,
+    "end_s": 74.86,
+    "ok": true,
+    "note": "Read Pictures file listing to confirm lorem_tough_dog_final.jpg"
+   },
+   {
+    "step": 17,
+    "tool": "done",
+    "start_s": 77.08,
+    "end_s": 77.09,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleDrawProCreateDrawing/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SimpleDrawProCreateDrawing/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SimpleDrawProCreateDrawing/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SimpleDrawProCreateDrawing/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SimpleDrawProCreateDrawing/task.json"
+  }
+ }
+}

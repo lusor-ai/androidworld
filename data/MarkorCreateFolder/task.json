@@ -1,0 +1,103 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "MarkorCreateFolder",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 18.2,
+  "mobilerun_published_time_s": 157.9,
+  "speed_ratio": 0.115,
+  "lusor_cost_usd": 0.0059,
+  "mobilerun_published_actions": 5,
+  "mobilerun_est_cost_usd": 0.383,
+  "lusor_tool_calls": 7,
+  "disclosure": null,
+  "skills_read": [
+   "markor"
+  ],
+  "skill_assisted": [],
+  "goal": "Create a new folder in Markor named folder_20261109_212319.",
+  "final_answer": null,
+  "final_summary": "Created the folder folder_20261109_212319 in Markor's Files list (Documents). It now shows as \"Folder folder_20261109_212319\".",
+  "video_duration_s": 58.9,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 29.52,
+    "end_s": 29.54,
+    "ok": true,
+    "note": "Read Markor skill guidance"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 29.52,
+    "end_s": 29.54,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 30.82,
+    "end_s": 33.51,
+    "ok": true,
+    "note": "Launch Markor and see current folder"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 34.69,
+    "end_s": 36.07,
+    "ok": true,
+    "note": "Tap create button and choose folder"
+   },
+   {
+    "step": 5,
+    "tool": "type",
+    "start_s": 37.35,
+    "end_s": 40.58,
+    "ok": true,
+    "note": "Type folder name then tap FOLDER"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 41.82,
+    "end_s": 43.0,
+    "ok": true,
+    "note": "Tap FOLDER to create directory"
+   },
+   {
+    "step": 7,
+    "tool": "done",
+    "start_s": 45.03,
+    "end_s": 45.04,
+    "ok": true,
+    "note": "None; task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorCreateFolder/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/MarkorCreateFolder/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/MarkorCreateFolder/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/MarkorCreateFolder/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/MarkorCreateFolder/task.json"
+  }
+ }
+}

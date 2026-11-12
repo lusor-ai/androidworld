@@ -1,0 +1,197 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "RetroPlayingQueue",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 51.2,
+  "mobilerun_published_time_s": 768.0,
+  "speed_ratio": 0.067,
+  "lusor_cost_usd": 0.0242,
+  "mobilerun_published_actions": 24,
+  "mobilerun_est_cost_usd": 1.838,
+  "lusor_tool_calls": 19,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Add the following songs, in order, City of Stars, Dreamer's Awake, Moonlight Sonata, Echoes of Silence, Forever Young to my playing queue in Retro music.",
+  "final_answer": null,
+  "final_summary": "All five songs are in your Retro Music playing queue, in the order you asked: City of Stars, Dreamer's Awake, Moonlight Sonata, Echoes of Silence, Forever Young. I re-read the queue list once after adding them and it holds exactly these five entries in that order.",
+  "video_duration_s": 100.0,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 36.44,
+    "end_s": 36.46,
+    "ok": true,
+    "note": "Observe current screen to find Retro Music app"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 37.45,
+    "end_s": 41.73,
+    "ok": true,
+    "note": "Launch Retro Music app"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 42.98,
+    "end_s": 44.66,
+    "ok": true,
+    "note": "Open Songs tab and search for City of Stars"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 46.86,
+    "end_s": 47.94,
+    "ok": true,
+    "note": "Open City of Stars menu and choose Add to playing queue"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 49.61,
+    "end_s": 49.94,
+    "ok": true,
+    "note": "Confirm City of Stars added to queue, then add Dreamer's Awake"
+   },
+   {
+    "step": 6,
+    "tool": "get_ui_state",
+    "start_s": 51.17,
+    "end_s": 51.27,
+    "ok": true,
+    "note": "Open Dreamer's Awake menu"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 53.17,
+    "end_s": 54.32,
+    "ok": true,
+    "note": "Tap Add to playing queue for Dreamer's Awake"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 55.23,
+    "end_s": 55.95,
+    "ok": true,
+    "note": "Add Moonlight Sonata to playing queue"
+   },
+   {
+    "step": 9,
+    "tool": "get_ui_state",
+    "start_s": 57.36,
+    "end_s": 57.41,
+    "ok": true,
+    "note": "Open Moonlight Sonata menu"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 60.85,
+    "end_s": 61.76,
+    "ok": true,
+    "note": "Tap Add to playing queue for Moonlight Sonata"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 63.12,
+    "end_s": 64.08,
+    "ok": true,
+    "note": "Add Echoes of Silence to playing queue"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 65.29,
+    "end_s": 66.37,
+    "ok": true,
+    "note": "Tap Add to playing queue for Echoes of Silence"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 67.43,
+    "end_s": 68.32,
+    "ok": true,
+    "note": "Add Forever Young to playing queue"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 69.27,
+    "end_s": 70.13,
+    "ok": true,
+    "note": "Tap Add to playing queue for Forever Young"
+   },
+   {
+    "step": 15,
+    "tool": "tap_element",
+    "start_s": 71.23,
+    "end_s": 72.46,
+    "ok": true,
+    "note": "Open the playing queue to verify order"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 74.07,
+    "end_s": 75.45,
+    "ok": true,
+    "note": "Open now playing screen to inspect queue"
+   },
+   {
+    "step": 17,
+    "tool": "tap_element",
+    "start_s": 76.95,
+    "end_s": 77.62,
+    "ok": true,
+    "note": "Read the playing queue list"
+   },
+   {
+    "step": 18,
+    "tool": "map_app",
+    "start_s": 80.47,
+    "end_s": 81.52,
+    "ok": true,
+    "note": "Confirm queue contains exactly the 5 songs in order, then done"
+   },
+   {
+    "step": 19,
+    "tool": "done",
+    "start_s": 84.96,
+    "end_s": 84.96,
+    "ok": true,
+    "note": "Task complete; queue verified with 5 songs in order"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/RetroPlayingQueue/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/RetroPlayingQueue/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/RetroPlayingQueue/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/RetroPlayingQueue/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/RetroPlayingQueue/task.json"
+  }
+ }
+}

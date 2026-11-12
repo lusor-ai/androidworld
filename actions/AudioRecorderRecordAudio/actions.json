@@ -1,0 +1,174 @@
+{
+ "task": "AudioRecorderRecordAudio",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.27,
+   "end_s": 29.31,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 30.64,
+   "end_s": 32.12,
+   "ok": true,
+   "args": {
+    "app": "com.dimowner.audiorecorder"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 32.97,
+   "end_s": 34.5,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Get started",
+    "index": 3,
+    "x": 540,
+    "y": 2148
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.35,
+   "end_s": 36.46,
+   "ok": true,
+   "args": {
+    "index": 25
+   },
+   "tapped": {
+    "label": "Apply",
+    "index": 25,
+    "x": 808,
+    "y": 2253
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.27,
+   "end_s": 39.06,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "Recording: %s",
+    "index": 4,
+    "x": 558,
+    "y": 2185
+   }
+  },
+  {
+   "step": 6,
+   "tool": "chain",
+   "start_s": 40.2,
+   "end_s": 44.52,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "verb": "wait",
+      "params": {
+       "duration_ms": 3000
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "btn_record_stop"
+      }
+     },
+     {
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 45.5,
+   "end_s": 46.77,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 742,
+    "y": 2184
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 47.64,
+   "end_s": 48.07,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "Save",
+    "index": 4,
+    "x": 821,
+    "y": 1409
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 49.04,
+   "end_s": 50.16,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 970,
+    "y": 2185
+   }
+  },
+  {
+   "step": 10,
+   "tool": "done",
+   "start_s": 52.19,
+   "end_s": 52.19,
+   "ok": true,
+   "args": {
+    "summary": "Recorded and saved an audio clip in Audio Recorder. I recorded about seven seconds of audio, stopped it, and saved it under the suggested name Record-1. The Records list now shows Record-1 dated Today, 0.09 Mb, M4a, 44.1kHz, duration 00:07.",
+    "evidence": {
+     "objective_evidence": "Records list screen shows a single row titled \"Record-1\" under Today with info \"0.09 Mb, M4a, 44.1kHz\" and duration \"00:07\". After saving, the main screen showed txt_name \"Record-1\" with duration 00:07.",
+     "key_signals": [
+      "New name dialog with pre-filled \"Record-1\" was saved",
+      "Recording screen showed Recording… then 00:07",
+      "Records list (By date, newest) contains Record-1"
+     ]
+    },
+    "rows": [
+     {
+      "name": "Record-1",
+      "duration": "00:07",
+      "size": "0.09 Mb",
+      "format": "M4a, 44.1kHz",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

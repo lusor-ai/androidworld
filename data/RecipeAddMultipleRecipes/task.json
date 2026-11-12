@@ -1,0 +1,409 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "RecipeAddMultipleRecipes",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 186.2,
+  "mobilerun_published_time_s": 429.7,
+  "speed_ratio": 0.433,
+  "lusor_cost_usd": 0.0537,
+  "mobilerun_published_actions": 48,
+  "mobilerun_est_cost_usd": 3.677,
+  "lusor_tool_calls": 45,
+  "disclosure": null,
+  "skills_read": [
+   "broccoli"
+  ],
+  "skill_assisted": [
+   "broccoli"
+  ],
+  "goal": "Add the following recipes into the Broccoli app:\nRecipe: Sweet Potato and Black Bean Tacos\n description: A quick and easy meal, perfect for busy weekdays.\n servings: 3-4 servings\n preparationTime: 4 hrs\n ingredients: as desired\n directions: Roast sweet potato cubes, mix with black beans, and use as filling for tacos. Top with avocado and cilantro lime sauce. Try adding a pinch of your favorite spices for extra flavor.\n\nRecipe: Salmon with Dill Sauce\n description: A quick and easy meal, perfect for busy weekdays.\n servings: 3-4 servings\n preparationTime: 10 mins\n ingredients: per individual taste\n directions: Bake salmon fillets and serve with a sauce made from Greek yogurt, dill, lemon juice, and garlic. Try adding a pinch of your favorite spices for extra flavor.\n\nRecipe: Caprese Salad Skewers\n description: A quick and easy meal, perfect for busy weekdays.\n servings: 8 servings\n preparationTime: 1 hrs\n ingredients: as needed\n directions: Thread cherry tomatoes, basil leaves, and mozzarella balls onto skewers. Drizzle with balsamic glaze. Garnish with fresh herbs for a more vibrant taste.",
+  "final_answer": null,
+  "final_summary": "I added all three recipes to Broccoli and checked each one after saving. Sweet Potato and Black Bean Tacos shows 3-4 servings, 4 hrs, \"as desired\" ingredients and the full directions; Salmon with Dill Sauce shows 3-4 servings, 10 mins, \"per individual taste\"; and Caprese Salad Skewers shows 8 servings, 1 hrs, \"as needed\". All three carry the description \"A quick and easy meal, perfect for busy weekdays.\" The list now holds 13 recipes, including these new entries. Note that the app already had a Caprese Salad Skewers and a Salmon with Dill Sauce with a different description (\"An ideal recipe for experimenting with different flavors and ingredients.\"), so those names now appear twice; I left the older ones untouched.",
+  "video_duration_s": 227.8,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 30.84,
+    "end_s": 30.86,
+    "ok": true,
+    "note": "Read the Broccoli skill guidance"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 30.84,
+    "end_s": 30.86,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 31.64,
+    "end_s": 34.38,
+    "ok": true,
+    "note": "Launch Broccoli app"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 35.17,
+    "end_s": 36.74,
+    "ok": true,
+    "note": "Tap New Recipe button"
+   },
+   {
+    "step": 5,
+    "tool": "get_ui_state",
+    "start_s": 37.66,
+    "end_s": 37.68,
+    "ok": true,
+    "note": "Observe new recipe form"
+   },
+   {
+    "step": 6,
+    "tool": "type",
+    "start_s": 42.11,
+    "end_s": 45.79,
+    "ok": true,
+    "note": "Type recipe title"
+   },
+   {
+    "step": 7,
+    "tool": "type",
+    "start_s": 47.02,
+    "end_s": 50.69,
+    "ok": true,
+    "note": "Type description"
+   },
+   {
+    "step": 8,
+    "tool": "key",
+    "start_s": 51.58,
+    "end_s": 51.92,
+    "ok": true,
+    "note": "Hide keyboard and scroll to lower fields"
+   },
+   {
+    "step": 9,
+    "tool": "type",
+    "start_s": 52.94,
+    "end_s": 55.22,
+    "ok": true,
+    "note": "Type servings value"
+   },
+   {
+    "step": 10,
+    "tool": "key",
+    "start_s": 56.15,
+    "end_s": 56.52,
+    "ok": true,
+    "note": "Hide keyboard, then type prep time"
+   },
+   {
+    "step": 11,
+    "tool": "type",
+    "start_s": 58.15,
+    "end_s": 59.62,
+    "ok": true,
+    "note": "Type prep time"
+   },
+   {
+    "step": 12,
+    "tool": "key",
+    "start_s": 60.67,
+    "end_s": 61.01,
+    "ok": true,
+    "note": "Hide keyboard, then type ingredients"
+   },
+   {
+    "step": 13,
+    "tool": "type",
+    "start_s": 61.75,
+    "end_s": 64.12,
+    "ok": true,
+    "note": "Type ingredients"
+   },
+   {
+    "step": 14,
+    "tool": "key",
+    "start_s": 64.87,
+    "end_s": 65.21,
+    "ok": true,
+    "note": "Hide keyboard, then type directions"
+   },
+   {
+    "step": 15,
+    "tool": "type",
+    "start_s": 66.18,
+    "end_s": 86.39,
+    "ok": true,
+    "note": "Type directions"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 87.54,
+    "end_s": 89.62,
+    "ok": true,
+    "note": "Save recipe 1"
+   },
+   {
+    "step": 17,
+    "tool": "tap_element",
+    "start_s": 90.76,
+    "end_s": 91.82,
+    "ok": true,
+    "note": "Return to list and create recipe 2"
+   },
+   {
+    "step": 18,
+    "tool": "tap_element",
+    "start_s": 94.69,
+    "end_s": 95.75,
+    "ok": true,
+    "note": "Tap New Recipe to add recipe 2"
+   },
+   {
+    "step": 19,
+    "tool": "type",
+    "start_s": 99.59,
+    "end_s": 102.57,
+    "ok": true,
+    "note": "Type recipe 2 title"
+   },
+   {
+    "step": 20,
+    "tool": "type",
+    "start_s": 103.7,
+    "end_s": 108.03,
+    "ok": true,
+    "note": "Type recipe 2 description"
+   },
+   {
+    "step": 21,
+    "tool": "key",
+    "start_s": 108.97,
+    "end_s": 109.34,
+    "ok": true,
+    "note": "Hide keyboard, type recipe 2 servings"
+   },
+   {
+    "step": 22,
+    "tool": "type",
+    "start_s": 110.32,
+    "end_s": 112.7,
+    "ok": true,
+    "note": "Type recipe 2 servings"
+   },
+   {
+    "step": 23,
+    "tool": "key",
+    "start_s": 113.65,
+    "end_s": 114.11,
+    "ok": true,
+    "note": "Hide keyboard, type recipe 2 prep time"
+   },
+   {
+    "step": 24,
+    "tool": "type",
+    "start_s": 115.11,
+    "end_s": 117.33,
+    "ok": true,
+    "note": "Type recipe 2 prep time"
+   },
+   {
+    "step": 25,
+    "tool": "key",
+    "start_s": 118.47,
+    "end_s": 119.03,
+    "ok": true,
+    "note": "Hide keyboard, type recipe 2 ingredients"
+   },
+   {
+    "step": 26,
+    "tool": "type",
+    "start_s": 119.82,
+    "end_s": 122.73,
+    "ok": true,
+    "note": "Type recipe 2 ingredients"
+   },
+   {
+    "step": 27,
+    "tool": "key",
+    "start_s": 123.54,
+    "end_s": 123.93,
+    "ok": true,
+    "note": "Hide keyboard, type recipe 2 directions"
+   },
+   {
+    "step": 28,
+    "tool": "type",
+    "start_s": 124.85,
+    "end_s": 141.6,
+    "ok": true,
+    "note": "Type recipe 2 directions"
+   },
+   {
+    "step": 29,
+    "tool": "tap_element",
+    "start_s": 142.65,
+    "end_s": 144.52,
+    "ok": true,
+    "note": "Save recipe 2 and verify"
+   },
+   {
+    "step": 30,
+    "tool": "tap_element",
+    "start_s": 145.69,
+    "end_s": 146.82,
+    "ok": true,
+    "note": "Return to list and start recipe 3"
+   },
+   {
+    "step": 31,
+    "tool": "tap_element",
+    "start_s": 147.8,
+    "end_s": 149.12,
+    "ok": true,
+    "note": "Tap New Recipe for recipe 3"
+   },
+   {
+    "step": 32,
+    "tool": "type",
+    "start_s": 150.32,
+    "end_s": 153.19,
+    "ok": true,
+    "note": "Type recipe 3 title"
+   },
+   {
+    "step": 33,
+    "tool": "type",
+    "start_s": 154.17,
+    "end_s": 157.54,
+    "ok": true,
+    "note": "Type recipe 3 description"
+   },
+   {
+    "step": 34,
+    "tool": "key",
+    "start_s": 158.64,
+    "end_s": 159.1,
+    "ok": true,
+    "note": "Hide keyboard, type recipe 3 servings"
+   },
+   {
+    "step": 35,
+    "tool": "type",
+    "start_s": 160.14,
+    "end_s": 162.5,
+    "ok": true,
+    "note": "Type recipe 3 servings"
+   },
+   {
+    "step": 36,
+    "tool": "key",
+    "start_s": 163.68,
+    "end_s": 164.13,
+    "ok": true,
+    "note": "Hide keyboard, type recipe 3 prep time"
+   },
+   {
+    "step": 37,
+    "tool": "type",
+    "start_s": 165.15,
+    "end_s": 167.01,
+    "ok": true,
+    "note": "Type recipe 3 prep time"
+   },
+   {
+    "step": 38,
+    "tool": "key",
+    "start_s": 167.92,
+    "end_s": 168.32,
+    "ok": true,
+    "note": "Hide keyboard, type recipe 3 ingredients"
+   },
+   {
+    "step": 39,
+    "tool": "type",
+    "start_s": 169.32,
+    "end_s": 171.7,
+    "ok": true,
+    "note": "Type recipe 3 ingredients"
+   },
+   {
+    "step": 40,
+    "tool": "key",
+    "start_s": 172.68,
+    "end_s": 173.14,
+    "ok": true,
+    "note": "Hide keyboard, type recipe 3 directions"
+   },
+   {
+    "step": 41,
+    "tool": "type",
+    "start_s": 174.17,
+    "end_s": 190.64,
+    "ok": true,
+    "note": "Type recipe 3 directions"
+   },
+   {
+    "step": 42,
+    "tool": "tap_element",
+    "start_s": 191.77,
+    "end_s": 193.11,
+    "ok": true,
+    "note": "Save recipe 3 and verify"
+   },
+   {
+    "step": 43,
+    "tool": "tap_element",
+    "start_s": 194.27,
+    "end_s": 195.43,
+    "ok": true,
+    "note": "Return to recipe list and recount titles"
+   },
+   {
+    "step": 44,
+    "tool": "map_app",
+    "start_s": 197.07,
+    "end_s": 210.29,
+    "ok": true,
+    "note": "Map full recipe list titles to confirm all three entries"
+   },
+   {
+    "step": 45,
+    "tool": "done",
+    "start_s": 213.73,
+    "end_s": 213.74,
+    "ok": true,
+    "note": "Task complete; report results"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipes/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipes/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipes/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipes/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipes/task.json"
+  }
+ }
+}

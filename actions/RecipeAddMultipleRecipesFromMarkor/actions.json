@@ -1,0 +1,567 @@
+{
+ "task": "RecipeAddMultipleRecipesFromMarkor",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 31.09,
+   "end_s": 31.09,
+   "ok": true,
+   "args": {
+    "path": "skill://broccoli/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "read",
+   "start_s": 31.09,
+   "end_s": 31.09,
+   "ok": true,
+   "args": {
+    "path": "skill://markor/SKILL.md"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 31.71,
+   "end_s": 31.73,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 32.64,
+   "end_s": 33.4,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "Markor",
+    "index": 11,
+    "x": 918,
+    "y": 1971
+   }
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 34.16,
+   "end_s": 35.26,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 36.08,
+   "end_s": 36.94,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "File recipes.txt ",
+    "index": 11,
+    "x": 540,
+    "y": 479
+   }
+  },
+  {
+   "step": 7,
+   "tool": "swipe",
+   "start_s": 39.27,
+   "end_s": 41.58,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1800,
+    "endX": 540,
+    "endY": 600
+   }
+  },
+  {
+   "step": 8,
+   "tool": "launch",
+   "start_s": 42.84,
+   "end_s": 46.16,
+   "ok": true,
+   "args": {
+    "app": "com.flauschcode.broccoli"
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 46.9,
+   "end_s": 48.28,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "New Recipe",
+    "index": 11,
+    "x": 965,
+    "y": 2222
+   }
+  },
+  {
+   "step": 10,
+   "tool": "type",
+   "start_s": 50.14,
+   "end_s": 53.41,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Shrimp Avocado Salad"
+   }
+  },
+  {
+   "step": 11,
+   "tool": "type",
+   "start_s": 54.45,
+   "end_s": 60.29,
+   "ok": true,
+   "args": {
+    "index": 10,
+    "text": "An ideal recipe for experimenting with different flavors and ingredients."
+   }
+  },
+  {
+   "step": 12,
+   "tool": "swipe",
+   "start_s": 61.84,
+   "end_s": 63.48,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1250,
+    "endX": 540,
+    "endY": 450
+   }
+  },
+  {
+   "step": 13,
+   "tool": "type",
+   "start_s": 64.48,
+   "end_s": 66.23,
+   "ok": true,
+   "args": {
+    "index": 11,
+    "text": "6 servings"
+   }
+  },
+  {
+   "step": 14,
+   "tool": "type",
+   "start_s": 67.25,
+   "end_s": 68.64,
+   "ok": true,
+   "args": {
+    "index": 13,
+    "text": "45 mins"
+   }
+  },
+  {
+   "step": 15,
+   "tool": "type",
+   "start_s": 69.74,
+   "end_s": 71.85,
+   "ok": true,
+   "args": {
+    "index": 15,
+    "text": "flexible ingredients"
+   }
+  },
+  {
+   "step": 16,
+   "tool": "swipe",
+   "start_s": 73.06,
+   "end_s": 75.09,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1250,
+    "endX": 540,
+    "endY": 500
+   }
+  },
+  {
+   "step": 17,
+   "tool": "type",
+   "start_s": 76.0,
+   "end_s": 92.46,
+   "ok": true,
+   "args": {
+    "index": 14,
+    "text": "Mix cooked shrimp with avocado, tomatoes, cucumber, and onion. Dress with lime juice, olive oil, salt, and pepper. Garnish with fresh herbs for a more vibrant taste."
+   }
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 93.55,
+   "end_s": 95.95,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 2,
+    "x": 954,
+    "y": 201
+   }
+  },
+  {
+   "step": 19,
+   "tool": "key",
+   "start_s": 97.02,
+   "end_s": 97.55,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 99.07,
+   "end_s": 100.16,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "New Recipe",
+    "index": 11,
+    "x": 862,
+    "y": 2222
+   }
+  },
+  {
+   "step": 21,
+   "tool": "key",
+   "start_s": 101.64,
+   "end_s": 102.06,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 22,
+   "tool": "tap",
+   "start_s": 103.51,
+   "end_s": 104.85,
+   "ok": true,
+   "args": {
+    "x": 955,
+    "y": 2222
+   }
+  },
+  {
+   "step": 23,
+   "tool": "type",
+   "start_s": 107.75,
+   "end_s": 110.04,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Eggplant Parmesan"
+   }
+  },
+  {
+   "step": 24,
+   "tool": "type",
+   "start_s": 110.96,
+   "end_s": 114.82,
+   "ok": true,
+   "args": {
+    "index": 10,
+    "text": "A delicious and healthy choice for any time of the day."
+   }
+  },
+  {
+   "step": 25,
+   "tool": "swipe",
+   "start_s": 116.05,
+   "end_s": 117.65,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1250,
+    "endX": 540,
+    "endY": 450
+   }
+  },
+  {
+   "step": 26,
+   "tool": "type",
+   "start_s": 118.83,
+   "end_s": 120.24,
+   "ok": true,
+   "args": {
+    "index": 11,
+    "text": "8 servings"
+   }
+  },
+  {
+   "step": 27,
+   "tool": "type",
+   "start_s": 121.12,
+   "end_s": 122.44,
+   "ok": true,
+   "args": {
+    "index": 13,
+    "text": "45 mins"
+   }
+  },
+  {
+   "step": 28,
+   "tool": "type",
+   "start_s": 123.37,
+   "end_s": 124.51,
+   "ok": true,
+   "args": {
+    "index": 15,
+    "text": "varies"
+   }
+  },
+  {
+   "step": 29,
+   "tool": "swipe",
+   "start_s": 125.79,
+   "end_s": 127.77,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1250,
+    "endX": 540,
+    "endY": 500
+   }
+  },
+  {
+   "step": 30,
+   "tool": "type",
+   "start_s": 128.76,
+   "end_s": 145.8,
+   "ok": true,
+   "args": {
+    "index": 14,
+    "text": "Slice eggplant, bread, and fry. Layer in a baking dish with marinara sauce and mozzarella cheese. Bake until bubbly. Try adding a pinch of your favorite spices for extra flavor."
+   }
+  },
+  {
+   "step": 31,
+   "tool": "tap_element",
+   "start_s": 146.79,
+   "end_s": 148.75,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 2,
+    "x": 954,
+    "y": 201
+   }
+  },
+  {
+   "step": 32,
+   "tool": "key",
+   "start_s": 150.22,
+   "end_s": 150.85,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 33,
+   "tool": "tap",
+   "start_s": 151.88,
+   "end_s": 153.05,
+   "ok": true,
+   "args": {
+    "x": 946,
+    "y": 2222
+   }
+  },
+  {
+   "step": 34,
+   "tool": "type",
+   "start_s": 154.17,
+   "end_s": 158.35,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Grilled Cheese with Tomato and Basil"
+   }
+  },
+  {
+   "step": 35,
+   "tool": "type",
+   "start_s": 159.32,
+   "end_s": 166.57,
+   "ok": true,
+   "args": {
+    "index": 10,
+    "text": "An ideal recipe for experimenting with different flavors and ingredients."
+   }
+  },
+  {
+   "step": 36,
+   "tool": "swipe",
+   "start_s": 167.77,
+   "end_s": 169.92,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1250,
+    "endX": 540,
+    "endY": 450
+   }
+  },
+  {
+   "step": 37,
+   "tool": "type",
+   "start_s": 171.07,
+   "end_s": 174.22,
+   "ok": true,
+   "args": {
+    "index": 11,
+    "text": "3-4 servings"
+   }
+  },
+  {
+   "step": 38,
+   "tool": "type",
+   "start_s": 175.33,
+   "end_s": 177.22,
+   "ok": true,
+   "args": {
+    "index": 13,
+    "text": "4 hrs"
+   }
+  },
+  {
+   "step": 39,
+   "tool": "type",
+   "start_s": 178.78,
+   "end_s": 182.3,
+   "ok": true,
+   "args": {
+    "index": 15,
+    "text": "see directions"
+   }
+  },
+  {
+   "step": 40,
+   "tool": "swipe",
+   "start_s": 183.25,
+   "end_s": 185.23,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1250,
+    "endX": 540,
+    "endY": 500
+   }
+  },
+  {
+   "step": 41,
+   "tool": "type",
+   "start_s": 186.27,
+   "end_s": 204.4,
+   "ok": true,
+   "args": {
+    "index": 14,
+    "text": "Butter bread slices, layer with cheese, tomato slices, and basil. Grill until bread is toasted and cheese is melted. Feel free to substitute with ingredients you have on hand."
+   }
+  },
+  {
+   "step": 42,
+   "tool": "tap_element",
+   "start_s": 205.56,
+   "end_s": 207.55,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 2,
+    "x": 954,
+    "y": 201
+   }
+  },
+  {
+   "step": 43,
+   "tool": "key",
+   "start_s": 208.82,
+   "end_s": 209.45,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 44,
+   "tool": "map_app",
+   "start_s": 210.44,
+   "end_s": 223.63,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 45,
+   "tool": "done",
+   "start_s": 226.59,
+   "end_s": 226.59,
+   "ok": true,
+   "args": {
+    "summary": "I added all three recipes from recipes.txt in Markor to the Broccoli app: Shrimp Avocado Salad, Eggplant Parmesan, and Grilled Cheese with Tomato and Basil, each with its description, servings, preparation time, ingredients and directions as written in the file, and I confirmed each one on its own recipe page. The recipe list now shows 13 recipes, including the three new ones.",
+    "evidence": {
+     "objective_evidence": "Each saved recipe page showed the typed fields back (e.g. Grilled Cheese with Tomato and Basil: 3-4 servings, 4 hrs, \"see directions\", full direction text). A final titles-only map of the recipe list counted 13 rows including Eggplant Parmesan, Grilled Cheese with Tomato and Basil, and the new Shrimp Avocado Salad entry with description \"An ideal recipe for experimenting with different flavors and ingredients.\"",
+     "key_signals": [
+      "recipes.txt contained exactly three recipes: Shrimp Avocado Salad, Eggplant Parmesan, Grilled Cheese with Tomato and Basil",
+      "Save returned to a detail page for each new recipe",
+      "Final list map showed 13 rows and end of list proven"
+     ]
+    },
+    "rows": [
+     {
+      "recipe": "Shrimp Avocado Salad",
+      "servings": "6 servings",
+      "preparation_time": "45 mins",
+      "ingredients": "flexible ingredients",
+      "lusor_status": "succeeded"
+     },
+     {
+      "recipe": "Eggplant Parmesan",
+      "servings": "8 servings",
+      "preparation_time": "45 mins",
+      "ingredients": "varies",
+      "lusor_status": "succeeded"
+     },
+     {
+      "recipe": "Grilled Cheese with Tomato and Basil",
+      "servings": "3-4 servings",
+      "preparation_time": "4 hrs",
+      "ingredients": "see directions",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

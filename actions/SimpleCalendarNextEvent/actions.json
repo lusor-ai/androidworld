@@ -1,0 +1,129 @@
+{
+ "task": "SimpleCalendarNextEvent",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.71,
+   "end_s": 29.73,
+   "ok": true,
+   "args": {
+    "path": "skill://simple-calendar/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.71,
+   "end_s": 29.73,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.49,
+   "end_s": 33.13,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.calendar.pro"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 34.42,
+   "end_s": 35.52,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "Change view",
+    "index": 4,
+    "x": 732,
+    "y": 212
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 36.28,
+   "end_s": 37.33,
+   "ok": true,
+   "args": {
+    "index": 7
+   },
+   "tapped": {
+    "label": "Simple event list",
+    "index": 7,
+    "x": 540,
+    "y": 1522
+   }
+  },
+  {
+   "step": 6,
+   "tool": "swipe",
+   "start_s": 39.12,
+   "end_s": 41.06,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 600,
+    "endX": 540,
+    "endY": 1800,
+    "durationMs": 400
+   }
+  },
+  {
+   "step": 7,
+   "tool": "swipe",
+   "start_s": 44.65,
+   "end_s": 46.47,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 500,
+    "endX": 540,
+    "endY": 1900,
+    "durationMs": 400
+   }
+  },
+  {
+   "step": 8,
+   "tool": "scroll_to",
+   "start_s": 48.52,
+   "end_s": 49.71,
+   "ok": true,
+   "args": {
+    "target": "Concert"
+   }
+  },
+  {
+   "step": 9,
+   "tool": "done",
+   "start_s": 52.25,
+   "end_s": 52.25,
+   "ok": true,
+   "args": {
+    "summary": "Your next upcoming event is Concert, today (Sunday 15 October) from 19:00 to 20:00. The current clock reads 15:34, and the three earlier events today (02:24, 03:32 and 06:50) have already passed; no other event is scheduled later today.",
+    "evidence": {
+     "objective_evidence": "Simple Calendar Pro simple event list, with device clock Sun 2023-10-15 15:34. Under the \"15 Sunday\" heading: Catch up on Annual Report 02:24-02:39, Catch up on Campaign 03:32-03:47, Appointment for Annual Report 06:50-07:20, Concert 19:00-20:00; next section is \"16 Monday\".",
+     "key_signals": [
+      "Device clock Sun 2023-10-15 15:34",
+      "Concert 19:00 - 20:00 is the only Sunday event after 15:34",
+      "Sunday section ends after Concert; 16 Monday section follows"
+     ]
+    },
+    "rows": [
+     {
+      "answer": "Concert",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

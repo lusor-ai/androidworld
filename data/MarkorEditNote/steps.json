@@ -1,0 +1,95 @@
+{
+ "task": "MarkorEditNote",
+ "video_duration_s": 67.4,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.08,
+   "end_s": 30.1,
+   "ok": true,
+   "note": "Load Markor skill guidance"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.08,
+   "end_s": 30.1,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.23,
+   "end_s": 33.64,
+   "ok": true,
+   "note": "Launch Markor and locate note_6aamy.txt"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 34.43,
+   "end_s": 34.89,
+   "ok": true,
+   "note": "Open note_6aamy.txt"
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 36.18,
+   "end_s": 36.19,
+   "ok": true,
+   "note": "Read note editor screen"
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 37.69,
+   "end_s": 45.5,
+   "ok": true,
+   "note": "Type prepended text into the editor"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 46.47,
+   "end_s": 46.88,
+   "ok": true,
+   "note": "Tap Save and verify saved content"
+  },
+  {
+   "step": 8,
+   "tool": "key",
+   "start_s": 48.0,
+   "end_s": 48.42,
+   "ok": true,
+   "note": "Go back to file list and reopen note to verify saved content"
+  },
+  {
+   "step": 9,
+   "tool": "key",
+   "start_s": 49.49,
+   "end_s": 50.42,
+   "ok": true,
+   "note": "Return to file list and reopen note_6aamy.txt to verify saved text"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 51.43,
+   "end_s": 52.57,
+   "ok": true,
+   "note": "Reopen note_6aamy.txt and read back content"
+  },
+  {
+   "step": 11,
+   "tool": "done",
+   "start_s": 54.62,
+   "end_s": 54.62,
+   "ok": true,
+   "note": "Task complete; nothing further"
+  }
+ ]
+}

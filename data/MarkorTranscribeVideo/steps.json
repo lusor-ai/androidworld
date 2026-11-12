@@ -1,0 +1,767 @@
+{
+ "task": "MarkorTranscribeVideo",
+ "video_duration_s": 401.1,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 34.68,
+   "end_s": 34.7,
+   "ok": true,
+   "note": "Read markor skill then observe screen"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 34.68,
+   "end_s": 34.7,
+   "ok": true,
+   "note": "Observe current screen state"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 35.92,
+   "end_s": 38.55,
+   "ok": true,
+   "note": "Open VLC app"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 39.71,
+   "end_s": 41.43,
+   "ok": true,
+   "note": "Browse to Download folder in VLC"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 42.16,
+   "end_s": 42.9,
+   "ok": true,
+   "note": "Open Download folder listing in VLC"
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 43.81,
+   "end_s": 43.93,
+   "ok": true,
+   "note": "Read Download folder file listing"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 44.91,
+   "end_s": 45.64,
+   "ok": true,
+   "note": "Play scene_56_4K_2023_06_01.mp4 in VLC"
+  },
+  {
+   "step": 8,
+   "tool": "get_ui_state",
+   "start_s": 46.41,
+   "end_s": 46.63,
+   "ok": true,
+   "note": "Check VLC player screen for video playback"
+  },
+  {
+   "step": 9,
+   "tool": "screenshot",
+   "start_s": 49.32,
+   "end_s": 51.83,
+   "ok": true,
+   "note": "Inspect video frame for text"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 54.02,
+   "end_s": 54.82,
+   "ok": true,
+   "note": "Dismiss VLC tips overlays"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 56.37,
+   "end_s": 56.63,
+   "ok": true,
+   "note": "Close VLC tips overlay"
+  },
+  {
+   "step": 12,
+   "tool": "screenshot",
+   "start_s": 57.88,
+   "end_s": 60.56,
+   "ok": true,
+   "note": "Read current frame text in VLC"
+  },
+  {
+   "step": 13,
+   "tool": "tap",
+   "start_s": 63.79,
+   "end_s": 65.01,
+   "ok": true,
+   "note": "Show player controls to read duration"
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 69.96,
+   "end_s": 71.03,
+   "ok": true,
+   "note": "Pause video playback"
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 72.77,
+   "end_s": 73.42,
+   "ok": true,
+   "note": "Open advanced options to set playback speed"
+  },
+  {
+   "step": 16,
+   "tool": "get_ui_state",
+   "start_s": 75.97,
+   "end_s": 75.98,
+   "ok": true,
+   "note": "Read advanced options panel"
+  },
+  {
+   "step": 17,
+   "tool": "screenshot",
+   "start_s": 79.99,
+   "end_s": 81.87,
+   "ok": true,
+   "note": "Observe advanced options panel"
+  },
+  {
+   "step": 18,
+   "tool": "tap",
+   "start_s": 86.49,
+   "end_s": 87.42,
+   "ok": true,
+   "note": "Seek to start of video and read frame"
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 90.18,
+   "end_s": 90.43,
+   "ok": true,
+   "note": "Pause current video and return to folder to reopen scene_56"
+  },
+  {
+   "step": 20,
+   "tool": "key",
+   "start_s": 92.43,
+   "end_s": 93.13,
+   "ok": true,
+   "note": "Return to Download folder listing"
+  },
+  {
+   "step": 21,
+   "tool": "tap_element",
+   "start_s": 96.86,
+   "end_s": 97.42,
+   "ok": true,
+   "note": "Play scene_56 again then pause it"
+  },
+  {
+   "step": 22,
+   "tool": "tap",
+   "start_s": 99.16,
+   "end_s": 99.16,
+   "ok": false,
+   "note": "Show controls and pause scene_56"
+  },
+  {
+   "step": 23,
+   "tool": "tap",
+   "start_s": 100.6,
+   "end_s": 100.6,
+   "ok": false,
+   "note": "Show controls and pause scene_56"
+  },
+  {
+   "step": 24,
+   "tool": "tap",
+   "start_s": 102.02,
+   "end_s": 102.92,
+   "ok": true,
+   "note": "Show controls and pause scene_56"
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 104.6,
+   "end_s": 104.92,
+   "ok": true,
+   "note": "Pause scene_56 at current position"
+  },
+  {
+   "step": 26,
+   "tool": "tap",
+   "start_s": 106.79,
+   "end_s": 107.11,
+   "ok": true,
+   "note": "Seek to ~0s and check time; then screenshot frame"
+  },
+  {
+   "step": 27,
+   "tool": "screenshot",
+   "start_s": 109.06,
+   "end_s": 110.92,
+   "ok": true,
+   "note": "Read frame at 0s"
+  },
+  {
+   "step": 28,
+   "tool": "tap",
+   "start_s": 116.2,
+   "end_s": 116.52,
+   "ok": true,
+   "note": "Seek to 1s and screenshot frame text"
+  },
+  {
+   "step": 29,
+   "tool": "tap_element",
+   "start_s": 121.49,
+   "end_s": 122.31,
+   "ok": true,
+   "note": "Open advanced options panel looking for playback speed"
+  },
+  {
+   "step": 30,
+   "tool": "screenshot",
+   "start_s": 126.79,
+   "end_s": 128.67,
+   "ok": true,
+   "note": "Read frame at ~0.72s to gauge word duration"
+  },
+  {
+   "step": 31,
+   "tool": "tap_element",
+   "start_s": 130.35,
+   "end_s": 131.03,
+   "ok": true,
+   "note": "Open Jump to Time dialog to seek precisely"
+  },
+  {
+   "step": 32,
+   "tool": "key",
+   "start_s": 141.5,
+   "end_s": 141.82,
+   "ok": true,
+   "note": "Close jump dialog and calibrate seekbar right edge"
+  },
+  {
+   "step": 33,
+   "tool": "tap",
+   "start_s": 143.34,
+   "end_s": 144.27,
+   "ok": true,
+   "note": "Show controls then calibrate seekbar right edge"
+  },
+  {
+   "step": 34,
+   "tool": "tap",
+   "start_s": 145.64,
+   "end_s": 145.85,
+   "ok": true,
+   "note": "Calibrate seekbar right edge value"
+  },
+  {
+   "step": 35,
+   "tool": "tap",
+   "start_s": 153.31,
+   "end_s": 153.73,
+   "ok": true,
+   "note": "Seek to ~0.5s and screenshot the frame text"
+  },
+  {
+   "step": 36,
+   "tool": "screenshot",
+   "start_s": 154.96,
+   "end_s": 157.09,
+   "ok": true,
+   "note": "Read frame text at 0.49s"
+  },
+  {
+   "step": 37,
+   "tool": "tap",
+   "start_s": 159.61,
+   "end_s": 159.94,
+   "ok": true,
+   "note": "Seek to ~1.5s and screenshot"
+  },
+  {
+   "step": 38,
+   "tool": "screenshot",
+   "start_s": 161.69,
+   "end_s": 163.7,
+   "ok": true,
+   "note": "Read frame text at 1.51s"
+  },
+  {
+   "step": 39,
+   "tool": "tap",
+   "start_s": 165.9,
+   "end_s": 166.24,
+   "ok": true,
+   "note": "Seek to ~2.5s and screenshot"
+  },
+  {
+   "step": 40,
+   "tool": "screenshot",
+   "start_s": 167.77,
+   "end_s": 169.69,
+   "ok": true,
+   "note": "Read frame text at 2.51s"
+  },
+  {
+   "step": 41,
+   "tool": "tap",
+   "start_s": 172.74,
+   "end_s": 173.04,
+   "ok": true,
+   "note": "Seek to ~4s and screenshot"
+  },
+  {
+   "step": 42,
+   "tool": "screenshot",
+   "start_s": 174.92,
+   "end_s": 176.84,
+   "ok": true,
+   "note": "Read frame text at 4.04s"
+  },
+  {
+   "step": 43,
+   "tool": "tap",
+   "start_s": 179.17,
+   "end_s": 179.52,
+   "ok": true,
+   "note": "Seek to ~5s and screenshot"
+  },
+  {
+   "step": 44,
+   "tool": "screenshot",
+   "start_s": 180.94,
+   "end_s": 182.99,
+   "ok": true,
+   "note": "Read frame text at 5.04s"
+  },
+  {
+   "step": 45,
+   "tool": "tap",
+   "start_s": 185.89,
+   "end_s": 186.31,
+   "ok": true,
+   "note": "Seek to ~8s and screenshot"
+  },
+  {
+   "step": 46,
+   "tool": "screenshot",
+   "start_s": 188.07,
+   "end_s": 190.08,
+   "ok": true,
+   "note": "Read frame text at 8.08s"
+  },
+  {
+   "step": 47,
+   "tool": "tap",
+   "start_s": 192.93,
+   "end_s": 193.16,
+   "ok": true,
+   "note": "Seek to ~6.5s and screenshot to find boundary"
+  },
+  {
+   "step": 48,
+   "tool": "screenshot",
+   "start_s": 194.81,
+   "end_s": 196.77,
+   "ok": true,
+   "note": "Read frame text at 6.57s"
+  },
+  {
+   "step": 49,
+   "tool": "tap",
+   "start_s": 199.37,
+   "end_s": 199.65,
+   "ok": true,
+   "note": "Seek to ~7.5s and screenshot to find Mila/Noah boundary"
+  },
+  {
+   "step": 50,
+   "tool": "screenshot",
+   "start_s": 201.74,
+   "end_s": 203.74,
+   "ok": true,
+   "note": "Read frame text at 7.5s"
+  },
+  {
+   "step": 51,
+   "tool": "tap",
+   "start_s": 207.05,
+   "end_s": 207.32,
+   "ok": true,
+   "note": "Seek to ~9s and screenshot"
+  },
+  {
+   "step": 52,
+   "tool": "screenshot",
+   "start_s": 208.93,
+   "end_s": 210.9,
+   "ok": true,
+   "note": "Read frame text at 9.23s"
+  },
+  {
+   "step": 53,
+   "tool": "tap",
+   "start_s": 213.63,
+   "end_s": 214.01,
+   "ok": true,
+   "note": "Seek to ~11.5s and screenshot"
+  },
+  {
+   "step": 54,
+   "tool": "screenshot",
+   "start_s": 216.75,
+   "end_s": 218.78,
+   "ok": true,
+   "note": "Read frame text at 11.5s"
+  },
+  {
+   "step": 55,
+   "tool": "tap",
+   "start_s": 222.82,
+   "end_s": 223.15,
+   "ok": true,
+   "note": "Seek to ~12.5s and screenshot to find next boundary"
+  },
+  {
+   "step": 56,
+   "tool": "screenshot",
+   "start_s": 224.62,
+   "end_s": 226.63,
+   "ok": true,
+   "note": "Read frame text at 12.5s"
+  },
+  {
+   "step": 57,
+   "tool": "tap",
+   "start_s": 229.33,
+   "end_s": 230.42,
+   "ok": true,
+   "note": "Seek to ~13s and screenshot"
+  },
+  {
+   "step": 58,
+   "tool": "tap",
+   "start_s": 234.03,
+   "end_s": 235.06,
+   "ok": true,
+   "note": "Seek to ~13s (controls now visible) and screenshot"
+  },
+  {
+   "step": 59,
+   "tool": "tap",
+   "start_s": 238.32,
+   "end_s": 238.61,
+   "ok": true,
+   "note": "Seek near 13.8s avoiding thumb, then screenshot"
+  },
+  {
+   "step": 60,
+   "tool": "screenshot",
+   "start_s": 240.54,
+   "end_s": 242.37,
+   "ok": true,
+   "note": "Read frame text at 13.7s"
+  },
+  {
+   "step": 61,
+   "tool": "tap",
+   "start_s": 248.25,
+   "end_s": 248.5,
+   "ok": true,
+   "note": "Seek to ~14.3s and screenshot"
+  },
+  {
+   "step": 62,
+   "tool": "screenshot",
+   "start_s": 249.99,
+   "end_s": 251.96,
+   "ok": true,
+   "note": "Read frame text at 14.6s"
+  },
+  {
+   "step": 63,
+   "tool": "tap",
+   "start_s": 255.58,
+   "end_s": 255.76,
+   "ok": true,
+   "note": "Seek to ~15.6s and screenshot"
+  },
+  {
+   "step": 64,
+   "tool": "screenshot",
+   "start_s": 257.99,
+   "end_s": 261.97,
+   "ok": true,
+   "note": "Read frame text at 15.6s"
+  },
+  {
+   "step": 65,
+   "tool": "tap",
+   "start_s": 269.31,
+   "end_s": 269.72,
+   "ok": true,
+   "note": "Seek back to start for real-time playback pass"
+  },
+  {
+   "step": 66,
+   "tool": "tap_element",
+   "start_s": 271.68,
+   "end_s": 271.93,
+   "ok": true,
+   "note": "Play from start and screenshot frames in real time"
+  },
+  {
+   "step": 67,
+   "tool": "screenshot",
+   "start_s": 273.55,
+   "end_s": 276.4,
+   "ok": true,
+   "note": "Screenshot during playback sample 1"
+  },
+  {
+   "step": 68,
+   "tool": "screenshot",
+   "start_s": 278.97,
+   "end_s": 281.44,
+   "ok": true,
+   "note": "Screenshot during playback sample 2"
+  },
+  {
+   "step": 69,
+   "tool": "screenshot",
+   "start_s": 283.75,
+   "end_s": 286.17,
+   "ok": true,
+   "note": "Screenshot during playback sample 3"
+  },
+  {
+   "step": 70,
+   "tool": "screenshot",
+   "start_s": 288.19,
+   "end_s": 290.38,
+   "ok": true,
+   "note": "Screenshot during playback sample 4"
+  },
+  {
+   "step": 71,
+   "tool": "tap_element",
+   "start_s": 297.22,
+   "end_s": 298.05,
+   "ok": true,
+   "note": "Reopen scene_56, pause, seek to end region 15.9s"
+  },
+  {
+   "step": 72,
+   "tool": "tap",
+   "start_s": 300.0,
+   "end_s": 300.92,
+   "ok": true,
+   "note": "Show controls and pause"
+  },
+  {
+   "step": 73,
+   "tool": "tap_element",
+   "start_s": 302.37,
+   "end_s": 302.72,
+   "ok": true,
+   "note": "Pause at 2.16s"
+  },
+  {
+   "step": 74,
+   "tool": "tap",
+   "start_s": 304.46,
+   "end_s": 304.82,
+   "ok": true,
+   "note": "Seek near 15.9s then screenshot"
+  },
+  {
+   "step": 75,
+   "tool": "get_ui_state",
+   "start_s": 306.16,
+   "end_s": 306.51,
+   "ok": true,
+   "note": "Let frame settle then screenshot at 15.89s"
+  },
+  {
+   "step": 76,
+   "tool": "screenshot",
+   "start_s": 308.13,
+   "end_s": 312.1,
+   "ok": true,
+   "note": "Read frame text at 15.89s"
+  },
+  {
+   "step": 77,
+   "tool": "launch",
+   "start_s": 321.97,
+   "end_s": 325.15,
+   "ok": true,
+   "note": "Create new file in Markor named scene_56_4K_2023_06_01_transcription.txt"
+  },
+  {
+   "step": 78,
+   "tool": "tap_element",
+   "start_s": 327.17,
+   "end_s": 328.44,
+   "ok": true,
+   "note": "Tap create new file FAB"
+  },
+  {
+   "step": 79,
+   "tool": "type",
+   "start_s": 330.4,
+   "end_s": 333.73,
+   "ok": true,
+   "note": "Type file name"
+  },
+  {
+   "step": 80,
+   "tool": "type",
+   "start_s": 335.69,
+   "end_s": 336.81,
+   "ok": true,
+   "note": "Set extension to .txt"
+  },
+  {
+   "step": 81,
+   "tool": "tap_element",
+   "start_s": 339.36,
+   "end_s": 340.83,
+   "ok": true,
+   "note": "Tap OK to create file"
+  },
+  {
+   "step": 82,
+   "tool": "type",
+   "start_s": 342.95,
+   "end_s": 344.41,
+   "ok": true,
+   "note": "Type transcription content into editor"
+  },
+  {
+   "step": 83,
+   "tool": "key",
+   "start_s": 347.32,
+   "end_s": 347.73,
+   "ok": true,
+   "note": "Go back to file list (auto-save) and verify file content"
+  },
+  {
+   "step": 84,
+   "tool": "tap_element",
+   "start_s": 349.87,
+   "end_s": 350.24,
+   "ok": true,
+   "note": "Tap Save then return to file list"
+  },
+  {
+   "step": 85,
+   "tool": "key",
+   "start_s": 352.39,
+   "end_s": 353.26,
+   "ok": true,
+   "note": "Return to file list and verify file exists with content"
+  },
+  {
+   "step": 86,
+   "tool": "tap_element",
+   "start_s": 355.37,
+   "end_s": 355.83,
+   "ok": true,
+   "note": "Open the txt file to verify its content"
+  },
+  {
+   "step": 87,
+   "tool": "get_ui_state",
+   "start_s": 357.96,
+   "end_s": 357.98,
+   "ok": true,
+   "note": "Read file content to verify"
+  },
+  {
+   "step": 88,
+   "tool": "launch",
+   "start_s": 362.83,
+   "end_s": 364.14,
+   "ok": true,
+   "note": "Return to VLC and sample t=5.8s to fill the largest unsampled gap"
+  },
+  {
+   "step": 89,
+   "tool": "tap_element",
+   "start_s": 366.59,
+   "end_s": 366.93,
+   "ok": true,
+   "note": "Open scene_56 again to sample 5.8s"
+  },
+  {
+   "step": 90,
+   "tool": "tap",
+   "start_s": 369.0,
+   "end_s": 369.91,
+   "ok": true,
+   "note": "Show controls and pause"
+  },
+  {
+   "step": 91,
+   "tool": "tap_element",
+   "start_s": 371.85,
+   "end_s": 372.12,
+   "ok": true,
+   "note": "Pause then seek to 5.8s"
+  },
+  {
+   "step": 92,
+   "tool": "tap",
+   "start_s": 374.19,
+   "end_s": 374.51,
+   "ok": true,
+   "note": "Seek to 5.8s and screenshot"
+  },
+  {
+   "step": 93,
+   "tool": "screenshot",
+   "start_s": 376.26,
+   "end_s": 378.11,
+   "ok": true,
+   "note": "Read frame text at 5.8s"
+  },
+  {
+   "step": 94,
+   "tool": "launch",
+   "start_s": 381.36,
+   "end_s": 382.75,
+   "ok": true,
+   "note": "Final check of Markor file content before reporting"
+  },
+  {
+   "step": 95,
+   "tool": "done",
+   "start_s": 386.74,
+   "end_s": 386.75,
+   "ok": true,
+   "note": "Report result"
+  }
+ ]
+}

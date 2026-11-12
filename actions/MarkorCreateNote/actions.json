@@ -1,0 +1,183 @@
+{
+ "task": "MarkorCreateNote",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.13,
+   "end_s": 30.13,
+   "ok": true,
+   "args": {
+    "path": "skill://markor/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.81,
+   "end_s": 30.82,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.66,
+   "end_s": 34.03,
+   "ok": true,
+   "args": {
+    "app": "net.gsantner.markor"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.09,
+   "end_s": 36.39,
+   "ok": true,
+   "args": {
+    "index": 11,
+    "capture": true
+   },
+   "tapped": {
+    "label": "Create a new file or folder",
+    "index": 11,
+    "x": 965,
+    "y": 2075
+   }
+  },
+  {
+   "step": 5,
+   "tool": "type",
+   "start_s": 37.59,
+   "end_s": 40.18,
+   "ok": true,
+   "args": {
+    "text": "brave_violin_2c5o",
+    "index": 2,
+    "capture": true
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 40.87,
+   "end_s": 42.58,
+   "ok": true,
+   "args": {
+    "index": 9,
+    "capture": true
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 9,
+    "x": 922,
+    "y": 1112
+   }
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 43.57,
+   "end_s": 47.75,
+   "ok": true,
+   "args": {
+    "text": "The library book is due back on the 15th.",
+    "index": 7,
+    "capture": true
+   }
+  },
+  {
+   "step": 8,
+   "tool": "key",
+   "start_s": 49.56,
+   "end_s": 49.89,
+   "ok": true,
+   "args": {
+    "key": "back",
+    "capture": true
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 50.74,
+   "end_s": 51.37,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "Save",
+    "index": 4,
+    "x": 818,
+    "y": 201
+   }
+  },
+  {
+   "step": 10,
+   "tool": "key",
+   "start_s": 52.29,
+   "end_s": 53.19,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 54.58,
+   "end_s": 55.3,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 13
+   },
+   "tapped": {
+    "label": "File brave_violin_2c5o.md ",
+    "index": 13,
+    "x": 540,
+    "y": 623
+   }
+  },
+  {
+   "step": 12,
+   "tool": "get_ui_state",
+   "start_s": 56.25,
+   "end_s": 56.27,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 13,
+   "tool": "done",
+   "start_s": 58.46,
+   "end_s": 58.47,
+   "ok": true,
+   "args": {
+    "summary": "I created the note brave_violin_2c5o.md in Markor's Documents folder and saved the text \"The library book is due back on the 15th.\" Reopening the file showed its title as brave_violin_2c5o and the exact sentence in the editor, so the content is saved.",
+    "evidence": {
+     "objective_evidence": "Markor file list shows 'brave_violin_2c5o.md' with timestamp 10/15/2023, 15:34; reopening it shows title 'brave_violin_2c5o' and editor content 'The library book is due back on the 15th.'",
+     "key_signals": [
+      "Create dialog used name brave_violin_2c5o with extension .md, type Markdown",
+      "Save tapped and Save control then disabled, indicating saved state",
+      "Files list (ui__filesystem_dialog__list) lists the new file",
+      "Reopened note editor reads back the exact requested sentence"
+     ]
+    },
+    "rows": [
+     {
+      "filename": "brave_violin_2c5o.md",
+      "location": "/storage/emulated/0/Documents",
+      "text": "The library book is due back on the 15th.",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

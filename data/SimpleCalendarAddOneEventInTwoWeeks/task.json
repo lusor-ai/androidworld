@@ -1,0 +1,297 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SimpleCalendarAddOneEventInTwoWeeks",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 69.2,
+  "mobilerun_published_time_s": 394.2,
+  "speed_ratio": 0.176,
+  "lusor_cost_usd": 0.0276,
+  "mobilerun_published_actions": 19,
+  "mobilerun_est_cost_usd": 1.455,
+  "lusor_tool_calls": 31,
+  "disclosure": null,
+  "skills_read": [
+   "simple-calendar"
+  ],
+  "skill_assisted": [
+   "simple-calendar"
+  ],
+  "goal": "In Simple Calendar Pro, create a calendar event in two weeks from today at 1h with the title 'Review session for Campaign' and the description 'We will explore upcoming project milestones. Please bring relevant documents.'. The event should last for 45 mins.",
+  "final_answer": null,
+  "final_summary": "I created the event \"Review session for Campaign\" in Simple Calendar Pro for Sunday, October 29, 2023 (two weeks from today, which was Sunday, October 15), from 01:00 to 01:45, so it lasts 45 minutes. The description reads \"We will explore upcoming project milestones. Please bring relevant documents.\" A search of the calendar showed the saved event under 29 Sunday with the 01:00 to 01:45 time, and opening it confirmed the title, description and both dates and times.",
+  "video_duration_s": 111.2,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 30.06,
+    "end_s": 30.06,
+    "ok": true,
+    "note": "Load Simple Calendar skill guidance"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 30.84,
+    "end_s": 30.86,
+    "ok": true,
+    "note": "Observe current screen, then open Simple Calendar"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 31.86,
+    "end_s": 34.23,
+    "ok": true,
+    "note": "Launch Simple Calendar and open new event form"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 35.84,
+    "end_s": 36.58,
+    "ok": true,
+    "note": "Fill new event form"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 37.59,
+    "end_s": 38.71,
+    "ok": true,
+    "note": "Tap Event to open event form"
+   },
+   {
+    "step": 6,
+    "tool": "type",
+    "start_s": 39.75,
+    "end_s": 42.18,
+    "ok": true,
+    "note": "Type title, then description"
+   },
+   {
+    "step": 7,
+    "tool": "type",
+    "start_s": 43.04,
+    "end_s": 48.28,
+    "ok": true,
+    "note": "Type description, then set start date to Oct 29"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 49.42,
+    "end_s": 49.97,
+    "ok": true,
+    "note": "Open start date picker and choose October 29"
+   },
+   {
+    "step": 9,
+    "tool": "get_ui_state",
+    "start_s": 51.0,
+    "end_s": 51.17,
+    "ok": true,
+    "note": "Read date picker dialog"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 52.29,
+    "end_s": 52.48,
+    "ok": true,
+    "note": "Select 29 and tap OK"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 53.36,
+    "end_s": 53.87,
+    "ok": true,
+    "note": "Confirm start date Oct 29, then set start time to 01:00"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 54.74,
+    "end_s": 56.28,
+    "ok": true,
+    "note": "Open start time picker, set 01:00"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 57.28,
+    "end_s": 58.38,
+    "ok": true,
+    "note": "Switch time picker to text input mode"
+   },
+   {
+    "step": 14,
+    "tool": "type",
+    "start_s": 59.22,
+    "end_s": 60.18,
+    "ok": true,
+    "note": "Type hour 01, then confirm minute is 00 and OK"
+   },
+   {
+    "step": 15,
+    "tool": "get_ui_state",
+    "start_s": 60.85,
+    "end_s": 60.87,
+    "ok": true,
+    "note": "Re-read time picker fields"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 61.92,
+    "end_s": 62.47,
+    "ok": true,
+    "note": "Confirm start time 01:00, then set end time 01:45"
+   },
+   {
+    "step": 17,
+    "tool": "tap_element",
+    "start_s": 64.06,
+    "end_s": 65.17,
+    "ok": true,
+    "note": "Open end time picker, set 01:45"
+   },
+   {
+    "step": 18,
+    "tool": "tap_element",
+    "start_s": 66.01,
+    "end_s": 66.88,
+    "ok": true,
+    "note": "Switch end time picker to text mode"
+   },
+   {
+    "step": 19,
+    "tool": "tap",
+    "start_s": 68.04,
+    "end_s": 68.67,
+    "ok": true,
+    "note": "Tap minute field to focus it"
+   },
+   {
+    "step": 20,
+    "tool": "type",
+    "start_s": 69.99,
+    "end_s": 70.97,
+    "ok": true,
+    "note": "Type minute 45"
+   },
+   {
+    "step": 21,
+    "tool": "get_ui_state",
+    "start_s": 71.7,
+    "end_s": 71.78,
+    "ok": true,
+    "note": "Check minute field content"
+   },
+   {
+    "step": 22,
+    "tool": "type",
+    "start_s": 73.17,
+    "end_s": 74.7,
+    "ok": true,
+    "note": "Reset hour field to 01"
+   },
+   {
+    "step": 23,
+    "tool": "get_ui_state",
+    "start_s": 75.57,
+    "end_s": 75.59,
+    "ok": true,
+    "note": "Read fields after typing hour"
+   },
+   {
+    "step": 24,
+    "tool": "type",
+    "start_s": 76.61,
+    "end_s": 77.89,
+    "ok": true,
+    "note": "Type 45 into minute field"
+   },
+   {
+    "step": 25,
+    "tool": "tap_element",
+    "start_s": 78.75,
+    "end_s": 79.3,
+    "ok": true,
+    "note": "Confirm end time 01:45 and save event"
+   },
+   {
+    "step": 26,
+    "tool": "tap_element",
+    "start_s": 80.29,
+    "end_s": 81.28,
+    "ok": true,
+    "note": "Save the event"
+   },
+   {
+    "step": 27,
+    "tool": "tap_element",
+    "start_s": 82.43,
+    "end_s": 83.51,
+    "ok": true,
+    "note": "Dismiss disclaimer and read back saved event"
+   },
+   {
+    "step": 28,
+    "tool": "tap_element",
+    "start_s": 84.9,
+    "end_s": 85.5,
+    "ok": true,
+    "note": "Search for the event title to verify saved details"
+   },
+   {
+    "step": 29,
+    "tool": "type",
+    "start_s": 86.45,
+    "end_s": 90.89,
+    "ok": true,
+    "note": "Type search query and view results"
+   },
+   {
+    "step": 30,
+    "tool": "tap_element",
+    "start_s": 92.0,
+    "end_s": 93.39,
+    "ok": true,
+    "note": "Open event to confirm details"
+   },
+   {
+    "step": 31,
+    "tool": "done",
+    "start_s": 96.52,
+    "end_s": 96.52,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventInTwoWeeks/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventInTwoWeeks/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventInTwoWeeks/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventInTwoWeeks/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventInTwoWeeks/task.json"
+  }
+ }
+}

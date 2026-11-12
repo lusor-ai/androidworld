@@ -1,0 +1,135 @@
+{
+ "task": "SimpleCalendarEventsInNextWeek",
+ "video_duration_s": 135.8,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.15,
+   "end_s": 30.15,
+   "ok": true,
+   "note": "Read Simple Calendar skill guidance"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 31.09,
+   "end_s": 31.11,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 32.79,
+   "end_s": 34.79,
+   "ok": true,
+   "note": "Launch Simple Calendar Pro and observe calendar view"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 36.75,
+   "end_s": 38.09,
+   "ok": true,
+   "note": "Inspect available calendar views via Change view"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 39.31,
+   "end_s": 40.2,
+   "ok": true,
+   "note": "Select Simple event list view and read events"
+  },
+  {
+   "step": 6,
+   "tool": "scroll_to",
+   "start_s": 43.45,
+   "end_s": 46.62,
+   "ok": true,
+   "note": "Scroll up in event list to check for earlier events"
+  },
+  {
+   "step": 7,
+   "tool": "scroll_to",
+   "start_s": 48.62,
+   "end_s": 52.54,
+   "ok": true,
+   "note": "Scroll to top of event list to see earliest sections"
+  },
+  {
+   "step": 8,
+   "tool": "map_app",
+   "start_s": 58.32,
+   "end_s": 90.69,
+   "ok": true,
+   "note": "Inventory all events in list view with map_app levels 1"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 95.55,
+   "end_s": 96.47,
+   "ok": true,
+   "note": "Switch to weekly view to cross-check next week's days"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 97.64,
+   "end_s": 98.74,
+   "ok": true,
+   "note": "Open weekly view and inspect week containing Oct 16-22"
+  },
+  {
+   "step": 11,
+   "tool": "swipe",
+   "start_s": 101.52,
+   "end_s": 103.21,
+   "ok": true,
+   "note": "Scroll week view to later hours to see evening events"
+  },
+  {
+   "step": 12,
+   "tool": "swipe",
+   "start_s": 105.26,
+   "end_s": 107.53,
+   "ok": true,
+   "note": "Swipe to next week page to check Sunday Oct 22"
+  },
+  {
+   "step": 13,
+   "tool": "swipe",
+   "start_s": 111.47,
+   "end_s": 111.48,
+   "ok": false,
+   "note": "Scroll week 43 view up to morning hours to check Oct 22"
+  },
+  {
+   "step": 14,
+   "tool": "swipe",
+   "start_s": 112.85,
+   "end_s": 114.53,
+   "ok": true,
+   "note": "Scroll week 43 view up to morning hours to check Oct 22"
+  },
+  {
+   "step": 15,
+   "tool": "get_ui_state",
+   "start_s": 116.95,
+   "end_s": 116.99,
+   "ok": true,
+   "note": "Final read before done"
+  },
+  {
+   "step": 16,
+   "tool": "done",
+   "start_s": 120.28,
+   "end_s": 120.28,
+   "ok": true,
+   "note": "Task complete; answer reported"
+  }
+ ]
+}

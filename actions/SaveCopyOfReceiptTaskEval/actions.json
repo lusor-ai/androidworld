@@ -1,0 +1,373 @@
+{
+ "task": "SaveCopyOfReceiptTaskEval",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 31.59,
+   "end_s": 31.6,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 33.19,
+   "end_s": 35.91,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.gallery.pro"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 37.17,
+   "end_s": 38.01,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 270,
+    "y": 566
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 39.28,
+   "end_s": 40.22,
+   "ok": true,
+   "args": {
+    "index": 9,
+    "hold_ms": 800
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 182,
+    "y": 476
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 41.67,
+   "end_s": 42.71,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "Toggle filename visibility",
+    "index": 5,
+    "x": 695,
+    "y": 212
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 43.83,
+   "end_s": 44.94,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 14,
+    "x": 1028,
+    "y": 212
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 46.24,
+   "end_s": 47.16,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 797,
+    "y": 464
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 48.32,
+   "end_s": 48.95,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 9,
+    "x": 842,
+    "y": 1673
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 49.77,
+   "end_s": 50.83,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 14,
+    "x": 1028,
+    "y": 212
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 51.7,
+   "end_s": 52.85,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 797,
+    "y": 842
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 53.93,
+   "end_s": 55.66,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": "Other folder",
+    "index": 8,
+    "x": 308,
+    "y": 2027
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 56.75,
+   "end_s": 57.35,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "Internal",
+    "index": 2,
+    "x": 229,
+    "y": 565
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 58.35,
+   "end_s": 58.94,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 551,
+    "y": 1475
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 60.0,
+   "end_s": 60.53,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 9,
+    "x": 842,
+    "y": 2027
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 62.05,
+   "end_s": 62.45,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": "Done",
+    "index": 10,
+    "x": 74,
+    "y": 212
+   }
+  },
+  {
+   "step": 16,
+   "tool": "key",
+   "start_s": 63.79,
+   "end_s": 64.85,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 65.87,
+   "end_s": 66.76,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": null,
+    "index": 10,
+    "x": 810,
+    "y": 566
+   }
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 68.41,
+   "end_s": 69.32,
+   "ok": true,
+   "args": {
+    "index": 9,
+    "hold_ms": 800
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 182,
+    "y": 476
+   }
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 70.25,
+   "end_s": 71.35,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 14,
+    "x": 1028,
+    "y": 212
+   }
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 72.23,
+   "end_s": 72.91,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 797,
+    "y": 464
+   }
+  },
+  {
+   "step": 21,
+   "tool": "tap",
+   "start_s": 74.32,
+   "end_s": 74.96,
+   "ok": true,
+   "args": {
+    "x": 842,
+    "y": 1673
+   }
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 75.84,
+   "end_s": 76.11,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": "Done",
+    "index": 10,
+    "x": 74,
+    "y": 212
+   }
+  },
+  {
+   "step": 23,
+   "tool": "key",
+   "start_s": 77.17,
+   "end_s": 77.64,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 24,
+   "tool": "done",
+   "start_s": 80.37,
+   "end_s": 80.37,
+   "ok": true,
+   "args": {
+    "summary": "I copied receipt_copy_proud_monkey.jpg from DCIM into Download in Simple Gallery Pro. The copy kept the same name: its Properties show Name \"receipt_copy_proud_monkey.jpg\", Path /storage/emulated/0/Download, size 14.6 kB, matching the original in DCIM. The folder list now shows 1 item in DCIM and 1 in Download.",
+    "evidence": {
+     "objective_evidence": "Properties dialog for the Download item showed Name \"receipt_copy_proud_monkey.jpg\" and Path \"/storage/emulated/0/Download\" with size 14.6 kB; the folder grid showed DCIM with 1 item and Download with 1 item; the original DCIM Properties showed the same name and size at /storage/emulated/0/DCIM.",
+     "key_signals": [
+      "Simple Gallery Pro directory grid: DCIM 1, Download 1",
+      "Copy to -> Select a folder -> Internal > Download -> OK completed",
+      "Download item Properties: receipt_copy_proud_monkey.jpg at /storage/emulated/0/Download, 14.6 kB, 500 x 500"
+     ]
+    },
+    "rows": [
+     {
+      "action": "Copied receipt_copy_proud_monkey.jpg from DCIM to Download with the same name",
+      "source_path": "/storage/emulated/0/DCIM/receipt_copy_proud_monkey.jpg",
+      "destination_path": "/storage/emulated/0/Download/receipt_copy_proud_monkey.jpg",
+      "size": "14.6 kB",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

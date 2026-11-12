@@ -1,0 +1,101 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SystemBluetoothTurnOnVerify",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 24.2,
+  "mobilerun_published_time_s": 108.0,
+  "speed_ratio": 0.224,
+  "lusor_cost_usd": 0.0061,
+  "mobilerun_published_actions": 4,
+  "mobilerun_est_cost_usd": 0.306,
+  "lusor_tool_calls": 7,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Turn bluetooth on.",
+  "final_answer": null,
+  "final_summary": "Bluetooth was already on when I opened the Bluetooth settings screen, so nothing needed changing. The \"Use Bluetooth\" switch shows as checked and the phone is visible as \"sdk_gphone64_x86_64\".",
+  "video_duration_s": 64.0,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 28.72,
+    "end_s": 28.74,
+    "ok": true,
+    "note": "Observe current screen; then open Settings/quick settings to turn Bluetooth on"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 29.57,
+    "end_s": 32.34,
+    "ok": true,
+    "note": "In Settings, find Bluetooth and toggle it on"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 33.41,
+    "end_s": 34.72,
+    "ok": true,
+    "note": "Open Connected devices to reach Bluetooth settings"
+   },
+   {
+    "step": 4,
+    "tool": "scroll_to",
+    "start_s": 36.11,
+    "end_s": 44.09,
+    "ok": true,
+    "note": "Scroll up in Connected devices to reveal Bluetooth toggle"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 44.78,
+    "end_s": 46.02,
+    "ok": true,
+    "note": "Tap Connection preferences, then Bluetooth"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 46.95,
+    "end_s": 48.11,
+    "ok": true,
+    "note": "On Bluetooth page, toggle Bluetooth on"
+   },
+   {
+    "step": 7,
+    "tool": "done",
+    "start_s": 49.83,
+    "end_s": 49.84,
+    "ok": true,
+    "note": "Task complete: Bluetooth verified on"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOnVerify/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOnVerify/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOnVerify/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOnVerify/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOnVerify/task.json"
+  }
+ }
+}

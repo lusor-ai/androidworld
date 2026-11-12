@@ -1,0 +1,115 @@
+{
+ "task": "SystemBrightnessMax",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.23,
+   "end_s": 29.25,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 30.27,
+   "end_s": 32.98,
+   "ok": true,
+   "args": {
+    "app": "com.android.settings"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "scroll_to",
+   "start_s": 33.72,
+   "end_s": 35.01,
+   "ok": true,
+   "args": {
+    "target": "Display"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.86,
+   "end_s": 37.14,
+   "ok": true,
+   "args": {
+    "index": 12
+   },
+   "tapped": {
+    "label": null,
+    "index": 12,
+    "x": 540,
+    "y": 1792
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.91,
+   "end_s": 38.34,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 590,
+    "y": 836
+   }
+  },
+  {
+   "step": 6,
+   "tool": "swipe",
+   "start_s": 39.77,
+   "end_s": 41.64,
+   "ok": true,
+   "args": {
+    "startX": 60,
+    "startY": 212,
+    "endX": 1100,
+    "endY": 212,
+    "durationMs": 500
+   }
+  },
+  {
+   "step": 7,
+   "tool": "key",
+   "start_s": 42.38,
+   "end_s": 42.77,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 8,
+   "tool": "done",
+   "start_s": 44.64,
+   "end_s": 44.65,
+   "ok": true,
+   "args": {
+    "summary": "Screen brightness is now set to the maximum. In Settings > Display, the brightness slider reads its top value (65535 of 65535) and the Brightness level row shows 100%.",
+    "evidence": {
+     "objective_evidence": "Settings > Display screen shows the Brightness level row summary \"100%\"; the brightness slider read Value 65535 (min 0, max 65535) after dragging it fully right.",
+     "key_signals": [
+      "Brightness slider value 65535 (max)",
+      "Brightness level row shows 100%"
+     ]
+    },
+    "rows": [
+     {
+      "setting": "Display brightness",
+      "value": "100% (slider max 65535)",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

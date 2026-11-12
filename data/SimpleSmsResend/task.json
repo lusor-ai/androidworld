@@ -1,0 +1,117 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SimpleSmsResend",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 24.2,
+  "mobilerun_published_time_s": 147.4,
+  "speed_ratio": 0.164,
+  "lusor_cost_usd": 0.0083,
+  "mobilerun_published_actions": 5,
+  "mobilerun_est_cost_usd": 0.383,
+  "lusor_tool_calls": 9,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Resend the message I just sent to Juan Alves in Simple SMS Messenger",
+  "final_answer": null,
+  "final_summary": "I resent your message to Juan Alves in Simple SMS Messenger. The thread now shows a second outgoing copy of \"Elementary, my dear Watson.\" right after the original, and the compose field is empty again. The app's long-press menu on that message offers only Properties, Forward, Select text and Select all, so I resent it by typing the identical text from the original message into the compose field and sending it.",
+  "video_duration_s": 87.8,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 51.06,
+    "end_s": 51.08,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 2,
+    "tool": "tap_element",
+    "start_s": 52.5,
+    "end_s": 53.54,
+    "ok": true,
+    "note": "Tap the last sent message to open its options menu"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 55.03,
+    "end_s": 56.01,
+    "ok": true,
+    "note": "Long press the last sent message to open context menu with Resend"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 57.1,
+    "end_s": 58.2,
+    "ok": true,
+    "note": "Tap More options in the selection bar to find Resend"
+   },
+   {
+    "step": 5,
+    "tool": "key",
+    "start_s": 60.5,
+    "end_s": 60.9,
+    "ok": true,
+    "note": "Dismiss the overflow menu and the selection bar"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 61.82,
+    "end_s": 62.42,
+    "ok": true,
+    "note": "Tap Done to exit selection mode"
+   },
+   {
+    "step": 7,
+    "tool": "type",
+    "start_s": 63.53,
+    "end_s": 65.88,
+    "ok": true,
+    "note": "Type the identical message text into the compose field"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 66.92,
+    "end_s": 68.2,
+    "ok": true,
+    "note": "Tap SMS send button"
+   },
+   {
+    "step": 9,
+    "tool": "done",
+    "start_s": 71.42,
+    "end_s": 71.43,
+    "ok": true,
+    "note": "Task complete; resent message verified in the thread"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleSmsResend/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SimpleSmsResend/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SimpleSmsResend/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SimpleSmsResend/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SimpleSmsResend/task.json"
+  }
+ }
+}

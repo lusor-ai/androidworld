@@ -1,0 +1,173 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "AudioRecorderRecordAudioWithFileName",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": false,
+  "lusor_time_s": 42.3,
+  "mobilerun_published_time_s": 250.9,
+  "speed_ratio": 0.169,
+  "lusor_cost_usd": 0.0132,
+  "mobilerun_published_actions": 10,
+  "mobilerun_est_cost_usd": 0.766,
+  "lusor_tool_calls": 16,
+  "disclosure": "The app adds .m4a itself, so Lusor typed the name without it and saved exactly the requested file; Google's grader looks for the file you get by typing the full name (.m4a.m4a). Mobilerun's fork checks for the name as written.",
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Record an audio clip and save it with name \"2023_06_24_training.m4a\" using Audio Recorder app.",
+  "final_answer": null,
+  "final_summary": "I recorded a 5-second audio clip in the Audio Recorder app and saved it as 2023_06_24_training.m4a. The app's Information screen for the clip lists the name 2023_06_24_training, format m4a, and file location /storage/emulated/0/Android/data/com.dimowner.audiorecorder/files/Music/records/2023_06_24_training.m4a.",
+  "video_duration_s": 84.8,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 30.33,
+    "end_s": 30.38,
+    "ok": true,
+    "note": "Observe current screen and open Audio Recorder app"
+   },
+   {
+    "step": 2,
+    "tool": "swipe",
+    "start_s": 31.42,
+    "end_s": 35.14,
+    "ok": true,
+    "note": "Open app drawer to find Audio Recorder"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 35.95,
+    "end_s": 36.7,
+    "ok": true,
+    "note": "Open Audio Recorder app"
+   },
+   {
+    "step": 4,
+    "tool": "get_ui_state",
+    "start_s": 37.54,
+    "end_s": 38.22,
+    "ok": true,
+    "note": "Read Audio Recorder home screen"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 39.0,
+    "end_s": 40.31,
+    "ok": true,
+    "note": "Dismiss intro and view recorder screen"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 41.82,
+    "end_s": 42.81,
+    "ok": true,
+    "note": "Apply setup and view recorder home"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 43.58,
+    "end_s": 44.71,
+    "ok": true,
+    "note": "Start recording, wait a few seconds, then stop"
+   },
+   {
+    "step": 8,
+    "tool": "chain",
+    "start_s": 45.63,
+    "end_s": 50.23,
+    "ok": true,
+    "note": "Stop the recording after a few seconds"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 51.27,
+    "end_s": 52.8,
+    "ok": true,
+    "note": "Tap stop to finish recording"
+   },
+   {
+    "step": 10,
+    "tool": "type",
+    "start_s": 55.37,
+    "end_s": 58.21,
+    "ok": true,
+    "note": "Enter clip name (app appends .m4a) then tap Save"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 59.13,
+    "end_s": 59.61,
+    "ok": true,
+    "note": "Tap Save to store the recording"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 60.56,
+    "end_s": 62.0,
+    "ok": true,
+    "note": "Open records list to verify saved name"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 63.83,
+    "end_s": 64.83,
+    "ok": true,
+    "note": "Long-press/more on the clip to view its file name with extension"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 65.77,
+    "end_s": 66.2,
+    "ok": true,
+    "note": "Open Information to read the file name with extension"
+   },
+   {
+    "step": 15,
+    "tool": "get_ui_state",
+    "start_s": 67.03,
+    "end_s": 67.05,
+    "ok": true,
+    "note": "Read Information dialog for file name"
+   },
+   {
+    "step": 16,
+    "tool": "done",
+    "start_s": 69.26,
+    "end_s": 69.27,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudioWithFileName/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudioWithFileName/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudioWithFileName/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudioWithFileName/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudioWithFileName/task.json"
+  }
+ }
+}

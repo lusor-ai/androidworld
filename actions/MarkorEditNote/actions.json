@@ -1,0 +1,148 @@
+{
+ "task": "MarkorEditNote",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.08,
+   "end_s": 30.1,
+   "ok": true,
+   "args": {
+    "path": "skill://markor/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.08,
+   "end_s": 30.1,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.23,
+   "end_s": 33.64,
+   "ok": true,
+   "args": {
+    "app": "net.gsantner.markor"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 34.43,
+   "end_s": 34.89,
+   "ok": true,
+   "args": {
+    "index": 13
+   },
+   "tapped": {
+    "label": "File note_6aamy.txt ",
+    "index": 13,
+    "x": 540,
+    "y": 623
+   }
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 36.18,
+   "end_s": 36.19,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 37.69,
+   "end_s": 45.5,
+   "ok": true,
+   "args": {
+    "index": 7,
+    "text": "It's a bird, it's a plane.\nThe night is dark and full of terrors.\n"
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 46.47,
+   "end_s": 46.88,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "Save",
+    "index": 4,
+    "x": 818,
+    "y": 201
+   }
+  },
+  {
+   "step": 8,
+   "tool": "key",
+   "start_s": 48.0,
+   "end_s": 48.42,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 9,
+   "tool": "key",
+   "start_s": 49.49,
+   "end_s": 50.42,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 51.43,
+   "end_s": 52.57,
+   "ok": true,
+   "args": {
+    "index": 13
+   },
+   "tapped": {
+    "label": "File note_6aamy.txt ",
+    "index": 13,
+    "x": 532,
+    "y": 623
+   }
+  },
+  {
+   "step": 11,
+   "tool": "done",
+   "start_s": 54.62,
+   "end_s": 54.62,
+   "ok": true,
+   "args": {
+    "summary": "I added \"It's a bird, it's a plane.\" as the first line of note_6aamy.txt in Markor, saved it, and reopened the note to confirm the saved text reads: \"It's a bird, it's a plane.\" followed by the original line \"The night is dark and full of terrors.\"",
+    "evidence": {
+     "objective_evidence": "Reopened note_6aamy shows editor content \"It's a bird, it's a plane.\\nThe night is dark and full of terrors.\\n\" with Save disabled (no unsaved changes).",
+     "key_signals": [
+      "File list showed note_6aamy.txt in Documents",
+      "Original note content was \"The night is dark and full of terrors.\\n\"",
+      "Editor read back prepended text before saving",
+      "After reopening, saved content includes the new first line"
+     ]
+    },
+    "rows": [
+     {
+      "note": "note_6aamy.txt",
+      "change": "Added \"It's a bird, it's a plane.\" as a new first line and saved",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

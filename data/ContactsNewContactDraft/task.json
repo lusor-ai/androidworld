@@ -1,0 +1,165 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "ContactsNewContactDraft",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 48.2,
+  "mobilerun_published_time_s": 215.0,
+  "speed_ratio": 0.224,
+  "lusor_cost_usd": 0.0191,
+  "mobilerun_published_actions": 10,
+  "mobilerun_est_cost_usd": 0.766,
+  "lusor_tool_calls": 15,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Go to the new contact screen and enter the following details: First Name: Eva, Last Name: Clark, Phone: 145-654-8510, Phone Label: Home. Do NOT hit save.",
+  "final_answer": null,
+  "final_summary": "I opened the new contact screen in Contacts and filled it in without saving: First name Eva, Last name Clark, Phone 145-654-8510, and the phone label set to Home. The form is still open on the Create contact screen with the Save button untouched.",
+  "video_duration_s": 88.5,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 28.8,
+    "end_s": 28.81,
+    "ok": true,
+    "note": "Observe the current screen to find the Contacts app"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 30.27,
+    "end_s": 31.71,
+    "ok": true,
+    "note": "Launch Contacts app"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 32.52,
+    "end_s": 36.52,
+    "ok": true,
+    "note": "Dismiss notification permission prompt"
+   },
+   {
+    "step": 4,
+    "tool": "tap",
+    "start_s": 37.74,
+    "end_s": 38.6,
+    "ok": true,
+    "note": "Dismiss tooltip overlay"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 39.82,
+    "end_s": 41.5,
+    "ok": true,
+    "note": "Tap Create contact FAB"
+   },
+   {
+    "step": 6,
+    "tool": "get_ui_state",
+    "start_s": 44.68,
+    "end_s": 44.71,
+    "ok": true,
+    "note": "Read full hints on the contact editor fields"
+   },
+   {
+    "step": 7,
+    "tool": "screenshot",
+    "start_s": 47.77,
+    "end_s": 49.13,
+    "ok": true,
+    "note": "Read visible field labels on new contact screen"
+   },
+   {
+    "step": 8,
+    "tool": "type",
+    "start_s": 51.65,
+    "end_s": 52.99,
+    "ok": true,
+    "note": "Enter first name Eva"
+   },
+   {
+    "step": 9,
+    "tool": "type",
+    "start_s": 54.14,
+    "end_s": 55.62,
+    "ok": true,
+    "note": "Enter last name Clark"
+   },
+   {
+    "step": 10,
+    "tool": "type",
+    "start_s": 56.97,
+    "end_s": 60.09,
+    "ok": true,
+    "note": "Enter phone number in Phone field"
+   },
+   {
+    "step": 11,
+    "tool": "get_ui_state",
+    "start_s": 61.06,
+    "end_s": 61.08,
+    "ok": true,
+    "note": "Scroll to phone field and type the number"
+   },
+   {
+    "step": 12,
+    "tool": "type",
+    "start_s": 62.1,
+    "end_s": 63.55,
+    "ok": true,
+    "note": "Enter phone number in Phone field"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 66.0,
+    "end_s": 68.2,
+    "ok": true,
+    "note": "Open phone label dropdown and choose Home"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 69.15,
+    "end_s": 70.08,
+    "ok": true,
+    "note": "Select Home as the phone label"
+   },
+   {
+    "step": 15,
+    "tool": "done",
+    "start_s": 74.21,
+    "end_s": 74.21,
+    "ok": true,
+    "note": "Report completion; nothing further needed"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/ContactsNewContactDraft/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/ContactsNewContactDraft/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/ContactsNewContactDraft/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/ContactsNewContactDraft/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/ContactsNewContactDraft/task.json"
+  }
+ }
+}

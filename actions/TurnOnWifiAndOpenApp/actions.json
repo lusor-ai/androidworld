@@ -1,0 +1,244 @@
+{
+ "task": "TurnOnWifiAndOpenApp",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.3,
+   "end_s": 29.32,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 30.53,
+   "end_s": 33.77,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 20,
+    "endX": 540,
+    "endY": 900
+   }
+  },
+  {
+   "step": 3,
+   "tool": "swipe",
+   "start_s": 34.67,
+   "end_s": 35.67,
+   "ok": true,
+   "args": {
+    "endX": 540,
+    "endY": 1500,
+    "startX": 540,
+    "startY": 600
+   }
+  },
+  {
+   "step": 4,
+   "tool": "swipe",
+   "start_s": 37.44,
+   "end_s": 41.48,
+   "ok": true,
+   "args": {
+    "endX": 540,
+    "endY": 2000,
+    "durationMs": 800,
+    "startX": 540,
+    "startY": 30
+   }
+  },
+  {
+   "step": 5,
+   "tool": "swipe",
+   "start_s": 43.04,
+   "end_s": 45.14,
+   "ok": true,
+   "args": {
+    "durationMs": 300,
+    "endX": 950,
+    "endY": 950,
+    "startX": 150,
+    "startY": 950
+   }
+  },
+  {
+   "step": 6,
+   "tool": "swipe",
+   "start_s": 46.3,
+   "end_s": 48.41,
+   "ok": true,
+   "args": {
+    "durationMs": 300,
+    "endX": 950,
+    "endY": 950,
+    "startX": 150,
+    "startY": 950
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 49.79,
+   "end_s": 52.06,
+   "ok": true,
+   "args": {
+    "index": 18
+   },
+   "tapped": {
+    "label": null,
+    "index": 18,
+    "x": 860,
+    "y": 2263
+   }
+  },
+  {
+   "step": 8,
+   "tool": "get_ui_state",
+   "start_s": 52.67,
+   "end_s": 53.06,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 53.98,
+   "end_s": 55.69,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 540,
+    "y": 886
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 56.97,
+   "end_s": 59.25,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 543,
+    "y": 701
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 60.01,
+   "end_s": 60.85,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 965,
+    "y": 889
+   }
+  },
+  {
+   "step": 12,
+   "tool": "key",
+   "start_s": 62.33,
+   "end_s": 63.16,
+   "ok": true,
+   "args": {
+    "key": "home",
+    "plan": "[\"Observe current screen\", \"Turn on Wi-Fi\", \"Open the contacts app\"]}"
+   }
+  },
+  {
+   "step": 13,
+   "tool": "launch",
+   "start_s": 64.15,
+   "end_s": 66.27,
+   "ok": true,
+   "args": {
+    "app": "com.google.android.contacts"
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 67.99,
+   "end_s": 71.07,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "Don’t allow",
+    "index": 5,
+    "x": 540,
+    "y": 1534
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap",
+   "start_s": 72.02,
+   "end_s": 73.25,
+   "ok": true,
+   "args": {
+    "x": 540,
+    "y": 1750
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap",
+   "start_s": 74.12,
+   "end_s": 75.16,
+   "ok": true,
+   "args": {
+    "x": 540,
+    "y": 1600
+   }
+  },
+  {
+   "step": 17,
+   "tool": "done",
+   "start_s": 77.1,
+   "end_s": 77.1,
+   "ok": true,
+   "args": {
+    "summary": "Wi-Fi is now on and the Contacts app is open on its Contacts tab (it shows \"No contacts yet\" on this device).",
+    "evidence": {
+     "objective_evidence": "Settings > Network & internet > Internet showed the Wi-Fi switch as Checked with \"Searching for networks…\" after tapping it. The Google Contacts app then launched and now shows its Contacts list screen with the Contacts bottom tab selected.",
+     "key_signals": [
+      "Wi-Fi switch state: Checked",
+      "Internet page showed network list after enabling",
+      "Contacts app screen with open_search_bar and Contacts tab Selected"
+     ]
+    },
+    "rows": [
+     {
+      "action": "Turn on Wi-Fi",
+      "result": "Wi-Fi switch is on (Checked) in Settings > Network & internet > Internet",
+      "lusor_status": "succeeded"
+     },
+     {
+      "action": "Open the contacts app",
+      "result": "Google Contacts opened on its Contacts tab",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

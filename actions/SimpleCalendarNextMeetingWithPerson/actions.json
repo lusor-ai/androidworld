@@ -1,0 +1,345 @@
+{
+ "task": "SimpleCalendarNextMeetingWithPerson",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 72.01,
+   "end_s": 72.03,
+   "ok": true,
+   "args": {
+    "path": "skill://simple-calendar/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 72.01,
+   "end_s": 72.03,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 73.08,
+   "end_s": 75.57,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.calendar.pro"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 76.39,
+   "end_s": 77.16,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 387,
+    "y": 212
+   }
+  },
+  {
+   "step": 5,
+   "tool": "type",
+   "start_s": 78.39,
+   "end_s": 80.52,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "text": "Muhammad"
+   }
+  },
+  {
+   "step": 6,
+   "tool": "map_app",
+   "start_s": 81.46,
+   "end_s": 81.51,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 7,
+   "tool": "key",
+   "start_s": 82.13,
+   "end_s": 82.58,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 8,
+   "tool": "map_app",
+   "start_s": 84.01,
+   "end_s": 85.06,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 88.4,
+   "end_s": 89.09,
+   "ok": true,
+   "args": {
+    "index": 58
+   },
+   "tapped": {
+    "label": null,
+    "index": 58,
+    "x": 540,
+    "y": 541
+   }
+  },
+  {
+   "step": 10,
+   "tool": "get_ui_state",
+   "start_s": 89.92,
+   "end_s": 89.94,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 11,
+   "tool": "key",
+   "start_s": 91.75,
+   "end_s": 92.39,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 12,
+   "tool": "type",
+   "start_s": 100.31,
+   "end_s": 102.02,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "text": "e"
+   }
+  },
+  {
+   "step": 13,
+   "tool": "key",
+   "start_s": 102.9,
+   "end_s": 103.28,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 104.88,
+   "end_s": 105.73,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "e",
+    "index": 3,
+    "x": 387,
+    "y": 212
+   }
+  },
+  {
+   "step": 15,
+   "tool": "get_ui_state",
+   "start_s": 106.67,
+   "end_s": 106.73,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 16,
+   "tool": "type",
+   "start_s": 109.11,
+   "end_s": 109.95,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "text": "e",
+    "clear": false
+   }
+  },
+  {
+   "step": 17,
+   "tool": "map_app",
+   "start_s": 112.12,
+   "end_s": 112.16,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 18,
+   "tool": "key",
+   "start_s": 113.04,
+   "end_s": 113.53,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 19,
+   "tool": "scroll_to",
+   "start_s": 114.42,
+   "end_s": 120.39,
+   "ok": true,
+   "args": {
+    "page": true
+   }
+  },
+  {
+   "step": 20,
+   "tool": "type",
+   "start_s": 126.02,
+   "end_s": 127.14,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "text": "t"
+   }
+  },
+  {
+   "step": 21,
+   "tool": "get_ui_state",
+   "start_s": 128.16,
+   "end_s": 128.19,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 131.59,
+   "end_s": 132.66,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "Change view",
+    "index": 4,
+    "x": 732,
+    "y": 212
+   }
+  },
+  {
+   "step": 23,
+   "tool": "key",
+   "start_s": 137.59,
+   "end_s": 138.01,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 24,
+   "tool": "chain",
+   "start_s": 139.9,
+   "end_s": 141.36,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "top_toolbar_search"
+      }
+     },
+     {
+      "verb": "clear",
+      "params": {
+       "target": "top_toolbar_search"
+      }
+     },
+     {
+      "verb": "type",
+      "params": {
+       "target": "top_toolbar_search",
+       "text": "Muhammad"
+      }
+     },
+     {
+      "verb": "back"
+     },
+     {
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 142.57,
+   "end_s": 143.18,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "t",
+    "index": 3,
+    "x": 387,
+    "y": 212
+   }
+  },
+  {
+   "step": 26,
+   "tool": "type",
+   "start_s": 144.27,
+   "end_s": 146.3,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "text": "Muhammad"
+   }
+  },
+  {
+   "step": 27,
+   "tool": "done",
+   "start_s": 148.83,
+   "end_s": 148.84,
+   "ok": true,
+   "args": {
+    "summary": "Your next meeting with Muhammad is Drinks with Muhammad on October 15 2023 at 12:00. It's the only event on the calendar involving Muhammad (it runs 12:00 to 12:30 today and doesn't repeat).",
+    "rows": [
+     {
+      "answer": "October 15 2023 12:00",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "Searching \"Muhammad\" in Simple Calendar Pro returned exactly one event: \"Drinks with Muhammad\", section OCTOBER, day \"15 Sunday\", time \"12:00 - 12:30\". Opening that event showed title \"Drinks with Muhammad\", start October 15 (Sun) 12:00, end October 15 (Sun) 12:30, repetition \"No repetition\". The search results list was mapped to its proven end with only that event.",
+     "key_signals": [
+      "Search for Muhammad returns a single result, end of list proven",
+      "Event record fields: October 15 (Sun), 12:00 to 12:30, no repetition",
+      "Device date Sun 2023-10-15"
+     ]
+    }
+   }
+  }
+ ]
+}

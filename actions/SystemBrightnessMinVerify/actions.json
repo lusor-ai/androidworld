@@ -1,0 +1,104 @@
+{
+ "task": "SystemBrightnessMinVerify",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 28.48,
+   "end_s": 28.5,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 29.37,
+   "end_s": 32.06,
+   "ok": true,
+   "args": {
+    "app": "com.android.settings"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "scroll_to",
+   "start_s": 33.26,
+   "end_s": 34.46,
+   "ok": true,
+   "args": {
+    "target": "Display"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.15,
+   "end_s": 36.52,
+   "ok": true,
+   "args": {
+    "index": 13
+   },
+   "tapped": {
+    "label": null,
+    "index": 13,
+    "x": 540,
+    "y": 1942
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.72,
+   "end_s": 38.52,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 545,
+    "y": 836
+   }
+  },
+  {
+   "step": 6,
+   "tool": "key",
+   "start_s": 40.44,
+   "end_s": 40.94,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 7,
+   "tool": "done",
+   "start_s": 42.69,
+   "end_s": 42.69,
+   "ok": true,
+   "args": {
+    "summary": "Brightness is already at the minimum: the Display settings show Brightness level 0%, and the brightness slider reads value 0 of a minimum 0, so nothing needed changing.",
+    "evidence": {
+     "objective_evidence": "Settings > Display shows Brightness level summary \"0%\"; the brightness slider dialog reported SeekBar \"Display brightness\" Value 0 (min 0, max 65535).",
+     "key_signals": [
+      "Display settings screen listed Brightness level 0%",
+      "Slider value 0 equals the minimum of 0",
+      "Final Display screen still shows 0%"
+     ]
+    },
+    "rows": [
+     {
+      "setting": "Brightness level",
+      "value": "0%",
+      "slider_raw": "0 (min 0, max 65535)",
+      "change_needed": "none, already at minimum",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

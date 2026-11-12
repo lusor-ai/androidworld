@@ -1,0 +1,145 @@
+{
+ "task": "SystemBrightnessMin",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 28.5,
+   "end_s": 28.52,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 29.68,
+   "end_s": 32.59,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 10,
+    "endX": 540,
+    "endY": 1200,
+    "durationMs": 400
+   }
+  },
+  {
+   "step": 3,
+   "tool": "swipe",
+   "start_s": 33.66,
+   "end_s": 36.74,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 400,
+    "endX": 540,
+    "endY": 1800,
+    "durationMs": 400
+   }
+  },
+  {
+   "step": 4,
+   "tool": "swipe",
+   "start_s": 38.04,
+   "end_s": 40.78,
+   "ok": true,
+   "args": {
+    "startX": 1030,
+    "startY": 420,
+    "endX": 5,
+    "endY": 420,
+    "durationMs": 600
+   }
+  },
+  {
+   "step": 5,
+   "tool": "swipe",
+   "start_s": 42.01,
+   "end_s": 44.69,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 10,
+    "endX": 540,
+    "endY": 1800,
+    "durationMs": 300
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap",
+   "start_s": 46.4,
+   "end_s": 47.17,
+   "ok": true,
+   "args": {
+    "x": 60,
+    "y": 420,
+    "capture": true
+   }
+  },
+  {
+   "step": 7,
+   "tool": "swipe",
+   "start_s": 49.2,
+   "end_s": 51.05,
+   "ok": true,
+   "args": {
+    "startX": 62,
+    "startY": 420,
+    "endX": 1,
+    "endY": 420,
+    "durationMs": 1000,
+    "capture": true
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap",
+   "start_s": 52.98,
+   "end_s": 53.31,
+   "ok": true,
+   "args": {
+    "x": 43,
+    "y": 420,
+    "capture": true
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap",
+   "start_s": 55.6,
+   "end_s": 55.92,
+   "ok": true,
+   "args": {
+    "x": 42,
+    "y": 420,
+    "capture": true
+   }
+  },
+  {
+   "step": 10,
+   "tool": "done",
+   "start_s": 57.49,
+   "end_s": 57.49,
+   "ok": true,
+   "args": {
+    "summary": "Brightness is now at the minimum: the quick settings brightness slider reads 0 (min 0, max 65535).",
+    "evidence": {
+     "objective_evidence": "Quick settings Display brightness SeekBar shows \"Value 0 (min 0, max 65535)\" after tapping the slider's leftmost position.",
+     "key_signals": [
+      "SeekBar id=slider label \"Display brightness\" Value 0",
+      "min 0, max 65535"
+     ]
+    },
+    "rows": [
+     {
+      "answer": "brightness set to 0",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

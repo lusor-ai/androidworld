@@ -1,0 +1,224 @@
+{
+ "task": "MarkorCreateNoteFromClipboard",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 36.94,
+   "end_s": 36.96,
+   "ok": true,
+   "args": {
+    "path": "skill://markor/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 36.94,
+   "end_s": 36.96,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 38.24,
+   "end_s": 40.74,
+   "ok": true,
+   "args": {
+    "app": "net.gsantner.markor"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 42.29,
+   "end_s": 43.6,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "Create a new file or folder",
+    "index": 11,
+    "x": 965,
+    "y": 2075
+   }
+  },
+  {
+   "step": 5,
+   "tool": "type",
+   "start_s": 44.92,
+   "end_s": 47.78,
+   "ok": true,
+   "args": {
+    "index": 2,
+    "text": "copy_bold_pig"
+   }
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 49.98,
+   "end_s": 51.08,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "text": ".txt"
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 52.17,
+   "end_s": 53.5,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 9,
+    "x": 922,
+    "y": 1112
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 54.89,
+   "end_s": 56.05,
+   "ok": true,
+   "args": {
+    "index": 7
+   },
+   "tapped": {
+    "label": null,
+    "index": 7,
+    "x": 540,
+    "y": 1299
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 57.16,
+   "end_s": 58.63,
+   "ok": true,
+   "args": {
+    "index": 7,
+    "hold_ms": 900
+   },
+   "tapped": {
+    "label": null,
+    "index": 7,
+    "x": 540,
+    "y": 836
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 59.64,
+   "end_s": 60.72,
+   "ok": true,
+   "args": {
+    "index": 19
+   },
+   "tapped": {
+    "label": "Paste",
+    "index": 19,
+    "x": 125,
+    "y": 233
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 61.78,
+   "end_s": 62.02,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "Save",
+    "index": 4,
+    "x": 818,
+    "y": 201
+   }
+  },
+  {
+   "step": 12,
+   "tool": "key",
+   "start_s": 62.99,
+   "end_s": 63.42,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 13,
+   "tool": "key",
+   "start_s": 64.35,
+   "end_s": 65.26,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 66.3,
+   "end_s": 66.8,
+   "ok": true,
+   "args": {
+    "index": 13
+   },
+   "tapped": {
+    "label": "File copy_bold_pig.txt ",
+    "index": 13,
+    "x": 524,
+    "y": 623
+   }
+  },
+  {
+   "step": 15,
+   "tool": "get_ui_state",
+   "start_s": 68.77,
+   "end_s": 68.8,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 16,
+   "tool": "done",
+   "start_s": 71.14,
+   "end_s": 71.14,
+   "ok": true,
+   "args": {
+    "summary": "I created the note copy_bold_pig.txt in Markor, pasted the clipboard content into it, and saved it. Reopening the file shows the saved text is still there.",
+    "evidence": {
+     "objective_evidence": "Markor's file list shows a File row \"copy_bold_pig.txt\" (10/15/2023, 15:34); reopening it shows the editor title \"copy_bold_pig\" with body \"UOdbdqL45A\" and the Save action greyed out, meaning the content is saved.",
+     "key_signals": [
+      "New file dialog: name copy_bold_pig with extension .txt accepted with OK",
+      "Long press in editor showed a Paste menu item; after tapping it the editor body showed the clipboard text",
+      "Save became disabled after tapping Save, indicating the note was written to disk"
+     ]
+    },
+    "rows": [
+     {
+      "file": "copy_bold_pig.txt",
+      "action": "created note, pasted clipboard content, saved",
+      "content": "UOdbdqL45A",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

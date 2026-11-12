@@ -1,0 +1,63 @@
+{
+ "task": "ClockStopWatchRunning",
+ "video_duration_s": 58.9,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.31,
+   "end_s": 29.33,
+   "ok": true,
+   "note": "Observe screen and find stopwatch app"
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 30.4,
+   "end_s": 32.53,
+   "ok": true,
+   "note": "Open app drawer to find Clock app"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 33.19,
+   "end_s": 36.44,
+   "ok": true,
+   "note": "Tap Clock app icon"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 37.19,
+   "end_s": 38.07,
+   "ok": true,
+   "note": "Tap Stopwatch tab"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 38.99,
+   "end_s": 39.63,
+   "ok": true,
+   "note": "Tap Start button and verify stopwatch counting"
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 40.72,
+   "end_s": 41.02,
+   "ok": true,
+   "note": "Verify stopwatch is running and finish with done()"
+  },
+  {
+   "step": 7,
+   "tool": "done",
+   "start_s": 42.97,
+   "end_s": 42.97,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

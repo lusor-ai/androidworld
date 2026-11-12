@@ -1,0 +1,123 @@
+{
+ "task": "ClockTimerEntry",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 30.34,
+   "end_s": 30.36,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 31.64,
+   "end_s": 34.2,
+   "ok": true,
+   "args": {
+    "app": "com.google.android.deskclock"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 35.81,
+   "end_s": 36.7,
+   "ok": true,
+   "args": {
+    "index": 7
+   },
+   "tapped": {
+    "label": "Timer",
+    "index": 7,
+    "x": 540,
+    "y": 2232
+   }
+  },
+  {
+   "step": 4,
+   "tool": "chain",
+   "start_s": 39.81,
+   "end_s": 42.59,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "1"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "4"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "1"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "4"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "1"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "7"
+      }
+     },
+     {
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 44.41,
+   "end_s": 44.43,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 6,
+   "tool": "done",
+   "start_s": 46.86,
+   "end_s": 46.86,
+   "ok": true,
+   "args": {
+    "summary": "The timer is set up in the Clock app to 14h 14m 17s and has not been started; the screen still shows the Start button, meaning nothing is running.",
+    "evidence": {
+     "objective_evidence": "Clock app Timer tab displays \"14h 14m 17s\" in the timer setup and the floating action button still reads \"Start\", so the countdown was not started.",
+     "key_signals": [
+      "timer_setup_time TextView = \"14h 14m 17s\"",
+      "fab button label = \"Start\" (not Pause/Stop)"
+     ]
+    },
+    "rows": [
+     {
+      "timer": "14 hours, 14 minutes, 17 seconds",
+      "started": false,
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

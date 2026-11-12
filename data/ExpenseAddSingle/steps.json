@@ -1,0 +1,143 @@
+{
+ "task": "ExpenseAddSingle",
+ "video_duration_s": 83.4,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.98,
+   "end_s": 30.0,
+   "ok": true,
+   "note": "Observe current screen to locate the Pro Expense app"
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 31.22,
+   "end_s": 33.25,
+   "ok": true,
+   "note": "Open app drawer to find Pro Expense app"
+  },
+  {
+   "step": 3,
+   "tool": "swipe",
+   "start_s": 34.23,
+   "end_s": 35.83,
+   "ok": true,
+   "note": "Scroll app drawer to find Pro Expense"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 36.72,
+   "end_s": 37.8,
+   "ok": true,
+   "note": "Tap Pro Expense app icon and observe its home screen"
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 38.51,
+   "end_s": 40.33,
+   "ok": true,
+   "note": "Read Pro Expense home screen after splash"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 41.37,
+   "end_s": 42.71,
+   "ok": true,
+   "note": "Tap add expense button and observe form"
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 43.91,
+   "end_s": 46.14,
+   "ok": true,
+   "note": "Type amount 284.16 into amount field"
+  },
+  {
+   "step": 8,
+   "tool": "type",
+   "start_s": 47.01,
+   "end_s": 48.04,
+   "ok": true,
+   "note": "Scroll category list right to find Education and select it"
+  },
+  {
+   "step": 9,
+   "tool": "swipe",
+   "start_s": 49.26,
+   "end_s": 51.02,
+   "ok": true,
+   "note": "Scroll category row right to find Education"
+  },
+  {
+   "step": 10,
+   "tool": "swipe",
+   "start_s": 52.17,
+   "end_s": 53.73,
+   "ok": true,
+   "note": "Scroll category row further to find Education"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 55.2,
+   "end_s": 55.63,
+   "ok": true,
+   "note": "Select Education category and verify it is checked"
+  },
+  {
+   "step": 12,
+   "tool": "type",
+   "start_s": 56.77,
+   "end_s": 59.78,
+   "ok": true,
+   "note": "Type note and verify all fields before saving"
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 60.65,
+   "end_s": 61.65,
+   "ok": true,
+   "note": "Tap SAVE and verify the entry appears in the list"
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 62.89,
+   "end_s": 63.61,
+   "ok": true,
+   "note": "Open the saved Library Fees entry to read back category and note"
+  },
+  {
+   "step": 15,
+   "tool": "get_ui_state",
+   "start_s": 64.47,
+   "end_s": 64.48,
+   "ok": true,
+   "note": "Read the opened Library Fees detail screen"
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 65.97,
+   "end_s": 66.67,
+   "ok": true,
+   "note": "Close the detail sheet and read the final home screen"
+  },
+  {
+   "step": 17,
+   "tool": "done",
+   "start_s": 68.73,
+   "end_s": 68.73,
+   "ok": true,
+   "note": "Task complete; expense saved and verified"
+  }
+ ]
+}

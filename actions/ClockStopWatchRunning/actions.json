@@ -1,0 +1,112 @@
+{
+ "task": "ClockStopWatchRunning",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.31,
+   "end_s": 29.33,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 30.4,
+   "end_s": 32.53,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1800,
+    "endX": 540,
+    "endY": 600,
+    "durationMs": 300
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 33.19,
+   "end_s": 36.44,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": "Clock",
+    "index": 10,
+    "x": 178,
+    "y": 1513
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 37.19,
+   "end_s": 38.07,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": "Stopwatch",
+    "index": 8,
+    "x": 756,
+    "y": 2232
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 38.99,
+   "end_s": 39.63,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "Start",
+    "index": 4,
+    "x": 540,
+    "y": 1959
+   }
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 40.72,
+   "end_s": 41.02,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 7,
+   "tool": "done",
+   "start_s": 42.97,
+   "end_s": 42.97,
+   "ok": true,
+   "args": {
+    "summary": "The stopwatch is running. I opened the Clock app, switched to the Stopwatch tab and pressed Start; it now shows 00:01.69 and is still counting, with the button changed to Pause.",
+    "evidence": {
+     "objective_evidence": "Clock app Stopwatch screen shows the time reading \"01\" with hundredths \"69\", the center button labelled \"Pause\", and Reset/Lap buttons present, confirming the stopwatch is actively running.",
+     "key_signals": [
+      "Clock app toolbar title \"Stopwatch\"",
+      "start button changed from \"Start\" to \"Pause\"",
+      "stopwatch_hundredths_text advanced from 20 to 69"
+     ]
+    },
+    "rows": [
+     {
+      "action": "Start stopwatch",
+      "app": "Clock",
+      "state": "running",
+      "reading": "00:01.69",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

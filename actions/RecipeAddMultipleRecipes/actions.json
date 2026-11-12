@@ -1,0 +1,582 @@
+{
+ "task": "RecipeAddMultipleRecipes",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.84,
+   "end_s": 30.86,
+   "ok": true,
+   "args": {
+    "path": "skill://broccoli/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.84,
+   "end_s": 30.86,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.64,
+   "end_s": 34.38,
+   "ok": true,
+   "args": {
+    "app": "com.flauschcode.broccoli"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.17,
+   "end_s": 36.74,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "New Recipe",
+    "index": 5,
+    "x": 965,
+    "y": 2222
+   }
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 37.66,
+   "end_s": 37.68,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 42.11,
+   "end_s": 45.79,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Sweet Potato and Black Bean Tacos",
+    "capture": true
+   }
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 47.02,
+   "end_s": 50.69,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 10,
+    "text": "A quick and easy meal, perfect for busy weekdays."
+   }
+  },
+  {
+   "step": 8,
+   "tool": "key",
+   "start_s": 51.58,
+   "end_s": 51.92,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 9,
+   "tool": "type",
+   "start_s": 52.94,
+   "end_s": 55.22,
+   "ok": true,
+   "args": {
+    "index": 14,
+    "text": "3-4 servings"
+   }
+  },
+  {
+   "step": 10,
+   "tool": "key",
+   "start_s": 56.15,
+   "end_s": 56.52,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 11,
+   "tool": "type",
+   "start_s": 58.15,
+   "end_s": 59.62,
+   "ok": true,
+   "args": {
+    "index": 16,
+    "text": "4 hrs"
+   }
+  },
+  {
+   "step": 12,
+   "tool": "key",
+   "start_s": 60.67,
+   "end_s": 61.01,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 13,
+   "tool": "type",
+   "start_s": 61.75,
+   "end_s": 64.12,
+   "ok": true,
+   "args": {
+    "index": 18,
+    "text": "as desired"
+   }
+  },
+  {
+   "step": 14,
+   "tool": "key",
+   "start_s": 64.87,
+   "end_s": 65.21,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 15,
+   "tool": "type",
+   "start_s": 66.18,
+   "end_s": 86.39,
+   "ok": true,
+   "args": {
+    "index": 20,
+    "text": "Roast sweet potato cubes, mix with black beans, and use as filling for tacos. Top with avocado and cilantro lime sauce. Try adding a pinch of your favorite spices for extra flavor."
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 87.54,
+   "end_s": 89.62,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 2
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 2,
+    "x": 954,
+    "y": 201
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 90.76,
+   "end_s": 91.82,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 4,
+    "x": 74,
+    "y": 202
+   }
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 94.69,
+   "end_s": 95.75,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 11
+   },
+   "tapped": {
+    "label": "New Recipe",
+    "index": 11,
+    "x": 934,
+    "y": 2222
+   }
+  },
+  {
+   "step": 19,
+   "tool": "type",
+   "start_s": 99.59,
+   "end_s": 102.57,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 5,
+    "text": "Salmon with Dill Sauce"
+   }
+  },
+  {
+   "step": 20,
+   "tool": "type",
+   "start_s": 103.7,
+   "end_s": 108.03,
+   "ok": true,
+   "args": {
+    "index": 10,
+    "text": "A quick and easy meal, perfect for busy weekdays."
+   }
+  },
+  {
+   "step": 21,
+   "tool": "key",
+   "start_s": 108.97,
+   "end_s": 109.34,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 22,
+   "tool": "type",
+   "start_s": 110.32,
+   "end_s": 112.7,
+   "ok": true,
+   "args": {
+    "index": 14,
+    "text": "3-4 servings"
+   }
+  },
+  {
+   "step": 23,
+   "tool": "key",
+   "start_s": 113.65,
+   "end_s": 114.11,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 24,
+   "tool": "type",
+   "start_s": 115.11,
+   "end_s": 117.33,
+   "ok": true,
+   "args": {
+    "index": 16,
+    "text": "10 mins"
+   }
+  },
+  {
+   "step": 25,
+   "tool": "key",
+   "start_s": 118.47,
+   "end_s": 119.03,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 26,
+   "tool": "type",
+   "start_s": 119.82,
+   "end_s": 122.73,
+   "ok": true,
+   "args": {
+    "index": 18,
+    "text": "per individual taste"
+   }
+  },
+  {
+   "step": 27,
+   "tool": "key",
+   "start_s": 123.54,
+   "end_s": 123.93,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 28,
+   "tool": "type",
+   "start_s": 124.85,
+   "end_s": 141.6,
+   "ok": true,
+   "args": {
+    "index": 20,
+    "text": "Bake salmon fillets and serve with a sauce made from Greek yogurt, dill, lemon juice, and garlic. Try adding a pinch of your favorite spices for extra flavor."
+   }
+  },
+  {
+   "step": 29,
+   "tool": "tap_element",
+   "start_s": 142.65,
+   "end_s": 144.52,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 2
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 2,
+    "x": 954,
+    "y": 201
+   }
+  },
+  {
+   "step": 30,
+   "tool": "tap_element",
+   "start_s": 145.69,
+   "end_s": 146.82,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 4,
+    "x": 74,
+    "y": 202
+   }
+  },
+  {
+   "step": 31,
+   "tool": "tap_element",
+   "start_s": 147.8,
+   "end_s": 149.12,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 11
+   },
+   "tapped": {
+    "label": "New Recipe",
+    "index": 11,
+    "x": 965,
+    "y": 2222
+   }
+  },
+  {
+   "step": 32,
+   "tool": "type",
+   "start_s": 150.32,
+   "end_s": 153.19,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 5,
+    "text": "Caprese Salad Skewers"
+   }
+  },
+  {
+   "step": 33,
+   "tool": "type",
+   "start_s": 154.17,
+   "end_s": 157.54,
+   "ok": true,
+   "args": {
+    "index": 10,
+    "text": "A quick and easy meal, perfect for busy weekdays."
+   }
+  },
+  {
+   "step": 34,
+   "tool": "key",
+   "start_s": 158.64,
+   "end_s": 159.1,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 35,
+   "tool": "type",
+   "start_s": 160.14,
+   "end_s": 162.5,
+   "ok": true,
+   "args": {
+    "index": 14,
+    "text": "8 servings"
+   }
+  },
+  {
+   "step": 36,
+   "tool": "key",
+   "start_s": 163.68,
+   "end_s": 164.13,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 37,
+   "tool": "type",
+   "start_s": 165.15,
+   "end_s": 167.01,
+   "ok": true,
+   "args": {
+    "index": 16,
+    "text": "1 hrs"
+   }
+  },
+  {
+   "step": 38,
+   "tool": "key",
+   "start_s": 167.92,
+   "end_s": 168.32,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 39,
+   "tool": "type",
+   "start_s": 169.32,
+   "end_s": 171.7,
+   "ok": true,
+   "args": {
+    "index": 18,
+    "text": "as needed"
+   }
+  },
+  {
+   "step": 40,
+   "tool": "key",
+   "start_s": 172.68,
+   "end_s": 173.14,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 41,
+   "tool": "type",
+   "start_s": 174.17,
+   "end_s": 190.64,
+   "ok": true,
+   "args": {
+    "index": 20,
+    "text": "Thread cherry tomatoes, basil leaves, and mozzarella balls onto skewers. Drizzle with balsamic glaze. Garnish with fresh herbs for a more vibrant taste."
+   }
+  },
+  {
+   "step": 42,
+   "tool": "tap_element",
+   "start_s": 191.77,
+   "end_s": 193.11,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 2
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 2,
+    "x": 954,
+    "y": 201
+   }
+  },
+  {
+   "step": 43,
+   "tool": "tap_element",
+   "start_s": 194.27,
+   "end_s": 195.43,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 4,
+    "x": 74,
+    "y": 202
+   }
+  },
+  {
+   "step": 44,
+   "tool": "map_app",
+   "start_s": 197.07,
+   "end_s": 210.29,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 45,
+   "tool": "done",
+   "start_s": 213.73,
+   "end_s": 213.74,
+   "ok": true,
+   "args": {
+    "summary": "I added all three recipes to Broccoli and checked each one after saving. Sweet Potato and Black Bean Tacos shows 3-4 servings, 4 hrs, \"as desired\" ingredients and the full directions; Salmon with Dill Sauce shows 3-4 servings, 10 mins, \"per individual taste\"; and Caprese Salad Skewers shows 8 servings, 1 hrs, \"as needed\". All three carry the description \"A quick and easy meal, perfect for busy weekdays.\" The list now holds 13 recipes, including these new entries. Note that the app already had a Caprese Salad Skewers and a Salmon with Dill Sauce with a different description (\"An ideal recipe for experimenting with different flavors and ingredients.\"), so those names now appear twice; I left the older ones untouched.",
+    "rows": [
+     {
+      "title": "Sweet Potato and Black Bean Tacos",
+      "servings": "3-4 servings",
+      "preparation_time": "4 hrs",
+      "ingredients": "as desired",
+      "description": "A quick and easy meal, perfect for busy weekdays.",
+      "lusor_status": "succeeded"
+     },
+     {
+      "title": "Salmon with Dill Sauce",
+      "servings": "3-4 servings",
+      "preparation_time": "10 mins",
+      "ingredients": "per individual taste",
+      "description": "A quick and easy meal, perfect for busy weekdays.",
+      "lusor_status": "succeeded"
+     },
+     {
+      "title": "Caprese Salad Skewers",
+      "servings": "8 servings",
+      "preparation_time": "1 hrs",
+      "ingredients": "as needed",
+      "description": "A quick and easy meal, perfect for busy weekdays.",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "Each saved recipe's detail page was read back: Sweet Potato and Black Bean Tacos with 3-4 servings / 4 hrs / as desired / full directions; Salmon with Dill Sauce with 3-4 servings / 10 mins / per individual taste; Caprese Salad Skewers with 8 servings / 1 hrs / as needed, each with description 'A quick and easy meal, perfect for busy weekdays.'",
+     "key_signals": [
+      "Recipe list after changes shows 13 titles, with new rows for Caprese Salad Skewers, Salmon with Dill Sauce and Sweet Potato and Black Bean Tacos carrying the requested descriptions",
+      "Pre-existing Caprese Salad Skewers and Salmon with Dill Sauce rows still show the older 'An ideal recipe for experimenting...' description"
+     ]
+    }
+   }
+  }
+ ]
+}

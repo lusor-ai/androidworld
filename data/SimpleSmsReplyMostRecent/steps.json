@@ -1,0 +1,71 @@
+{
+ "task": "SimpleSmsReplyMostRecent",
+ "video_duration_s": 90.3,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 45.97,
+   "end_s": 45.99,
+   "ok": true,
+   "note": "Observe current screen to find SMS app"
+  },
+  {
+   "step": 2,
+   "tool": "tap_element",
+   "start_s": 47.15,
+   "end_s": 47.93,
+   "ok": true,
+   "note": "Tap Messages app to open Simple SMS Messenger"
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 48.75,
+   "end_s": 49.02,
+   "ok": true,
+   "note": "Read SMS app screen"
+  },
+  {
+   "step": 4,
+   "tool": "launch",
+   "start_s": 51.38,
+   "end_s": 54.12,
+   "ok": true,
+   "note": "Launch Simple SMS Messenger by package"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 56.44,
+   "end_s": 58.36,
+   "ok": true,
+   "note": "Open top conversation +19375296280 to check message times"
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 60.28,
+   "end_s": 65.0,
+   "ok": true,
+   "note": "Type message into compose field"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 65.92,
+   "end_s": 67.23,
+   "ok": true,
+   "note": "Tap SMS send button"
+  },
+  {
+   "step": 8,
+   "tool": "done",
+   "start_s": 69.23,
+   "end_s": 69.23,
+   "ok": true,
+   "note": "Task complete; message sent and verified"
+  }
+ ]
+}

@@ -1,0 +1,441 @@
+{
+ "task": "VlcCreatePlaylist",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 30.71,
+   "end_s": 30.72,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 31.92,
+   "end_s": 34.46,
+   "ok": true,
+   "args": {
+    "app": "org.videolan.vlc"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 36.54,
+   "end_s": 37.17,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": "Playlists",
+    "index": 8,
+    "x": 756,
+    "y": 2264
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 38.09,
+   "end_s": 39.06,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 3,
+    "x": 1028,
+    "y": 201
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 40.77,
+   "end_s": 40.77,
+   "ok": true,
+   "args": {
+    "index": 8
+   }
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 42.19,
+   "end_s": 42.19,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 7,
+   "tool": "tap",
+   "start_s": 43.21,
+   "end_s": 43.67,
+   "ok": true,
+   "args": {
+    "x": 200,
+    "y": 1500
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 44.62,
+   "end_s": 45.87,
+   "ok": true,
+   "args": {
+    "index": 8
+   },
+   "tapped": {
+    "label": "Browse",
+    "index": 8,
+    "x": 540,
+    "y": 2264
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 46.79,
+   "end_s": 47.64,
+   "ok": true,
+   "args": {
+    "index": 13
+   },
+   "tapped": {
+    "label": "Folder: Internal memory, 14 subfolders",
+    "index": 13,
+    "x": 199,
+    "y": 1099
+   }
+  },
+  {
+   "step": 10,
+   "tool": "get_ui_state",
+   "start_s": 48.73,
+   "end_s": 48.79,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 11,
+   "tool": "tap",
+   "start_s": 51.16,
+   "end_s": 51.77,
+   "ok": true,
+   "args": {
+    "x": 540,
+    "y": 2300
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 53.3,
+   "end_s": 54.57,
+   "ok": true,
+   "args": {
+    "index": 16,
+    "hold_ms": 800
+   },
+   "tapped": {
+    "label": "File: copy_recording_22_export.mp4, File size: 662 kB",
+    "index": 16,
+    "x": 540,
+    "y": 715
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 56.47,
+   "end_s": 57.44,
+   "ok": true,
+   "args": {
+    "index": 34
+   },
+   "tapped": {
+    "label": "Add to playlist",
+    "index": 34,
+    "x": 1006,
+    "y": 201
+   }
+  },
+  {
+   "step": 14,
+   "tool": "type",
+   "start_s": 58.91,
+   "end_s": 63.35,
+   "ok": true,
+   "args": {
+    "index": 4,
+    "text": "Comedy Marathon"
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 64.65,
+   "end_s": 65.4,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 5,
+    "x": 975,
+    "y": 1446
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 67.08,
+   "end_s": 68.16,
+   "ok": true,
+   "args": {
+    "hold_ms": 800,
+    "index": 37
+   },
+   "tapped": {
+    "label": "File: recording_44_HD_2023_08_31.mp4, File size: 1.92 MB",
+    "index": 37,
+    "x": 540,
+    "y": 1751
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 69.2,
+   "end_s": 70.25,
+   "ok": true,
+   "args": {
+    "index": 34
+   },
+   "tapped": {
+    "label": "Add to playlist",
+    "index": 34,
+    "x": 1006,
+    "y": 201
+   }
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 71.49,
+   "end_s": 71.97,
+   "ok": true,
+   "args": {
+    "index": 7
+   },
+   "tapped": {
+    "label": null,
+    "index": 7,
+    "x": 540,
+    "y": 2243
+   }
+  },
+  {
+   "step": 19,
+   "tool": "chain",
+   "start_s": 75.73,
+   "end_s": 77.15,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "{item}",
+       "hold_ms": 800
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "Add to playlist"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "Comedy Marathon"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "step": 20,
+   "tool": "chain",
+   "start_s": 79.63,
+   "end_s": 87.77,
+   "ok": true,
+   "args": {
+    "items": [
+     "File: highlight_30__2023_10_02.mp4, File size: 1.13 MB",
+     "File: episode_12_4K_final.mp4, File size: 3.10 MB",
+     "File: footage_98_export_edited.mp4, File size: 3.16 MB"
+    ],
+    "steps": [
+     {
+      "params": {
+       "hold_ms": 800,
+       "target": "{item}"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Add to playlist"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Comedy Marathon"
+      },
+      "verb": "tap_element"
+     }
+    ]
+   }
+  },
+  {
+   "step": 21,
+   "tool": "tap",
+   "start_s": 89.51,
+   "end_s": 89.81,
+   "ok": true,
+   "args": {
+    "x": 756,
+    "y": 2264
+   }
+  },
+  {
+   "step": 22,
+   "tool": "key",
+   "start_s": 91.53,
+   "end_s": 92.07,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 23,
+   "tool": "key",
+   "start_s": 93.55,
+   "end_s": 94.36,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 24,
+   "tool": "tap_element",
+   "start_s": 96.1,
+   "end_s": 96.98,
+   "ok": true,
+   "args": {
+    "index": 18
+   },
+   "tapped": {
+    "label": "Playlists",
+    "index": 18,
+    "x": 756,
+    "y": 2264
+   }
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 98.37,
+   "end_s": 98.89,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "Playlist: Comedy Marathon, 5 tracks",
+    "index": 5,
+    "x": 289,
+    "y": 708
+   }
+  },
+  {
+   "step": 26,
+   "tool": "tap",
+   "start_s": 100.46,
+   "end_s": 100.87,
+   "ok": true,
+   "args": {
+    "x": 200,
+    "y": 930
+   }
+  },
+  {
+   "step": 27,
+   "tool": "done",
+   "start_s": 104.38,
+   "end_s": 104.38,
+   "ok": true,
+   "args": {
+    "schema": [
+     "playlist",
+     "position",
+     "file",
+     "lusor_status"
+    ],
+    "rows": [
+     {
+      "playlist": "Comedy Marathon",
+      "position": 1,
+      "file": "copy_recording_22_export.mp4",
+      "lusor_status": "succeeded"
+     },
+     {
+      "playlist": "Comedy Marathon",
+      "position": 2,
+      "file": "recording_44_HD_2023_08_31.mp4",
+      "lusor_status": "succeeded"
+     },
+     {
+      "playlist": "Comedy Marathon",
+      "position": 3,
+      "file": "highlight_30__2023_10_02.mp4",
+      "lusor_status": "succeeded"
+     },
+     {
+      "playlist": "Comedy Marathon",
+      "position": 4,
+      "file": "episode_12_4K_final.mp4",
+      "lusor_status": "succeeded"
+     },
+     {
+      "playlist": "Comedy Marathon",
+      "position": 5,
+      "file": "footage_98_export_edited.mp4",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "summary": "I created the playlist \"Comedy Marathon\" in VLC with the five videos from Internal Memory/VLCVideos, in the order you gave. The Playlists tab shows the playlist with 5 tracks, and opening it lists them exactly as requested: copy_recording_22_export.mp4, recording_44_HD_2023_08_31.mp4, highlight_30__2023_10_02.mp4, episode_12_4K_final.mp4, footage_98_export_edited.mp4.",
+    "evidence": {
+     "objective_evidence": "VLC Playlists tab showed a card \"Playlist: Comedy Marathon, 5 tracks\"; opening it showed the track list in order: copy_recording_22_export.mp4, recording_44_HD_2023_08_31.mp4, highlight_30__2023_10_02.mp4, episode_12_4K_final.mp4, footage_98_export_edited.mp4.",
+     "key_signals": [
+      "Playlists tab card: \"Comedy Marathon\", subtitle \"5 tracks\"",
+      "Opened playlist header title \"Comedy Marathon\" with 5 rows in the requested sequence",
+      "Files located in Browse > Internal memory > VLCVideos"
+     ]
+    }
+   }
+  }
+ ]
+}

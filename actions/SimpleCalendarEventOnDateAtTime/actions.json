@@ -1,0 +1,195 @@
+{
+ "task": "SimpleCalendarEventOnDateAtTime",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.67,
+   "end_s": 29.69,
+   "ok": true,
+   "args": {
+    "path": "skill://simple-calendar/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.67,
+   "end_s": 29.69,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.44,
+   "end_s": 32.77,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.calendar.pro"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap",
+   "start_s": 34.57,
+   "end_s": 35.47,
+   "ok": true,
+   "args": {
+    "x": 540,
+    "y": 1272,
+    "capture": true
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.04,
+   "end_s": 37.61,
+   "ok": true,
+   "args": {
+    "index": 56
+   },
+   "tapped": {
+    "label": null,
+    "index": 56,
+    "x": 1007,
+    "y": 388
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 39.37,
+   "end_s": 40.49,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": "October 12 (Thu)",
+    "index": 9,
+    "x": 540,
+    "y": 388
+   }
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 41.81,
+   "end_s": 44.91,
+   "ok": true,
+   "args": {
+    "text": "18",
+    "index": 7
+   }
+  },
+  {
+   "step": 8,
+   "tool": "get_ui_state",
+   "start_s": 45.78,
+   "end_s": 45.8,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 9,
+   "tool": "type",
+   "start_s": 46.82,
+   "end_s": 47.06,
+   "ok": true,
+   "args": {
+    "text": "18"
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 48.17,
+   "end_s": 49.07,
+   "ok": true,
+   "args": {
+    "index": 15
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 15,
+    "x": 842,
+    "y": 1159
+   }
+  },
+  {
+   "step": 11,
+   "tool": "chain",
+   "start_s": 53.07,
+   "end_s": 56.49,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 14
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 14
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 14
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 14
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 14
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "index": 14
+      }
+     }
+    ]
+   }
+  },
+  {
+   "step": 12,
+   "tool": "done",
+   "start_s": 59.3,
+   "end_s": 59.3,
+   "ok": true,
+   "args": {
+    "summary": "Your only event at 9:45am on October 18 2023 is \"Volunteer cleanup\" (09:45 to 11:15). The day's other events are at 14:55 and 16:14.",
+    "evidence": {
+     "objective_evidence": "Day view header reads \"October 18 (Wed)\" and lists: Volunteer cleanup 09:45 - 11:15; Meeting with Alice 14:55 - 15:10; Call with the Team 16:14 - 17:14.",
+     "key_signals": [
+      "top_value \"October 18 (Wed)\"",
+      "event_item_title \"Volunteer cleanup\" with event_item_time \"09:45 - 11:15\"",
+      "Only 3 rows in day_events list, none matching 09:45 besides Volunteer cleanup"
+     ]
+    },
+    "rows": [
+     {
+      "answer": "Volunteer cleanup",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,144 @@
+{
+ "task": "SportsTrackerActivityDuration",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.52,
+   "end_s": 29.53,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 30.43,
+   "end_s": 32.63,
+   "ok": true,
+   "args": {
+    "app": "de.dennisguse.opentracks"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 33.32,
+   "end_s": 34.02,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 943,
+    "y": 2017
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.18,
+   "end_s": 36.72,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 943,
+    "y": 2017
+   }
+  },
+  {
+   "step": 5,
+   "tool": "scroll_to",
+   "start_s": 38.08,
+   "end_s": 43.09,
+   "ok": true,
+   "args": {
+    "page": true
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 45.24,
+   "end_s": 46.21,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": null,
+    "index": 14,
+    "x": 540,
+    "y": 1401
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 49.23,
+   "end_s": 50.21,
+   "ok": true,
+   "args": {
+    "index": 12
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 12,
+    "x": 444,
+    "y": 2232
+   }
+  },
+  {
+   "step": 8,
+   "tool": "key",
+   "start_s": 52.22,
+   "end_s": 52.6,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 9,
+   "tool": "screenshot",
+   "start_s": 53.39,
+   "end_s": 54.79,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 10,
+   "tool": "done",
+   "start_s": 57.09,
+   "end_s": 57.1,
+   "ok": true,
+   "args": {
+    "summary": "Your running activity on October 05, 2023 (named \"Skill work\", started 7:00 AM) lasted 30 minutes. Both its moving time and total time read 30:00.",
+    "rows": [
+     {
+      "answer": 30,
+      "activity": "Skill work",
+      "date": "Oct 5, 2023",
+      "total_time": "30:00",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "OpenTracks track detail for \"Skill work\" shows start Oct 5, 2023, 7:00:00 AM, MOVING TIME 30:00 and TOTAL TIME 30:00; the activity-type icon is a running figure.",
+     "key_signals": [
+      "Track list mapped to end (21 rows); only one track dated 5 Oct: Skill work, 30:00, 0.62 mi",
+      "Detail screen confirms Oct 5, 2023 and total time 30:00",
+      "Running icon confirms it is the running activity"
+     ]
+    }
+   }
+  }
+ ]
+}

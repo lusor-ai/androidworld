@@ -1,0 +1,366 @@
+{
+ "task": "RecipeDeleteMultipleRecipesWithConstraint",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.53,
+   "end_s": 30.53,
+   "ok": true,
+   "args": {
+    "path": "skill://broccoli/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 31.36,
+   "end_s": 31.38,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 32.06,
+   "end_s": 36.42,
+   "ok": true,
+   "args": {
+    "app": "com.flauschcode.broccoli"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "map_app",
+   "start_s": 37.66,
+   "end_s": 64.63,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 65.62,
+   "end_s": 66.1,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "Search",
+    "index": 3,
+    "x": 1017,
+    "y": 348
+   }
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 66.9,
+   "end_s": 69.76,
+   "ok": true,
+   "args": {
+    "text": "almond butter",
+    "index": 4
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 71.48,
+   "end_s": 72.0,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "Clear query",
+    "index": 5,
+    "x": 1007,
+    "y": 348
+   }
+  },
+  {
+   "step": 8,
+   "tool": "map_app",
+   "start_s": 73.45,
+   "end_s": 73.47,
+   "ok": true,
+   "args": {
+    "levels": 2
+   }
+  },
+  {
+   "step": 9,
+   "tool": "key",
+   "start_s": 74.23,
+   "end_s": 74.6,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 10,
+   "tool": "map_app",
+   "start_s": 75.84,
+   "end_s": 246.42,
+   "ok": true,
+   "args": {
+    "levels": 2
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 248.78,
+   "end_s": 249.0,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "Collapse",
+    "index": 2,
+    "x": 74,
+    "y": 349
+   }
+  },
+  {
+   "step": 12,
+   "tool": "scroll_to",
+   "start_s": 250.23,
+   "end_s": 254.74,
+   "ok": true,
+   "args": {
+    "target": "Raspberry Almond Smoothie",
+    "direction": "up"
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 255.65,
+   "end_s": 255.65,
+   "ok": true,
+   "args": {
+    "index": 98
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap",
+   "start_s": 256.6,
+   "end_s": 257.77,
+   "ok": true,
+   "args": {
+    "x": 540,
+    "y": 520
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 258.53,
+   "end_s": 259.28,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 6,
+    "x": 1028,
+    "y": 201
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 260.02,
+   "end_s": 260.89,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 813,
+    "y": 601
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 261.61,
+   "end_s": 262.71,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "DELETE",
+    "index": 3,
+    "x": 861,
+    "y": 1296
+   }
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 263.72,
+   "end_s": 265.27,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 532,
+    "y": 822
+   }
+  },
+  {
+   "step": 19,
+   "tool": "chain",
+   "start_s": 266.26,
+   "end_s": 268.99,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "target": "More options"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Delete"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "DELETE"
+      },
+      "verb": "tap_element"
+     }
+    ]
+   }
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 269.87,
+   "end_s": 271.19,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 476,
+    "y": 836
+   }
+  },
+  {
+   "step": 21,
+   "tool": "chain",
+   "start_s": 272.21,
+   "end_s": 274.5,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "target": "More options"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Delete"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "DELETE"
+      },
+      "verb": "tap_element"
+     }
+    ]
+   }
+  },
+  {
+   "step": 22,
+   "tool": "map_app",
+   "start_s": 275.38,
+   "end_s": 303.47,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 23,
+   "tool": "get_ui_state",
+   "start_s": 305.46,
+   "end_s": 305.48,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 24,
+   "tool": "done",
+   "start_s": 308.3,
+   "end_s": 308.31,
+   "ok": true,
+   "args": {
+    "rows": [
+     {
+      "title": "Raspberry Almond Smoothie",
+      "servings": "8 servings",
+      "time": "4 hrs",
+      "direction_mentions_almond_butter": true,
+      "action": "deleted",
+      "lusor_status": "succeeded"
+     },
+     {
+      "title": "Raspberry Almond Smoothie",
+      "servings": "1 serving",
+      "time": "3 hrs",
+      "direction_mentions_almond_butter": true,
+      "action": "deleted",
+      "lusor_status": "succeeded"
+     },
+     {
+      "title": "Raspberry Almond Smoothie",
+      "servings": "2 servings",
+      "time": "20 mins",
+      "direction_mentions_almond_butter": true,
+      "action": "deleted",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "summary": "I deleted all three Raspberry Almond Smoothie recipes, the only ones in the app whose directions use almond butter (each says to blend in a scoop of almond butter). I checked all 32 recipes' directions one by one; no other recipe mentions almond butter. The list now has 29 recipes.",
+    "evidence": {
+     "objective_evidence": "Each of the three opened recipe pages showed direction text 'Blend together raspberries, almond milk, banana, and a scoop of almond butter until smooth...' and each was removed through its own Delete confirmation. A fresh map of the list afterwards shows 29 recipes with no Raspberry Almond Smoothie row.",
+     "key_signals": [
+      "Full recipe list mapped with every recipe's page read: 32 recipes, only the three Raspberry Almond Smoothie entries contain 'almond butter' in Directions",
+      "Deletion confirmed by the list tree reporting 3 deleted entries for the opened recipes",
+      "Recount after changes: 29 recipes, Raspberry Almond Smoothie absent"
+     ]
+    }
+   }
+  }
+ ]
+}

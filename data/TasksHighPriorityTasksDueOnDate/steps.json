@@ -1,0 +1,127 @@
+{
+ "task": "TasksHighPriorityTasksDueOnDate",
+ "video_duration_s": 127.6,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 34.7,
+   "end_s": 34.7,
+   "ok": true,
+   "note": "Read the Tasks skill guidance"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 35.71,
+   "end_s": 35.73,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 36.61,
+   "end_s": 40.18,
+   "ok": true,
+   "note": "Launch Tasks app"
+  },
+  {
+   "step": 4,
+   "tool": "map_app",
+   "start_s": 41.68,
+   "end_s": 56.58,
+   "ok": true,
+   "note": "Count all tasks in My Tasks list"
+  },
+  {
+   "step": 5,
+   "tool": "scroll_to",
+   "start_s": 59.07,
+   "end_s": 75.51,
+   "ok": true,
+   "note": "Open Code Review task to read priority and due date"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 76.65,
+   "end_s": 77.88,
+   "ok": true,
+   "note": "Open More options menu to look for filter by priority"
+  },
+  {
+   "step": 7,
+   "tool": "key",
+   "start_s": 79.38,
+   "end_s": 81.49,
+   "ok": true,
+   "note": "Close menu and open Search to find Code Review"
+  },
+  {
+   "step": 8,
+   "tool": "swipe",
+   "start_s": 82.56,
+   "end_s": 87.18,
+   "ok": true,
+   "note": "Scroll list down to reach Code Review row"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 88.2,
+   "end_s": 89.69,
+   "ok": true,
+   "note": "Read Code Review details: priority and due date"
+  },
+  {
+   "step": 10,
+   "tool": "screenshot",
+   "start_s": 92.03,
+   "end_s": 93.4,
+   "ok": true,
+   "note": "Inspect priority row icons to identify which radio is High"
+  },
+  {
+   "step": 11,
+   "tool": "key",
+   "start_s": 98.68,
+   "end_s": 99.2,
+   "ok": true,
+   "note": "Return to list and check remaining candidates' dates"
+  },
+  {
+   "step": 12,
+   "tool": "swipe",
+   "start_s": 102.39,
+   "end_s": 104.03,
+   "ok": true,
+   "note": "Scroll to lower rows and open Renew Driver's License to check its full date"
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 105.81,
+   "end_s": 106.61,
+   "ok": true,
+   "note": "Read Renew Driver's License full due date and priority"
+  },
+  {
+   "step": 14,
+   "tool": "key",
+   "start_s": 110.18,
+   "end_s": 110.59,
+   "ok": true,
+   "note": "Confirm list state and finish with answer Code Review"
+  },
+  {
+   "step": 15,
+   "tool": "done",
+   "start_s": 113.11,
+   "end_s": 113.12,
+   "ok": true,
+   "note": "Task complete; answer reported"
+  }
+ ]
+}

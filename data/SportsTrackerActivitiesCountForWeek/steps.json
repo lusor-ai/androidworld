@@ -1,0 +1,247 @@
+{
+ "task": "SportsTrackerActivitiesCountForWeek",
+ "video_duration_s": 392.0,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.56,
+   "end_s": 29.58,
+   "ok": true,
+   "note": "Observe current screen; launch OpenTracks if needed"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 30.56,
+   "end_s": 32.68,
+   "ok": true,
+   "note": "Launch OpenTracks and view track list"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 33.77,
+   "end_s": 34.43,
+   "ok": true,
+   "note": "Skip introduction screens"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.13,
+   "end_s": 36.64,
+   "ok": true,
+   "note": "Skip introduction screens"
+  },
+  {
+   "step": 5,
+   "tool": "map_app",
+   "start_s": 38.12,
+   "end_s": 173.09,
+   "ok": true,
+   "note": "Map track list with opened item details to get dates and activity types"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 177.04,
+   "end_s": 177.04,
+   "ok": false,
+   "note": "Open Lake Paddling track to look for activity type info"
+  },
+  {
+   "step": 7,
+   "tool": "scroll_to",
+   "start_s": 178.99,
+   "end_s": 184.17,
+   "ok": true,
+   "note": "Scroll to Lake Paddling row and open it"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 185.38,
+   "end_s": 186.14,
+   "ok": true,
+   "note": "Inspect Lake Paddling detail page for activity type"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 187.33,
+   "end_s": 188.44,
+   "ok": true,
+   "note": "Open track detail More options menu to find activity type"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 189.37,
+   "end_s": 190.45,
+   "ok": true,
+   "note": "Open Edit dialog to read activity type, then cancel"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 193.2,
+   "end_s": 193.98,
+   "ok": true,
+   "note": "Cancel edit dialog; check list More options for activity type filter"
+  },
+  {
+   "step": 12,
+   "tool": "key",
+   "start_s": 194.96,
+   "end_s": 196.17,
+   "ok": true,
+   "note": "Return to list; inspect toolbar More options for type filter"
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 197.77,
+   "end_s": 198.67,
+   "ok": true,
+   "note": "Inspect list toolbar More options for activity type filter"
+  },
+  {
+   "step": 14,
+   "tool": "chain",
+   "start_s": 210.85,
+   "end_s": 216.85,
+   "ok": true,
+   "note": "Run chain to read activity type for this week's tracks"
+  },
+  {
+   "step": 15,
+   "tool": "key",
+   "start_s": 217.95,
+   "end_s": 218.45,
+   "ok": true,
+   "note": "Dismiss menu, then run per-track edit chain starting with Trail Biking"
+  },
+  {
+   "step": 16,
+   "tool": "chain",
+   "start_s": 220.35,
+   "end_s": 278.11,
+   "ok": true,
+   "note": "Run per-track edit chain; start with Trail Biking"
+  },
+  {
+   "step": 17,
+   "tool": "chain",
+   "start_s": 282.91,
+   "end_s": 288.44,
+   "ok": true,
+   "note": "Close open menu and read remaining 7 tracks' activity types via Edit dialog"
+  },
+  {
+   "step": 18,
+   "tool": "chain",
+   "start_s": 290.88,
+   "end_s": 309.14,
+   "ok": true,
+   "note": "Read remaining 6 tracks' activity types via Edit dialog"
+  },
+  {
+   "step": 19,
+   "tool": "key",
+   "start_s": 311.22,
+   "end_s": 312.15,
+   "ok": true,
+   "note": "Close notification shade and return to OpenTracks list"
+  },
+  {
+   "step": 20,
+   "tool": "key",
+   "start_s": 313.83,
+   "end_s": 314.05,
+   "ok": true,
+   "note": "Close notification shade and return to OpenTracks"
+  },
+  {
+   "step": 21,
+   "tool": "launch",
+   "start_s": 316.19,
+   "end_s": 317.63,
+   "ok": true,
+   "note": "Relaunch OpenTracks and read remaining 6 tracks' types"
+  },
+  {
+   "step": 22,
+   "tool": "chain",
+   "start_s": 320.38,
+   "end_s": 340.81,
+   "ok": true,
+   "note": "Read remaining 6 tracks' activity types via Edit dialog"
+  },
+  {
+   "step": 23,
+   "tool": "key",
+   "start_s": 343.13,
+   "end_s": 343.56,
+   "ok": true,
+   "note": "Close menu; open Trail Run to read type"
+  },
+  {
+   "step": 24,
+   "tool": "swipe",
+   "start_s": 345.62,
+   "end_s": 347.38,
+   "ok": true,
+   "note": "Scroll list up a bit to fully show Trail Run"
+  },
+  {
+   "step": 25,
+   "tool": "chain",
+   "start_s": 350.27,
+   "end_s": 364.37,
+   "ok": true,
+   "note": "Read types for Trail Run, Lunch Break Fitness, Mindful Movement"
+  },
+  {
+   "step": 26,
+   "tool": "tap_element",
+   "start_s": 366.01,
+   "end_s": 366.76,
+   "ok": true,
+   "note": "Open Mindful Movement edit to read activity type"
+  },
+  {
+   "step": 27,
+   "tool": "tap_element",
+   "start_s": 367.91,
+   "end_s": 368.83,
+   "ok": true,
+   "note": "Read Mindful Movement activity type in edit dialog"
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 371.1,
+   "end_s": 371.84,
+   "ok": true,
+   "note": "Cancel dialog without saving; confirm list unchanged"
+  },
+  {
+   "step": 29,
+   "tool": "key",
+   "start_s": 374.31,
+   "end_s": 375.34,
+   "ok": true,
+   "note": "Return to list and confirm list intact"
+  },
+  {
+   "step": 30,
+   "tool": "done",
+   "start_s": 378.47,
+   "end_s": 378.48,
+   "ok": true,
+   "note": "Task complete; answer reported"
+  }
+ ]
+}

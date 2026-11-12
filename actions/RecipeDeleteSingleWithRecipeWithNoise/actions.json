@@ -1,0 +1,157 @@
+{
+ "task": "RecipeDeleteSingleWithRecipeWithNoise",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.2,
+   "end_s": 30.21,
+   "ok": true,
+   "args": {
+    "path": "skill://broccoli/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.2,
+   "end_s": 30.21,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.03,
+   "end_s": 34.95,
+   "ok": true,
+   "args": {
+    "app": "com.flauschcode.broccoli"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "scroll_to",
+   "start_s": 36.09,
+   "end_s": 37.29,
+   "ok": true,
+   "args": {
+    "target": "Classic Margherita Pizza"
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 38.23,
+   "end_s": 39.93,
+   "ok": true,
+   "args": {
+    "index": 11,
+    "capture": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 11,
+    "x": 540,
+    "y": 2239
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 41.06,
+   "end_s": 42.14,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 6
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 6,
+    "x": 1028,
+    "y": 201
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 42.88,
+   "end_s": 43.82,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 5
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 813,
+    "y": 601
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 44.92,
+   "end_s": 46.14,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 3,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "DELETE",
+    "index": 3,
+    "x": 861,
+    "y": 1296
+   }
+  },
+  {
+   "step": 9,
+   "tool": "map_app",
+   "start_s": 47.49,
+   "end_s": 72.8,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 10,
+   "tool": "get_ui_state",
+   "start_s": 73.86,
+   "end_s": 73.88,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 11,
+   "tool": "done",
+   "start_s": 75.99,
+   "end_s": 75.99,
+   "ok": true,
+   "args": {
+    "summary": "Deleted the Classic Margherita Pizza recipe from Broccoli. The deletion was confirmed by the app, and a full recount of the recipe list (29 recipes) shows it is no longer present.",
+    "evidence": {
+     "objective_evidence": "The recipe detail page for Classic Margherita Pizza (6 servings, 10 mins) was opened, Delete chosen from More options, and the 'Delete this recipe?' dialog confirmed. The app then showed a 29-recipe list with no Classic Margherita Pizza, and map_app levels 1 walked all 29 rows (BBQ Chicken Quesadillas through Zucchini Noodles with Pesto) proving the end of list with no matching row.",
+     "key_signals": [
+      "Delete dialog 'Delete this recipe?' confirmed with DELETE",
+      "List tree reports 'deleted: e8 (6 servings, 10 mins, to prefer)'",
+      "map_app levels 1 returned 29 rows, end_proven true, without Classic Margherita Pizza"
+     ]
+    },
+    "rows": [
+     {
+      "recipe": "Classic Margherita Pizza",
+      "action": "deleted",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,1416 @@
+{
+ "version": "2026-11-09",
+ "date": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "video_format": {
+  "mp4": "H.264 High, AAC, 1080x2400, faststart",
+  "webm": "WebM (VP9), 1080x2400"
+ },
+ "tasks": [
+  {
+   "task": "MarkorAddNoteHeader",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorAddNoteHeader/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/MarkorAddNoteHeader/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/MarkorAddNoteHeader/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/MarkorAddNoteHeader/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/MarkorAddNoteHeader/task.json"
+   }
+  },
+  {
+   "task": "ClockTimerEntry",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/ClockTimerEntry/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/ClockTimerEntry/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/ClockTimerEntry/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/ClockTimerEntry/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/ClockTimerEntry/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarEventsInNextWeek",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInNextWeek/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInNextWeek/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInNextWeek/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInNextWeek/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInNextWeek/task.json"
+   }
+  },
+  {
+   "task": "BrowserDraw",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/BrowserDraw/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/BrowserDraw/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/BrowserDraw/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/BrowserDraw/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/BrowserDraw/task.json"
+   }
+  },
+  {
+   "task": "NotesTodoItemCount",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/NotesTodoItemCount/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/NotesTodoItemCount/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/NotesTodoItemCount/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/NotesTodoItemCount/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/NotesTodoItemCount/task.json"
+   }
+  },
+  {
+   "task": "ExpenseAddMultipleFromMarkor",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": false,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/ExpenseAddMultipleFromMarkor/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/ExpenseAddMultipleFromMarkor/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/ExpenseAddMultipleFromMarkor/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/ExpenseAddMultipleFromMarkor/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/ExpenseAddMultipleFromMarkor/task.json"
+   }
+  },
+  {
+   "task": "MarkorEditNote",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorEditNote/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/MarkorEditNote/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/MarkorEditNote/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/MarkorEditNote/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/MarkorEditNote/task.json"
+   }
+  },
+  {
+   "task": "VlcCreatePlaylist",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/VlcCreatePlaylist/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/VlcCreatePlaylist/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/VlcCreatePlaylist/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/VlcCreatePlaylist/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/VlcCreatePlaylist/task.json"
+   }
+  },
+  {
+   "task": "OsmAndTrack",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/OsmAndTrack/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/OsmAndTrack/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/OsmAndTrack/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/OsmAndTrack/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/OsmAndTrack/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarEventsOnDate",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsOnDate/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsOnDate/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsOnDate/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsOnDate/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsOnDate/task.json"
+   }
+  },
+  {
+   "task": "TasksCompletedTasksForDate",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/TasksCompletedTasksForDate/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/TasksCompletedTasksForDate/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/TasksCompletedTasksForDate/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/TasksCompletedTasksForDate/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/TasksCompletedTasksForDate/task.json"
+   }
+  },
+  {
+   "task": "AudioRecorderRecordAudioWithFileName",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": false,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudioWithFileName/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudioWithFileName/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudioWithFileName/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudioWithFileName/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudioWithFileName/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarFirstEventAfterStartTime",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarFirstEventAfterStartTime/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarFirstEventAfterStartTime/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarFirstEventAfterStartTime/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarFirstEventAfterStartTime/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarFirstEventAfterStartTime/task.json"
+   }
+  },
+  {
+   "task": "RetroPlayingQueue",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RetroPlayingQueue/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RetroPlayingQueue/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RetroPlayingQueue/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RetroPlayingQueue/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RetroPlayingQueue/task.json"
+   }
+  },
+  {
+   "task": "RecipeAddMultipleRecipesFromMarkor",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor/task.json"
+   }
+  },
+  {
+   "task": "BrowserMultiply",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/BrowserMultiply/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/BrowserMultiply/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/BrowserMultiply/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/BrowserMultiply/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/BrowserMultiply/task.json"
+   }
+  },
+  {
+   "task": "MarkorMergeNotes",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorMergeNotes/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/MarkorMergeNotes/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/MarkorMergeNotes/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/MarkorMergeNotes/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/MarkorMergeNotes/task.json"
+   }
+  },
+  {
+   "task": "RetroPlaylistDuration",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RetroPlaylistDuration/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RetroPlaylistDuration/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RetroPlaylistDuration/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RetroPlaylistDuration/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RetroPlaylistDuration/task.json"
+   }
+  },
+  {
+   "task": "RecipeDeleteDuplicateRecipes3",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes3/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes3/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes3/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes3/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes3/task.json"
+   }
+  },
+  {
+   "task": "MarkorCreateNoteAndSms",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteAndSms/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteAndSms/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteAndSms/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteAndSms/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteAndSms/task.json"
+   }
+  },
+  {
+   "task": "RecipeAddSingleRecipe",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeAddSingleRecipe/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RecipeAddSingleRecipe/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RecipeAddSingleRecipe/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RecipeAddSingleRecipe/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RecipeAddSingleRecipe/task.json"
+   }
+  },
+  {
+   "task": "TasksDueNextWeek",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/TasksDueNextWeek/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/TasksDueNextWeek/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/TasksDueNextWeek/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/TasksDueNextWeek/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/TasksDueNextWeek/task.json"
+   }
+  },
+  {
+   "task": "TasksIncompleteTasksOnDate",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/TasksIncompleteTasksOnDate/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/TasksIncompleteTasksOnDate/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/TasksIncompleteTasksOnDate/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/TasksIncompleteTasksOnDate/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/TasksIncompleteTasksOnDate/task.json"
+   }
+  },
+  {
+   "task": "NotesMeetingAttendeeCount",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/NotesMeetingAttendeeCount/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/NotesMeetingAttendeeCount/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/NotesMeetingAttendeeCount/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/NotesMeetingAttendeeCount/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/NotesMeetingAttendeeCount/task.json"
+   }
+  },
+  {
+   "task": "SystemCopyToClipboard",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SystemCopyToClipboard/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SystemCopyToClipboard/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SystemCopyToClipboard/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SystemCopyToClipboard/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SystemCopyToClipboard/task.json"
+   }
+  },
+  {
+   "task": "RecipeAddMultipleRecipes",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipes/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipes/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipes/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipes/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipes/task.json"
+   }
+  },
+  {
+   "task": "MarkorTranscribeVideo",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorTranscribeVideo/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/MarkorTranscribeVideo/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/MarkorTranscribeVideo/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/MarkorTranscribeVideo/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/MarkorTranscribeVideo/task.json"
+   }
+  },
+  {
+   "task": "RecipeDeleteMultipleRecipesWithConstraint",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithConstraint/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithConstraint/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithConstraint/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithConstraint/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithConstraint/task.json"
+   }
+  },
+  {
+   "task": "CameraTakePhoto",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/CameraTakePhoto/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/CameraTakePhoto/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/CameraTakePhoto/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/CameraTakePhoto/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/CameraTakePhoto/task.json"
+   }
+  },
+  {
+   "task": "RecipeDeleteDuplicateRecipes2",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes2/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes2/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes2/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes2/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes2/task.json"
+   }
+  },
+  {
+   "task": "SportsTrackerTotalDistanceForCategoryOverInterval",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SportsTrackerTotalDistanceForCategoryOverInterval/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SportsTrackerTotalDistanceForCategoryOverInterval/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SportsTrackerTotalDistanceForCategoryOverInterval/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SportsTrackerTotalDistanceForCategoryOverInterval/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SportsTrackerTotalDistanceForCategoryOverInterval/task.json"
+   }
+  },
+  {
+   "task": "RecipeAddMultipleRecipesFromMarkor2",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor2/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor2/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor2/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor2/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromMarkor2/task.json"
+   }
+  },
+  {
+   "task": "VlcCreateTwoPlaylists",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/VlcCreateTwoPlaylists/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/VlcCreateTwoPlaylists/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/VlcCreateTwoPlaylists/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/VlcCreateTwoPlaylists/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/VlcCreateTwoPlaylists/task.json"
+   }
+  },
+  {
+   "task": "RecipeAddMultipleRecipesFromImage",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromImage/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromImage/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromImage/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromImage/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RecipeAddMultipleRecipesFromImage/task.json"
+   }
+  },
+  {
+   "task": "SportsTrackerLongestDistanceActivity",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SportsTrackerLongestDistanceActivity/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SportsTrackerLongestDistanceActivity/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SportsTrackerLongestDistanceActivity/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SportsTrackerLongestDistanceActivity/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SportsTrackerLongestDistanceActivity/task.json"
+   }
+  },
+  {
+   "task": "SportsTrackerTotalDurationForCategoryThisWeek",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SportsTrackerTotalDurationForCategoryThisWeek/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SportsTrackerTotalDurationForCategoryThisWeek/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SportsTrackerTotalDurationForCategoryThisWeek/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SportsTrackerTotalDurationForCategoryThisWeek/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SportsTrackerTotalDurationForCategoryThisWeek/task.json"
+   }
+  },
+  {
+   "task": "RetroSavePlaylist",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RetroSavePlaylist/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RetroSavePlaylist/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RetroSavePlaylist/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RetroSavePlaylist/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RetroSavePlaylist/task.json"
+   }
+  },
+  {
+   "task": "ExpenseDeleteSingle",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/ExpenseDeleteSingle/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/ExpenseDeleteSingle/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/ExpenseDeleteSingle/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/ExpenseDeleteSingle/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/ExpenseDeleteSingle/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarAddOneEventTomorrow",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventTomorrow/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventTomorrow/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventTomorrow/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventTomorrow/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventTomorrow/task.json"
+   }
+  },
+  {
+   "task": "MarkorMoveNote",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorMoveNote/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/MarkorMoveNote/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/MarkorMoveNote/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/MarkorMoveNote/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/MarkorMoveNote/task.json"
+   }
+  },
+  {
+   "task": "BrowserMaze",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/BrowserMaze/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/BrowserMaze/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/BrowserMaze/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/BrowserMaze/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/BrowserMaze/task.json"
+   }
+  },
+  {
+   "task": "OsmAndMarker",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/OsmAndMarker/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/OsmAndMarker/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/OsmAndMarker/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/OsmAndMarker/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/OsmAndMarker/task.json"
+   }
+  },
+  {
+   "task": "ExpenseAddMultipleFromGallery",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/ExpenseAddMultipleFromGallery/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/ExpenseAddMultipleFromGallery/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/ExpenseAddMultipleFromGallery/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/ExpenseAddMultipleFromGallery/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/ExpenseAddMultipleFromGallery/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarDeleteEventsOnRelativeDay",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEventsOnRelativeDay/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEventsOnRelativeDay/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEventsOnRelativeDay/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEventsOnRelativeDay/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEventsOnRelativeDay/task.json"
+   }
+  },
+  {
+   "task": "MarkorDeleteAllNotes",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorDeleteAllNotes/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/MarkorDeleteAllNotes/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/MarkorDeleteAllNotes/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/MarkorDeleteAllNotes/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/MarkorDeleteAllNotes/task.json"
+   }
+  },
+  {
+   "task": "MarkorTranscribeReceipt",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorTranscribeReceipt/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/MarkorTranscribeReceipt/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/MarkorTranscribeReceipt/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/MarkorTranscribeReceipt/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/MarkorTranscribeReceipt/task.json"
+   }
+  },
+  {
+   "task": "OsmAndFavorite",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/OsmAndFavorite/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/OsmAndFavorite/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/OsmAndFavorite/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/OsmAndFavorite/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/OsmAndFavorite/task.json"
+   }
+  },
+  {
+   "task": "RecipeDeleteMultipleRecipesWithNoise",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithNoise/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithNoise/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithNoise/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithNoise/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipesWithNoise/task.json"
+   }
+  },
+  {
+   "task": "ExpenseAddMultiple",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/ExpenseAddMultiple/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/ExpenseAddMultiple/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/ExpenseAddMultiple/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/ExpenseAddMultiple/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/ExpenseAddMultiple/task.json"
+   }
+  },
+  {
+   "task": "SimpleSmsReply",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleSmsReply/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleSmsReply/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleSmsReply/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleSmsReply/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleSmsReply/task.json"
+   }
+  },
+  {
+   "task": "RetroCreatePlaylist",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RetroCreatePlaylist/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RetroCreatePlaylist/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RetroCreatePlaylist/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RetroCreatePlaylist/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RetroCreatePlaylist/task.json"
+   }
+  },
+  {
+   "task": "ExpenseDeleteDuplicates2",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/ExpenseDeleteDuplicates2/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/ExpenseDeleteDuplicates2/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/ExpenseDeleteDuplicates2/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/ExpenseDeleteDuplicates2/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/ExpenseDeleteDuplicates2/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarAddOneEventInTwoWeeks",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventInTwoWeeks/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventInTwoWeeks/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventInTwoWeeks/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventInTwoWeeks/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventInTwoWeeks/task.json"
+   }
+  },
+  {
+   "task": "ExpenseDeleteMultiple2",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/ExpenseDeleteMultiple2/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/ExpenseDeleteMultiple2/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/ExpenseDeleteMultiple2/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/ExpenseDeleteMultiple2/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/ExpenseDeleteMultiple2/task.json"
+   }
+  },
+  {
+   "task": "SportsTrackerActivitiesOnDate",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesOnDate/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesOnDate/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesOnDate/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesOnDate/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesOnDate/task.json"
+   }
+  },
+  {
+   "task": "SportsTrackerActivitiesCountForWeek",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesCountForWeek/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesCountForWeek/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesCountForWeek/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesCountForWeek/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SportsTrackerActivitiesCountForWeek/task.json"
+   }
+  },
+  {
+   "task": "FilesMoveFile",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/FilesMoveFile/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/FilesMoveFile/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/FilesMoveFile/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/FilesMoveFile/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/FilesMoveFile/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarAddRepeatingEvent",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddRepeatingEvent/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddRepeatingEvent/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddRepeatingEvent/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddRepeatingEvent/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddRepeatingEvent/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarAddOneEventRelativeDay",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventRelativeDay/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventRelativeDay/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventRelativeDay/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventRelativeDay/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEventRelativeDay/task.json"
+   }
+  },
+  {
+   "task": "SimpleSmsSendReceivedAddress",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleSmsSendReceivedAddress/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleSmsSendReceivedAddress/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleSmsSendReceivedAddress/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleSmsSendReceivedAddress/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleSmsSendReceivedAddress/task.json"
+   }
+  },
+  {
+   "task": "TurnOffWifiAndTurnOnBluetooth",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/TurnOffWifiAndTurnOnBluetooth/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/TurnOffWifiAndTurnOnBluetooth/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/TurnOffWifiAndTurnOnBluetooth/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/TurnOffWifiAndTurnOnBluetooth/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/TurnOffWifiAndTurnOnBluetooth/task.json"
+   }
+  },
+  {
+   "task": "SaveCopyOfReceiptTaskEval",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SaveCopyOfReceiptTaskEval/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SaveCopyOfReceiptTaskEval/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SaveCopyOfReceiptTaskEval/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SaveCopyOfReceiptTaskEval/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SaveCopyOfReceiptTaskEval/task.json"
+   }
+  },
+  {
+   "task": "MarkorChangeNoteContent",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorChangeNoteContent/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/MarkorChangeNoteContent/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/MarkorChangeNoteContent/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/MarkorChangeNoteContent/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/MarkorChangeNoteContent/task.json"
+   }
+  },
+  {
+   "task": "TasksHighPriorityTasksDueOnDate",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/TasksHighPriorityTasksDueOnDate/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/TasksHighPriorityTasksDueOnDate/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/TasksHighPriorityTasksDueOnDate/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/TasksHighPriorityTasksDueOnDate/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/TasksHighPriorityTasksDueOnDate/task.json"
+   }
+  },
+  {
+   "task": "MarkorCreateNoteFromClipboard",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteFromClipboard/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteFromClipboard/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteFromClipboard/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteFromClipboard/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/MarkorCreateNoteFromClipboard/task.json"
+   }
+  },
+  {
+   "task": "ExpenseAddSingle",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/ExpenseAddSingle/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/ExpenseAddSingle/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/ExpenseAddSingle/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/ExpenseAddSingle/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/ExpenseAddSingle/task.json"
+   }
+  },
+  {
+   "task": "MarkorDeleteNote",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorDeleteNote/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/MarkorDeleteNote/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/MarkorDeleteNote/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/MarkorDeleteNote/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/MarkorDeleteNote/task.json"
+   }
+  },
+  {
+   "task": "SimpleSmsResend",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleSmsResend/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleSmsResend/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleSmsResend/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleSmsResend/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleSmsResend/task.json"
+   }
+  },
+  {
+   "task": "ExpenseDeleteMultiple",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/ExpenseDeleteMultiple/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/ExpenseDeleteMultiple/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/ExpenseDeleteMultiple/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/ExpenseDeleteMultiple/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/ExpenseDeleteMultiple/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarAddOneEvent",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEvent/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEvent/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEvent/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEvent/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarAddOneEvent/task.json"
+   }
+  },
+  {
+   "task": "TasksDueOnDate",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/TasksDueOnDate/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/TasksDueOnDate/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/TasksDueOnDate/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/TasksDueOnDate/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/TasksDueOnDate/task.json"
+   }
+  },
+  {
+   "task": "RecipeDeleteMultipleRecipes",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipes/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipes/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipes/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipes/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipes/task.json"
+   }
+  },
+  {
+   "task": "RecipeDeleteDuplicateRecipes",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes/task.json"
+   }
+  },
+  {
+   "task": "TasksHighPriorityTasks",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/TasksHighPriorityTasks/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/TasksHighPriorityTasks/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/TasksHighPriorityTasks/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/TasksHighPriorityTasks/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/TasksHighPriorityTasks/task.json"
+   }
+  },
+  {
+   "task": "ExpenseDeleteDuplicates",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/ExpenseDeleteDuplicates/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/ExpenseDeleteDuplicates/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/ExpenseDeleteDuplicates/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/ExpenseDeleteDuplicates/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/ExpenseDeleteDuplicates/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarAnyEventsOnDate",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarAnyEventsOnDate/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarAnyEventsOnDate/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarAnyEventsOnDate/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarAnyEventsOnDate/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarAnyEventsOnDate/task.json"
+   }
+  },
+  {
+   "task": "MarkorCreateNote",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorCreateNote/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/MarkorCreateNote/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/MarkorCreateNote/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/MarkorCreateNote/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/MarkorCreateNote/task.json"
+   }
+  },
+  {
+   "task": "SimpleSmsReplyMostRecent",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleSmsReplyMostRecent/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleSmsReplyMostRecent/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleSmsReplyMostRecent/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleSmsReplyMostRecent/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleSmsReplyMostRecent/task.json"
+   }
+  },
+  {
+   "task": "SimpleDrawProCreateDrawing",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleDrawProCreateDrawing/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleDrawProCreateDrawing/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleDrawProCreateDrawing/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleDrawProCreateDrawing/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleDrawProCreateDrawing/task.json"
+   }
+  },
+  {
+   "task": "RecipeDeleteSingleWithRecipeWithNoise",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleWithRecipeWithNoise/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleWithRecipeWithNoise/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleWithRecipeWithNoise/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleWithRecipeWithNoise/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleWithRecipeWithNoise/task.json"
+   }
+  },
+  {
+   "task": "AudioRecorderRecordAudio",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudio/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudio/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudio/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudio/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/AudioRecorderRecordAudio/task.json"
+   }
+  },
+  {
+   "task": "SimpleSmsSendClipboardContent",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleSmsSendClipboardContent/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleSmsSendClipboardContent/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleSmsSendClipboardContent/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleSmsSendClipboardContent/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleSmsSendClipboardContent/task.json"
+   }
+  },
+  {
+   "task": "ContactsNewContactDraft",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/ContactsNewContactDraft/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/ContactsNewContactDraft/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/ContactsNewContactDraft/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/ContactsNewContactDraft/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/ContactsNewContactDraft/task.json"
+   }
+  },
+  {
+   "task": "NotesIsTodo",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/NotesIsTodo/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/NotesIsTodo/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/NotesIsTodo/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/NotesIsTodo/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/NotesIsTodo/task.json"
+   }
+  },
+  {
+   "task": "SimpleSmsSend",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleSmsSend/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleSmsSend/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleSmsSend/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleSmsSend/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleSmsSend/task.json"
+   }
+  },
+  {
+   "task": "FilesDeleteFile",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/FilesDeleteFile/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/FilesDeleteFile/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/FilesDeleteFile/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/FilesDeleteFile/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/FilesDeleteFile/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarEventOnDateAtTime",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventOnDateAtTime/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventOnDateAtTime/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventOnDateAtTime/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventOnDateAtTime/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventOnDateAtTime/task.json"
+   }
+  },
+  {
+   "task": "ContactsAddContact",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/ContactsAddContact/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/ContactsAddContact/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/ContactsAddContact/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/ContactsAddContact/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/ContactsAddContact/task.json"
+   }
+  },
+  {
+   "task": "TurnOnWifiAndOpenApp",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/TurnOnWifiAndOpenApp/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/TurnOnWifiAndOpenApp/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/TurnOnWifiAndOpenApp/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/TurnOnWifiAndOpenApp/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/TurnOnWifiAndOpenApp/task.json"
+   }
+  },
+  {
+   "task": "CameraTakeVideo",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/CameraTakeVideo/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/CameraTakeVideo/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/CameraTakeVideo/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/CameraTakeVideo/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/CameraTakeVideo/task.json"
+   }
+  },
+  {
+   "task": "NotesRecipeIngredientCount",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/NotesRecipeIngredientCount/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/NotesRecipeIngredientCount/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/NotesRecipeIngredientCount/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/NotesRecipeIngredientCount/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/NotesRecipeIngredientCount/task.json"
+   }
+  },
+  {
+   "task": "SystemBrightnessMin",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SystemBrightnessMin/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SystemBrightnessMin/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SystemBrightnessMin/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SystemBrightnessMin/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SystemBrightnessMin/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarDeleteEvents",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEvents/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEvents/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEvents/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEvents/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEvents/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarEventsInTimeRange",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInTimeRange/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInTimeRange/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInTimeRange/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInTimeRange/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarEventsInTimeRange/task.json"
+   }
+  },
+  {
+   "task": "MarkorDeleteNewestNote",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorDeleteNewestNote/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/MarkorDeleteNewestNote/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/MarkorDeleteNewestNote/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/MarkorDeleteNewestNote/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/MarkorDeleteNewestNote/task.json"
+   }
+  },
+  {
+   "task": "MarkorCreateFolder",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorCreateFolder/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/MarkorCreateFolder/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/MarkorCreateFolder/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/MarkorCreateFolder/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/MarkorCreateFolder/task.json"
+   }
+  },
+  {
+   "task": "OpenAppTaskEval",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/OpenAppTaskEval/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/OpenAppTaskEval/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/OpenAppTaskEval/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/OpenAppTaskEval/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/OpenAppTaskEval/task.json"
+   }
+  },
+  {
+   "task": "RecipeDeleteSingleRecipe",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleRecipe/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleRecipe/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleRecipe/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleRecipe/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/RecipeDeleteSingleRecipe/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarNextMeetingWithPerson",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextMeetingWithPerson/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextMeetingWithPerson/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextMeetingWithPerson/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextMeetingWithPerson/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextMeetingWithPerson/task.json"
+   }
+  },
+  {
+   "task": "SportsTrackerActivityDuration",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SportsTrackerActivityDuration/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SportsTrackerActivityDuration/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SportsTrackerActivityDuration/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SportsTrackerActivityDuration/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SportsTrackerActivityDuration/task.json"
+   }
+  },
+  {
+   "task": "SystemBrightnessMax",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SystemBrightnessMax/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SystemBrightnessMax/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SystemBrightnessMax/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SystemBrightnessMax/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SystemBrightnessMax/task.json"
+   }
+  },
+  {
+   "task": "SystemBluetoothTurnOn",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOn/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOn/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOn/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOn/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOn/task.json"
+   }
+  },
+  {
+   "task": "ClockStopWatchPausedVerify",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/ClockStopWatchPausedVerify/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/ClockStopWatchPausedVerify/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/ClockStopWatchPausedVerify/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/ClockStopWatchPausedVerify/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/ClockStopWatchPausedVerify/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarLocationOfEvent",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarLocationOfEvent/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarLocationOfEvent/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarLocationOfEvent/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarLocationOfEvent/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarLocationOfEvent/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarDeleteOneEvent",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteOneEvent/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteOneEvent/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteOneEvent/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteOneEvent/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteOneEvent/task.json"
+   }
+  },
+  {
+   "task": "SystemWifiTurnOff",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOff/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOff/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOff/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOff/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOff/task.json"
+   }
+  },
+  {
+   "task": "SimpleCalendarNextEvent",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextEvent/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextEvent/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextEvent/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextEvent/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarNextEvent/task.json"
+   }
+  },
+  {
+   "task": "SystemBluetoothTurnOffVerify",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOffVerify/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOffVerify/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOffVerify/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOffVerify/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOffVerify/task.json"
+   }
+  },
+  {
+   "task": "SystemWifiTurnOnVerify",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOnVerify/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOnVerify/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOnVerify/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOnVerify/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOnVerify/task.json"
+   }
+  },
+  {
+   "task": "SystemBluetoothTurnOnVerify",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOnVerify/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOnVerify/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOnVerify/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOnVerify/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOnVerify/task.json"
+   }
+  },
+  {
+   "task": "SystemBrightnessMinVerify",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SystemBrightnessMinVerify/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SystemBrightnessMinVerify/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SystemBrightnessMinVerify/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SystemBrightnessMinVerify/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SystemBrightnessMinVerify/task.json"
+   }
+  },
+  {
+   "task": "SystemBluetoothTurnOff",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOff/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOff/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOff/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOff/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SystemBluetoothTurnOff/task.json"
+   }
+  },
+  {
+   "task": "SystemBrightnessMaxVerify",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SystemBrightnessMaxVerify/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SystemBrightnessMaxVerify/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SystemBrightnessMaxVerify/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SystemBrightnessMaxVerify/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SystemBrightnessMaxVerify/task.json"
+   }
+  },
+  {
+   "task": "SystemWifiTurnOn",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOn/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOn/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOn/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOn/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOn/task.json"
+   }
+  },
+  {
+   "task": "ClockStopWatchRunning",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/ClockStopWatchRunning/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/ClockStopWatchRunning/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/ClockStopWatchRunning/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/ClockStopWatchRunning/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/ClockStopWatchRunning/task.json"
+   }
+  },
+  {
+   "task": "SystemWifiTurnOffVerify",
+   "mobilerun_grader_pass": true,
+   "google_grader_pass": true,
+   "files": {
+    "video_mp4": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOffVerify/video.mp4",
+    "video_webm": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOffVerify/video.webm",
+    "poster": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOffVerify/poster.webp",
+    "steps": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOffVerify/steps.json",
+    "task": "benchmarks/androidworld/2026-11-09/SystemWifiTurnOffVerify/task.json"
+   }
+  }
+ ]
+}

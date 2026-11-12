@@ -1,0 +1,183 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "RecipeDeleteMultipleRecipes",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 39.2,
+  "mobilerun_published_time_s": 234.1,
+  "speed_ratio": 0.167,
+  "lusor_cost_usd": 0.0138,
+  "mobilerun_published_actions": 13,
+  "mobilerun_est_cost_usd": 0.996,
+  "lusor_tool_calls": 17,
+  "disclosure": null,
+  "skills_read": [
+   "broccoli"
+  ],
+  "skill_assisted": [],
+  "goal": "Delete the following recipes from Broccoli app: Moroccan Chickpea Stew, Eggplant Parmesan, Quinoa Salad with Vegetables.",
+  "final_answer": null,
+  "final_summary": "I deleted all three recipes from Broccoli: Moroccan Chickpea Stew, Eggplant Parmesan, and Quinoa Salad with Vegetables. The recipe list now shows \"No recipes found.\", so the list holds no rows at all.",
+  "video_duration_s": 80.2,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 30.09,
+    "end_s": 30.1,
+    "ok": true,
+    "note": "Read Broccoli skill, then observe screen"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 30.09,
+    "end_s": 30.1,
+    "ok": true,
+    "note": "Read Broccoli skill, then observe screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 31.11,
+    "end_s": 35.14,
+    "ok": true,
+    "note": "Launch Broccoli and inspect recipe list"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 36.28,
+    "end_s": 37.82,
+    "ok": true,
+    "note": "Open Eggplant Parmesan recipe to delete it"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 40.22,
+    "end_s": 41.25,
+    "ok": true,
+    "note": "Open more options menu on Eggplant Parmesan"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 42.43,
+    "end_s": 43.33,
+    "ok": true,
+    "note": "Tap Delete on Eggplant Parmesan and confirm any dialog"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 44.29,
+    "end_s": 45.53,
+    "ok": true,
+    "note": "Confirm deletion, then delete Moroccan Chickpea Stew"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 46.64,
+    "end_s": 48.15,
+    "ok": true,
+    "note": "Open Moroccan Chickpea Stew"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 49.24,
+    "end_s": 50.14,
+    "ok": true,
+    "note": "Open more options on Moroccan Chickpea Stew"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 51.22,
+    "end_s": 52.03,
+    "ok": true,
+    "note": "Tap Delete on Moroccan Chickpea Stew and confirm"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 53.07,
+    "end_s": 54.14,
+    "ok": true,
+    "note": "Confirm deletion, then delete Quinoa Salad with Vegetables"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 55.14,
+    "end_s": 56.33,
+    "ok": true,
+    "note": "Open Quinoa Salad with Vegetables"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 57.52,
+    "end_s": 58.31,
+    "ok": true,
+    "note": "Open more options on Quinoa Salad with Vegetables"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 59.41,
+    "end_s": 60.22,
+    "ok": true,
+    "note": "Tap Delete on Quinoa Salad and confirm"
+   },
+   {
+    "step": 15,
+    "tool": "tap_element",
+    "start_s": 61.28,
+    "end_s": 62.12,
+    "ok": true,
+    "note": "Confirm deletion and verify list via map_app"
+   },
+   {
+    "step": 16,
+    "tool": "map_app",
+    "start_s": 63.29,
+    "end_s": 63.41,
+    "ok": true,
+    "note": "Map the recipe list to confirm no recipes remain"
+   },
+   {
+    "step": 17,
+    "tool": "done",
+    "start_s": 65.64,
+    "end_s": 65.65,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipes/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipes/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipes/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipes/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/RecipeDeleteMultipleRecipes/task.json"
+  }
+ }
+}

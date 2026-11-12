@@ -1,0 +1,55 @@
+{
+ "task": "SimpleSmsReply",
+ "video_duration_s": 74.1,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 35.66,
+   "end_s": 35.68,
+   "ok": true,
+   "note": "Observe current screen to find Simple SMS Messenger"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 36.65,
+   "end_s": 38.95,
+   "ok": true,
+   "note": "Launch Simple SMS Messenger and find conversation with +17184821533"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 40.2,
+   "end_s": 42.25,
+   "ok": true,
+   "note": "Open conversation with +17184821533 and tap message input"
+  },
+  {
+   "step": 4,
+   "tool": "type",
+   "start_s": 43.49,
+   "end_s": 48.86,
+   "ok": true,
+   "note": "Read back typed text then tap SMS send button"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 49.94,
+   "end_s": 51.25,
+   "ok": true,
+   "note": "Verify sent message appears in thread, then done"
+  },
+  {
+   "step": 6,
+   "tool": "done",
+   "start_s": 53.17,
+   "end_s": 53.17,
+   "ok": true,
+   "note": "Task complete: reply sent and verified in thread"
+  }
+ ]
+}

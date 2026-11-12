@@ -1,0 +1,159 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SimpleCalendarDeleteEventsOnRelativeDay",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 33.2,
+  "mobilerun_published_time_s": 215.6,
+  "speed_ratio": 0.154,
+  "lusor_cost_usd": 0.0144,
+  "mobilerun_published_actions": 9,
+  "mobilerun_est_cost_usd": 0.689,
+  "lusor_tool_calls": 14,
+  "disclosure": null,
+  "skills_read": [
+   "simple-calendar"
+  ],
+  "skill_assisted": [],
+  "goal": "In Simple Calendar Pro, delete all events scheduled for this Thursday.",
+  "final_answer": null,
+  "final_summary": "I deleted both events scheduled for this Thursday, October 19: \"Call with Marketing\" (12:00 to 13:00) and \"Meeting with HR\" (23:00 to midnight into October 20). The Thursday, October 19 day view now shows no events.",
+  "video_duration_s": 73.9,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 29.59,
+    "end_s": 29.61,
+    "ok": true,
+    "note": "Load simple-calendar skill, then observe screen"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 29.59,
+    "end_s": 29.61,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 30.57,
+    "end_s": 32.76,
+    "ok": true,
+    "note": "Launch Simple Calendar Pro"
+   },
+   {
+    "step": 4,
+    "tool": "tap",
+    "start_s": 34.56,
+    "end_s": 35.23,
+    "ok": true,
+    "note": null
+   },
+   {
+    "step": 5,
+    "tool": "key",
+    "start_s": 38.81,
+    "end_s": 39.12,
+    "ok": true,
+    "note": "Back to month view, then tap Thursday cell in week of Oct 19"
+   },
+   {
+    "step": 6,
+    "tool": "tap",
+    "start_s": 41.27,
+    "end_s": 41.95,
+    "ok": true,
+    "note": "Tap Oct 19 cell (row 4, Thursday column) and read day view header"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 43.99,
+    "end_s": 45.04,
+    "ok": true,
+    "note": "Open the first Oct 19 event to delete it"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 46.3,
+    "end_s": 47.35,
+    "ok": true,
+    "note": "Tap Delete on Call with Marketing, confirm dialog"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 48.33,
+    "end_s": 49.44,
+    "ok": true,
+    "note": "Confirm deletion, then delete Meeting with HR"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 50.27,
+    "end_s": 51.15,
+    "ok": true,
+    "note": "Open Meeting with HR and delete it"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 51.98,
+    "end_s": 52.72,
+    "ok": true,
+    "note": "Tap Delete on Meeting with HR, then Yes"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 53.54,
+    "end_s": 54.65,
+    "ok": true,
+    "note": "Confirm deletion and verify Oct 19 has no events"
+   },
+   {
+    "step": 13,
+    "tool": "get_ui_state",
+    "start_s": 56.47,
+    "end_s": 56.59,
+    "ok": true,
+    "note": "Confirm Oct 19 day list is empty, then done"
+   },
+   {
+    "step": 14,
+    "tool": "done",
+    "start_s": 59.13,
+    "end_s": 59.13,
+    "ok": true,
+    "note": "Task complete; both Oct 19 events deleted and day view empty"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEventsOnRelativeDay/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEventsOnRelativeDay/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEventsOnRelativeDay/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEventsOnRelativeDay/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SimpleCalendarDeleteEventsOnRelativeDay/task.json"
+  }
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "task": "MarkorCreateFolder",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.52,
+   "end_s": 29.54,
+   "ok": true,
+   "args": {
+    "path": "skill://markor/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.52,
+   "end_s": 29.54,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.82,
+   "end_s": 33.51,
+   "ok": true,
+   "args": {
+    "app": "net.gsantner.markor"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 34.69,
+   "end_s": 36.07,
+   "ok": true,
+   "args": {
+    "index": 9,
+    "capture": true
+   },
+   "tapped": {
+    "label": "Create a new file or folder",
+    "index": 9,
+    "x": 965,
+    "y": 2075
+   }
+  },
+  {
+   "step": 5,
+   "tool": "type",
+   "start_s": 37.35,
+   "end_s": 40.58,
+   "ok": true,
+   "args": {
+    "text": "folder_20261109_212319",
+    "index": 2,
+    "capture": true
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 41.82,
+   "end_s": 43.0,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 7
+   },
+   "tapped": {
+    "label": "FOLDER",
+    "index": 7,
+    "x": 172,
+    "y": 1112
+   }
+  },
+  {
+   "step": 7,
+   "tool": "done",
+   "start_s": 45.03,
+   "end_s": 45.04,
+   "ok": true,
+   "args": {
+    "summary": "Created the folder folder_20261109_212319 in Markor's Files list (Documents). It now shows as \"Folder folder_20261109_212319\".",
+    "rows": [
+     {
+      "folder_name": "folder_20261109_212319",
+      "type": "folder",
+      "location": "/storage/emulated/0/Documents",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "After tapping FOLDER in the new-item dialog, the Markor Files list shows a row labelled \"Folder folder_20261109_212319\" with title folder_20261109_212319 in /storage/emulated/0/Documents.",
+     "key_signals": [
+      "New item dialog with name field and FOLDER button",
+      "List row \"Folder folder_20261109_212319\" present"
+     ]
+    }
+   }
+  }
+ ]
+}

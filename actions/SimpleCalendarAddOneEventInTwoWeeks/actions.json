@@ -1,0 +1,425 @@
+{
+ "task": "SimpleCalendarAddOneEventInTwoWeeks",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.06,
+   "end_s": 30.06,
+   "ok": true,
+   "args": {
+    "path": "skill://simple-calendar/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.84,
+   "end_s": 30.86,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.86,
+   "end_s": 34.23,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.calendar.pro"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.84,
+   "end_s": 36.58,
+   "ok": true,
+   "args": {
+    "index": 53
+   },
+   "tapped": {
+    "label": "New Event",
+    "index": 53,
+    "x": 965,
+    "y": 2222
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.59,
+   "end_s": 38.71,
+   "ok": true,
+   "args": {
+    "index": 56
+   },
+   "tapped": {
+    "label": "Event",
+    "index": 56,
+    "x": 812,
+    "y": 2222
+   }
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 39.75,
+   "end_s": 42.18,
+   "ok": true,
+   "args": {
+    "text": "Review session for Campaign",
+    "index": 4
+   }
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 43.04,
+   "end_s": 48.28,
+   "ok": true,
+   "args": {
+    "index": 7,
+    "text": "We will explore upcoming project milestones. Please bring relevant documents."
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 49.42,
+   "end_s": 49.97,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": "October 15 (Sun)",
+    "index": 10,
+    "x": 350,
+    "y": 1140
+   }
+  },
+  {
+   "step": 9,
+   "tool": "get_ui_state",
+   "start_s": 51.0,
+   "end_s": 51.17,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 52.29,
+   "end_s": 52.48,
+   "ok": true,
+   "args": {
+    "index": 34
+   },
+   "tapped": {
+    "label": "29",
+    "index": 34,
+    "x": 225,
+    "y": 1567
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 53.36,
+   "end_s": 53.87,
+   "ok": true,
+   "args": {
+    "index": 40
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 40,
+    "x": 844,
+    "y": 1798
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 54.74,
+   "end_s": 56.28,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "16:00",
+    "index": 11,
+    "x": 962,
+    "y": 1140
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 57.28,
+   "end_s": 58.38,
+   "ok": true,
+   "args": {
+    "index": 28
+   },
+   "tapped": {
+    "label": "Switch to text input mode for the time input.",
+    "index": 28,
+    "x": 237,
+    "y": 1816
+   }
+  },
+  {
+   "step": 14,
+   "tool": "type",
+   "start_s": 59.22,
+   "end_s": 60.18,
+   "ok": true,
+   "args": {
+    "index": 1,
+    "text": "01"
+   }
+  },
+  {
+   "step": 15,
+   "tool": "get_ui_state",
+   "start_s": 60.85,
+   "end_s": 60.87,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 61.92,
+   "end_s": 62.47,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 5,
+    "x": 781,
+    "y": 1107
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 64.06,
+   "end_s": 65.17,
+   "ok": true,
+   "args": {
+    "index": 13
+   },
+   "tapped": {
+    "label": "01:00",
+    "index": 13,
+    "x": 962,
+    "y": 1285
+   }
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 66.01,
+   "end_s": 66.88,
+   "ok": true,
+   "args": {
+    "index": 28
+   },
+   "tapped": {
+    "label": "Switch to text input mode for the time input.",
+    "index": 28,
+    "x": 237,
+    "y": 1816
+   }
+  },
+  {
+   "step": 19,
+   "tool": "tap",
+   "start_s": 68.04,
+   "end_s": 68.67,
+   "ok": true,
+   "args": {
+    "x": 697,
+    "y": 825
+   }
+  },
+  {
+   "step": 20,
+   "tool": "type",
+   "start_s": 69.99,
+   "end_s": 70.97,
+   "ok": true,
+   "args": {
+    "index": 2,
+    "text": "45"
+   }
+  },
+  {
+   "step": 21,
+   "tool": "get_ui_state",
+   "start_s": 71.7,
+   "end_s": 71.78,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 22,
+   "tool": "type",
+   "start_s": 73.17,
+   "end_s": 74.7,
+   "ok": true,
+   "args": {
+    "index": 1,
+    "text": "01"
+   }
+  },
+  {
+   "step": 23,
+   "tool": "get_ui_state",
+   "start_s": 75.57,
+   "end_s": 75.59,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 24,
+   "tool": "type",
+   "start_s": 76.61,
+   "end_s": 77.89,
+   "ok": true,
+   "args": {
+    "index": 2,
+    "text": "45"
+   }
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 78.75,
+   "end_s": 79.3,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 5,
+    "x": 781,
+    "y": 1107
+   }
+  },
+  {
+   "step": 26,
+   "tool": "tap_element",
+   "start_s": 80.29,
+   "end_s": 81.28,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "Save",
+    "index": 2,
+    "x": 1017,
+    "y": 211
+   }
+  },
+  {
+   "step": 27,
+   "tool": "tap_element",
+   "start_s": 82.43,
+   "end_s": 83.51,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 3,
+    "x": 842,
+    "y": 1512
+   }
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 84.9,
+   "end_s": 85.5,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 279,
+    "y": 212
+   }
+  },
+  {
+   "step": 29,
+   "tool": "type",
+   "start_s": 86.45,
+   "end_s": 90.89,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "text": "Review session for Campaign"
+   }
+  },
+  {
+   "step": 30,
+   "tool": "tap_element",
+   "start_s": 92.0,
+   "end_s": 93.39,
+   "ok": true,
+   "args": {
+    "index": 58
+   },
+   "tapped": {
+    "label": null,
+    "index": 58,
+    "x": 540,
+    "y": 568
+   }
+  },
+  {
+   "step": 31,
+   "tool": "done",
+   "start_s": 96.52,
+   "end_s": 96.52,
+   "ok": true,
+   "args": {
+    "summary": "I created the event \"Review session for Campaign\" in Simple Calendar Pro for Sunday, October 29, 2023 (two weeks from today, which was Sunday, October 15), from 01:00 to 01:45, so it lasts 45 minutes. The description reads \"We will explore upcoming project milestones. Please bring relevant documents.\" A search of the calendar showed the saved event under 29 Sunday with the 01:00 to 01:45 time, and opening it confirmed the title, description and both dates and times.",
+    "evidence": {
+     "objective_evidence": "Search results listed the event under \"29 Sunday\" with time \"01:00 - 01:45\" and the exact description; opening the event showed title \"Review session for Campaign\", description as requested, start October 29 (Sun) 01:00 and end October 29 (Sun) 01:45.",
+     "key_signals": [
+      "Device date Sun 2023-10-15, two weeks later = 2023-10-29",
+      "Event form saved with start 01:00 and end 01:45",
+      "Search result row: 01:00 - 01:45 on 29 Sunday",
+      "Opened event detail confirmed all fields"
+     ]
+    },
+    "rows": [
+     {
+      "title": "Review session for Campaign",
+      "date": "2023-10-29",
+      "start_time": "01:00",
+      "end_time": "01:45",
+      "duration": "45 minutes",
+      "description": "We will explore upcoming project milestones. Please bring relevant documents.",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

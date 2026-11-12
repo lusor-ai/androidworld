@@ -1,0 +1,181 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "ExpenseAddSingle",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 42.2,
+  "mobilerun_published_time_s": 311.7,
+  "speed_ratio": 0.135,
+  "lusor_cost_usd": 0.0169,
+  "mobilerun_published_actions": 12,
+  "mobilerun_est_cost_usd": 0.919,
+  "lusor_tool_calls": 17,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Add the following expenses into the pro expense:\nExpense: Library Fees\n amount_dollars: $284.16\n category_name: Education\n note: Remember to transfer funds",
+  "final_answer": null,
+  "final_summary": "I added the Library Fees expense of $284.16 under the Education category with the note \"Remember to transfer funds\". The app's Recent list now shows Library Fees at 284.16 USD, the Expense Detail screen shows the same amount and note, and the weekly outcome total rose from 243.1 to 527.26 USD.",
+  "video_duration_s": 83.4,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 29.98,
+    "end_s": 30.0,
+    "ok": true,
+    "note": "Observe current screen to locate the Pro Expense app"
+   },
+   {
+    "step": 2,
+    "tool": "swipe",
+    "start_s": 31.22,
+    "end_s": 33.25,
+    "ok": true,
+    "note": "Open app drawer to find Pro Expense app"
+   },
+   {
+    "step": 3,
+    "tool": "swipe",
+    "start_s": 34.23,
+    "end_s": 35.83,
+    "ok": true,
+    "note": "Scroll app drawer to find Pro Expense"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 36.72,
+    "end_s": 37.8,
+    "ok": true,
+    "note": "Tap Pro Expense app icon and observe its home screen"
+   },
+   {
+    "step": 5,
+    "tool": "get_ui_state",
+    "start_s": 38.51,
+    "end_s": 40.33,
+    "ok": true,
+    "note": "Read Pro Expense home screen after splash"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 41.37,
+    "end_s": 42.71,
+    "ok": true,
+    "note": "Tap add expense button and observe form"
+   },
+   {
+    "step": 7,
+    "tool": "type",
+    "start_s": 43.91,
+    "end_s": 46.14,
+    "ok": true,
+    "note": "Type amount 284.16 into amount field"
+   },
+   {
+    "step": 8,
+    "tool": "type",
+    "start_s": 47.01,
+    "end_s": 48.04,
+    "ok": true,
+    "note": "Scroll category list right to find Education and select it"
+   },
+   {
+    "step": 9,
+    "tool": "swipe",
+    "start_s": 49.26,
+    "end_s": 51.02,
+    "ok": true,
+    "note": "Scroll category row right to find Education"
+   },
+   {
+    "step": 10,
+    "tool": "swipe",
+    "start_s": 52.17,
+    "end_s": 53.73,
+    "ok": true,
+    "note": "Scroll category row further to find Education"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 55.2,
+    "end_s": 55.63,
+    "ok": true,
+    "note": "Select Education category and verify it is checked"
+   },
+   {
+    "step": 12,
+    "tool": "type",
+    "start_s": 56.77,
+    "end_s": 59.78,
+    "ok": true,
+    "note": "Type note and verify all fields before saving"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 60.65,
+    "end_s": 61.65,
+    "ok": true,
+    "note": "Tap SAVE and verify the entry appears in the list"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 62.89,
+    "end_s": 63.61,
+    "ok": true,
+    "note": "Open the saved Library Fees entry to read back category and note"
+   },
+   {
+    "step": 15,
+    "tool": "get_ui_state",
+    "start_s": 64.47,
+    "end_s": 64.48,
+    "ok": true,
+    "note": "Read the opened Library Fees detail screen"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 65.97,
+    "end_s": 66.67,
+    "ok": true,
+    "note": "Close the detail sheet and read the final home screen"
+   },
+   {
+    "step": 17,
+    "tool": "done",
+    "start_s": 68.73,
+    "end_s": 68.73,
+    "ok": true,
+    "note": "Task complete; expense saved and verified"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/ExpenseAddSingle/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/ExpenseAddSingle/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/ExpenseAddSingle/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/ExpenseAddSingle/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/ExpenseAddSingle/task.json"
+  }
+ }
+}

@@ -1,0 +1,342 @@
+{
+ "task": "MarkorMergeNotes",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.92,
+   "end_s": 30.93,
+   "ok": true,
+   "args": {
+    "path": "skill://markor/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.92,
+   "end_s": 30.93,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 32.0,
+   "end_s": 32.89,
+   "ok": true,
+   "args": {
+    "index": 11,
+    "capture": true
+   },
+   "tapped": {
+    "label": "Markor",
+    "index": 11,
+    "x": 918,
+    "y": 1971
+   }
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 34.33,
+   "end_s": 34.79,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 35.82,
+   "end_s": 36.37,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 11
+   },
+   "tapped": {
+    "label": "File active_mouse_copy.md ",
+    "index": 11,
+    "x": 540,
+    "y": 479
+   }
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 37.09,
+   "end_s": 37.1,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 7,
+   "tool": "key",
+   "start_s": 38.33,
+   "end_s": 39.22,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 40.28,
+   "end_s": 41.01,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 13
+   },
+   "tapped": {
+    "label": "File backup_neat_nest.txt ",
+    "index": 13,
+    "x": 536,
+    "y": 623
+   }
+  },
+  {
+   "step": 9,
+   "tool": "get_ui_state",
+   "start_s": 42.13,
+   "end_s": 42.15,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 10,
+   "tool": "key",
+   "start_s": 43.36,
+   "end_s": 44.14,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 45.45,
+   "end_s": 45.91,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 15
+   },
+   "tapped": {
+    "label": "File bKCr_silly_umbrella.md ",
+    "index": 15,
+    "x": 524,
+    "y": 767
+   }
+  },
+  {
+   "step": 12,
+   "tool": "get_ui_state",
+   "start_s": 47.03,
+   "end_s": 47.04,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 13,
+   "tool": "calculate",
+   "start_s": 49.46,
+   "end_s": 49.5,
+   "ok": true,
+   "args": {
+    "code": "const a=\"22bldei9fN1FY6O8Uku5\\n\", b=\"GM01IHyC0dRsNTG9BMFe\\n\", c=\"nEdZKQJWyDlV3RWS0fy3\\n\"; return [a,b,c].join(\"\\n\");"
+   }
+  },
+  {
+   "step": 14,
+   "tool": "key",
+   "start_s": 51.29,
+   "end_s": 52.08,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 53.46,
+   "end_s": 54.7,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 17
+   },
+   "tapped": {
+    "label": "Create a new file or folder",
+    "index": 17,
+    "x": 965,
+    "y": 2075
+   }
+  },
+  {
+   "step": 16,
+   "tool": "type",
+   "start_s": 56.85,
+   "end_s": 59.19,
+   "ok": true,
+   "args": {
+    "index": 2,
+    "text": "CFR0t5ao",
+    "capture": true
+   }
+  },
+  {
+   "step": 17,
+   "tool": "clear",
+   "start_s": 60.51,
+   "end_s": 61.42,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "capture": true
+   }
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 62.97,
+   "end_s": 64.48,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 9
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 9,
+    "x": 922,
+    "y": 1112
+   }
+  },
+  {
+   "step": 19,
+   "tool": "type",
+   "start_s": 66.82,
+   "end_s": 74.2,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 7,
+    "text": "22bldei9fN1FY6O8Uku5\n\nGM01IHyC0dRsNTG9BMFe\n\nnEdZKQJWyDlV3RWS0fy3"
+   }
+  },
+  {
+   "step": 20,
+   "tool": "type",
+   "start_s": 79.45,
+   "end_s": 85.57,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 9,
+    "text": "22bldei9fN1FY6O8Uku5\n\nGM01IHyC0dRsNTG9BMFe\n\nnEdZKQJWyDlV3RWS0fy3\n"
+   }
+  },
+  {
+   "step": 21,
+   "tool": "tap_element",
+   "start_s": 87.7,
+   "end_s": 88.07,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4
+   },
+   "tapped": {
+    "label": "Save",
+    "index": 4,
+    "x": 818,
+    "y": 201
+   }
+  },
+  {
+   "step": 22,
+   "tool": "key",
+   "start_s": 89.93,
+   "end_s": 90.5,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 23,
+   "tool": "key",
+   "start_s": 91.81,
+   "end_s": 92.6,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "key": "back"
+   }
+  },
+  {
+   "step": 24,
+   "tool": "tap_element",
+   "start_s": 94.36,
+   "end_s": 94.89,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 19
+   },
+   "tapped": {
+    "label": "File CFR0t5ao ",
+    "index": 19,
+    "x": 540,
+    "y": 1055
+   }
+  },
+  {
+   "step": 25,
+   "tool": "get_ui_state",
+   "start_s": 96.46,
+   "end_s": 96.77,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 26,
+   "tool": "done",
+   "start_s": 100.58,
+   "end_s": 100.59,
+   "ok": true,
+   "args": {
+    "summary": "Created and saved a new Markor note named CFR0t5ao containing the three notes merged in order, with a blank line between each note's content. I read each source note first, built the combined text, saved the new note, and reopened it from the file list to confirm the saved content.",
+    "evidence": {
+     "objective_evidence": "Reopening CFR0t5ao from the Markor file list shows the editor title \"CFR0t5ao\" and content \"22bldei9fN1FY6O8Uku5\\n\\nGM01IHyC0dRsNTG9BMFe\\n\\nnEdZKQJWyDlV3RWS0fy3\\n\" with Save disabled (nothing unsaved). The file list shows CFR0t5ao with no extension at 10/15/2023, 15:35.",
+     "key_signals": [
+      "active_mouse_copy.md content: 22bldei9fN1FY6O8Uku5 (with trailing newline)",
+      "backup_neat_nest.txt content: GM01IHyC0dRsNTG9BMFe (with trailing newline)",
+      "bKCr_silly_umbrella.md content: nEdZKQJWyDlV3RWS0fy3 (with trailing newline)",
+      "New file created with empty extension field, so the name is exactly CFR0t5ao",
+      "Saved note reopened from disk shows the merged content unchanged"
+     ]
+    },
+    "rows": [
+     {
+      "note": "CFR0t5ao",
+      "source_notes": "active_mouse_copy.md, backup_neat_nest.txt, bKCr_silly_umbrella.md",
+      "content": "22bldei9fN1FY6O8Uku5\n\nGM01IHyC0dRsNTG9BMFe\n\nnEdZKQJWyDlV3RWS0fy3\n",
+      "saved": true,
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

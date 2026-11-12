@@ -1,0 +1,318 @@
+{
+ "task": "MarkorCreateNoteAndSms",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 37.94,
+   "end_s": 37.95,
+   "ok": true,
+   "args": {
+    "path": "skill://markor/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 37.94,
+   "end_s": 37.95,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 39.16,
+   "end_s": 41.52,
+   "ok": true,
+   "args": {
+    "app": "net.gsantner.markor",
+    "capture": true
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 42.35,
+   "end_s": 43.66,
+   "ok": true,
+   "args": {
+    "index": 9,
+    "capture": true
+   },
+   "tapped": {
+    "label": "Create a new file or folder",
+    "index": 9,
+    "x": 965,
+    "y": 2075
+   }
+  },
+  {
+   "step": 5,
+   "tool": "type",
+   "start_s": 45.08,
+   "end_s": 48.08,
+   "ok": true,
+   "args": {
+    "index": 2,
+    "text": "glad_eagle_2023_05_21"
+   }
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 49.0,
+   "end_s": 50.45,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "text": ".txt"
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 52.89,
+   "end_s": 54.76,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 9
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 9,
+    "x": 922,
+    "y": 1112
+   }
+  },
+  {
+   "step": 8,
+   "tool": "type",
+   "start_s": 57.56,
+   "end_s": 61.34,
+   "ok": true,
+   "args": {
+    "index": 7,
+    "text": "Better late than never.."
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 62.07,
+   "end_s": 62.75,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 4
+   },
+   "tapped": {
+    "label": "Save",
+    "index": 4,
+    "x": 818,
+    "y": 201
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 63.82,
+   "end_s": 64.66,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 5
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 5,
+    "x": 1028,
+    "y": 201
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 65.54,
+   "end_s": 66.59,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 813,
+    "y": 327
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 67.6,
+   "end_s": 68.47,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 817,
+    "y": 327
+   }
+  },
+  {
+   "step": 13,
+   "tool": "get_ui_state",
+   "start_s": 69.24,
+   "end_s": 70.86,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 71.66,
+   "end_s": 73.49,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 11
+   },
+   "tapped": {
+    "label": null,
+    "index": 11,
+    "x": 945,
+    "y": 2164
+   }
+  },
+  {
+   "step": 15,
+   "tool": "type",
+   "start_s": 74.73,
+   "end_s": 76.12,
+   "ok": true,
+   "args": {
+    "index": 2,
+    "text": "+13660435839",
+    "capture": true
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 76.78,
+   "end_s": 77.86,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 1017,
+    "y": 359
+   }
+  },
+  {
+   "step": 17,
+   "tool": "get_ui_state",
+   "start_s": 78.54,
+   "end_s": 78.56,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 79.73,
+   "end_s": 80.78,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 8,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "SMS",
+    "index": 8,
+    "x": 1006,
+    "y": 2274
+   }
+  },
+  {
+   "step": 19,
+   "tool": "get_ui_state",
+   "start_s": 81.66,
+   "end_s": 81.68,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 83.63,
+   "end_s": 85.0,
+   "ok": true,
+   "args": {
+    "capture": true,
+    "index": 8,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "SMS",
+    "index": 8,
+    "x": 1006,
+    "y": 1454
+   }
+  },
+  {
+   "step": 21,
+   "tool": "get_ui_state",
+   "start_s": 87.82,
+   "end_s": 87.83,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 22,
+   "tool": "done",
+   "start_s": 90.55,
+   "end_s": 90.56,
+   "ok": true,
+   "args": {
+    "summary": "I created the note glad_eagle_2023_05_21.txt in Markor with the text \"Better late than never..\" (kept exactly as you wrote it, including the double period), saved it, and shared its full content by SMS to +13660435839 using Simple SMS Messenger. The conversation thread shows the message at 15:34 with a delivered checkmark, and Simple SMS Messenger is left open in the foreground.",
+    "evidence": {
+     "objective_evidence": "Markor editor showed title \"glad_eagle_2023_05_21\" with body \"Better late than never..\" and Save greyed out after saving; the share sheet preview showed the same text and sent to the SMS Messenger share target; the Simple SMS Messenger thread for +13660435839 now lists the message body \"Better late than never..\" at 15:34 with a success indicator.",
+     "key_signals": [
+      "New file dialog: name glad_eagle_2023_05_21, extension .txt",
+      "Editor readback: \"Better late than never..\", Save Disabled after tap",
+      "Share sheet preview text matched note content",
+      "Thread title +13660435839 with one outgoing message and thread_success icon"
+     ]
+    },
+    "rows": [
+     {
+      "item": "glad_eagle_2023_05_21.txt created in Markor with text 'Better late than never..'",
+      "lusor_status": "succeeded"
+     },
+     {
+      "item": "Full note content shared via SMS to +13660435839 in Simple SMS Messenger",
+      "lusor_status": "succeeded"
+     },
+     {
+      "item": "Simple SMS Messenger left in foreground on the thread",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

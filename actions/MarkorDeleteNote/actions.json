@@ -1,0 +1,127 @@
+{
+ "task": "MarkorDeleteNote",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 31.73,
+   "end_s": 31.73,
+   "ok": true,
+   "args": {
+    "path": "skill://markor/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 32.72,
+   "end_s": 32.74,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 33.83,
+   "end_s": 36.15,
+   "ok": true,
+   "args": {
+    "app": "net.gsantner.markor"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 37.02,
+   "end_s": 37.11,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 38.41,
+   "end_s": 39.7,
+   "ok": true,
+   "args": {
+    "index": 23,
+    "hold_ms": 1200
+   },
+   "tapped": {
+    "label": "File final_polite_fish ",
+    "index": 23,
+    "x": 540,
+    "y": 1343
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 40.79,
+   "end_s": 41.73,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "Delete",
+    "index": 5,
+    "x": 923,
+    "y": 201
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 42.78,
+   "end_s": 43.82,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 3,
+    "x": 802,
+    "y": 1477
+   }
+  },
+  {
+   "step": 8,
+   "tool": "map_app",
+   "start_s": 45.48,
+   "end_s": 46.85,
+   "ok": true,
+   "args": {
+    "levels": 1
+   }
+  },
+  {
+   "step": 9,
+   "tool": "done",
+   "start_s": 49.07,
+   "end_s": 49.08,
+   "ok": true,
+   "args": {
+    "summary": "I deleted the Markor note named exactly final_polite_fish. I long-pressed it in the Files list, tapped Delete, and confirmed the \"Confirm Delete\" dialog, which showed the path /storage/emulated/0/Documents/markor/final_polite_fish. The list now has 13 entries and no longer contains that note; the similarly named files that have extra text or extensions (such as final_polite_fish_2023_02_28.md) are separate notes and were left alone.",
+    "rows": [
+     {
+      "item": "final_polite_fish",
+      "action": "deleted from Markor Files at /storage/emulated/0/Documents/markor/final_polite_fish",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "Delete confirmation dialog listed /storage/emulated/0/Documents/markor/final_polite_fish; after tapping OK the Files list dropped from 14 to 13 rows and a titles-only map shows no final_polite_fish entry.",
+     "key_signals": [
+      "Long press on final_polite_fish row selected it (\"Selected final_polite_fish\")",
+      "Confirm Delete dialog named final_polite_fish",
+      "Map after deletion: 13 rows, end proven, target absent"
+     ]
+    }
+   }
+  }
+ ]
+}

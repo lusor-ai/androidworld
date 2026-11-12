@@ -1,0 +1,255 @@
+{
+ "task": "ExpenseAddSingle",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.98,
+   "end_s": 30.0,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 31.22,
+   "end_s": 33.25,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1600,
+    "endX": 540,
+    "endY": 400,
+    "durationMs": 300,
+    "capture": true
+   }
+  },
+  {
+   "step": 3,
+   "tool": "swipe",
+   "start_s": 34.23,
+   "end_s": 35.83,
+   "ok": true,
+   "args": {
+    "startX": 540,
+    "startY": 1900,
+    "endX": 540,
+    "endY": 800,
+    "durationMs": 300,
+    "capture": true
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 36.72,
+   "end_s": 37.8,
+   "ok": true,
+   "args": {
+    "index": 19,
+    "capture": true
+   },
+   "tapped": {
+    "label": "Pro Expense",
+    "index": 19,
+    "x": 419,
+    "y": 1694
+   }
+  },
+  {
+   "step": 5,
+   "tool": "get_ui_state",
+   "start_s": 38.51,
+   "end_s": 40.33,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 41.37,
+   "end_s": 42.71,
+   "ok": true,
+   "args": {
+    "index": 8,
+    "capture": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 8,
+    "x": 965,
+    "y": 2180
+   }
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 43.91,
+   "end_s": 46.14,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "text": "Library Fees"
+   }
+  },
+  {
+   "step": 8,
+   "tool": "type",
+   "start_s": 47.01,
+   "end_s": 48.04,
+   "ok": true,
+   "args": {
+    "index": 6,
+    "text": "284.16"
+   }
+  },
+  {
+   "step": 9,
+   "tool": "swipe",
+   "start_s": 49.26,
+   "end_s": 51.02,
+   "ok": true,
+   "args": {
+    "startX": 900,
+    "startY": 820,
+    "endX": 150,
+    "endY": 820,
+    "durationMs": 300,
+    "capture": true
+   }
+  },
+  {
+   "step": 10,
+   "tool": "swipe",
+   "start_s": 52.17,
+   "end_s": 53.73,
+   "ok": true,
+   "args": {
+    "startX": 900,
+    "startY": 820,
+    "endX": 150,
+    "endY": 820,
+    "durationMs": 300,
+    "capture": true
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 55.2,
+   "end_s": 55.63,
+   "ok": true,
+   "args": {
+    "index": 11,
+    "toggle": true,
+    "capture": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 11,
+    "x": 715,
+    "y": 817
+   }
+  },
+  {
+   "step": 12,
+   "tool": "type",
+   "start_s": 56.77,
+   "end_s": 59.78,
+   "ok": true,
+   "args": {
+    "index": 13,
+    "text": "Remember to transfer funds"
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 60.65,
+   "end_s": 61.65,
+   "ok": true,
+   "args": {
+    "index": 14,
+    "capture": true
+   },
+   "tapped": {
+    "label": "SAVE",
+    "index": 14,
+    "x": 454,
+    "y": 1303
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 62.89,
+   "end_s": 63.61,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "capture": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 5,
+    "x": 540,
+    "y": 1991
+   }
+  },
+  {
+   "step": 15,
+   "tool": "get_ui_state",
+   "start_s": 64.47,
+   "end_s": 64.48,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 65.97,
+   "end_s": 66.67,
+   "ok": true,
+   "args": {
+    "index": 2,
+    "capture": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 992,
+    "y": 1469
+   }
+  },
+  {
+   "step": 17,
+   "tool": "done",
+   "start_s": 68.73,
+   "end_s": 68.73,
+   "ok": true,
+   "args": {
+    "summary": "I added the Library Fees expense of $284.16 under the Education category with the note \"Remember to transfer funds\". The app's Recent list now shows Library Fees at 284.16 USD, the Expense Detail screen shows the same amount and note, and the weekly outcome total rose from 243.1 to 527.26 USD.",
+    "evidence": {
+     "objective_evidence": "Home Recent list shows 'Library Fees' 284.16 USD, Today 3:34 PM, and the opened Expense Detail sheet shows name Library Fees, amount 284.16 USD, note 'Remember to transfer funds'. Totals OUTCOME changed from 243.1 to 527.26 USD.",
+     "key_signals": [
+      "Expense Entry form: name Library Fees, amount 284.16 with USD suffix",
+      "Education category card showed Checked before saving",
+      "Recent list row e86 = Library Fees 284.16 USD",
+      "Expense Detail sheet shows note 'Remember to transfer funds'"
+     ]
+    },
+    "rows": [
+     {
+      "name": "Library Fees",
+      "amount": "284.16",
+      "category_name": "Education",
+      "note": "Remember to transfer funds",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

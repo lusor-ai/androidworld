@@ -1,0 +1,179 @@
+{
+ "task": "SimpleCalendarDeleteOneEvent",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.47,
+   "end_s": 30.48,
+   "ok": true,
+   "args": {
+    "path": "skill://simple-calendar/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.47,
+   "end_s": 30.48,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.26,
+   "end_s": 33.59,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.calendar.pro"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap",
+   "start_s": 36.16,
+   "end_s": 36.98,
+   "ok": true,
+   "args": {
+    "x": 386,
+    "y": 1272
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap",
+   "start_s": 38.78,
+   "end_s": 39.88,
+   "ok": true,
+   "args": {
+    "x": 386,
+    "y": 1577
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 41.35,
+   "end_s": 41.96,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 387,
+    "y": 212
+   }
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 42.8,
+   "end_s": 46.51,
+   "ok": true,
+   "args": {
+    "text": "Workshop on Annual Report"
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 47.75,
+   "end_s": 48.97,
+   "ok": true,
+   "args": {
+    "index": 22
+   },
+   "tapped": {
+    "label": null,
+    "index": 22,
+    "x": 540,
+    "y": 568
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 50.18,
+   "end_s": 51.26,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "Delete",
+    "index": 3,
+    "x": 785,
+    "y": 211
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 52.52,
+   "end_s": 53.68,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "Yes",
+    "index": 3,
+    "x": 842,
+    "y": 1317
+   }
+  },
+  {
+   "step": 11,
+   "tool": "get_ui_state",
+   "start_s": 54.93,
+   "end_s": 54.98,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 12,
+   "tool": "type",
+   "start_s": 56.17,
+   "end_s": 60.01,
+   "ok": true,
+   "args": {
+    "text": "Workshop on Annual Report",
+    "index": 3
+   }
+  },
+  {
+   "step": 13,
+   "tool": "done",
+   "start_s": 63.08,
+   "end_s": 63.09,
+   "ok": true,
+   "args": {
+    "summary": "I deleted the event \"Workshop on Annual Report\" on October 17, 2023 at 21:00 (21:00 to 22:00) from Simple Calendar Pro. Searching for the title again now returns \"No items found.\"",
+    "evidence": {
+     "objective_evidence": "Search for \"Workshop on Annual Report\" returned a single result under \"17 Tuesday\" (OCTOBER) at 21:00 - 22:00 with the matching title and description. I opened it, confirmed the title and the October 17 (Tue) 21:00 - 22:00 times, tapped Delete and then Yes on \"Are you sure you want to proceed with the deletion?\". Re-running the same search now shows \"No items found.\"",
+     "key_signals": [
+      "Event detail page showed title 'Workshop on Annual Report', October 17 (Tue), 21:00 - 22:00",
+      "Delete confirmation dialog was accepted",
+      "Repeat search shows 'No items found.'"
+     ]
+    },
+    "rows": [
+     {
+      "event": "Workshop on Annual Report",
+      "date": "2023-10-17",
+      "time": "21:00-22:00",
+      "action": "deleted",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

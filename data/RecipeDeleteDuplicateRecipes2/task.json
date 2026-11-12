@@ -1,0 +1,263 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "RecipeDeleteDuplicateRecipes2",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 96.2,
+  "mobilerun_published_time_s": 327.1,
+  "speed_ratio": 0.294,
+  "lusor_cost_usd": 0.0353,
+  "mobilerun_published_actions": 18,
+  "mobilerun_est_cost_usd": 1.379,
+  "lusor_tool_calls": 27,
+  "disclosure": null,
+  "skills_read": [
+   "broccoli"
+  ],
+  "skill_assisted": [],
+  "goal": "Delete all but one of any recipes in the Broccoli app that are exact duplicates, ensuring at least one instance of each unique recipe remains",
+  "final_answer": null,
+  "final_summary": "I found only one exact duplicate pair in Broccoli and deleted the extra copy, so at least one instance of every unique recipe remains. The six Veggie and Hummus Sandwich entries looked alike as list rows, but opening each one showed they differ in servings, time, ingredients and directions, except two that matched on every field (3-4 servings, 2 hrs, \"per individual taste\", and the same direction text). I deleted one of those two; the recipe list now holds 11 recipes, with the other five sandwich entries each unique and the remaining five recipes distinct.",
+  "video_duration_s": 136.9,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 29.67,
+    "end_s": 29.69,
+    "ok": true,
+    "note": "Load broccoli skill guidance"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 29.67,
+    "end_s": 29.69,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 31.01,
+    "end_s": 34.95,
+    "ok": true,
+    "note": "Launch Broccoli app"
+   },
+   {
+    "step": 4,
+    "tool": "map_app",
+    "start_s": 35.76,
+    "end_s": 48.69,
+    "ok": true,
+    "note": "Map all recipe titles"
+   },
+   {
+    "step": 5,
+    "tool": "get_ui_state",
+    "start_s": 50.54,
+    "end_s": 50.56,
+    "ok": true,
+    "note": "Open first Veggie and Hummus Sandwich to read its full details"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 52.97,
+    "end_s": 54.33,
+    "ok": true,
+    "note": "Read sandwich #1 (delicious) details"
+   },
+   {
+    "step": 7,
+    "tool": "key",
+    "start_s": 56.03,
+    "end_s": 56.46,
+    "ok": true,
+    "note": "Open sandwich #2 (delicious) at pos 9"
+   },
+   {
+    "step": 8,
+    "tool": "swipe",
+    "start_s": 60.16,
+    "end_s": 62.31,
+    "ok": true,
+    "note": "Scroll to top of recipe list and count rows"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 65.89,
+    "end_s": 67.07,
+    "ok": true,
+    "note": "Open pos9 (veggie delicious #2) and read details"
+   },
+   {
+    "step": 10,
+    "tool": "key",
+    "start_s": 68.71,
+    "end_s": 69.15,
+    "ok": true,
+    "note": "Open pos10 (veggie ideal #1) and read details"
+   },
+   {
+    "step": 11,
+    "tool": "swipe",
+    "start_s": 70.53,
+    "end_s": 72.65,
+    "ok": true,
+    "note": "Scroll down to reveal pos10 veggie ideal #1"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 74.67,
+    "end_s": 74.68,
+    "ok": true,
+    "note": "Read pos10 (veggie ideal #1) details"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 75.52,
+    "end_s": 76.83,
+    "ok": true,
+    "note": "Read pos10 (veggie ideal #1) details"
+   },
+   {
+    "step": 14,
+    "tool": "key",
+    "start_s": 78.5,
+    "end_s": 79.13,
+    "ok": true,
+    "note": "Open pos11 (veggie ideal #2) and read details"
+   },
+   {
+    "step": 15,
+    "tool": "tap_element",
+    "start_s": 80.21,
+    "end_s": 81.55,
+    "ok": true,
+    "note": "Read pos11 (veggie ideal #2) details"
+   },
+   {
+    "step": 16,
+    "tool": "key",
+    "start_s": 83.36,
+    "end_s": 83.94,
+    "ok": true,
+    "note": "Scroll up and open pos6 (veggie quick #1)"
+   },
+   {
+    "step": 17,
+    "tool": "tap_element",
+    "start_s": 85.48,
+    "end_s": 86.74,
+    "ok": true,
+    "note": "Read veggie quick #2 details (currently on screen as quick row 2)"
+   },
+   {
+    "step": 18,
+    "tool": "key",
+    "start_s": 88.57,
+    "end_s": 89.14,
+    "ok": true,
+    "note": "Open veggie quick #1 (partial top row) details"
+   },
+   {
+    "step": 19,
+    "tool": "tap_element",
+    "start_s": 90.26,
+    "end_s": 91.53,
+    "ok": true,
+    "note": "Read veggie quick #1 details"
+   },
+   {
+    "step": 20,
+    "tool": "key",
+    "start_s": 95.14,
+    "end_s": 95.77,
+    "ok": true,
+    "note": "Open the duplicate ideal #2 recipe and delete it via More options"
+   },
+   {
+    "step": 21,
+    "tool": "tap_element",
+    "start_s": 96.76,
+    "end_s": 98.16,
+    "ok": true,
+    "note": "Open ideal #2 duplicate, then More options > Delete"
+   },
+   {
+    "step": 22,
+    "tool": "tap_element",
+    "start_s": 99.31,
+    "end_s": 100.35,
+    "ok": true,
+    "note": "Open More options menu on the duplicate recipe"
+   },
+   {
+    "step": 23,
+    "tool": "tap_element",
+    "start_s": 101.61,
+    "end_s": 102.48,
+    "ok": true,
+    "note": "Tap Delete and confirm"
+   },
+   {
+    "step": 24,
+    "tool": "tap_element",
+    "start_s": 103.48,
+    "end_s": 104.99,
+    "ok": true,
+    "note": "Confirm delete of the duplicate recipe"
+   },
+   {
+    "step": 25,
+    "tool": "map_app",
+    "start_s": 106.61,
+    "end_s": 117.49,
+    "ok": true,
+    "note": "Recount list with map_app levels 1"
+   },
+   {
+    "step": 26,
+    "tool": "get_ui_state",
+    "start_s": 119.26,
+    "end_s": 119.28,
+    "ok": true,
+    "note": "Final screen read before done"
+   },
+   {
+    "step": 27,
+    "tool": "done",
+    "start_s": 123.39,
+    "end_s": 123.4,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes2/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes2/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes2/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes2/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes2/task.json"
+  }
+ }
+}

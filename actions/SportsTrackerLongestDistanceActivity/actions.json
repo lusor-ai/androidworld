@@ -1,0 +1,730 @@
+{
+ "task": "SportsTrackerLongestDistanceActivity",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.52,
+   "end_s": 29.54,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 30.67,
+   "end_s": 32.84,
+   "ok": true,
+   "args": {
+    "app": "de.dennisguse.opentracks"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 33.93,
+   "end_s": 34.18,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 943,
+    "y": 2017
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 34.88,
+   "end_s": 36.47,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 943,
+    "y": 2017
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 39.97,
+   "end_s": 40.99,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": null,
+    "index": 10,
+    "x": 543,
+    "y": 920
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 42.97,
+   "end_s": 43.97,
+   "ok": true,
+   "args": {
+    "index": 12
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 12,
+    "x": 444,
+    "y": 2232
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 44.89,
+   "end_s": 45.57,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 258,
+    "y": 1708
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 49.32,
+   "end_s": 50.17,
+   "ok": true,
+   "args": {
+    "index": 7
+   },
+   "tapped": {
+    "label": "Cancel",
+    "index": 7,
+    "x": 270,
+    "y": 2064
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 53.7,
+   "end_s": 54.91,
+   "ok": true,
+   "args": {
+    "index": 9,
+    "plan": "[\"Open OpenTracks app\", \"Review this week's activities\", \"Find longest hiking distance\", \"Report answer in meters\"]}"
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 9,
+    "x": 66,
+    "y": 2232
+   }
+  },
+  {
+   "step": 10,
+   "tool": "chain",
+   "start_s": 57.02,
+   "end_s": 62.95,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "{item}"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "More options"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "Edit"
+      }
+     },
+     {
+      "verb": "get_ui_state"
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "Cancel"
+      }
+     },
+     {
+      "verb": "tap_element",
+      "params": {
+       "target": "Navigate up"
+      }
+     }
+    ],
+    "items": [
+     "Laps around the lake"
+    ]
+   }
+  },
+  {
+   "step": 11,
+   "tool": "chain",
+   "start_s": 65.11,
+   "end_s": 70.38,
+   "ok": true,
+   "args": {
+    "items": [
+     "Laps around the lake"
+    ],
+    "steps": [
+     {
+      "params": {
+       "target": "{item}"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "More options"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Edit"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 1500
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {
+       "target": "Cancel"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Navigate up"
+      },
+      "verb": "tap_element"
+     }
+    ]
+   }
+  },
+  {
+   "step": 12,
+   "tool": "get_ui_state",
+   "start_s": 72.63,
+   "end_s": 72.68,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 13,
+   "tool": "chain",
+   "start_s": 74.32,
+   "end_s": 95.32,
+   "ok": true,
+   "args": {
+    "items": [
+     "Road Run",
+     "Sailboat Expedition",
+     "Dirt Biking",
+     "Pedal Excursion",
+     "Skateboard Ride"
+    ],
+    "steps": [
+     {
+      "params": {
+       "target": "{item}"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "More options"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Edit"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 1500
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {
+       "target": "Cancel"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Navigate up"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 1000
+      },
+      "verb": "wait"
+     }
+    ]
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 97.69,
+   "end_s": 98.8,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 9,
+    "x": 74,
+    "y": 2232
+   }
+  },
+  {
+   "step": 15,
+   "tool": "chain",
+   "start_s": 100.43,
+   "end_s": 114.6,
+   "ok": true,
+   "args": {
+    "items": [
+     "Pedal Excursion",
+     "Skateboard Ride"
+    ],
+    "steps": [
+     {
+      "params": {
+       "target": "{item}"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "More options"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "target": "Edit"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 1500
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     },
+     {
+      "params": {
+       "target": "Cancel"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 500
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Navigate up"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 1000
+      },
+      "verb": "wait"
+     }
+    ]
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 117.18,
+   "end_s": 118.06,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 5,
+    "x": 1028,
+    "y": 211
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 119.03,
+   "end_s": 119.98,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": null,
+    "index": 2,
+    "x": 813,
+    "y": 233
+   }
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 121.12,
+   "end_s": 121.61,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 546,
+    "y": 419
+   }
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 122.84,
+   "end_s": 123.76,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 540,
+    "y": 527
+   }
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 124.76,
+   "end_s": 125.36,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "Metric (km, m)",
+    "index": 2,
+    "x": 540,
+    "y": 1039
+   }
+  },
+  {
+   "step": 21,
+   "tool": "tap_element",
+   "start_s": 126.37,
+   "end_s": 126.86,
+   "ok": true,
+   "args": {
+    "index": 1
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 1,
+    "x": 74,
+    "y": 2232
+   }
+  },
+  {
+   "step": 22,
+   "tool": "tap_element",
+   "start_s": 127.93,
+   "end_s": 128.98,
+   "ok": true,
+   "args": {
+    "index": 1
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 1,
+    "x": 74,
+    "y": 2232
+   }
+  },
+  {
+   "step": 23,
+   "tool": "tap_element",
+   "start_s": 153.94,
+   "end_s": 154.66,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 486,
+    "y": 754
+   }
+  },
+  {
+   "step": 24,
+   "tool": "tap_element",
+   "start_s": 156.06,
+   "end_s": 157.38,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 9,
+    "x": 74,
+    "y": 2232
+   }
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 158.26,
+   "end_s": 158.97,
+   "ok": true,
+   "args": {
+    "index": 7
+   },
+   "tapped": {
+    "label": null,
+    "index": 7,
+    "x": 540,
+    "y": 401
+   }
+  },
+  {
+   "step": 26,
+   "tool": "calculate",
+   "start_s": 162.44,
+   "end_s": 162.48,
+   "ok": true,
+   "args": {
+    "code": "const pace=33*60+8; const t=40*60; const D=t/pace*1000; return {D, mi:D/1609.344};"
+   }
+  },
+  {
+   "step": 27,
+   "tool": "tap_element",
+   "start_s": 163.9,
+   "end_s": 165.16,
+   "ok": true,
+   "args": {
+    "index": 9,
+    "plan": [
+     "Open OpenTracks app",
+     "Review this week's activities",
+     "Find longest hiking distance",
+     "Restore app units and report answer"
+    ]
+   },
+   "tapped": {
+    "label": "Navigate up",
+    "index": 9,
+    "x": 74,
+    "y": 2232
+   }
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 165.99,
+   "end_s": 166.77,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 5,
+    "x": 1028,
+    "y": 211
+   }
+  },
+  {
+   "step": 29,
+   "tool": "chain",
+   "start_s": 167.87,
+   "end_s": 173.87,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "target": "Settings"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 800
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Default Units and Activity"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 800
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Preferred units"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 800
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Imperial (mi, ft)"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 800
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 30,
+   "tool": "chain",
+   "start_s": 175.26,
+   "end_s": 178.1,
+   "ok": true,
+   "args": {
+    "steps": [
+     {
+      "params": {
+       "target": "Navigate up"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 800
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {
+       "target": "Navigate up"
+      },
+      "verb": "tap_element"
+     },
+     {
+      "params": {
+       "duration_ms": 800
+      },
+      "verb": "wait"
+     },
+     {
+      "params": {},
+      "verb": "get_ui_state"
+     }
+    ]
+   }
+  },
+  {
+   "step": 31,
+   "tool": "done",
+   "start_s": 180.97,
+   "end_s": 180.97,
+   "ok": true,
+   "args": {
+    "summary": "The longest hiking distance in OpenTracks this week (Mon 9 Oct to Sun 15 Oct 2023) was 1207 meters. It was the only hiking activity in that window: \"Laps around the lake\" today (Oct 15, 6:30 AM), 40:00 long, shown as 0.75 mi / 1.21 km, whose pace of 33:08 min/km against 40:00 works out to about 1207 m. The other activities this week were running, sailing, walking, mountain biking, cycling and skateboarding, so none of them counted. I temporarily switched the app's units to metric to read the distance and put them back to Imperial (mi, ft) afterwards.",
+    "rows": [
+     {
+      "answer": 1207,
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "OpenTracks track list (weekly, Sunday Oct 15) shows 'Laps around the lake' Today 40:00 (0.75 mi / 1.21 km). Its edit screen shows activity type 'hiking'; all six other activities from Oct 10-14 were running, sailing, walking, mountain biking, cycling and skate boarding. Metric detail page showed 1.21 km with 40:00 moving time and 33:08 min/km avg pace, giving 1207 m.",
+     "key_signals": [
+      "Hiking track: Laps around the lake, Oct 15 2023, 40:00",
+      "Metric display 1.21 km, imperial 0.75 mi",
+      "Avg pace 33:08 min/km over 40:00 implies 1207 m",
+      "All other this-week activities have non-hiking activity types",
+      "Units setting restored to Imperial (mi, ft)"
+     ]
+    }
+   }
+  }
+ ]
+}

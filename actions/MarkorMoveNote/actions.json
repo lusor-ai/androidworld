@@ -1,0 +1,215 @@
+{
+ "task": "MarkorMoveNote",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 31.48,
+   "end_s": 31.5,
+   "ok": true,
+   "args": {
+    "path": "skill://markor/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 31.48,
+   "end_s": 31.5,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 32.5,
+   "end_s": 34.89,
+   "ok": true,
+   "args": {
+    "app": "net.gsantner.markor"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 35.73,
+   "end_s": 35.78,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 36.8,
+   "end_s": 37.43,
+   "ok": true,
+   "args": {
+    "index": 13
+   },
+   "tapped": {
+    "label": "Folder WorkProjects ",
+    "index": 13,
+    "x": 540,
+    "y": 623
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 38.45,
+   "end_s": 39.6,
+   "ok": true,
+   "args": {
+    "index": 19,
+    "hold_ms": 1000
+   },
+   "tapped": {
+    "label": "File 8zum_friendly_penguin.txt ",
+    "index": 19,
+    "x": 540,
+    "y": 1113
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 40.59,
+   "end_s": 41.57,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": "More options",
+    "index": 6,
+    "x": 1028,
+    "y": 201
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 42.8,
+   "end_s": 43.4,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": null,
+    "index": 3,
+    "x": 813,
+    "y": 327
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 44.83,
+   "end_s": 45.8,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": "Folder .. ",
+    "index": 4,
+    "x": 540,
+    "y": 513
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 46.93,
+   "end_s": 47.26,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": "Folder CodeSnippets ",
+    "index": 6,
+    "x": 540,
+    "y": 657
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 48.36,
+   "end_s": 49.1,
+   "ok": true,
+   "args": {
+    "index": 7
+   },
+   "tapped": {
+    "label": "SELECT THIS FOLDER",
+    "index": 7,
+    "x": 794,
+    "y": 2207
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 50.39,
+   "end_s": 50.81,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": "Folder .. ",
+    "index": 9,
+    "x": 540,
+    "y": 335
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 51.66,
+   "end_s": 52.09,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "Folder CodeSnippets ",
+    "index": 11,
+    "x": 540,
+    "y": 479
+   }
+  },
+  {
+   "step": 14,
+   "tool": "done",
+   "start_s": 54.18,
+   "end_s": 54.19,
+   "ok": true,
+   "args": {
+    "summary": "Moved 8zum_friendly_penguin.txt from WorkProjects to CodeSnippets in Markor. CodeSnippets now shows the note, and it no longer appears in WorkProjects.",
+    "rows": [
+     {
+      "note": "8zum_friendly_penguin.txt",
+      "from": "WorkProjects",
+      "to": "CodeSnippets",
+      "lusor_status": "succeeded"
+     }
+    ],
+    "evidence": {
+     "objective_evidence": "After the move, the CodeSnippets folder listing in Markor shows 'File 8zum_friendly_penguin.txt 10/15/2023, 15:34', while the WorkProjects listing now only holds 8zum_friendly_penguin_final.txt and 11 other files, with 8zum_friendly_penguin.txt absent.",
+     "key_signals": [
+      "WorkProjects listing before move contained 8zum_friendly_penguin.txt",
+      "Move dialog title read 'Move → CodeSnippets' before confirming SELECT THIS FOLDER",
+      "WorkProjects listing after move no longer contains the note",
+      "CodeSnippets listing shows 8zum_friendly_penguin.txt"
+     ]
+    }
+   }
+  }
+ ]
+}

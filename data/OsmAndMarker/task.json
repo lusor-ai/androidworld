@@ -1,0 +1,175 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "OsmAndMarker",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 36.2,
+  "mobilerun_published_time_s": 212.6,
+  "speed_ratio": 0.17,
+  "lusor_cost_usd": 0.0136,
+  "mobilerun_published_actions": 5,
+  "mobilerun_est_cost_usd": 0.383,
+  "lusor_tool_calls": 16,
+  "disclosure": null,
+  "skills_read": [
+   "osmand"
+  ],
+  "skill_assisted": [],
+  "goal": "Add a location marker for 47.2122151, 9.5062101 in the OsmAnd maps app.",
+  "final_answer": null,
+  "final_summary": "I added the location marker in OsmAnd. I searched for 47.2122151, 9.5062101, opened the matching result, and used the context menu's Marker action. The Map markers list now contains one new marker, \"Breita, Bendern\", dated Oct 15, and its details show the coordinates 47.21222° N, 9.50621° E, matching what you gave.",
+  "video_duration_s": 118.6,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 57.78,
+    "end_s": 57.8,
+    "ok": true,
+    "note": "Read OsmAnd skill, then observe screen"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 57.78,
+    "end_s": 57.8,
+    "ok": true,
+    "note": null
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 58.83,
+    "end_s": 63.3,
+    "ok": true,
+    "note": "Launch OsmAnd and observe"
+   },
+   {
+    "step": 4,
+    "tool": "get_ui_state",
+    "start_s": 64.01,
+    "end_s": 64.63,
+    "ok": true,
+    "note": "Observe OsmAnd screen"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 65.73,
+    "end_s": 67.34,
+    "ok": true,
+    "note": "Tap Search in OsmAnd"
+   },
+   {
+    "step": 6,
+    "tool": "type",
+    "start_s": 68.01,
+    "end_s": 70.6,
+    "ok": true,
+    "note": "Type coordinates into OsmAnd search"
+   },
+   {
+    "step": 7,
+    "tool": "get_ui_state",
+    "start_s": 71.29,
+    "end_s": 71.73,
+    "ok": true,
+    "note": "Read search results for coordinates"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 72.81,
+    "end_s": 73.09,
+    "ok": true,
+    "note": "Tap the coordinate search result to open place card"
+   },
+   {
+    "step": 9,
+    "tool": "tap",
+    "start_s": 74.09,
+    "end_s": 76.5,
+    "ok": true,
+    "note": "Tap result row title to open place card"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 77.98,
+    "end_s": 78.81,
+    "ok": true,
+    "note": "Tap Marker to add marker at coordinates"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 81.02,
+    "end_s": 81.71,
+    "ok": true,
+    "note": "Open OsmAnd menu to verify marker was added"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 82.99,
+    "end_s": 83.82,
+    "ok": true,
+    "note": "Open Map markers to verify marker list"
+   },
+   {
+    "step": 13,
+    "tool": "get_ui_state",
+    "start_s": 84.44,
+    "end_s": 84.47,
+    "ok": true,
+    "note": "Read Map markers list"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 85.79,
+    "end_s": 87.02,
+    "ok": true,
+    "note": "Open the marker to confirm its coordinates"
+   },
+   {
+    "step": 15,
+    "tool": "tap_element",
+    "start_s": 88.26,
+    "end_s": 89.62,
+    "ok": true,
+    "note": "Open marker details to read its coordinates"
+   },
+   {
+    "step": 16,
+    "tool": "done",
+    "start_s": 92.12,
+    "end_s": 92.13,
+    "ok": true,
+    "note": "Task complete; no further steps"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/OsmAndMarker/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/OsmAndMarker/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/OsmAndMarker/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/OsmAndMarker/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/OsmAndMarker/task.json"
+  }
+ }
+}

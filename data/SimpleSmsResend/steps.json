@@ -1,0 +1,79 @@
+{
+ "task": "SimpleSmsResend",
+ "video_duration_s": 87.8,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 51.06,
+   "end_s": 51.08,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 2,
+   "tool": "tap_element",
+   "start_s": 52.5,
+   "end_s": 53.54,
+   "ok": true,
+   "note": "Tap the last sent message to open its options menu"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 55.03,
+   "end_s": 56.01,
+   "ok": true,
+   "note": "Long press the last sent message to open context menu with Resend"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 57.1,
+   "end_s": 58.2,
+   "ok": true,
+   "note": "Tap More options in the selection bar to find Resend"
+  },
+  {
+   "step": 5,
+   "tool": "key",
+   "start_s": 60.5,
+   "end_s": 60.9,
+   "ok": true,
+   "note": "Dismiss the overflow menu and the selection bar"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 61.82,
+   "end_s": 62.42,
+   "ok": true,
+   "note": "Tap Done to exit selection mode"
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 63.53,
+   "end_s": 65.88,
+   "ok": true,
+   "note": "Type the identical message text into the compose field"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 66.92,
+   "end_s": 68.2,
+   "ok": true,
+   "note": "Tap SMS send button"
+  },
+  {
+   "step": 9,
+   "tool": "done",
+   "start_s": 71.42,
+   "end_s": 71.43,
+   "ok": true,
+   "note": "Task complete; resent message verified in the thread"
+  }
+ ]
+}

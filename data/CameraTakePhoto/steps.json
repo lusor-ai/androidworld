@@ -1,0 +1,55 @@
+{
+ "task": "CameraTakePhoto",
+ "video_duration_s": 55.5,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.02,
+   "end_s": 29.05,
+   "ok": true,
+   "note": "Read camera skill, then observe screen with get_ui_state"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.02,
+   "end_s": 29.05,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.03,
+   "end_s": 34.01,
+   "ok": true,
+   "note": "Launch camera app and read screen"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.06,
+   "end_s": 36.83,
+   "ok": true,
+   "note": "Press shutter to take one photo, then read screen"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.64,
+   "end_s": 38.81,
+   "ok": true,
+   "note": "Open thumbnail to verify saved photo"
+  },
+  {
+   "step": 6,
+   "tool": "done",
+   "start_s": 40.71,
+   "end_s": 40.72,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

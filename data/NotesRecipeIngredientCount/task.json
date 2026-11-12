@@ -1,0 +1,117 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "NotesRecipeIngredientCount",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 21.2,
+  "mobilerun_published_time_s": 137.5,
+  "speed_ratio": 0.154,
+  "lusor_cost_usd": 0.0097,
+  "mobilerun_published_actions": 5,
+  "mobilerun_est_cost_usd": 0.383,
+  "lusor_tool_calls": 9,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "What quantity of coconut sugar do I need for the recipe 'Pancake Recipe' in the Joplin app? Express your answer in the format <amount> <unit> where both the amount and unit exactly match the format in the recipe.",
+  "final_answer": "1/2 cup",
+  "final_summary": "The Pancake Recipe note in Joplin's Recipes notebook lists 1/2 cup coconut sugar, so you need 1/2 cup.",
+  "video_duration_s": 65.3,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 33.14,
+    "end_s": 33.16,
+    "ok": true,
+    "note": "Observe current screen, then launch Joplin"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 34.13,
+    "end_s": 35.51,
+    "ok": true,
+    "note": "Launch Joplin and observe its notes list"
+   },
+   {
+    "step": 3,
+    "tool": "get_ui_state",
+    "start_s": 36.58,
+    "end_s": 38.22,
+    "ok": true,
+    "note": "Read Joplin UI after load"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 39.2,
+    "end_s": 40.02,
+    "ok": true,
+    "note": "Search for Pancake Recipe"
+   },
+   {
+    "step": 5,
+    "tool": "type",
+    "start_s": 40.84,
+    "end_s": 43.74,
+    "ok": true,
+    "note": "Type Pancake Recipe in search and read results"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 44.52,
+    "end_s": 45.03,
+    "ok": true,
+    "note": "Open Pancake Recipe note and read ingredients"
+   },
+   {
+    "step": 7,
+    "tool": "tap",
+    "start_s": 46.49,
+    "end_s": 47.12,
+    "ok": true,
+    "note": "Tap the Pancake Recipe search result again and check whether the note opens"
+   },
+   {
+    "step": 8,
+    "tool": "get_ui_state",
+    "start_s": 49.14,
+    "end_s": 49.17,
+    "ok": true,
+    "note": "Read note body text via full UI tree"
+   },
+   {
+    "step": 9,
+    "tool": "done",
+    "start_s": 51.63,
+    "end_s": 51.64,
+    "ok": true,
+    "note": "Answer reported; task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/NotesRecipeIngredientCount/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/NotesRecipeIngredientCount/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/NotesRecipeIngredientCount/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/NotesRecipeIngredientCount/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/NotesRecipeIngredientCount/task.json"
+  }
+ }
+}

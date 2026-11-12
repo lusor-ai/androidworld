@@ -1,0 +1,151 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "RecipeDeleteDuplicateRecipes3",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 240.2,
+  "mobilerun_published_time_s": 620.1,
+  "speed_ratio": 0.387,
+  "lusor_cost_usd": 0.0355,
+  "mobilerun_published_actions": 34,
+  "mobilerun_est_cost_usd": 2.604,
+  "lusor_tool_calls": 13,
+  "disclosure": null,
+  "skills_read": [
+   "broccoli"
+  ],
+  "skill_assisted": [],
+  "goal": "Delete all but one of any recipes in the Broccoli app that are exact duplicates, ensuring at least one instance of each unique recipe remains",
+  "final_answer": null,
+  "final_summary": "I found 32 recipes in Broccoli and exactly one pair of true exact duplicates: two \"Veggie and Hummus Sandwich\" recipes with identical servings (1 serving), time (20 mins), description, ingredients (\"varies\") and directions. I deleted one of them, leaving 31 recipes with a single copy of each unique recipe. The other same-named recipes are not duplicates, because their servings, times, ingredients or directions differ (for example the three Avocado Toast with Egg entries and the six remaining Veggie and Hummus Sandwich entries all differ in at least one of those fields).",
+  "video_duration_s": 284.5,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 33.55,
+    "end_s": 33.56,
+    "ok": true,
+    "note": "Read Broccoli skill and observe current screen"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 33.55,
+    "end_s": 33.56,
+    "ok": true,
+    "note": "Read Broccoli skill and observe current screen"
+   },
+   {
+    "step": 3,
+    "tool": "launch",
+    "start_s": 34.74,
+    "end_s": 38.71,
+    "ok": true,
+    "note": "Launch Broccoli and inventory recipes"
+   },
+   {
+    "step": 4,
+    "tool": "map_app",
+    "start_s": 40.43,
+    "end_s": 211.88,
+    "ok": true,
+    "note": "Map all recipes with details to find exact duplicates"
+   },
+   {
+    "step": 5,
+    "tool": "scroll_to",
+    "start_s": 218.3,
+    "end_s": 221.04,
+    "ok": true,
+    "note": "Scroll to bottom of recipe list to reach the duplicate Veggie and Hummus Sandwich"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 222.71,
+    "end_s": 223.92,
+    "ok": true,
+    "note": "Open the last Veggie and Hummus Sandwich (bottom row) to verify it is the duplicate"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 225.57,
+    "end_s": 226.33,
+    "ok": true,
+    "note": "Open More options menu on this recipe to delete it"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 227.17,
+    "end_s": 228.0,
+    "ok": true,
+    "note": "Tap Delete and confirm the deletion dialog"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 229.15,
+    "end_s": 230.39,
+    "ok": true,
+    "note": "Confirm DELETE on the duplicate recipe and return to list"
+   },
+   {
+    "step": 10,
+    "tool": "map_app",
+    "start_s": 231.98,
+    "end_s": 260.31,
+    "ok": true,
+    "note": "Recount recipe list titles to confirm 31 remain"
+   },
+   {
+    "step": 11,
+    "tool": "get_ui_state",
+    "start_s": 263.15,
+    "end_s": 263.18,
+    "ok": true,
+    "note": "Final screen check then report"
+   },
+   {
+    "step": 12,
+    "tool": "done",
+    "start_s": 266.55,
+    "end_s": 266.55,
+    "ok": false,
+    "note": null
+   },
+   {
+    "step": 13,
+    "tool": "done",
+    "start_s": 269.26,
+    "end_s": 269.26,
+    "ok": true,
+    "note": "Task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes3/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes3/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes3/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes3/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/RecipeDeleteDuplicateRecipes3/task.json"
+  }
+ }
+}

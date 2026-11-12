@@ -1,0 +1,127 @@
+{
+ "task": "ExpenseDeleteMultiple",
+ "video_duration_s": 71.5,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.95,
+   "end_s": 29.99,
+   "ok": true,
+   "note": "Observe current screen to locate Pro Expense app"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 31.07,
+   "end_s": 32.33,
+   "ok": true,
+   "note": "Observe Pro Expense home screen"
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 33.33,
+   "end_s": 33.84,
+   "ok": true,
+   "note": "Read Pro Expense main screen"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.13,
+   "end_s": 36.41,
+   "ok": true,
+   "note": "Open Religious expense to find delete option"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.3,
+   "end_s": 38.24,
+   "ok": true,
+   "note": "Tap delete on Religious; handle confirm dialog"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 39.29,
+   "end_s": 40.41,
+   "ok": true,
+   "note": "Confirm deletion of Religious"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 41.36,
+   "end_s": 42.52,
+   "ok": true,
+   "note": "Open Flight Tickets detail and delete it"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 43.98,
+   "end_s": 45.0,
+   "ok": true,
+   "note": "Tap delete icon on School Supplies detail"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 45.95,
+   "end_s": 46.58,
+   "ok": true,
+   "note": "Confirm deletion of School Supplies, then delete Flight Tickets"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 47.59,
+   "end_s": 48.54,
+   "ok": true,
+   "note": "Open Flight Tickets detail"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 49.63,
+   "end_s": 50.42,
+   "ok": true,
+   "note": "Tap delete icon on Flight Tickets detail"
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 51.45,
+   "end_s": 52.04,
+   "ok": true,
+   "note": "Confirm Flight Tickets deletion, then verify list"
+  },
+  {
+   "step": 13,
+   "tool": "map_app",
+   "start_s": 53.35,
+   "end_s": 53.37,
+   "ok": true,
+   "note": "Map recent list to confirm no named expenses remain"
+  },
+  {
+   "step": 14,
+   "tool": "get_ui_state",
+   "start_s": 54.63,
+   "end_s": 54.65,
+   "ok": true,
+   "note": "Confirm final home screen has no named expenses"
+  },
+  {
+   "step": 15,
+   "tool": "done",
+   "start_s": 58.13,
+   "end_s": 58.13,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

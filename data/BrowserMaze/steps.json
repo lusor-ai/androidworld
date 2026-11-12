@@ -1,0 +1,167 @@
+{
+ "task": "BrowserMaze",
+ "video_duration_s": 94.4,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.88,
+   "end_s": 29.89,
+   "ok": true,
+   "note": "Observe current screen to find file manager / task.html"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 31.18,
+   "end_s": 33.08,
+   "ok": true,
+   "note": "Launch Files app and open Downloads"
+  },
+  {
+   "step": 3,
+   "tool": "get_ui_state",
+   "start_s": 33.98,
+   "end_s": 34.26,
+   "ok": true,
+   "note": "Read file list in Downloads"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.32,
+   "end_s": 36.55,
+   "ok": true,
+   "note": "Tap task.html to open; choose Chrome in the chooser"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.82,
+   "end_s": 38.97,
+   "ok": true,
+   "note": "Wait for Chrome to load task.html"
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 39.92,
+   "end_s": 40.6,
+   "ok": true,
+   "note": "Handle Chrome first-run screens, then view task page"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 41.71,
+   "end_s": 42.07,
+   "ok": true,
+   "note": "Complete Chrome first-run and load task.html"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 43.03,
+   "end_s": 44.09,
+   "ok": true,
+   "note": "Dismiss any remaining Chrome prompts and load task.html"
+  },
+  {
+   "step": 9,
+   "tool": "tap",
+   "start_s": 45.03,
+   "end_s": 46.15,
+   "ok": true,
+   "note": "Dismiss sync prompt to load task.html"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 47.19,
+   "end_s": 48.18,
+   "ok": true,
+   "note": "Tap task.html again to open with Chrome"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 48.9,
+   "end_s": 51.28,
+   "ok": true,
+   "note": "Wait for Chrome to load task.html"
+  },
+  {
+   "step": 12,
+   "tool": "screenshot",
+   "start_s": 53.01,
+   "end_s": 54.34,
+   "ok": true,
+   "note": "Inspect task.html page visually in Chrome"
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 59.32,
+   "end_s": 59.9,
+   "ok": true,
+   "note": "Verify X moved down after tapping Down"
+  },
+  {
+   "step": 14,
+   "tool": "screenshot",
+   "start_s": 60.95,
+   "end_s": 62.29,
+   "ok": true,
+   "note": "Check X position after Down"
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 66.27,
+   "end_s": 66.77,
+   "ok": true,
+   "note": "Tap Down to move X from row1 to row2"
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 68.35,
+   "end_s": 68.93,
+   "ok": true,
+   "note": "Tap Right to move to column 1"
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 70.45,
+   "end_s": 70.95,
+   "ok": true,
+   "note": "Tap Right to move to column 2"
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 72.21,
+   "end_s": 72.7,
+   "ok": true,
+   "note": "Tap Right to move to column 3"
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 73.77,
+   "end_s": 74.26,
+   "ok": true,
+   "note": "Tap Down to enter the green bottom-right cell, then verify"
+  },
+  {
+   "step": 20,
+   "tool": "done",
+   "start_s": 77.29,
+   "end_s": 77.29,
+   "ok": true,
+   "note": "done"
+  }
+ ]
+}

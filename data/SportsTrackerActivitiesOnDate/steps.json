@@ -1,0 +1,167 @@
+{
+ "task": "SportsTrackerActivitiesOnDate",
+ "video_duration_s": 112.4,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 29.47,
+   "end_s": 29.49,
+   "ok": true,
+   "note": "Observe current screen to find OpenTracks app"
+  },
+  {
+   "step": 2,
+   "tool": "swipe",
+   "start_s": 30.65,
+   "end_s": 32.61,
+   "ok": true,
+   "note": null
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 33.32,
+   "end_s": 33.68,
+   "ok": true,
+   "note": "Open OpenTracks and view activity list"
+  },
+  {
+   "step": 4,
+   "tool": "get_ui_state",
+   "start_s": 34.33,
+   "end_s": 34.98,
+   "ok": true,
+   "note": "Read OpenTracks main screen"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 35.66,
+   "end_s": 36.1,
+   "ok": true,
+   "note": "Skip OpenTracks intro"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 36.86,
+   "end_s": 38.38,
+   "ok": true,
+   "note": "Continue skipping intro pages"
+  },
+  {
+   "step": 7,
+   "tool": "map_app",
+   "start_s": 40.52,
+   "end_s": 50.23,
+   "ok": true,
+   "note": "Map full track list to see all rows"
+  },
+  {
+   "step": 8,
+   "tool": "map_app",
+   "start_s": 51.57,
+   "end_s": 73.91,
+   "ok": true,
+   "note": "Open the two 5 Oct tracks and read their activity type"
+  },
+  {
+   "step": 9,
+   "tool": "scroll_to",
+   "start_s": 75.85,
+   "end_s": 75.89,
+   "ok": true,
+   "note": "Scroll to Skill work row and open it"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 77.8,
+   "end_s": 78.59,
+   "ok": true,
+   "note": "Open Skill work track detail"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 79.95,
+   "end_s": 81.1,
+   "ok": true,
+   "note": "Open More options menu on Skill work detail"
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 81.99,
+   "end_s": 83.12,
+   "ok": true,
+   "note": "Open Edit form to read activity type of Skill work"
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 84.07,
+   "end_s": 84.99,
+   "ok": true,
+   "note": "Cancel edit, back to list, open 'Trying and failing to keep up with John' and read its activity type"
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 86.02,
+   "end_s": 86.9,
+   "ok": true,
+   "note": "Return to track list and open 'Trying and failing to keep up with John'"
+  },
+  {
+   "step": 15,
+   "tool": "get_ui_state",
+   "start_s": 87.72,
+   "end_s": 87.8,
+   "ok": true,
+   "note": "Confirm screen; navigate back to track list"
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 88.6,
+   "end_s": 89.38,
+   "ok": true,
+   "note": "Open 'Trying and failing to keep up with John' detail"
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 90.33,
+   "end_s": 91.12,
+   "ok": true,
+   "note": "More options then Edit to read activity type of second track"
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 91.85,
+   "end_s": 92.69,
+   "ok": true,
+   "note": "Read activity type in edit form of second track"
+  },
+  {
+   "step": 19,
+   "tool": "tap_element",
+   "start_s": 94.26,
+   "end_s": 94.89,
+   "ok": true,
+   "note": "Cancel edit and answer"
+  },
+  {
+   "step": 20,
+   "tool": "done",
+   "start_s": 98.21,
+   "end_s": 98.21,
+   "ok": true,
+   "note": "Answered"
+  }
+ ]
+}

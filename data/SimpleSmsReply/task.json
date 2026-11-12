@@ -1,0 +1,93 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SimpleSmsReply",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 21.2,
+  "mobilerun_published_time_s": 159.6,
+  "speed_ratio": 0.133,
+  "lusor_cost_usd": 0.0053,
+  "mobilerun_published_actions": 5,
+  "mobilerun_est_cost_usd": 0.383,
+  "lusor_tool_calls": 6,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Reply to +17184821533 with message: Your dentist appointment is scheduled for 2 PM on Thursday. in Simple SMS Messenger",
+  "final_answer": null,
+  "final_summary": "I replied to +17184821533 in Simple SMS Messenger with \"Your dentist appointment is scheduled for 2 PM on Thursday.\" The message shows in the thread as an outgoing message with a success checkmark next to it.",
+  "video_duration_s": 74.1,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 35.66,
+    "end_s": 35.68,
+    "ok": true,
+    "note": "Observe current screen to find Simple SMS Messenger"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 36.65,
+    "end_s": 38.95,
+    "ok": true,
+    "note": "Launch Simple SMS Messenger and find conversation with +17184821533"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 40.2,
+    "end_s": 42.25,
+    "ok": true,
+    "note": "Open conversation with +17184821533 and tap message input"
+   },
+   {
+    "step": 4,
+    "tool": "type",
+    "start_s": 43.49,
+    "end_s": 48.86,
+    "ok": true,
+    "note": "Read back typed text then tap SMS send button"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 49.94,
+    "end_s": 51.25,
+    "ok": true,
+    "note": "Verify sent message appears in thread, then done"
+   },
+   {
+    "step": 6,
+    "tool": "done",
+    "start_s": 53.17,
+    "end_s": 53.17,
+    "ok": true,
+    "note": "Task complete: reply sent and verified in thread"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SimpleSmsReply/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SimpleSmsReply/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SimpleSmsReply/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SimpleSmsReply/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SimpleSmsReply/task.json"
+  }
+ }
+}

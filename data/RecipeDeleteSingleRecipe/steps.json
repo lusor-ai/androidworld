@@ -1,0 +1,79 @@
+{
+ "task": "RecipeDeleteSingleRecipe",
+ "video_duration_s": 58.6,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.05,
+   "end_s": 29.06,
+   "ok": true,
+   "note": "Read broccoli skill, then observe screen"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.81,
+   "end_s": 29.82,
+   "ok": true,
+   "note": "Observe current screen and locate the Turkey and Cheese Panini recipe"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.59,
+   "end_s": 34.24,
+   "ok": true,
+   "note": "Broccoli launched; locate Turkey and Cheese Panini in recipe list"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.37,
+   "end_s": 36.94,
+   "ok": true,
+   "note": "Open the Turkey and Cheese Panini recipe page and find delete option"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.85,
+   "end_s": 38.77,
+   "ok": true,
+   "note": "Open More options menu to find Delete"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 39.4,
+   "end_s": 40.26,
+   "ok": true,
+   "note": "Confirm delete dialog for Turkey and Cheese Panini"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 41.09,
+   "end_s": 42.04,
+   "ok": true,
+   "note": "Confirm deletion and verify list no longer shows the recipe"
+  },
+  {
+   "step": 8,
+   "tool": "map_app",
+   "start_s": 42.79,
+   "end_s": 42.8,
+   "ok": true,
+   "note": "Recount list with map_app to confirm it is empty"
+  },
+  {
+   "step": 9,
+   "tool": "done",
+   "start_s": 44.66,
+   "end_s": 44.66,
+   "ok": true,
+   "note": "Task complete; recipe deleted and empty list verified"
+  }
+ ]
+}

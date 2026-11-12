@@ -1,0 +1,95 @@
+{
+ "task": "SimpleSmsSendClipboardContent",
+ "video_duration_s": 78.2,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 37.97,
+   "end_s": 38.06,
+   "ok": true,
+   "note": "Observe current screen state"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 39.9,
+   "end_s": 41.56,
+   "ok": true,
+   "note": "Open Simple SMS Messenger and start a new message"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 42.44,
+   "end_s": 44.05,
+   "ok": true,
+   "note": "Tap the new conversation FAB"
+  },
+  {
+   "step": 4,
+   "tool": "type",
+   "start_s": 44.83,
+   "end_s": 46.07,
+   "ok": true,
+   "note": "Type the phone number into address field"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 46.83,
+   "end_s": 47.58,
+   "ok": true,
+   "note": "Confirm number to open conversation thread"
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 48.45,
+   "end_s": 48.56,
+   "ok": true,
+   "note": "Read the conversation screen"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 49.84,
+   "end_s": 51.7,
+   "ok": true,
+   "note": "Long-press message field to open Paste menu"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 52.62,
+   "end_s": 53.66,
+   "ok": true,
+   "note": "Tap Paste to paste clipboard content"
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 54.82,
+   "end_s": 55.23,
+   "ok": true,
+   "note": "Tap SMS send button"
+  },
+  {
+   "step": 10,
+   "tool": "get_ui_state",
+   "start_s": 56.24,
+   "end_s": 56.26,
+   "ok": true,
+   "note": "Confirm the sent message appears in the thread"
+  },
+  {
+   "step": 11,
+   "tool": "done",
+   "start_s": 58.29,
+   "end_s": 58.29,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

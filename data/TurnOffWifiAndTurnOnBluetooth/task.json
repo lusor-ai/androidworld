@@ -1,0 +1,205 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "TurnOffWifiAndTurnOnBluetooth",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 54.2,
+  "mobilerun_published_time_s": 164.8,
+  "speed_ratio": 0.329,
+  "lusor_cost_usd": 0.0191,
+  "mobilerun_published_actions": 10,
+  "mobilerun_est_cost_usd": 0.766,
+  "lusor_tool_calls": 20,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Turn off WiFi, then enable bluetooth",
+  "final_answer": null,
+  "final_summary": "WiFi is now off and Bluetooth is on. I turned WiFi off from Settings, Network & internet, Internet (the Wi-Fi switch now reads Unchecked), then turned Bluetooth on from Settings, Connected devices, Connection preferences, Bluetooth (the switch reads Checked, and the Connected devices page now shows this phone as visible to other devices).",
+  "video_duration_s": 95.4,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 29.71,
+    "end_s": 29.73,
+    "ok": true,
+    "note": "Observe current screen to find quick settings or Settings app"
+   },
+   {
+    "step": 2,
+    "tool": "swipe",
+    "start_s": 30.95,
+    "end_s": 33.91,
+    "ok": true,
+    "note": "Read quick settings panel tiles"
+   },
+   {
+    "step": 3,
+    "tool": "swipe",
+    "start_s": 35.03,
+    "end_s": 36.12,
+    "ok": true,
+    "note": "Expand quick settings fully to see WiFi and Bluetooth tiles"
+   },
+   {
+    "step": 4,
+    "tool": "launch",
+    "start_s": 37.32,
+    "end_s": 38.74,
+    "ok": true,
+    "note": "Use Settings app Network & internet to turn off WiFi"
+   },
+   {
+    "step": 5,
+    "tool": "key",
+    "start_s": 40.04,
+    "end_s": 41.15,
+    "ok": true,
+    "note": "Close notification shade and see Settings app"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 42.42,
+    "end_s": 43.83,
+    "ok": true,
+    "note": "Open Network & internet to reach Internet/WiFi toggle"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 44.97,
+    "end_s": 52.45,
+    "ok": true,
+    "note": "Tap Internet entry to reach WiFi toggle"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 53.61,
+    "end_s": 55.32,
+    "ok": true,
+    "note": "Verify WiFi switch unchecked, then go back to settings and open Connected devices/Bluetooth"
+   },
+   {
+    "step": 9,
+    "tool": "get_ui_state",
+    "start_s": 56.28,
+    "end_s": 56.53,
+    "ok": true,
+    "note": "Re-observe screen after device disconnect, then toggle WiFi switch"
+   },
+   {
+    "step": 10,
+    "tool": "tap_element",
+    "start_s": 57.9,
+    "end_s": 58.43,
+    "ok": true,
+    "note": "Go back to Network & internet then Settings home and open Connected devices"
+   },
+   {
+    "step": 11,
+    "tool": "get_ui_state",
+    "start_s": 59.72,
+    "end_s": 59.75,
+    "ok": true,
+    "note": "Read Network & internet page, then navigate up to Settings home"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 60.75,
+    "end_s": 61.84,
+    "ok": true,
+    "note": "From Settings home open Connected devices to enable Bluetooth"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 62.74,
+    "end_s": 64.01,
+    "ok": true,
+    "note": "Open Connected devices page and find Bluetooth switch"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 65.55,
+    "end_s": 67.02,
+    "ok": true,
+    "note": "Open Connection preferences to reach Bluetooth toggle"
+   },
+   {
+    "step": 15,
+    "tool": "tap_element",
+    "start_s": 68.24,
+    "end_s": 69.32,
+    "ok": true,
+    "note": "Open Bluetooth settings page and toggle Bluetooth on"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 70.48,
+    "end_s": 70.95,
+    "ok": true,
+    "note": "Verify Bluetooth switch is Checked and WiFi remains off"
+   },
+   {
+    "step": 17,
+    "tool": "get_ui_state",
+    "start_s": 71.92,
+    "end_s": 71.94,
+    "ok": true,
+    "note": "Re-read Bluetooth page to confirm switch Checked and WiFi off; then done"
+   },
+   {
+    "step": 18,
+    "tool": "tap_element",
+    "start_s": 73.63,
+    "end_s": 74.93,
+    "ok": true,
+    "note": "Back to Connected devices to confirm Bluetooth status text"
+   },
+   {
+    "step": 19,
+    "tool": "tap_element",
+    "start_s": 76.46,
+    "end_s": 77.23,
+    "ok": true,
+    "note": "View Connected devices page to confirm Bluetooth is on"
+   },
+   {
+    "step": 20,
+    "tool": "done",
+    "start_s": 80.02,
+    "end_s": 80.02,
+    "ok": true,
+    "note": "Nothing left; task complete"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/TurnOffWifiAndTurnOnBluetooth/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/TurnOffWifiAndTurnOnBluetooth/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/TurnOffWifiAndTurnOnBluetooth/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/TurnOffWifiAndTurnOnBluetooth/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/TurnOffWifiAndTurnOnBluetooth/task.json"
+  }
+ }
+}

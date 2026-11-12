@@ -1,0 +1,63 @@
+{
+ "task": "SimpleCalendarAnyEventsOnDate",
+ "video_duration_s": 62.3,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.74,
+   "end_s": 29.75,
+   "ok": true,
+   "note": "Load Simple Calendar skill guidance"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.74,
+   "end_s": 29.75,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.08,
+   "end_s": 33.17,
+   "ok": true,
+   "note": "Launch Simple Calendar Pro and open the date Thu Oct 26 2023"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.61,
+   "end_s": 36.4,
+   "ok": true,
+   "note": "Tap the Oct 26 cell (row4 col5) and read day view header + events"
+  },
+  {
+   "step": 5,
+   "tool": "key",
+   "start_s": 42.1,
+   "end_s": 42.41,
+   "ok": true,
+   "note": "Return to month view and tap cell for Oct 26 (row5 col5)"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 43.55,
+   "end_s": 44.29,
+   "ok": true,
+   "note": "Tap cell 43 (expected Oct 26) and read day view"
+  },
+  {
+   "step": 7,
+   "tool": "done",
+   "start_s": 46.63,
+   "end_s": 46.63,
+   "ok": true,
+   "note": "Done"
+  }
+ ]
+}

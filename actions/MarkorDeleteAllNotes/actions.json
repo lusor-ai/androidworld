@@ -1,0 +1,299 @@
+{
+ "task": "MarkorDeleteAllNotes",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.59,
+   "end_s": 29.59,
+   "ok": true,
+   "args": {
+    "path": "skill://markor/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.24,
+   "end_s": 30.25,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.14,
+   "end_s": 33.44,
+   "ok": true,
+   "args": {
+    "app": "net.gsantner.markor"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "map_app",
+   "start_s": 34.85,
+   "end_s": 35.95,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.91,
+   "end_s": 38.81,
+   "ok": true,
+   "args": {
+    "index": 26
+   },
+   "tapped": {
+    "label": "QuickNote",
+    "index": 26,
+    "x": 675,
+    "y": 2264
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 40.26,
+   "end_s": 41.11,
+   "ok": true,
+   "args": {
+    "index": 20
+   },
+   "tapped": {
+    "label": "Files",
+    "index": 20,
+    "x": 135,
+    "y": 2264
+   }
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 44.72,
+   "end_s": 45.98,
+   "ok": true,
+   "args": {
+    "index": 11,
+    "hold_ms": 1200
+   },
+   "tapped": {
+    "label": "File 2023_02_03_meeting_notes_project_team.md ",
+    "index": 11,
+    "x": 540,
+    "y": 508
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 47.04,
+   "end_s": 47.92,
+   "ok": true,
+   "args": {
+    "index": 5,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "Delete",
+    "index": 5,
+    "x": 923,
+    "y": 201
+   }
+  },
+  {
+   "step": 9,
+   "tool": "tap_element",
+   "start_s": 49.38,
+   "end_s": 50.2,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 3,
+    "x": 802,
+    "y": 1502
+   }
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 54.16,
+   "end_s": 55.42,
+   "ok": true,
+   "args": {
+    "index": 11,
+    "hold_ms": 1200
+   },
+   "tapped": {
+    "label": "File 2023_09_09_grocery_list_weekly.md 10/15/2023, 15:34",
+    "index": 11,
+    "x": 540,
+    "y": 479
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 56.5,
+   "end_s": 57.19,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": "File 9r5p_summer_vacation_plans.md 10/15/2023, 15:34",
+    "index": 14,
+    "x": 540,
+    "y": 623
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 58.86,
+   "end_s": 59.32,
+   "ok": true,
+   "args": {
+    "index": 15
+   },
+   "tapped": {
+    "label": "File art_project_sketches_copy.md ",
+    "index": 15,
+    "x": 540,
+    "y": 767
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 60.69,
+   "end_s": 61.19,
+   "ok": true,
+   "args": {
+    "index": 17
+   },
+   "tapped": {
+    "label": "File budget_home_renovation_final.md ",
+    "index": 17,
+    "x": 540,
+    "y": 911
+   }
+  },
+  {
+   "step": 14,
+   "tool": "tap_element",
+   "start_s": 62.08,
+   "end_s": 62.63,
+   "ok": true,
+   "args": {
+    "index": 17
+   },
+   "tapped": {
+    "label": "File fW01A_backup.md ",
+    "index": 17,
+    "x": 540,
+    "y": 1055
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 63.72,
+   "end_s": 64.49,
+   "ok": true,
+   "args": {
+    "index": 2,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "Delete",
+    "index": 2,
+    "x": 923,
+    "y": 201
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 66.25,
+   "end_s": 67.06,
+   "ok": true,
+   "args": {
+    "index": 3,
+    "irreversible": true
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 3,
+    "x": 802,
+    "y": 1783
+   }
+  },
+  {
+   "step": 17,
+   "tool": "map_app",
+   "start_s": 69.02,
+   "end_s": 70.1,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 18,
+   "tool": "done",
+   "start_s": 74.18,
+   "end_s": 74.18,
+   "ok": true,
+   "args": {
+    "summary": "I deleted all six notes in Markor's Documents/markor folder: the project team meeting notes, the weekly grocery list, the summer vacation plans, the art project sketches copy, the home renovation budget, and the fW01A backup. The Files list now shows only the \"..\" folder row with the empty-folder hint, so no notes are left.",
+    "evidence": {
+     "objective_evidence": "After confirming the deletes, the Markor Files list shows only the '..' row plus the empty_hint '¯\\_(ツ)_/¯'; a map_app recount proves the list holds 1 row (the parent folder) and cannot scroll.",
+     "key_signals": [
+      "Initial inventory had 6 .md notes under /storage/emulated/0/Documents/markor",
+      "Confirm Delete dialog listed exactly the 5 remaining note paths before the second deletion",
+      "Final Files list shows only 'Folder ..' and an empty hint"
+     ]
+    },
+    "rows": [
+     {
+      "note": "2023_02_03_meeting_notes_project_team.md",
+      "location": "/storage/emulated/0/Documents/markor",
+      "lusor_status": "succeeded"
+     },
+     {
+      "note": "2023_09_09_grocery_list_weekly.md",
+      "location": "/storage/emulated/0/Documents/markor",
+      "lusor_status": "succeeded"
+     },
+     {
+      "note": "9r5p_summer_vacation_plans.md",
+      "location": "/storage/emulated/0/Documents/markor",
+      "lusor_status": "succeeded"
+     },
+     {
+      "note": "art_project_sketches_copy.md",
+      "location": "/storage/emulated/0/Documents/markor",
+      "lusor_status": "succeeded"
+     },
+     {
+      "note": "budget_home_renovation_final.md",
+      "location": "/storage/emulated/0/Documents/markor",
+      "lusor_status": "succeeded"
+     },
+     {
+      "note": "fW01A_backup.md",
+      "location": "/storage/emulated/0/Documents/markor",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "task": "SimpleCalendarEventOnDateAtTime",
+ "video_duration_s": 74.2,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 29.67,
+   "end_s": 29.69,
+   "ok": true,
+   "note": "Read simple-calendar skill"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 29.67,
+   "end_s": 29.69,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 30.44,
+   "end_s": 32.77,
+   "ok": true,
+   "note": "Launch Simple Calendar Pro and observe screen"
+  },
+  {
+   "step": 4,
+   "tool": "tap",
+   "start_s": 34.57,
+   "end_s": 35.47,
+   "ok": true,
+   "note": "Tap Oct 18 cell to open day view"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 37.04,
+   "end_s": 37.61,
+   "ok": true,
+   "note": "Advance day view to Oct 18"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 39.37,
+   "end_s": 40.49,
+   "ok": true,
+   "note": "Tap day view title to open date picker"
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 41.81,
+   "end_s": 44.91,
+   "ok": true,
+   "note": "Type 18 in day field and confirm the picker"
+  },
+  {
+   "step": 8,
+   "tool": "get_ui_state",
+   "start_s": 45.78,
+   "end_s": 45.8,
+   "ok": true,
+   "note": "Re-read date picker state"
+  },
+  {
+   "step": 9,
+   "tool": "type",
+   "start_s": 46.82,
+   "end_s": 47.06,
+   "ok": true,
+   "note": "Type 18 into focused number picker field"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 48.17,
+   "end_s": 49.07,
+   "ok": true,
+   "note": "Confirm picker OK and read Oct 18 events"
+  },
+  {
+   "step": 11,
+   "tool": "chain",
+   "start_s": 53.07,
+   "end_s": 56.49,
+   "ok": true,
+   "note": "Advance day view 6 days to Oct 18"
+  },
+  {
+   "step": 12,
+   "tool": "done",
+   "start_s": 59.3,
+   "end_s": 59.3,
+   "ok": true,
+   "note": "Task complete; answer reported"
+  }
+ ]
+}

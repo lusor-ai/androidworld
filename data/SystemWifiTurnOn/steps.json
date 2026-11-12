@@ -1,0 +1,55 @@
+{
+ "task": "SystemWifiTurnOn",
+ "video_duration_s": 54.2,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 27.74,
+   "end_s": 27.75,
+   "ok": true,
+   "note": "Observe current screen, then open Settings to enable Wi-Fi"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 28.98,
+   "end_s": 32.02,
+   "ok": true,
+   "note": "Tap Wi-Fi in Settings"
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 32.77,
+   "end_s": 34.52,
+   "ok": true,
+   "note": "In Network & internet, open Wi-Fi settings"
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 35.4,
+   "end_s": 37.47,
+   "ok": true,
+   "note": "Open Internet to see Wi-Fi switch state"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 38.29,
+   "end_s": 39.41,
+   "ok": true,
+   "note": "Verify Wi-Fi switch now Checked"
+  },
+  {
+   "step": 6,
+   "tool": "done",
+   "start_s": 40.85,
+   "end_s": 40.85,
+   "ok": true,
+   "note": "Task complete; Wi-Fi confirmed on"
+  }
+ ]
+}

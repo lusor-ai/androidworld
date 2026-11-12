@@ -1,0 +1,295 @@
+{
+ "task": "ExpenseDeleteMultiple2",
+ "video_duration_s": 222.2,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 30.23,
+   "end_s": 30.25,
+   "ok": true,
+   "note": "Observe current screen"
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 31.75,
+   "end_s": 32.95,
+   "ok": true,
+   "note": "Launch the Pro Expense app"
+  },
+  {
+   "step": 3,
+   "tool": "swipe",
+   "start_s": 34.21,
+   "end_s": 36.33,
+   "ok": true,
+   "note": "Open app drawer and find Pro Expense"
+  },
+  {
+   "step": 4,
+   "tool": "scroll_to",
+   "start_s": 37.41,
+   "end_s": 38.67,
+   "ok": true,
+   "note": "Scroll app drawer to find Pro Expense"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 39.52,
+   "end_s": 39.52,
+   "ok": true,
+   "note": "Tap Pro Expense icon"
+  },
+  {
+   "step": 6,
+   "tool": "get_ui_state",
+   "start_s": 40.6,
+   "end_s": 40.62,
+   "ok": true,
+   "note": "Read current app drawer state and tap Pro Expense"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 41.46,
+   "end_s": 42.04,
+   "ok": true,
+   "note": "Open Pro Expense and read its expense list"
+  },
+  {
+   "step": 8,
+   "tool": "get_ui_state",
+   "start_s": 42.75,
+   "end_s": 42.82,
+   "ok": true,
+   "note": "Read the Pro Expense home screen"
+  },
+  {
+   "step": 9,
+   "tool": "get_ui_state",
+   "start_s": 43.83,
+   "end_s": 45.25,
+   "ok": true,
+   "note": "Read the Pro Expense home screen after load"
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 46.42,
+   "end_s": 47.23,
+   "ok": true,
+   "note": "Open the drawer menu to reach the expenses list"
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 48.01,
+   "end_s": 49.25,
+   "ok": true,
+   "note": "Open Expense Logs list"
+  },
+  {
+   "step": 12,
+   "tool": "map_app",
+   "start_s": 50.86,
+   "end_s": 76.69,
+   "ok": true,
+   "note": "Map the full Expense Logs list to find Utilities, Dining Out, Specialty Foods"
+  },
+  {
+   "step": 13,
+   "tool": "scroll_to",
+   "start_s": 79.15,
+   "end_s": 90.02,
+   "ok": true,
+   "note": "Scroll to Utilities row and swipe it to reveal Delete"
+  },
+  {
+   "step": 14,
+   "tool": "swipe",
+   "start_s": 91.57,
+   "end_s": 93.29,
+   "ok": true,
+   "note": "Scroll down toward Oct 4 rows (Utilities)"
+  },
+  {
+   "step": 15,
+   "tool": "swipe",
+   "start_s": 94.6,
+   "end_s": 96.7,
+   "ok": true,
+   "note": "Scroll down toward Oct 4 rows (Utilities)"
+  },
+  {
+   "step": 16,
+   "tool": "swipe",
+   "start_s": 97.87,
+   "end_s": 99.5,
+   "ok": true,
+   "note": "Scroll down until the Utilities row (2023 Oct 4) is visible"
+  },
+  {
+   "step": 17,
+   "tool": "swipe",
+   "start_s": 101.22,
+   "end_s": 102.85,
+   "ok": true,
+   "note": "Bring Utilities row fully into view"
+  },
+  {
+   "step": 18,
+   "tool": "tap_element",
+   "start_s": 104.79,
+   "end_s": 104.8,
+   "ok": true,
+   "note": "Tap Delete on the Utilities row and confirm it disappeared"
+  },
+  {
+   "step": 19,
+   "tool": "swipe",
+   "start_s": 106.4,
+   "end_s": 108.23,
+   "ok": true,
+   "note": "Swipe the Utilities row left to reveal Delete"
+  },
+  {
+   "step": 20,
+   "tool": "tap_element",
+   "start_s": 109.4,
+   "end_s": 110.3,
+   "ok": true,
+   "note": "Tap Delete on the revealed Utilities row and confirm it was removed"
+  },
+  {
+   "step": 21,
+   "tool": "tap_element",
+   "start_s": 111.78,
+   "end_s": 112.72,
+   "ok": true,
+   "note": "Confirm deletion of Utilities, then verify row gone"
+  },
+  {
+   "step": 22,
+   "tool": "swipe",
+   "start_s": 114.82,
+   "end_s": 116.56,
+   "ok": true,
+   "note": "Scroll up toward Oct 11 row Specialty Foods"
+  },
+  {
+   "step": 23,
+   "tool": "swipe",
+   "start_s": 118.17,
+   "end_s": 119.86,
+   "ok": true,
+   "note": "Scroll up toward specialty foods row"
+  },
+  {
+   "step": 24,
+   "tool": "swipe",
+   "start_s": 122.2,
+   "end_s": 124.04,
+   "ok": true,
+   "note": "Scroll up to Oct 11 rows"
+  },
+  {
+   "step": 25,
+   "tool": "swipe",
+   "start_s": 126.31,
+   "end_s": 128.45,
+   "ok": true,
+   "note": "Scroll up to Oct 11 rows (Specialty Foods)"
+  },
+  {
+   "step": 26,
+   "tool": "swipe",
+   "start_s": 130.2,
+   "end_s": 132.07,
+   "ok": true,
+   "note": "Swipe Dining Out row left to reveal Delete"
+  },
+  {
+   "step": 27,
+   "tool": "tap_element",
+   "start_s": 133.82,
+   "end_s": 135.0,
+   "ok": true,
+   "note": "Tap Delete on Dining Out and confirm"
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 136.23,
+   "end_s": 136.96,
+   "ok": true,
+   "note": "Confirm deletion of Dining Out, then locate Specialty Foods"
+  },
+  {
+   "step": 29,
+   "tool": "swipe",
+   "start_s": 139.08,
+   "end_s": 140.8,
+   "ok": true,
+   "note": "Scroll up to Oct 11 rows to find Specialty Foods"
+  },
+  {
+   "step": 30,
+   "tool": "swipe",
+   "start_s": 142.53,
+   "end_s": 144.28,
+   "ok": true,
+   "note": "Scroll up toward Oct 11 rows (Specialty Foods)"
+  },
+  {
+   "step": 31,
+   "tool": "swipe",
+   "start_s": 146.39,
+   "end_s": 148.09,
+   "ok": true,
+   "note": "Scroll up toward Oct 11 rows (Specialty Foods)"
+  },
+  {
+   "step": 32,
+   "tool": "swipe",
+   "start_s": 173.04,
+   "end_s": 175.06,
+   "ok": true,
+   "note": "Swipe Specialty Foods row left to reveal Delete"
+  },
+  {
+   "step": 33,
+   "tool": "tap_element",
+   "start_s": 176.44,
+   "end_s": 177.29,
+   "ok": true,
+   "note": "Tap Delete on revealed Specialty Foods row, then CONFIRM"
+  },
+  {
+   "step": 34,
+   "tool": "tap_element",
+   "start_s": 178.65,
+   "end_s": 179.49,
+   "ok": true,
+   "note": "Confirm deletion of Specialty Foods, then recount list with map_app levels 1"
+  },
+  {
+   "step": 35,
+   "tool": "map_app",
+   "start_s": 181.14,
+   "end_s": 204.73,
+   "ok": true,
+   "note": "Recount the list titles to confirm the three are gone"
+  },
+  {
+   "step": 36,
+   "tool": "done",
+   "start_s": 207.86,
+   "end_s": 207.86,
+   "ok": true,
+   "note": "Complete"
+  }
+ ]
+}

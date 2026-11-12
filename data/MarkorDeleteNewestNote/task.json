@@ -1,0 +1,119 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "MarkorDeleteNewestNote",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 21.2,
+  "mobilerun_published_time_s": 194.0,
+  "speed_ratio": 0.109,
+  "lusor_cost_usd": 0.0088,
+  "mobilerun_published_actions": 6,
+  "mobilerun_est_cost_usd": 0.46,
+  "lusor_tool_calls": 9,
+  "disclosure": null,
+  "skills_read": [
+   "markor"
+  ],
+  "skill_assisted": [],
+  "goal": "Delete the newest note in Markor.",
+  "final_answer": null,
+  "final_summary": "Deleted the newest note in Markor, 2023_08_11_good_vase.txt (dated 10/16/2023, 07:33). The file list now shows only 7aqA_proud_nurse.txt, brave_quilt_backup.txt and silly_tree_copy.md.",
+  "video_duration_s": 60.6,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "read",
+    "start_s": 28.58,
+    "end_s": 28.58,
+    "ok": true,
+    "note": "Read the Markor skill guidance"
+   },
+   {
+    "step": 2,
+    "tool": "get_ui_state",
+    "start_s": 29.23,
+    "end_s": 29.25,
+    "ok": true,
+    "note": "Observe current screen, then open Markor"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 30.08,
+    "end_s": 31.0,
+    "ok": true,
+    "note": "Launch Markor and inspect the notes list"
+   },
+   {
+    "step": 4,
+    "tool": "get_ui_state",
+    "start_s": 31.67,
+    "end_s": 32.93,
+    "ok": true,
+    "note": "Inspect Markor file list"
+   },
+   {
+    "step": 5,
+    "tool": "screenshot",
+    "start_s": 34.3,
+    "end_s": 35.75,
+    "ok": true,
+    "note": "See the file list contents visually"
+   },
+   {
+    "step": 6,
+    "tool": "tap_element",
+    "start_s": 38.44,
+    "end_s": 39.63,
+    "ok": true,
+    "note": "Long press the newest note 2023_08_11_good_vase.txt to open its menu"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 40.84,
+    "end_s": 41.78,
+    "ok": true,
+    "note": "Tap Delete on selected note 2023_08_11_good_vase.txt and confirm dialog"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 42.68,
+    "end_s": 43.66,
+    "ok": true,
+    "note": "Confirm OK, then verify the note is gone from the list"
+   },
+   {
+    "step": 9,
+    "tool": "done",
+    "start_s": 46.13,
+    "end_s": 46.13,
+    "ok": true,
+    "note": "Completed"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/MarkorDeleteNewestNote/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/MarkorDeleteNewestNote/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/MarkorDeleteNewestNote/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/MarkorDeleteNewestNote/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/MarkorDeleteNewestNote/task.json"
+  }
+ }
+}

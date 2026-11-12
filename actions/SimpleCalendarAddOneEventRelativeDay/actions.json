@@ -1,0 +1,421 @@
+{
+ "task": "SimpleCalendarAddOneEventRelativeDay",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 31.1,
+   "end_s": 31.1,
+   "ok": true,
+   "args": {
+    "path": "skill://simple-calendar/SKILL.md"
+   }
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 32.26,
+   "end_s": 32.28,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 33.58,
+   "end_s": 36.21,
+   "ok": true,
+   "args": {
+    "app": "com.simplemobiletools.calendar.pro"
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 37.73,
+   "end_s": 38.64,
+   "ok": true,
+   "args": {
+    "index": 53
+   },
+   "tapped": {
+    "label": "New Event",
+    "index": 53,
+    "x": 965,
+    "y": 2222
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 39.64,
+   "end_s": 40.74,
+   "ok": true,
+   "args": {
+    "index": 56
+   },
+   "tapped": {
+    "label": "Event",
+    "index": 56,
+    "x": 812,
+    "y": 2222
+   }
+  },
+  {
+   "step": 6,
+   "tool": "type",
+   "start_s": 41.79,
+   "end_s": 43.99,
+   "ok": true,
+   "args": {
+    "index": 4,
+    "text": "Appointment for Campaign"
+   }
+  },
+  {
+   "step": 7,
+   "tool": "type",
+   "start_s": 44.89,
+   "end_s": 49.1,
+   "ok": true,
+   "args": {
+    "index": 7,
+    "text": "We will understand upcoming project milestones."
+   }
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 50.17,
+   "end_s": 50.73,
+   "ok": true,
+   "args": {
+    "index": 10
+   },
+   "tapped": {
+    "label": "October 15 (Sun)",
+    "index": 10,
+    "x": 350,
+    "y": 1140
+   }
+  },
+  {
+   "step": 9,
+   "tool": "get_ui_state",
+   "start_s": 51.84,
+   "end_s": 51.93,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 10,
+   "tool": "tap_element",
+   "start_s": 52.88,
+   "end_s": 53.19,
+   "ok": true,
+   "args": {
+    "index": 26
+   },
+   "tapped": {
+    "label": "21",
+    "index": 26,
+    "x": 849,
+    "y": 1357
+   }
+  },
+  {
+   "step": 11,
+   "tool": "tap_element",
+   "start_s": 54.55,
+   "end_s": 55.21,
+   "ok": true,
+   "args": {
+    "index": 40
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 40,
+    "x": 844,
+    "y": 1798
+   }
+  },
+  {
+   "step": 12,
+   "tool": "tap_element",
+   "start_s": 56.46,
+   "end_s": 57.91,
+   "ok": true,
+   "args": {
+    "index": 11
+   },
+   "tapped": {
+    "label": "16:00",
+    "index": 11,
+    "x": 962,
+    "y": 1140
+   }
+  },
+  {
+   "step": 13,
+   "tool": "tap_element",
+   "start_s": 58.77,
+   "end_s": 59.92,
+   "ok": true,
+   "args": {
+    "index": 28
+   },
+   "tapped": {
+    "label": "Switch to text input mode for the time input.",
+    "index": 28,
+    "x": 237,
+    "y": 1816
+   }
+  },
+  {
+   "step": 14,
+   "tool": "type",
+   "start_s": 60.87,
+   "end_s": 61.96,
+   "ok": true,
+   "args": {
+    "index": 1,
+    "text": "00"
+   }
+  },
+  {
+   "step": 15,
+   "tool": "tap_element",
+   "start_s": 62.96,
+   "end_s": 63.52,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 5,
+    "x": 781,
+    "y": 1107
+   }
+  },
+  {
+   "step": 16,
+   "tool": "tap_element",
+   "start_s": 64.46,
+   "end_s": 65.61,
+   "ok": true,
+   "args": {
+    "index": 13
+   },
+   "tapped": {
+    "label": "00:00",
+    "index": 13,
+    "x": 962,
+    "y": 1285
+   }
+  },
+  {
+   "step": 17,
+   "tool": "tap_element",
+   "start_s": 66.38,
+   "end_s": 67.42,
+   "ok": true,
+   "args": {
+    "index": 28
+   },
+   "tapped": {
+    "label": "Switch to text input mode for the time input.",
+    "index": 28,
+    "x": 237,
+    "y": 1816
+   }
+  },
+  {
+   "step": 18,
+   "tool": "tap",
+   "start_s": 68.62,
+   "end_s": 69.84,
+   "ok": true,
+   "args": {
+    "x": 697,
+    "y": 928
+   }
+  },
+  {
+   "step": 19,
+   "tool": "type",
+   "start_s": 71.17,
+   "end_s": 72.16,
+   "ok": true,
+   "args": {
+    "index": 2,
+    "text": "45"
+   }
+  },
+  {
+   "step": 20,
+   "tool": "get_ui_state",
+   "start_s": 73.87,
+   "end_s": 73.93,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 21,
+   "tool": "type",
+   "start_s": 75.93,
+   "end_s": 77.02,
+   "ok": true,
+   "args": {
+    "index": 1,
+    "text": "00"
+   }
+  },
+  {
+   "step": 22,
+   "tool": "get_ui_state",
+   "start_s": 78.8,
+   "end_s": 78.81,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 23,
+   "tool": "type",
+   "start_s": 81.57,
+   "end_s": 84.06,
+   "ok": true,
+   "args": {
+    "index": 2,
+    "text": "45"
+   }
+  },
+  {
+   "step": 24,
+   "tool": "tap_element",
+   "start_s": 85.33,
+   "end_s": 86.21,
+   "ok": true,
+   "args": {
+    "index": 5
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 5,
+    "x": 781,
+    "y": 1107
+   }
+  },
+  {
+   "step": 25,
+   "tool": "tap_element",
+   "start_s": 87.56,
+   "end_s": 88.79,
+   "ok": true,
+   "args": {
+    "index": 2
+   },
+   "tapped": {
+    "label": "Save",
+    "index": 2,
+    "x": 1017,
+    "y": 211
+   }
+  },
+  {
+   "step": 26,
+   "tool": "tap_element",
+   "start_s": 89.78,
+   "end_s": 91.48,
+   "ok": true,
+   "args": {
+    "index": 3
+   },
+   "tapped": {
+    "label": "OK",
+    "index": 3,
+    "x": 842,
+    "y": 1512
+   }
+  },
+  {
+   "step": 27,
+   "tool": "tap",
+   "start_s": 92.81,
+   "end_s": 94.44,
+   "ok": true,
+   "args": {
+    "x": 990,
+    "y": 1270
+   }
+  },
+  {
+   "step": 28,
+   "tool": "tap_element",
+   "start_s": 95.72,
+   "end_s": 96.28,
+   "ok": true,
+   "args": {
+    "index": 14
+   },
+   "tapped": {
+    "label": null,
+    "index": 14,
+    "x": 1007,
+    "y": 388
+   }
+  },
+  {
+   "step": 29,
+   "tool": "key",
+   "start_s": 99.92,
+   "end_s": 100.24,
+   "ok": true,
+   "args": {
+    "key": "back"
+   }
+  },
+  {
+   "step": 30,
+   "tool": "tap",
+   "start_s": 103.17,
+   "end_s": 103.82,
+   "ok": true,
+   "args": {
+    "x": 990,
+    "y": 1570
+   }
+  },
+  {
+   "step": 31,
+   "tool": "done",
+   "start_s": 106.25,
+   "end_s": 106.26,
+   "ok": true,
+   "args": {
+    "summary": "Created the event \"Appointment for Campaign\" in Simple Calendar Pro for Saturday, October 21, 2023, from 00:00 to 00:45 (45 minutes), with the description \"We will understand upcoming project milestones.\" I read it back on the Oct 21 day view and all details match.",
+    "evidence": {
+     "objective_evidence": "Day view header reads \"October 21 (Sat)\" with one event row: title \"Appointment for Campaign\", time \"00:00 - 00:45\", description \"We will understand upcoming project milestones.\"",
+     "key_signals": [
+      "Editor showed start October 21 (Sat) 00:00 and end October 21 (Sat) 00:45 before saving",
+      "Time picker text fields verified as hour 00 and minute 45",
+      "Device date Sun 2023-10-15, so this Saturday is 2023-10-21"
+     ]
+    },
+    "rows": [
+     {
+      "title": "Appointment for Campaign",
+      "date": "2023-10-21",
+      "start_time": "00:00",
+      "end_time": "00:45",
+      "duration_minutes": 45,
+      "description": "We will understand upcoming project milestones.",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "task": "SystemBluetoothTurnOn",
+ "time_base": "seconds from the start of the original video (same as steps.json)",
+ "note": "Arguments as the agent sent them; for taps, the element label, index and screen point the tool reported. Tool output is not included.",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "get_ui_state",
+   "start_s": 28.54,
+   "end_s": 28.55,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 2,
+   "tool": "launch",
+   "start_s": 29.74,
+   "end_s": 32.44,
+   "ok": true,
+   "args": {
+    "app": "com.android.settings"
+   }
+  },
+  {
+   "step": 3,
+   "tool": "tap_element",
+   "start_s": 33.37,
+   "end_s": 34.73,
+   "ok": true,
+   "args": {
+    "index": 9
+   },
+   "tapped": {
+    "label": null,
+    "index": 9,
+    "x": 540,
+    "y": 1117
+   }
+  },
+  {
+   "step": 4,
+   "tool": "tap_element",
+   "start_s": 36.1,
+   "end_s": 37.51,
+   "ok": true,
+   "args": {
+    "index": 6
+   },
+   "tapped": {
+    "label": null,
+    "index": 6,
+    "x": 540,
+    "y": 1248
+   }
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 38.41,
+   "end_s": 39.43,
+   "ok": true,
+   "args": {
+    "index": 4
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 565,
+    "y": 787
+   }
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 40.14,
+   "end_s": 40.6,
+   "ok": true,
+   "args": {
+    "index": 4,
+    "toggle": true
+   },
+   "tapped": {
+    "label": null,
+    "index": 4,
+    "x": 912,
+    "y": 738
+   }
+  },
+  {
+   "step": 7,
+   "tool": "get_ui_state",
+   "start_s": 41.23,
+   "end_s": 41.31,
+   "ok": true,
+   "args": {}
+  },
+  {
+   "step": 8,
+   "tool": "done",
+   "start_s": 42.47,
+   "end_s": 42.48,
+   "ok": true,
+   "args": {
+    "summary": "Bluetooth is now on. In Settings, the \"Use Bluetooth\" switch on the Bluetooth screen shows as checked.",
+    "evidence": {
+     "objective_evidence": "Settings > Connection preferences > Bluetooth screen shows the \"Use Bluetooth\" switch Checked (it previously showed Unchecked).",
+     "key_signals": [
+      "Before: Switch id switch_widget Unchecked",
+      "After tapping: Switch id switch_widget Checked",
+      "Final screen re-read confirms Checked"
+     ]
+    },
+    "rows": [
+     {
+      "action": "Turn Bluetooth on",
+      "lusor_status": "succeeded"
+     }
+    ]
+   }
+  }
+ ]
+}

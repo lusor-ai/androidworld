@@ -1,0 +1,95 @@
+{
+ "task": "RecipeDeleteSingleWithRecipeWithNoise",
+ "video_duration_s": 89.2,
+ "time_base": "seconds from the video start",
+ "steps": [
+  {
+   "step": 1,
+   "tool": "read",
+   "start_s": 30.2,
+   "end_s": 30.21,
+   "ok": true,
+   "note": "Read Broccoli skill and observe screen"
+  },
+  {
+   "step": 2,
+   "tool": "get_ui_state",
+   "start_s": 30.2,
+   "end_s": 30.21,
+   "ok": true,
+   "note": "Read Broccoli skill and observe screen"
+  },
+  {
+   "step": 3,
+   "tool": "launch",
+   "start_s": 31.03,
+   "end_s": 34.95,
+   "ok": true,
+   "note": "Launch Broccoli and find the recipe list"
+  },
+  {
+   "step": 4,
+   "tool": "scroll_to",
+   "start_s": 36.09,
+   "end_s": 37.29,
+   "ok": true,
+   "note": "Scroll to Classic Margherita Pizza card"
+  },
+  {
+   "step": 5,
+   "tool": "tap_element",
+   "start_s": 38.23,
+   "end_s": 39.93,
+   "ok": true,
+   "note": "Open Classic Margherita Pizza recipe detail"
+  },
+  {
+   "step": 6,
+   "tool": "tap_element",
+   "start_s": 41.06,
+   "end_s": 42.14,
+   "ok": true,
+   "note": "Open the More options menu on the recipe detail page"
+  },
+  {
+   "step": 7,
+   "tool": "tap_element",
+   "start_s": 42.88,
+   "end_s": 43.82,
+   "ok": true,
+   "note": "Tap Delete in the menu and confirm if a dialog appears"
+  },
+  {
+   "step": 8,
+   "tool": "tap_element",
+   "start_s": 44.92,
+   "end_s": 46.14,
+   "ok": true,
+   "note": "Confirm DELETE in the dialog, then verify the recipe is gone from the list"
+  },
+  {
+   "step": 9,
+   "tool": "map_app",
+   "start_s": 47.49,
+   "end_s": 72.8,
+   "ok": true,
+   "note": "Map the full recipe list to verify Classic Margherita Pizza is gone"
+  },
+  {
+   "step": 10,
+   "tool": "get_ui_state",
+   "start_s": 73.86,
+   "end_s": 73.88,
+   "ok": true,
+   "note": "Report the deletion result"
+  },
+  {
+   "step": 11,
+   "tool": "done",
+   "start_s": 75.99,
+   "end_s": 75.99,
+   "ok": true,
+   "note": "Task complete"
+  }
+ ]
+}

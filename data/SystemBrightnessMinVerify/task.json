@@ -1,0 +1,101 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "SystemBrightnessMinVerify",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 18.2,
+  "mobilerun_published_time_s": 117.4,
+  "speed_ratio": 0.155,
+  "lusor_cost_usd": 0.0064,
+  "mobilerun_published_actions": 5,
+  "mobilerun_est_cost_usd": 0.383,
+  "lusor_tool_calls": 7,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Turn brightness to the min value.",
+  "final_answer": null,
+  "final_summary": "Brightness is already at the minimum: the Display settings show Brightness level 0%, and the brightness slider reads value 0 of a minimum 0, so nothing needed changing.",
+  "video_duration_s": 57.8,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 28.48,
+    "end_s": 28.5,
+    "ok": true,
+    "note": "Observe current screen to find brightness settings"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 29.37,
+    "end_s": 32.06,
+    "ok": true,
+    "note": "Open Settings app and navigate to Display > Brightness level"
+   },
+   {
+    "step": 3,
+    "tool": "scroll_to",
+    "start_s": 33.26,
+    "end_s": 34.46,
+    "ok": true,
+    "note": "Scroll to Display entry in Settings"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 35.15,
+    "end_s": 36.52,
+    "ok": true,
+    "note": "Open Display settings"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 37.72,
+    "end_s": 38.52,
+    "ok": true,
+    "note": "Open Brightness level page to check slider value"
+   },
+   {
+    "step": 6,
+    "tool": "key",
+    "start_s": 40.44,
+    "end_s": 40.94,
+    "ok": true,
+    "note": "Close slider and re-read Display screen to confirm 0%"
+   },
+   {
+    "step": 7,
+    "tool": "done",
+    "start_s": 42.69,
+    "end_s": 42.69,
+    "ok": true,
+    "note": "Task complete; brightness confirmed at minimum (0%)"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/SystemBrightnessMinVerify/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/SystemBrightnessMinVerify/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/SystemBrightnessMinVerify/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/SystemBrightnessMinVerify/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/SystemBrightnessMinVerify/task.json"
+  }
+ }
+}

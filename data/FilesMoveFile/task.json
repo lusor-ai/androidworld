@@ -1,0 +1,189 @@
+{
+ "version": "2026-11-09",
+ "setup": {
+  "benchmark": "AndroidWorld",
+  "date": "2026-11-09",
+  "agent": "Lusor",
+  "model": "DeepSeek V4.1 Flash (low)",
+  "seed": 42,
+  "graders": {
+   "mobilerun": "droidrun/android-world c5467e6",
+   "google": "google-research/android_world 30583e2"
+  },
+  "mobilerun_cost_note": "ESTIMATE: published action count x $0.0766 (mean per-call cost we measured running gpt-6-astra low in our harness); not their bill",
+  "mobilerun_source": "Mobilerun published per-task times and action counts",
+  "skills_note": "skills_read = published app skills the agent opened in that task. skill_assisted = the subset with a rule written for an action or reading this task needs (our reading of each skill text); opening a skill whose rules do not apply to the task is not counted as assisted."
+ },
+ "task": {
+  "task": "FilesMoveFile",
+  "mobilerun_grader_pass": true,
+  "google_grader_pass": true,
+  "lusor_time_s": 51.2,
+  "mobilerun_published_time_s": 380.8,
+  "speed_ratio": 0.134,
+  "lusor_cost_usd": 0.022,
+  "mobilerun_published_actions": 15,
+  "mobilerun_est_cost_usd": 1.149,
+  "lusor_tool_calls": 18,
+  "disclosure": null,
+  "skills_read": [],
+  "skill_assisted": [],
+  "goal": "Move the file jazzy_ring.mp3 from Documents within the sdk_gphone_x86_64 storage area to the Ringtones within the same sdk_gphone_x86_64 storage area in the Android filesystem.",
+  "final_answer": null,
+  "final_summary": "I moved jazzy_ring.mp3 from Documents into Ringtones on the internal storage. Both folders are inside the same storage area, listed on this phone as sdk_gphone64_x86_64 (the only internal storage root).",
+  "video_duration_s": 94.1,
+  "steps": [
+   {
+    "step": 1,
+    "tool": "get_ui_state",
+    "start_s": 30.22,
+    "end_s": 35.21,
+    "ok": true,
+    "note": "Observe current screen"
+   },
+   {
+    "step": 2,
+    "tool": "launch",
+    "start_s": 36.69,
+    "end_s": 40.48,
+    "ok": true,
+    "note": "Observe Files app home"
+   },
+   {
+    "step": 3,
+    "tool": "tap_element",
+    "start_s": 41.4,
+    "end_s": 42.39,
+    "ok": true,
+    "note": "Open drawer and choose sdk_gphone_x86_64 root"
+   },
+   {
+    "step": 4,
+    "tool": "tap_element",
+    "start_s": 43.76,
+    "end_s": 44.93,
+    "ok": true,
+    "note": "Open sdk_gphone64_x86_64 root and find Documents folder"
+   },
+   {
+    "step": 5,
+    "tool": "tap_element",
+    "start_s": 46.11,
+    "end_s": 47.12,
+    "ok": true,
+    "note": "Open Documents folder and find jazzy_ring.mp3"
+   },
+   {
+    "step": 6,
+    "tool": "scroll_to",
+    "start_s": 48.07,
+    "end_s": 49.79,
+    "ok": true,
+    "note": "Scroll Documents to find jazzy_ring.mp3"
+   },
+   {
+    "step": 7,
+    "tool": "tap_element",
+    "start_s": 50.98,
+    "end_s": 52.39,
+    "ok": true,
+    "note": "Long press jazzy_ring.mp3 to select it"
+   },
+   {
+    "step": 8,
+    "tool": "tap_element",
+    "start_s": 53.41,
+    "end_s": 54.49,
+    "ok": true,
+    "note": "Tap More options in selection bar to find Move to"
+   },
+   {
+    "step": 9,
+    "tool": "tap_element",
+    "start_s": 55.62,
+    "end_s": 56.58,
+    "ok": true,
+    "note": "Tap Move to… and then choose Ringtones destination"
+   },
+   {
+    "step": 10,
+    "tool": "get_ui_state",
+    "start_s": 57.77,
+    "end_s": 57.81,
+    "ok": true,
+    "note": "Read Move to destination picker"
+   },
+   {
+    "step": 11,
+    "tool": "tap_element",
+    "start_s": 58.85,
+    "end_s": 59.48,
+    "ok": true,
+    "note": "Open roots drawer in picker and select sdk_gphone64_x86_64"
+   },
+   {
+    "step": 12,
+    "tool": "tap_element",
+    "start_s": 60.35,
+    "end_s": 61.29,
+    "ok": true,
+    "note": "Select sdk_gphone64_x86_64 in picker roots"
+   },
+   {
+    "step": 13,
+    "tool": "tap_element",
+    "start_s": 62.25,
+    "end_s": 63.01,
+    "ok": true,
+    "note": "Open Ringtones folder in picker"
+   },
+   {
+    "step": 14,
+    "tool": "tap_element",
+    "start_s": 64.14,
+    "end_s": 65.31,
+    "ok": true,
+    "note": "Tap MOVE to move file into Ringtones"
+   },
+   {
+    "step": 15,
+    "tool": "tap_element",
+    "start_s": 67.03,
+    "end_s": 68.3,
+    "ok": true,
+    "note": "Navigate to Ringtones folder to verify file"
+   },
+   {
+    "step": 16,
+    "tool": "tap_element",
+    "start_s": 69.88,
+    "end_s": 71.1,
+    "ok": true,
+    "note": "Open sdk root then Ringtones to verify"
+   },
+   {
+    "step": 17,
+    "tool": "tap_element",
+    "start_s": 73.0,
+    "end_s": 73.73,
+    "ok": true,
+    "note": "Open Ringtones and check jazzy_ring.mp3 present"
+   },
+   {
+    "step": 18,
+    "tool": "done",
+    "start_s": 77.0,
+    "end_s": 77.0,
+    "ok": true,
+    "note": "Task complete; file verified in Ringtones"
+   }
+  ],
+  "files": {
+   "video_mp4": "benchmarks/androidworld/2026-11-09/FilesMoveFile/video.mp4",
+   "video_webm": "benchmarks/androidworld/2026-11-09/FilesMoveFile/video.webm",
+   "poster": "benchmarks/androidworld/2026-11-09/FilesMoveFile/poster.webp",
+   "steps": "benchmarks/androidworld/2026-11-09/FilesMoveFile/steps.json",
+   "task": "benchmarks/androidworld/2026-11-09/FilesMoveFile/task.json"
+  }
+ }
+}
